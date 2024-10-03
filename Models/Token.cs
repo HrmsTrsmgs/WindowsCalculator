@@ -1,4 +1,4 @@
-﻿namespace Marimo.MauiBlazor.Models.Tokens;
+﻿namespace Marimo.MauiBlazor.Models;
 
 /// <summary>
 /// 入力された文字列のひと塊を表します。

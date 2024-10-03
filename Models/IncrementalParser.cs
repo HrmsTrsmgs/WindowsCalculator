@@ -1,6 +1,4 @@
-﻿using Marimo.MauiBlazor.Models.Tokens;
-
-namespace Marimo.MauiBlazor.Models;
+﻿namespace Marimo.MauiBlazor.Models;
 
 /// <summary>
 /// 一文字ずつの入力を処理します。
@@ -16,7 +14,7 @@ public class IncrementalParser
     /// 一文字ずつの入力を処理します。
     /// </summary>
     /// <param name="charactor">入力された一文字。</param>
-    public void InputCharactor(char charactor)
+    public void Input(char charactor)
     {
         switch (charactor)
         {

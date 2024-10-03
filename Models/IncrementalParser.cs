@@ -2,10 +2,20 @@
 
 namespace Marimo.MauiBlazor.Models;
 
+/// <summary>
+/// 一文字ずつの入力を処理します。
+/// </summary>
 public class IncrementalParser
 {
+    /// <summary>
+    /// 処理中のトークンを取得します。
+    /// </summary>
     public Token? ActiveToken { get; private set; } = null;
 
+    /// <summary>
+    /// 一文字ずつの入力を処理します。
+    /// </summary>
+    /// <param name="charactor">入力された一文字。</param>
     public void InputCharactor(char charactor)
     {
         switch (charactor)

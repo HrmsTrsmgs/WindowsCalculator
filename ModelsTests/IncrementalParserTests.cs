@@ -63,7 +63,6 @@ public class IncrementalParserTests
     public void 数値や四則演算以外の値は受け付けません()
     {
         tested.InputCharactor('#');
-        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         tested.ActiveToken.Should().BeNull();
     }
     [Fact]
@@ -71,6 +70,7 @@ public class IncrementalParserTests
     {
         tested.InputCharactor('1');
         tested.InputCharactor('#');
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
     }
 

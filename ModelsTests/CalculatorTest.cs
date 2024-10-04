@@ -32,4 +32,14 @@ public class CalculatorTest
 
         tested.Result.Should().Be(3);
     }
+
+    [Fact]
+    public void 初期状態から数値が入力された場合に計算は変わりません()
+    {
+        var initial = tested.ActiveCaluculation;
+
+        tested.Input(new NumberToken { Number = 3 });
+
+        tested.ActiveCaluculation.Should().BeSameAs(initial);
+    }
 }

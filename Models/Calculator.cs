@@ -15,7 +15,7 @@ public class Calculator :ObservableObject
     {
         var numberToken = token as NumberToken;
         if(numberToken == null) return;
-        ActiveCaluculation = new Caluculation(null, numberToken.Number);
+        ActiveCaluculation.Operand = numberToken.Number;
         OnPropertyChanged(nameof(Result));
     }
 

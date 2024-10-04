@@ -8,8 +8,8 @@ namespace Marimo.MauiBlazor.Models;
 /// <param name="Operand">計算される、もしくは最初に入力された数値。</param>
 public class Caluculation(char? @operator = null, int operand = 0) : ObservableObject
 {
-    public char? Operator { get; } = @operator;
-    public int Operand { get; } = operand;
+    public char? Operator { get; set; } = @operator;
+    public int Operand { get; set; } = operand;
 
     public int Result => Operand;
 }

@@ -5,12 +5,12 @@ namespace Marimo.MauiBlazor.Tests.ViewModels;
 
 public class CaluculatorViewModelTests
 {
-    CaluculatorViewModel tested { get; } = new();
+    CalculatorViewModel tested { get; } = new();
 
     [Fact]
     public void 入力した数値が表示されています()
     {
-        tested.Input('5');
+        tested.PushKeybord.Execute('5');
 
         tested.Number.Should().Be(5);
 

@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="Marimo.MauiBlazor.Calculator.styles.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
+    <script>
+        window.addEventListener('keydown', function (event) {
+            DotNet.invokeMethodAsync('Marimo.MauiBlazor.Calculator', 'HandleKeyDown', event.key);
+        });
+    </script>
 </head>
 
 <body>

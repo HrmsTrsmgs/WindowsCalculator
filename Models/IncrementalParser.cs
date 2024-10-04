@@ -24,13 +24,14 @@ public class IncrementalParser : ObservableObject
     /// <param name="charactor">入力された一文字。</param>
     public void Input(char charactor)
     {
-
         switch (charactor)
         {
             case >= '0' and <= '9':
-                ActiveToken = new NumberToken() { Number = int.Parse(charactor.ToString()) };
+                ActiveToken = new NumberToken(charactor - '0');
+                break;
+            case '+':
+                ActiveToken = new OperatorToken(charactor);
                 break;
         }
     }
-    
 }

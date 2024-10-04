@@ -11,18 +11,27 @@ public class Calculator :ObservableObject
     /// 電卓にトークンを入力します。
     /// </summary>
     /// <param name="token">入力されたトークン。</param>
-    public void Input(Token token) 
+    public void Input(Token token)
     {
-        var numberToken = token as NumberToken;
-        if(numberToken == null) return;
-        ActiveCaluculation.Operand = numberToken.Number;
+        switch (token) 
+        {
+            case NumberToken t:
+                ActiveCaluculation.Operand = t.Number;
+                break;
+            case OperatorToken t:
+                activeCaluculation = new Caluculation(t.Operator, null);
+                break;
+        }
+
+        
+        
         OnPropertyChanged(nameof(Result));
     }
 
     /// <summary>
     /// 現在行っている計算です。
     /// </summary>
-    Caluculation activeCaluculation = new();
+    Caluculation activeCaluculation = new(null, 0);
 
     /// <summary>
     /// 現在行っている計算を取得、設定します。

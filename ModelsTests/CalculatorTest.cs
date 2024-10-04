@@ -26,20 +26,39 @@ public class CalculatorTest
     }
 
     [Fact]
-    public void 入力されたトークンは結果となります()
+    public void 入力された数値トークンの数値は結果となります()
     {
-        tested.Input(new NumberToken { Number = 3 });
+        tested.Input(new NumberToken(3));
 
         tested.Result.Should().Be(3);
     }
 
     [Fact]
-    public void 初期状態から数値が入力された場合に計算は変わりません()
+    public void 初期状態から数値が入力された場合に現在の計算は変わりません()
     {
         var initial = tested.ActiveCaluculation;
 
-        tested.Input(new NumberToken { Number = 3 });
+        tested.Input(new NumberToken(3));
 
         tested.ActiveCaluculation.Should().BeSameAs(initial);
     }
+
+    [Fact]
+    public void 演算子が入力された場合に現在の計算が変わります()
+    {
+        var initial = tested.ActiveCaluculation;
+
+        tested.Input(new OperatorToken('+'));
+
+        tested.ActiveCaluculation.Should().NotBeSameAs(initial);
+    }
+
+    [Fact]
+    public void 演算子が入力された場合に新しい計算の演算子は指定したものになります()
+    {
+        tested.Input(new OperatorToken('+'));
+
+        tested.ActiveCaluculation.Operator.Should().Be('+');
+    }
+
 }

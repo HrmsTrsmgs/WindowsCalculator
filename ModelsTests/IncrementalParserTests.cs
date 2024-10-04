@@ -65,12 +65,37 @@ public class IncrementalParserTests
         tested.ActiveToken.Should().BeNull();
     }
     [Fact]
-    public void すでにトークンが入力された後についても数値や四則演算以外の値は受け付けません()
+    public void すでにトークンが入力された後についても無効な値は受け付けません()
     {
         tested.Input('1');
         tested.Input('#');
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
+    }
+
+    [Fact]
+    public void 演算子トークンが入力できます()
+    {
+        tested.Input('+');
+        tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be('+');
+    }
+
+    [Fact]
+    public void 四則演算の演算子トークンが入力できます()
+    {
+        tested.Input('+');
+        tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be('+');
+        tested.Input('-');
+        tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be('+');
+        tested.Input('*');
+        tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be('+');
+        tested.Input('/');
+        tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be('+');
     }
 
 }

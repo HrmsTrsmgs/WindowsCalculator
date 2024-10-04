@@ -16,12 +16,12 @@
 
     public static class StaticClass
     {
-        public static CalculatorViewModel ViewModel { get; set; }
+        public static CalculatorViewModel? ViewModel { get; set; }
 
         [JSInvokable("HandleKeyDown")]
         public static void HandleKeyDown(char key)
         {
-            ViewModel.PushKeybord.Execute(key);
+            ViewModel?.PushKeybord?.Execute(key);
         }
     }
     

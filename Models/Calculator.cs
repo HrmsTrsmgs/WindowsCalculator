@@ -20,9 +20,17 @@ public class Calculator :ObservableObject
     }
 
     /// <summary>
+    /// 現在行っている計算です。
+    /// </summary>
+    Caluculation? activeCaluculation;
+
+    /// <summary>
     /// 現在行っている計算を取得、設定します。
     /// </summary>
-    Caluculation? ActiveCaluculation { get; set; }
+    Caluculation? ActiveCaluculation 
+    {
+        get => activeCaluculation;
+        set => SetProperty(ref activeCaluculation, value); }
 
     /// <summary>
     /// 計算結果を取得します。

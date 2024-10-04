@@ -1,8 +1,10 @@
-﻿namespace Marimo.MauiBlazor.Models;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+
+namespace Marimo.MauiBlazor.Models;
 
 /// <summary>
 /// 入力された文字列のひと塊を表します。
 /// </summary>
-public class Token
+public class Token : ObservableObject
 {
 }

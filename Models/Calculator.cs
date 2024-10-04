@@ -15,25 +15,26 @@ public class Calculator :ObservableObject
     {
         var numberToken = token as NumberToken;
         if(numberToken == null) return;
-        ActiveCaluculation = new Caluculation(numberToken.Number);
+        ActiveCaluculation = new Caluculation(null, numberToken.Number);
         OnPropertyChanged(nameof(Result));
     }
 
     /// <summary>
     /// 現在行っている計算です。
     /// </summary>
-    Caluculation? activeCaluculation;
+    Caluculation activeCaluculation = new();
 
     /// <summary>
     /// 現在行っている計算を取得、設定します。
     /// </summary>
-    Caluculation? ActiveCaluculation 
+    public Caluculation ActiveCaluculation 
     {
         get => activeCaluculation;
-        set => SetProperty(ref activeCaluculation, value); }
+        private set => SetProperty(ref activeCaluculation, value); 
+    }
 
     /// <summary>
     /// 計算結果を取得します。
     /// </summary>
-    public int Result => ActiveCaluculation?.Result ?? 0;
+    public int Result => ActiveCaluculation.Result;
 }

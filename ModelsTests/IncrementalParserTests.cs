@@ -131,4 +131,13 @@ public class IncrementalParserTests
         tested.Input(Key.Equal);
         tested.ActiveToken.Should().BeSameAs(OtherToken.Equal);
     }
+
+    [Fact]
+    public void 二桁の数字が入力できます()
+    {
+        tested.Input(Key.One);
+        tested.Input(Key.Zero);
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(10);
+    }
 }

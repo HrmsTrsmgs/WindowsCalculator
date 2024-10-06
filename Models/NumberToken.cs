@@ -11,5 +11,5 @@ public class NumberToken(int number) : Token
     /// <summary>
     /// 入力された数値を取得します。
     /// </summary>
-    public int Number { get; } = number;
+    public int Number { get; set; } = number;
 }

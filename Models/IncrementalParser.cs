@@ -31,7 +31,15 @@ public class IncrementalParser : ObservableObject
         switch (key)
         {
             case >= Key.Zero and <= Key.Nine:
-                ActiveToken = new NumberToken((int)key);
+                switch (ActiveToken)
+                {
+                    case NumberToken t:
+                        t.Number = t.Number * 10 + (int)key;
+                        break;
+                    default:
+                        ActiveToken = new NumberToken((int)key);
+                        break;
+                }
                 break;
             case Key.Plus or Key.Minus or Key.Multiply or Key.Divide:
                 switch (ActiveToken)

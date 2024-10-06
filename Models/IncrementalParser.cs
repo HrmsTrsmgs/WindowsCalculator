@@ -1,5 +1,4 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
 
 namespace Marimo.MauiBlazor.Models;
 
@@ -9,9 +8,13 @@ namespace Marimo.MauiBlazor.Models;
 public class IncrementalParser : ObservableObject
 {
 
-    Token? activeToken = null;
     /// <summary>
-    /// 処理中のトークンを取得します。
+    /// 現在入力されているトークンです。
+    /// </summary>
+    Token? activeToken = null;
+
+    /// <summary>
+    /// 現在入力されているトークンを取得します。
     /// </summary>
     public Token? ActiveToken 
     {
@@ -31,7 +34,6 @@ public class IncrementalParser : ObservableObject
                 ActiveToken = new NumberToken((int)key);
                 break;
             case Key.Plus or Key.Minus or Key.Multiply or Key.Divide:
-
                 switch (ActiveToken)
                 {
                     case OperatorToken t:

@@ -1,6 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Marimo.MauiBlazor.Models.Calculations;
-using System.Net.Http.Headers;
 
 namespace Marimo.MauiBlazor.Models;
 
@@ -18,36 +17,67 @@ public class Calculator :ObservableObject
         switch (token)
         {
             case NumberToken t:
-                switch (ActiveCaluculation)
-                {
-                    case NumberCalculation c:
-                        c.Number = t.Number;
-                        break;
-                    case OperationCalculation c:
-                        c.Operand = t.Number;
-                        break;
-                }
-
+                InputNumberToken(t);
                 break;
             case OperatorToken t:
-                ActiveCaluculation = new OperationCalculation(ActiveCaluculation, t.Operator, null);
+                ActiveCaluculation 
+                    = new OperationCalculation(ActiveCaluculation, t.Operator, null);
                 break;
             case OtherToken t:
-                OperationCalculation? lastCalculation = null;
-                if (ActiveCaluculation is EqualButtonCalculation)
-                {
-                    var before = ((EqualButtonCalculation)ActiveCaluculation).LastOperationCalculation;
-                    if(before == null)
-                    {
-                        before = ((EqualButtonCalculation)ActiveCaluculation).Receiver as OperationCalculation;
-                    }
-                    lastCalculation = new OperationCalculation(ActiveCaluculation, before.Operator, before.Operand);
-                }
-                ActiveCaluculation =
-                new EqualButtonCalculation(ActiveCaluculation, lastCalculation);
+                ActiveCaluculation = GetCalculationOtherWhenTokenInputed(t);
                 break;
         }
         OnPropertyChanged(nameof(DisplaiedNumber));
+    }
+
+    /// <summary>
+    /// 数値と演算子以外の入力を行います。
+    /// </summary>
+    private Calculation GetCalculationOtherWhenTokenInputed(OtherToken otherToken)
+        => otherToken.Kind switch
+        {
+            OtherTokenKind.Equal =>
+                new EqualButtonCalculation(
+                    ActiveCaluculation,
+                    ActiveCaluculation switch
+                    {
+                        EqualButtonCalculation c => GetLastOperationCalculation(c),
+                        _ => null
+                    }),
+            _ => throw new NotSupportedException()
+        };
+
+    /// <summary>
+    /// 次の最後の演算を取得します。
+    /// </summary>
+    /// <param name="lastCaluculation">これまでの最後の計算</param>
+    /// <returns>これまでの最後の演算。</returns>
+    private OperationCalculation? GetLastOperationCalculation(
+        EqualButtonCalculation lastCaluculation)
+    {
+        var before
+            = lastCaluculation.LastOperationCalculation
+            ?? lastCaluculation.Receiver as OperationCalculation
+            ?? throw new InvalidOperationException();
+        return new OperationCalculation(
+                ActiveCaluculation, before.Operator, before.Operand);
+    }
+
+    /// <summary>
+    /// 数値トークンが入力された処理を行います。
+    /// </summary>
+    /// <param name="token">数値トークン。</param>
+    private void InputNumberToken(NumberToken token)
+    {
+        switch (ActiveCaluculation)
+        {
+            case NumberCalculation c:
+                c.Number = token.Number;
+                break;
+            case OperationCalculation c:
+                c.Operand = token.Number;
+                break;
+        }
     }
 
     /// <summary>
@@ -56,8 +86,12 @@ public class Calculator :ObservableObject
     Calculation activeCaluculation = new NumberCalculation(null);
 
     /// <summary>
-    /// 現在行っている計算を取得、設定します。
+    /// 現在、最新で行われている計算を取得、設定します。
     /// </summary>
+    /// <remarks>
+    /// 現在、最新で行われている計算を取得、設定します。
+    /// 設定された値のレシーバーは、直前の計算に設定されます。
+    /// </remarks>
     public Calculation ActiveCaluculation 
     {
         get => activeCaluculation;

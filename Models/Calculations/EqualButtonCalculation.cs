@@ -5,6 +5,11 @@
 /// </summary>
 public class EqualButtonCalculation : Calculation
 {
+    /// <summary>
+    /// EqualButtonCalculationを初期化します。
+    /// </summary>
+    /// <param name="receiver">計算対象。</param>
+    /// <param name="lastCalculation">イコールで演算を繰り返すとき、最後の演算となる対象。一度目のイコールではnullとなります。</param>
     public EqualButtonCalculation(Calculation receiver, Calculation? lastCalculation)
         : base(receiver)
     {

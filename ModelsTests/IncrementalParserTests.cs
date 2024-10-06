@@ -194,4 +194,20 @@ public class IncrementalParserTests
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1.23456m);
     }
+
+    [Fact]
+    public void 小数は5桁までしか入力することはできません()
+    {
+        tested.Input(Key.One);
+        tested.Input(Key.Dot);
+        tested.Input(Key.Two);
+        tested.Input(Key.Three);
+        tested.Input(Key.Four);
+        tested.Input(Key.Five);
+        tested.Input(Key.Six);
+        tested.Input(Key.Seven);
+        tested.Input(Key.Eight);
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(1.23456m);
+    }
 }

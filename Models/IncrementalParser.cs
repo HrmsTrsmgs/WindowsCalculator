@@ -42,10 +42,9 @@ public class IncrementalParser : ObservableObject
                         else
                         {
                             t.DecimalPlaces++;
-                            var decimalPlaces = t.DecimalPlaces.Value;
                             t.Number 
                                 += (int)key
-                                    * Enumerable.Repeat(0.1m, decimalPlaces)
+                                    * Enumerable.Repeat(0.1m, t.DecimalPlaces.Value)
                                         .Aggregate(1m, (acc, val) => acc * val);                        }
                         break;
                     default:

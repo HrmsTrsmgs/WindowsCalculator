@@ -8,10 +8,20 @@
 /// </param>
 public class NumberToken(decimal number) : Token
 {
+    const int MaxDecimalPlaces = 5;
+
     /// <summary>
     /// 入力された数値を取得します。
     /// </summary>
     public decimal Number { get; set; } = number;
 
-    public int? DecimalPlaces { get; set; } = null;
+    int? decimalPlaces = null;
+    public int? DecimalPlaces 
+    {
+        get => decimalPlaces;
+        set => decimalPlaces 
+            = value == null 
+            ? null 
+            : Math.Min(value.Value, MaxDecimalPlaces);
+    }
 }

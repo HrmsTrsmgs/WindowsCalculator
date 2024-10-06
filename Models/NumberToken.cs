@@ -15,7 +15,14 @@ public class NumberToken(decimal number) : Token
     /// </summary>
     public decimal Number { get; set; } = number;
 
+    /// <summary>
+    /// 入力中の小数点の桁数です。小数の入力中でなければnullです。
+    /// </summary>
     int? decimalPlaces = null;
+
+    /// <summary>
+    /// 入力中の小数点の桁数を取得、設定します。小数の入力中でなければnullです。
+    /// </summary>
     public int? DecimalPlaces 
     {
         get => decimalPlaces;

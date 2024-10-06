@@ -70,7 +70,6 @@ public class CalculatorTest
     public void 最初に数字が入力された場合に表示される数字はその数字になります()
     {
         tested.Input(new NumberToken(1));
-        tested.Input(new OperatorToken('+'));
         tested.DisplaiedNumber.Should().Be(1);
     }
 
@@ -78,7 +77,7 @@ public class CalculatorTest
     public void 最初に数字が入力された後に演算子が入力されても表示される数字は変わりません()
     {
         tested.Input(new NumberToken(1));
-
+        tested.Input(new OperatorToken('+'));
         tested.DisplaiedNumber.Should().Be(1);
     }
 }

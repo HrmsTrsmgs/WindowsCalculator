@@ -22,6 +22,7 @@ public class OperationCalculation(char? @operator = null, int? operand = null) :
         { 
             '+' => Receiver.Result + Operand,
             '-' => Receiver.Result - Operand,
-            '*' => Receiver.Result * Operand
+            '*' => Receiver.Result * Operand,
+            '/' => Receiver.Result / Operand
         };
 }

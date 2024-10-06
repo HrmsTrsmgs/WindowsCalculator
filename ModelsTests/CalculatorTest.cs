@@ -129,4 +129,14 @@ public class CalculatorTest
         tested.Input(new OperatorToken('+'));
         tested.DisplaiedNumber.Should().Be(15);
     }
+
+    [Fact]
+    public void 割り算が実現されています()
+    {
+        tested.Input(new NumberToken(8));
+        tested.Input(new OperatorToken('/'));
+        tested.Input(new NumberToken(2));
+        tested.Input(new OperatorToken('+'));
+        tested.DisplaiedNumber.Should().Be(4);
+    }
 }

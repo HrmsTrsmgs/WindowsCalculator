@@ -15,10 +15,10 @@ public class Calculator :ObservableObject
     /// <param name="token">入力されたトークン。</param>
     public void Input(Token token)
     {
-        switch (token) 
+        switch (token)
         {
             case NumberToken t:
-                switch (ActiveCaluculation) 
+                switch (ActiveCaluculation)
                 {
                     case NumberCalculation c:
                         c.Number = t.Number;
@@ -27,19 +27,24 @@ public class Calculator :ObservableObject
                         c.Operand = t.Number;
                         break;
                 }
-                
+
                 break;
             case OperatorToken t:
                 ActiveCaluculation = new OperationCalculation(ActiveCaluculation, t.Operator, null);
                 break;
             case OtherToken t:
                 OperationCalculation? lastCalculation = null;
-                if(ActiveCaluculation is EqualButtonCalculation 
-                    && activeCaluculation.Receiver is OperationCalculation)
+                if (ActiveCaluculation is EqualButtonCalculation)
                 {
-                    lastCalculation = (OperationCalculation)activeCaluculation.Receiver;
+                    var before = ((EqualButtonCalculation)ActiveCaluculation).LastOperationCalculation;
+                    if(before == null)
+                    {
+                        before = ((EqualButtonCalculation)ActiveCaluculation).Receiver as OperationCalculation;
+                    }
+                    lastCalculation = new OperationCalculation(ActiveCaluculation, before.Operator, before.Operand);
                 }
-                ActiveCaluculation = new EqualButtonCalculation(ActiveCaluculation, lastCalculation);
+                ActiveCaluculation =
+                new EqualButtonCalculation(ActiveCaluculation, lastCalculation);
                 break;
         }
         OnPropertyChanged(nameof(DisplaiedNumber));

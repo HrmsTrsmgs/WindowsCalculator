@@ -159,5 +159,16 @@ public class CalculatorTest
         tested.Input(OtherToken.Equal);
         tested.DisplaiedNumber.Should().Be(7);
     }
+    [Fact]
+    public void イコールボタンを3度以上押しても前の結果が繰り返されます()
+    {
+        tested.Input(new NumberToken(1));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new NumberToken(3));
+        tested.Input(OtherToken.Equal);
+        tested.Input(OtherToken.Equal);
+        tested.Input(OtherToken.Equal);
+        tested.DisplaiedNumber.Should().Be(10);
+    }
 
 }

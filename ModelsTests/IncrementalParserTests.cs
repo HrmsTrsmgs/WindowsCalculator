@@ -115,4 +115,13 @@ public class IncrementalParserTests
         tested.ActiveToken.Should().BeSameAs(initial);
         (tested.ActiveToken as OperatorToken)?.Operator.Should().Be('*');
     }
+
+    [Fact]
+    public void 演算子の後に数字が入力されると数字トークンが付け足されます()
+    {
+        tested.Input('+');
+        tested.Input('1');
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
+    }
 }

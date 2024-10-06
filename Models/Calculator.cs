@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Marimo.MauiBlazor.Models.Calculations;
 
 namespace Marimo.MauiBlazor.Models;
 
@@ -16,31 +17,53 @@ public class Calculator :ObservableObject
         switch (token) 
         {
             case NumberToken t:
-                ActiveCaluculation.Operand = t.Number;
+                switch (ActiveCaluculation) 
+                {
+                    case NumberCalculation c:
+                        c.Number = t.Number;
+                        break;
+                    case OperationCalculation c:
+                        c.Operand = t.Number;
+                        break;
+                }
+                
                 break;
             case OperatorToken t:
-                activeCaluculation = new Caluculation(t.Operator, null);
+                ActiveCaluculation = new OperationCalculation(t.Operator, null);
                 break;
         }
-        OnPropertyChanged(nameof(Result));
+        OnPropertyChanged(nameof(DisplaiedNumber));
     }
 
     /// <summary>
     /// 現在行っている計算です。
     /// </summary>
-    Caluculation activeCaluculation = new(null, 0);
+    Calculation activeCaluculation = new NumberCalculation();
 
     /// <summary>
     /// 現在行っている計算を取得、設定します。
     /// </summary>
-    public Caluculation ActiveCaluculation 
+    public Calculation ActiveCaluculation 
     {
         get => activeCaluculation;
-        private set => SetProperty(ref activeCaluculation, value); 
+        private set
+        {
+            value.Receiver = activeCaluculation;
+            SetProperty(ref activeCaluculation, value);
+        }
     }
 
     /// <summary>
     /// 計算結果を取得します。
     /// </summary>
-    public int Result => ActiveCaluculation.Result;
+    public int DisplaiedNumber =>
+        ActiveCaluculation switch
+        {
+            NumberCalculation c => c.Number,
+            OperationCalculation c =>
+                c.Receiver switch
+                {
+                    NumberCalculation  cc => cc.Number
+                }
+        };
 }

@@ -52,7 +52,7 @@ public class CalculatorTest
     {
         var initial = tested.ActiveCaluculation;
 
-        tested.Input(new OperatorToken('+'));
+        tested.Input(new OperatorToken(Key.Plus));
 
         tested.ActiveCaluculation.Should().NotBeSameAs(initial);
     }
@@ -60,10 +60,10 @@ public class CalculatorTest
     [Fact]
     public void 演算子が入力された場合に新しい計算の演算子は指定したものになります()
     {
-        tested.Input(new OperatorToken('+'));
+        tested.Input(new OperatorToken(Key.Plus));
         tested.ActiveCaluculation.Should().BeOfType<OperationCalculation>();
         var calculation = (OperationCalculation)tested.ActiveCaluculation;
-        calculation.Operator.Should().Be('+');
+        calculation.Operator.Should().Be(Key.Plus);
     }
 
     [Fact]
@@ -77,7 +77,7 @@ public class CalculatorTest
     public void 最初に数字が入力された後に演算子が入力されても表示される数字は変わりません()
     {
         tested.Input(new NumberToken(1));
-        tested.Input(new OperatorToken('+'));
+        tested.Input(new OperatorToken(Key.Plus));
         tested.DisplaiedNumber.Should().Be(1);
     }
 
@@ -85,7 +85,7 @@ public class CalculatorTest
     public void 数字演算子数字と入力された状態で表示は二つ目の数字となっています()
     {
         tested.Input(new NumberToken(1));
-        tested.Input(new OperatorToken('+'));
+        tested.Input(new OperatorToken(Key.Plus));
         tested.Input(new NumberToken(3));
         tested.DisplaiedNumber.Should().Be(3);
     }
@@ -94,9 +94,9 @@ public class CalculatorTest
     public void 数字演算子数字演算子と入力された状態で表示は計算結果となっています()
     {
         tested.Input(new NumberToken(1));
-        tested.Input(new OperatorToken('+'));
+        tested.Input(new OperatorToken(Key.Plus));
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken('+'));
+        tested.Input(new OperatorToken(Key.Plus));
         tested.DisplaiedNumber.Should().Be(4);
     }
 
@@ -104,9 +104,9 @@ public class CalculatorTest
     public void 足し算が実現されています()
     {
         tested.Input(new NumberToken(1));
-        tested.Input(new OperatorToken('+'));
+        tested.Input(new OperatorToken(Key.Plus));
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken('+'));
+        tested.Input(new OperatorToken(Key.Plus));
         tested.DisplaiedNumber.Should().Be(4);
     }
 
@@ -114,9 +114,9 @@ public class CalculatorTest
     public void 引き算が実現されています()
     {
         tested.Input(new NumberToken(5));
-        tested.Input(new OperatorToken('-'));
+        tested.Input(new OperatorToken(Key.Minus));
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken('+'));
+        tested.Input(new OperatorToken(Key.Plus));
         tested.DisplaiedNumber.Should().Be(2);
     }
 
@@ -124,9 +124,9 @@ public class CalculatorTest
     public void 掛け算が実現されています()
     {
         tested.Input(new NumberToken(5));
-        tested.Input(new OperatorToken('*'));
+        tested.Input(new OperatorToken(Key.Multiply));
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken('+'));
+        tested.Input(new OperatorToken(Key.Plus));
         tested.DisplaiedNumber.Should().Be(15);
     }
 
@@ -134,9 +134,9 @@ public class CalculatorTest
     public void 割り算が実現されています()
     {
         tested.Input(new NumberToken(8));
-        tested.Input(new OperatorToken('/'));
+        tested.Input(new OperatorToken(Key.Divide));
         tested.Input(new NumberToken(2));
-        tested.Input(new OperatorToken('+'));
+        tested.Input(new OperatorToken(Key.Plus));
         tested.DisplaiedNumber.Should().Be(4);
     }
 }

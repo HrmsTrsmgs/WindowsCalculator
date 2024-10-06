@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using Marimo.MauiBlazor.Models
 @using Marimo.MauiBlazor.ViewModels
 @inject CalculatorViewModel ViewModel
 
@@ -19,9 +20,27 @@
         public static CalculatorViewModel? ViewModel { get; set; }
 
         [JSInvokable("HandleKeyDown")]
-        public static void HandleKeyDown(char key)
+        public static void HandleKeyDown(string key)
         {
-            ViewModel?.PushKeybord?.Execute(key);
+            ViewModel?.PushKeybord?.Execute(
+            key switch
+            {
+                "0" => Key.Zero,
+                "1" => Key.One,
+                "2" => Key.Two,
+                "3" => Key.Three,
+                "4" => Key.Four,
+                "5" => Key.Five,
+                "6" => Key.Six,
+                "7" => Key.Seven,
+                "8" => Key.Eight,
+                "9" => Key.Nine,
+                "." => Key.Dot,
+                "+" => Key.Plus,
+                "-" => Key.Minus,
+                "*" => Key.Multiply,
+                "/" => Key.Divide
+            });
         }
     }
     

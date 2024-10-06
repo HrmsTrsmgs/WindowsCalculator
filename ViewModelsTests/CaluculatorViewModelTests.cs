@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using Marimo.MauiBlazor.Models;
 using Marimo.MauiBlazor.ViewModels;
 
 namespace Marimo.MauiBlazor.Tests.ViewModels;
@@ -10,7 +11,7 @@ public class CaluculatorViewModelTests
     [Fact]
     public void 入力した数値が表示されています()
     {
-        tested.PushKeybord.Execute('5');
+        tested.PushKeybord.Execute(Key.Five);
 
         tested.Number.Should().Be(5);
 

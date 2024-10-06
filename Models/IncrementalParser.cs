@@ -22,23 +22,23 @@ public class IncrementalParser : ObservableObject
     /// <summary>
     /// 一文字ずつの入力を処理します。
     /// </summary>
-    /// <param name="charactor">入力された一文字。</param>
-    public void Input(char charactor)
+    /// <param name="key">入力された一文字。</param>
+    public void Input(Key key)
     {
-        switch (charactor)
+        switch (key)
         {
-            case >= '0' and <= '9':
-                ActiveToken = new NumberToken(charactor - '0');
+            case >= Key.Zero and <= Key.Nine:
+                ActiveToken = new NumberToken((int)key);
                 break;
-            case '+' or '-' or '*' or '/':
+            case Key.Plus or Key.Minus or Key.Multiply or Key.Divide:
 
                 switch (ActiveToken)
                 {
                     case OperatorToken t:
-                        t.Operator = charactor;
+                        t.Operator = key;
                         break;
                     default:
-                        ActiveToken = new OperatorToken(charactor);
+                        ActiveToken = new OperatorToken(key);
                         break;
                 }
                 

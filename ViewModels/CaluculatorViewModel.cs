@@ -33,7 +33,7 @@ public class CalculatorViewModel : ObservableObject
 
     public CalculatorViewModel()
     {
-        PushKeybord = new RelayCommand<char>(c => Input(c));
+        PushKeybord = new RelayCommand<Key>(c => Input(c));
         model.PropertyChanged += 
             (sender, e) =>
             {
@@ -48,7 +48,7 @@ public class CalculatorViewModel : ObservableObject
     /// 文字を一文字入力します。
     /// </summary>
     /// <param name="input">一文字。</param>
-    void Input(char input)
+    void Input(Key input)
     {
         parser.Input(input);
         if (parser.ActiveToken != null)

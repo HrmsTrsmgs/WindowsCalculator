@@ -1,6 +1,6 @@
 ﻿namespace Marimo.MauiBlazor.Models;
 
-public class OperatorToken(char @operator) : Token
+public class OperatorToken(Key @operator) : Token
 {
-    public Char Operator { get; set; } = @operator;
+    public Key Operator { get; set; } = @operator;
 }

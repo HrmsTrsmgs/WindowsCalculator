@@ -32,6 +32,9 @@ public class Calculator :ObservableObject
             case OperatorToken t:
                 ActiveCaluculation = new OperationCalculation(t.Operator, null);
                 break;
+            case OtherToken t:
+                ActiveCaluculation = new EqualButtonCalculation();
+                break;
         }
         OnPropertyChanged(nameof(DisplaiedNumber));
     }
@@ -64,6 +67,8 @@ public class Calculator :ObservableObject
             OperationCalculation c
                 => (c.Result != null ? c.Operand : c.Receiver.Result) ??
                     throw new InvalidOperationException(
-                        "今の演算も前の演算も結果が出てないのはおかしいはず")
+                        "今の演算も前の演算も結果が出てないのはおかしいはず"),
+            EqualButtonCalculation c => c.Result ?? 0
+           
         };
 }

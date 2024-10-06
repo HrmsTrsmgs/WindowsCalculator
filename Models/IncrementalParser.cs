@@ -41,8 +41,9 @@ public class IncrementalParser : ObservableObject
                         ActiveToken = new OperatorToken(key);
                         break;
                 }
-                
-
+                break;
+            case Key.Equal:
+                ActiveToken = OtherToken.Equal;
                 break;
         }
     }

@@ -139,4 +139,14 @@ public class CalculatorTest
         tested.Input(new OperatorToken(Key.Plus));
         tested.DisplaiedNumber.Should().Be(4);
     }
+
+    [Fact]
+    public void イコールボタンを押すと表示は計算結果となっています()
+    {
+        tested.Input(new NumberToken(1));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new NumberToken(3));
+        tested.Input(OtherToken.Equal);
+        tested.DisplaiedNumber.Should().Be(4);
+    }
 }

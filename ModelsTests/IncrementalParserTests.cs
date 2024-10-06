@@ -124,4 +124,11 @@ public class IncrementalParserTests
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
     }
+
+    [Fact]
+    public void イコールを受け付けその他トークンが出力されます()
+    {
+        tested.Input(Key.Equal);
+        tested.ActiveToken.Should().BeSameAs(OtherToken.Equal);
+    }
 }

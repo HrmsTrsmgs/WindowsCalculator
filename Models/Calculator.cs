@@ -105,15 +105,16 @@ public class Calculator :ObservableObject
     /// <summary>
     /// 計算結果を取得します。
     /// </summary>
-    public int DisplaiedNumber =>
+    public string DisplaiedNumber =>
         ActiveCaluculation switch
         {
-            NumberCalculation c => c.Number,
+            NumberCalculation c => c.Number.ToString(),
             OperationCalculation c
-                => (c.Result != null ? c.Operand : c.Receiver.Result) ??
+                => (c.Result != null ? c.Operand : c.Receiver?.Result)?.ToString() ??
                     throw new InvalidOperationException(
                         "今の演算も前の演算も結果が出てないのはおかしいはず"),
-            EqualButtonCalculation c => c.Result ?? 0
+            EqualButtonCalculation c 
+                => c.Result.ToString() ?? throw new InvalidOperationException()
            
         };
 }

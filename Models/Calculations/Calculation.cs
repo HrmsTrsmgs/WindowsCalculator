@@ -25,5 +25,5 @@ public abstract class Calculation(Calculation? receiver) : ObservableObject
     /// 基本的にはnullになりません。
     /// 演算子が入力され、計算対象が入力されていない場合などにnullとなります。
     /// </remarks>
-    public abstract int? Result { get; }
+    public abstract decimal? Result { get; }
 }

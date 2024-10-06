@@ -13,7 +13,7 @@ public class CaluculatorViewModelTests
     {
         tested.PushKeybord.Execute(Key.Five);
 
-        tested.Number.Should().Be(5);
+        tested.DisplaiedNumber.Should().Be("5");
 
     }
 }

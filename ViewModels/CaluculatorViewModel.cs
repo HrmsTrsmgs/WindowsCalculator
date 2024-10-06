@@ -26,10 +26,10 @@ public class CalculatorViewModel : ObservableObject
     /// </summary>
     Calculator model { get; } = new();
 
-    /// <summary>
-    /// 計算機に表示されている数を取得します。
-    /// </summary>
-    public int Number => model.DisplaiedNumber;
+    ///// <summary>
+    ///// 計算機に表示されている数を取得します。
+    ///// </summary>
+    public string DisplaiedNumber => model.DisplaiedNumber;
 
     public CalculatorViewModel()
     {
@@ -39,7 +39,7 @@ public class CalculatorViewModel : ObservableObject
             {
                 if (e.PropertyName == nameof(model.DisplaiedNumber))
                 {
-                    OnPropertyChanged(nameof(Number));
+                    OnPropertyChanged(nameof(DisplaiedNumber));
                 }
             };
     }

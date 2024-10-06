@@ -4,7 +4,7 @@
 /// 計算、もしくは最初に入力された数値を表します。
 /// </summary>
 /// <param name="Operand">計算される、もしくは最初に入力された数値。</param>
-public class OperationCalculation(Calculation receiver, Key? @operator = null, int? operand = null) : Calculation(receiver)
+public class OperationCalculation(Calculation receiver, Key? @operator = null, decimal? operand = null) : Calculation(receiver)
 {
     /// <summary>
     /// 計算の内容を表す演算子を取得、設定します。
@@ -19,7 +19,7 @@ public class OperationCalculation(Calculation receiver, Key? @operator = null, i
     /// Receiverに対してこの数値で演算を行います。
     /// 入力されるまではnullとなります。
     /// </remarks>
-    public int? Operand { get; set; } = operand;
+    public decimal? Operand { get; set; } = operand;
 
 
     /// <summary>
@@ -43,7 +43,7 @@ public class OperationCalculation(Calculation receiver, Key? @operator = null, i
     /// 基本的にはnullになりません。
     /// 演算子が入力され、計算対象が入力されていない場合などにnullとなります。
     /// </remarks>
-    public override int? Result =>
+    public override decimal? Result =>
         Receiver == null 
         ? null 
         : Operator switch

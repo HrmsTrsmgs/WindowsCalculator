@@ -26,7 +26,7 @@ public class CalculatorTest
     [Fact]
     public void 初期状態の表示は0です()
     {
-        tested.DisplaiedNumber.Should().Be(0);
+        tested.DisplaiedNumber.Should().Be("0");
     }
 
     [Fact]
@@ -34,7 +34,7 @@ public class CalculatorTest
     {
         tested.Input(new NumberToken(3));
 
-        tested.DisplaiedNumber.Should().Be(3);
+        tested.DisplaiedNumber.Should().Be("3");
     }
 
     [Fact]
@@ -70,7 +70,7 @@ public class CalculatorTest
     public void 最初に数字が入力された場合に表示される数字はその数字になります()
     {
         tested.Input(new NumberToken(1));
-        tested.DisplaiedNumber.Should().Be(1);
+        tested.DisplaiedNumber.Should().Be("1");
     }
 
     [Fact]
@@ -78,7 +78,7 @@ public class CalculatorTest
     {
         tested.Input(new NumberToken(1));
         tested.Input(new OperatorToken(Key.Plus));
-        tested.DisplaiedNumber.Should().Be(1);
+        tested.DisplaiedNumber.Should().Be("1");
     }
 
     [Fact]
@@ -87,7 +87,7 @@ public class CalculatorTest
         tested.Input(new NumberToken(1));
         tested.Input(new OperatorToken(Key.Plus));
         tested.Input(new NumberToken(3));
-        tested.DisplaiedNumber.Should().Be(3);
+        tested.DisplaiedNumber.Should().Be("3");
     }
 
     [Fact]
@@ -97,7 +97,7 @@ public class CalculatorTest
         tested.Input(new OperatorToken(Key.Plus));
         tested.Input(new NumberToken(3));
         tested.Input(new OperatorToken(Key.Plus));
-        tested.DisplaiedNumber.Should().Be(4);
+        tested.DisplaiedNumber.Should().Be("4");
     }
 
     [Fact]
@@ -107,7 +107,7 @@ public class CalculatorTest
         tested.Input(new OperatorToken(Key.Plus));
         tested.Input(new NumberToken(3));
         tested.Input(new OperatorToken(Key.Plus));
-        tested.DisplaiedNumber.Should().Be(4);
+        tested.DisplaiedNumber.Should().Be("4");
     }
 
     [Fact]
@@ -117,7 +117,7 @@ public class CalculatorTest
         tested.Input(new OperatorToken(Key.Minus));
         tested.Input(new NumberToken(3));
         tested.Input(new OperatorToken(Key.Plus));
-        tested.DisplaiedNumber.Should().Be(2);
+        tested.DisplaiedNumber.Should().Be("2");
     }
 
     [Fact]
@@ -127,7 +127,7 @@ public class CalculatorTest
         tested.Input(new OperatorToken(Key.Multiply));
         tested.Input(new NumberToken(3));
         tested.Input(new OperatorToken(Key.Plus));
-        tested.DisplaiedNumber.Should().Be(15);
+        tested.DisplaiedNumber.Should().Be("15");
     }
 
     [Fact]
@@ -137,7 +137,7 @@ public class CalculatorTest
         tested.Input(new OperatorToken(Key.Divide));
         tested.Input(new NumberToken(2));
         tested.Input(new OperatorToken(Key.Plus));
-        tested.DisplaiedNumber.Should().Be(4);
+        tested.DisplaiedNumber.Should().Be("4");
     }
 
     [Fact]
@@ -147,7 +147,7 @@ public class CalculatorTest
         tested.Input(new OperatorToken(Key.Plus));
         tested.Input(new NumberToken(3));
         tested.Input(OtherToken.Equal);
-        tested.DisplaiedNumber.Should().Be(4);
+        tested.DisplaiedNumber.Should().Be("4");
     }
     [Fact]
     public void イコールボタンを二度押すと前の結果が繰り返されます()
@@ -157,7 +157,7 @@ public class CalculatorTest
         tested.Input(new NumberToken(3));
         tested.Input(OtherToken.Equal);
         tested.Input(OtherToken.Equal);
-        tested.DisplaiedNumber.Should().Be(7);
+        tested.DisplaiedNumber.Should().Be("7");
     }
     [Fact]
     public void イコールボタンを3度以上押しても前の結果が繰り返されます()
@@ -168,7 +168,7 @@ public class CalculatorTest
         tested.Input(OtherToken.Equal);
         tested.Input(OtherToken.Equal);
         tested.Input(OtherToken.Equal);
-        tested.DisplaiedNumber.Should().Be(10);
+        tested.DisplaiedNumber.Should().Be("10");
     }
 
 }

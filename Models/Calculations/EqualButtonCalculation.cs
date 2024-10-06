@@ -26,7 +26,7 @@ public class EqualButtonCalculation : Calculation
     /// <summary>
     /// 計算結果を取得、設定します。
     /// </summary>
-    public override int? Result =>
+    public override decimal? Result =>
         LastOperationCalculation switch
         {
             OperationCalculation c => c.Result,

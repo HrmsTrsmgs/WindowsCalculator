@@ -11,5 +11,15 @@ public class OperationCalculation(char? @operator = null, int? operand = null) :
     public char? Operator { get; set; } = @operator;
     public int? Operand { get; set; } = operand;
 
-    public int Result => Operand ?? throw new Exception("とりあえず");
+    public override Calculation Receiver 
+    {
+        get => base.Receiver ?? throw new InvalidOperationException();
+        set => base.Receiver = value; 
+    }
+
+    public override int? Result =>
+        Operator switch
+        { 
+            '+' => Receiver.Result + Operand
+        };
 }

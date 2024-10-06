@@ -5,4 +5,6 @@ namespace Marimo.MauiBlazor.Models.Calculations;
 public abstract class Calculation : ObservableObject
 {
     public virtual Calculation? Receiver { get; set; } = null;
+
+    public abstract int? Result { get; }
 }

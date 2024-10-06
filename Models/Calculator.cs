@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Marimo.MauiBlazor.Models.Calculations;
+using System.Net.Http.Headers;
 
 namespace Marimo.MauiBlazor.Models;
 
@@ -60,11 +61,9 @@ public class Calculator :ObservableObject
         ActiveCaluculation switch
         {
             NumberCalculation c => c.Number,
-            OperationCalculation c =>
-                c.Operand ??
-                c.Receiver switch
-                {
-                    NumberCalculation  cc => cc.Number
-                }
+            OperationCalculation c
+                => (c.Result != null ? c.Operand : c.Receiver.Result) ??
+                    throw new InvalidOperationException(
+                        "今の演算も前の演算も結果が出てないのはおかしいはず")
         };
 }

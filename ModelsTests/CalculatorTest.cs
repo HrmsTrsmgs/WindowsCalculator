@@ -89,4 +89,14 @@ public class CalculatorTest
         tested.Input(new NumberToken(3));
         tested.DisplaiedNumber.Should().Be(3);
     }
+
+    [Fact]
+    public void 数字演算子数字演算子と入力された状態で表示は計算結果となっています()
+    {
+        tested.Input(new NumberToken(1));
+        tested.Input(new OperatorToken('+'));
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken('+'));
+        tested.DisplaiedNumber.Should().Be(4);
+    }
 }

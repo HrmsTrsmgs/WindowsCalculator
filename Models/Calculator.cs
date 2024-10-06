@@ -22,9 +22,6 @@ public class Calculator :ObservableObject
                 activeCaluculation = new Caluculation(t.Operator, null);
                 break;
         }
-
-        
-        
         OnPropertyChanged(nameof(Result));
     }
 

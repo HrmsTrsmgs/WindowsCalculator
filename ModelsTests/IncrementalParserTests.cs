@@ -89,13 +89,30 @@ public class IncrementalParserTests
         (tested.ActiveToken as OperatorToken)?.Operator.Should().Be('+');
         tested.Input('-');
         tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
-        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be('+');
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be('-');
         tested.Input('*');
         tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
-        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be('+');
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be('*');
         tested.Input('/');
         tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
-        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be('+');
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be('/');
     }
 
+    [Fact]
+    public void 演算子の後に演算子が入力されてもトークンは同じです()
+    {
+        tested.Input('+');
+        var initial = tested.ActiveToken;
+        tested.Input('*');
+        tested.ActiveToken.Should().BeSameAs(initial);
+    }
+    [Fact]
+    public void 演算子の後に演算子が入力されると演算子は変わります()
+    {
+        tested.Input('+');
+        var initial = tested.ActiveToken;
+        tested.Input('*');
+        tested.ActiveToken.Should().BeSameAs(initial);
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be('*');
+    }
 }

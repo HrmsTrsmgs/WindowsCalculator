@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Marimo.MauiBlazor.Models;
 
@@ -29,8 +30,19 @@ public class IncrementalParser : ObservableObject
             case >= '0' and <= '9':
                 ActiveToken = new NumberToken(charactor - '0');
                 break;
-            case '+':
-                ActiveToken = new OperatorToken(charactor);
+            case '+' or '-' or '*' or '/':
+
+                switch (ActiveToken)
+                {
+                    case OperatorToken t:
+                        t.Operator = charactor;
+                        break;
+                    default:
+                        ActiveToken = new OperatorToken(charactor);
+                        break;
+                }
+                
+
                 break;
         }
     }

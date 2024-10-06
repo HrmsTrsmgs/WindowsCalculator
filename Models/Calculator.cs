@@ -61,6 +61,7 @@ public class Calculator :ObservableObject
         {
             NumberCalculation c => c.Number,
             OperationCalculation c =>
+                c.Operand ??
                 c.Receiver switch
                 {
                     NumberCalculation  cc => cc.Number

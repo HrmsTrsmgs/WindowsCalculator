@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
 
 namespace Marimo.MauiBlazor.Models;
 
@@ -34,10 +35,29 @@ public class IncrementalParser : ObservableObject
                 switch (ActiveToken)
                 {
                     case NumberToken t:
-                        t.Number = t.Number * 10 + (int)key;
+                        if (t.DecimalPlaces == null)
+                        {
+                            t.Number = t.Number * 10 + (int)key;
+                        }
+                        else
+                        {
+                            t.DecimalPlaces++;
+                            var decimalPlaces = t.DecimalPlaces.Value;
+                            t.Number 
+                                += (int)key
+                                    * Enumerable.Repeat(0.1m, decimalPlaces)
+                                        .Aggregate(1m, (acc, val) => acc * val);                        }
                         break;
                     default:
                         ActiveToken = new NumberToken((int)key);
+                        break;
+                }
+                break;
+            case Key.Dot:
+                switch (ActiveToken)
+                {
+                    case NumberToken t:
+                        t.DecimalPlaces ??= 0;
                         break;
                 }
                 break;

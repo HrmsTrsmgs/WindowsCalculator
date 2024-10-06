@@ -140,4 +140,58 @@ public class IncrementalParserTests
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(10);
     }
+
+    [Fact]
+    public void 小数点の入力をするまではトークンの小数点以下桁数はnullです()
+    {
+        tested.Input(Key.One);
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
+        (tested.ActiveToken as NumberToken)?.DecimalPlaces.Should().BeNull();
+    }
+    [Fact]
+    public void 小数点が入力できます()
+    {
+        tested.Input(Key.One);
+        tested.Input(Key.Dot);
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
+        (tested.ActiveToken as NumberToken)?.DecimalPlaces.Should().Be(0);
+    }
+
+    [Fact]
+    public void 小数点を何回入力しても特に変わりはありません()
+    {
+        tested.Input(Key.One);
+        tested.Input(Key.Dot);
+        tested.Input(Key.Dot);
+        tested.Input(Key.Dot);
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
+        (tested.ActiveToken as NumberToken)?.DecimalPlaces.Should().Be(0);
+    }
+
+    [Fact]
+    public void 小数点に続いて小数を入力することができます()
+    {
+        tested.Input(Key.One);
+        tested.Input(Key.Dot);
+        tested.Input(Key.Two);
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(1.2m);
+    }
+
+    [Fact]
+    public void 小数点に続いて小数を5桁入力することができます()
+    {
+        tested.Input(Key.One);
+        tested.Input(Key.Dot);
+        tested.Input(Key.Two);
+        tested.Input(Key.Three);
+        tested.Input(Key.Four);
+        tested.Input(Key.Five);
+        tested.Input(Key.Six);
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(1.23456m);
+    }
 }

@@ -21,6 +21,7 @@ public class OperationCalculation(char? @operator = null, int? operand = null) :
         Operator switch
         { 
             '+' => Receiver.Result + Operand,
-            '-' => Receiver.Result - Operand
+            '-' => Receiver.Result - Operand,
+            '*' => Receiver.Result * Operand
         };
 }

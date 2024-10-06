@@ -99,4 +99,24 @@ public class CalculatorTest
         tested.Input(new OperatorToken('+'));
         tested.DisplaiedNumber.Should().Be(4);
     }
+
+    [Fact]
+    public void 足し算が実現されています()
+    {
+        tested.Input(new NumberToken(1));
+        tested.Input(new OperatorToken('+'));
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken('+'));
+        tested.DisplaiedNumber.Should().Be(4);
+    }
+
+    [Fact]
+    public void 引き算が実現されています()
+    {
+        tested.Input(new NumberToken(5));
+        tested.Input(new OperatorToken('-'));
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken('+'));
+        tested.DisplaiedNumber.Should().Be(2);
+    }
 }

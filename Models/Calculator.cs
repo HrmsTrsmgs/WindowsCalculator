@@ -30,10 +30,16 @@ public class Calculator :ObservableObject
                 
                 break;
             case OperatorToken t:
-                ActiveCaluculation = new OperationCalculation(t.Operator, null);
+                ActiveCaluculation = new OperationCalculation(ActiveCaluculation, t.Operator, null);
                 break;
             case OtherToken t:
-                ActiveCaluculation = new EqualButtonCalculation();
+                OperationCalculation? lastCalculation = null;
+                if(ActiveCaluculation is EqualButtonCalculation 
+                    && activeCaluculation.Receiver is OperationCalculation)
+                {
+                    lastCalculation = (OperationCalculation)activeCaluculation.Receiver;
+                }
+                ActiveCaluculation = new EqualButtonCalculation(ActiveCaluculation, lastCalculation);
                 break;
         }
         OnPropertyChanged(nameof(DisplaiedNumber));
@@ -42,7 +48,7 @@ public class Calculator :ObservableObject
     /// <summary>
     /// 現在行っている計算です。
     /// </summary>
-    Calculation activeCaluculation = new NumberCalculation();
+    Calculation activeCaluculation = new NumberCalculation(null);
 
     /// <summary>
     /// 現在行っている計算を取得、設定します。

@@ -4,6 +4,10 @@ namespace Marimo.MauiBlazor.Models.Calculations;
 
 public class NumberCalculation : Calculation
 {
+    public NumberCalculation(Calculation? receiver) : base(receiver)
+    {
+
+    }
     public override Calculation? Receiver => null;
 
     public int Number { get; set; } = 0;

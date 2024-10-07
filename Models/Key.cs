@@ -93,5 +93,16 @@ public enum Key
     /// <summary>
     /// Redoを表すCrrl+yキー。
     /// </summary>
-    Redo
+    Redo,
+
+    /// <summary>
+    /// Deleteキー。
+    /// </summary>
+    Delete,
+
+    /// <summary>
+    /// バックスペースキー。
+    /// </summary>
+    Backspace
+
 }

@@ -6,7 +6,12 @@
 public enum OtherTokenKind
 {
     /// <summary>
-    /// =の操作。
+    /// =とEnterの操作。
     /// </summary>
-    Equal
+    Equal,
+
+    /// <summary>
+    /// BackspaceとESCの操作。
+    /// </summary>
+    Backspace
 }

@@ -258,4 +258,57 @@ public class IncrementalParserTests
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1234567890123456m);
     }
+
+    [Fact]
+    public void 一文字書いた分をBackspaceで削除できます()
+    {
+
+        tested.Input(Key.One);
+        tested.Input(Key.Backspace);
+
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(0);
+    }
+
+    [Fact]
+    public void 二文字以上書いた分をBackspaceで削除できます()
+    {
+
+        tested.Input(Key.One);
+        tested.Input(Key.Six);
+        tested.Input(Key.Seven);
+        tested.Input(Key.Backspace);
+
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(16);
+    }
+
+    [Fact]
+    public void 小数点のみをBackspaceで削除できます()
+    {
+
+        tested.Input(Key.One);
+        tested.Input(Key.Dot);
+        tested.Input(Key.Backspace);
+
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.DecimalPlaces.Should().BeNull();
+            ;
+    }
+
+    [Fact]
+    public void 小数点以下の数字をBackspaceで削除できます()
+    {
+
+        tested.Input(Key.One);
+        tested.Input(Key.Dot);
+        tested.Input(Key.Two);
+        tested.Input(Key.Three);
+        tested.Input(Key.Backspace);
+
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.DecimalPlaces.Should().Be(1);
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(1.2m);
+        ;
+    }
 }

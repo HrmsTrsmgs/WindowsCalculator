@@ -35,19 +35,17 @@ public class IncrementalParser : ObservableObject
                 switch (ActiveToken)
                 {
                     case NumberToken t:
-                        if (t.DecimalPlaces == null 
-                            && t.Number < Enumerable.Repeat(10m, NumberToken.MaxDigits - 1)
-                                .Aggregate(1m, (acc, val) => acc * val))
-                        {
+                        if (t.DecimalPlaces == null
+                            && t.Number < Utility.Pow(10m, NumberToken.MaxDigits - 1))                       {
                             t.Number = t.Number * 10 + (int)key;
                         }
                         else if(t.DecimalPlaces < NumberToken.MaxDecimalPlaces)
                         {
                             t.DecimalPlaces++;
-                            t.Number 
+                            t.Number
                                 += (int)key
-                                    * Enumerable.Repeat(0.1m, t.DecimalPlaces.Value)
-                                        .Aggregate(1m, (acc, val) => acc * val);                        }
+                                    * Utility.Pow(0.1m, t.DecimalPlaces.Value);
+                        }
                         break;
                     default:
                         ActiveToken = new NumberToken((int)key);
@@ -76,6 +74,31 @@ public class IncrementalParser : ObservableObject
             case Key.Equal:
                 ActiveToken = OtherToken.Equal;
                 break;
+            case Key.Backspace:
+                switch (ActiveToken)
+                {
+                    case NumberToken t:
+                        switch (t.DecimalPlaces)
+                        {
+                            case null:
+                                t.Number = Decimal.Truncate(t.Number / 10);
+                                break;
+                            case 0:
+                                t.DecimalPlaces = null;
+                                break;
+                            case >= 1:
+                                t.DecimalPlaces--;
+                                t.Number = Utility.Truncate(t.DecimalPlaces, t.Number);
+
+                                break;
+
+                        }
+                        
+                        break;
+                }
+                break;
         }
     }
+
+
 }

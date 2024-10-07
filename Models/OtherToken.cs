@@ -9,7 +9,12 @@ public class OtherToken(OtherTokenKind kind) : Token
     /// <summary>
     /// イコールトークンを取得します。
     /// </summary>
-    public static OtherToken Equal = new OtherToken(OtherTokenKind.Equal);
+    public static OtherToken Equal { get; } = new OtherToken(OtherTokenKind.Equal);
+
+    /// <summary>
+    /// バックスペーストークンを取得します。
+    /// </summary>
+    public static OtherToken Backspace { get; } = new OtherToken(OtherTokenKind.Backspace);
 
     /// <summary>
     /// トークンの種類を取得します。

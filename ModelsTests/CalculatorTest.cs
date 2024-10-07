@@ -141,6 +141,16 @@ public class CalculatorTest
     }
 
     [Fact]
+    public void 割り算のゼロ除算でエラーが表示されます()
+    {
+        tested.Input(new NumberToken(8));
+        tested.Input(new OperatorToken(Key.Divide));
+        tested.Input(new NumberToken(0));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.DisplaiedNumber.Should().Be("0 で割ることはできません");
+    }
+
+    [Fact]
     public void イコールボタンを押すと表示は計算結果となっています()
     {
         tested.Input(new NumberToken(1));

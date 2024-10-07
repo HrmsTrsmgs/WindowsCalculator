@@ -107,18 +107,31 @@ public class Calculator :ObservableObject
     /// <summary>
     /// 計算結果を取得します。
     /// </summary>
-    public string DisplaiedNumber =>
-        ActiveCaluculation switch
+    public string DisplaiedNumber
+    {
+        get
         {
-            NumberCalculation c => c.NumberToken.ToString(),
-            OperationCalculation c
-                => (c.Result != null ? c.Operand?.Number : c.Receiver?.Result)?.ToString() ??
-                    throw new InvalidOperationException(
-                        "今の演算も前の演算も結果が出てないのはおかしいはず"),
-            EqualButtonCalculation c 
-                => c.Result.ToString() ?? throw new InvalidOperationException(),
-            DeleteCalculation c
-                => c.Result.ToString() ?? throw new InvalidOperationException()
+            try
+            {
+                return
+                    ActiveCaluculation switch
+                    {
+                        NumberCalculation c => c.NumberToken.ToString(),
+                        OperationCalculation c
+                            => (c.Result != null ? c.Operand?.Number : c.Receiver?.Result)?.ToString() ??
+                                throw new InvalidOperationException(
+                                    "今の演算も前の演算も結果が出てないのはおかしいはず"),
+                        EqualButtonCalculation c
+                            => c.Result.ToString() ?? throw new InvalidOperationException(),
+                        DeleteCalculation c
+                            => c.Result.ToString() ?? throw new InvalidOperationException()
 
-        };
+                    };
+            }
+            catch(DivideByZeroException)
+            {
+                return "0 で割ることはできません";
+            }
+        }
+    }
 }

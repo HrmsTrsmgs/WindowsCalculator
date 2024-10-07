@@ -39,7 +39,7 @@ public class IncrementalParser : ObservableObject
                         {
                             t.Number = t.Number * 10 + (int)key;
                         }
-                        else
+                        else if(t.DecimalPlaces < NumberToken.MaxDecimalPlaces)
                         {
                             t.DecimalPlaces++;
                             t.Number 

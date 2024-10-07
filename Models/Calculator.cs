@@ -60,7 +60,7 @@ public class Calculator :ObservableObject
             ?? lastCaluculation.Receiver as OperationCalculation
             ?? throw new InvalidOperationException();
         return new OperationCalculation(
-                ActiveCaluculation, before.Operator, before.Operand);
+                ActiveCaluculation, before.OperatorToken, before.Operand);
     }
 
     /// <summary>
@@ -72,10 +72,10 @@ public class Calculator :ObservableObject
         switch (ActiveCaluculation)
         {
             case NumberCalculation c:
-                c.Number = token.Number;
+                c.NumberToken = token;
                 break;
             case OperationCalculation c:
-                c.Operand = token.Number;
+                c.Operand = token;
                 break;
         }
     }
@@ -108,9 +108,9 @@ public class Calculator :ObservableObject
     public string DisplaiedNumber =>
         ActiveCaluculation switch
         {
-            NumberCalculation c => c.Number.ToString(),
+            NumberCalculation c => c.NumberToken.ToString(),
             OperationCalculation c
-                => (c.Result != null ? c.Operand : c.Receiver?.Result)?.ToString() ??
+                => (c.Result != null ? c.Operand?.Number : c.Receiver?.Result)?.ToString() ??
                     throw new InvalidOperationException(
                         "今の演算も前の演算も結果が出てないのはおかしいはず"),
             EqualButtonCalculation c 

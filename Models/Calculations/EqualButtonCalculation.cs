@@ -17,7 +17,7 @@ public class EqualButtonCalculation : Calculation
             lastCalculation switch
             {
                 OperationCalculation c =>
-                    new OperationCalculation(receiver, c.Operator, c.Operand),
+                    new OperationCalculation(receiver, c.OperatorToken, c.Operand),
                 _ => null
             };
     }

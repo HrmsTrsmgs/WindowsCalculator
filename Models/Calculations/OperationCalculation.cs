@@ -4,12 +4,12 @@
 /// 計算、もしくは最初に入力された数値を表します。
 /// </summary>
 /// <param name="Operand">計算される、もしくは最初に入力された数値。</param>
-public class OperationCalculation(Calculation receiver, Key? @operator = null, decimal? operand = null) : Calculation(receiver)
+public class OperationCalculation(Calculation receiver, Key? operatorToken = null, NumberToken? operand = null) : Calculation(receiver)
 {
     /// <summary>
     /// 計算の内容を表す演算子を取得、設定します。
     /// </summary>
-    public Key? Operator { get; set; } = @operator;
+    public Key? OperatorToken { get; set; } = operatorToken;
 
     /// <summary>
     /// 演算子で計算される比演算子を指します。
@@ -19,7 +19,7 @@ public class OperationCalculation(Calculation receiver, Key? @operator = null, d
     /// Receiverに対してこの数値で演算を行います。
     /// 入力されるまではnullとなります。
     /// </remarks>
-    public decimal? Operand { get; set; } = operand;
+    public NumberToken? Operand { get; set; } = operand;
 
 
     /// <summary>
@@ -46,12 +46,12 @@ public class OperationCalculation(Calculation receiver, Key? @operator = null, d
     public override decimal? Result =>
         Receiver == null 
         ? null 
-        : Operator switch
+        : OperatorToken switch
         { 
-            Key.Plus => Receiver.Result + Operand,
-            Key.Minus => Receiver.Result - Operand,
-            Key.Multiply => Receiver.Result * Operand,
-            Key.Divide => Receiver.Result / Operand,
+            Key.Plus => Receiver.Result + Operand?.Number,
+            Key.Minus => Receiver.Result - Operand?.Number,
+            Key.Multiply => Receiver.Result * Operand?.Number,
+            Key.Divide => Receiver.Result / Operand?.Number,
             _ => throw new NotImplementedException()
         };
 }

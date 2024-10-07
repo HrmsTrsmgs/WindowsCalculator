@@ -12,7 +12,7 @@ public class CalculatorTest
     public void 初期状態の計算は数値演算子です()
     {
         tested.ActiveCaluculation.Should().BeOfType<NumberCalculation>();
-        (tested.ActiveCaluculation as NumberCalculation)?.Number.Should().Be(0);
+        (tested.ActiveCaluculation as NumberCalculation)?.NumberToken.Number.Should().Be(0);
     }
 
     [Fact]
@@ -20,7 +20,7 @@ public class CalculatorTest
     {
         tested.ActiveCaluculation.Should().BeOfType<NumberCalculation>();
         var calculation = (NumberCalculation)tested.ActiveCaluculation;
-        calculation.Number.Should().Be(0);
+        calculation.NumberToken.Number.Should().Be(0);
     }
 
     [Fact]
@@ -63,7 +63,7 @@ public class CalculatorTest
         tested.Input(new OperatorToken(Key.Plus));
         tested.ActiveCaluculation.Should().BeOfType<OperationCalculation>();
         var calculation = (OperationCalculation)tested.ActiveCaluculation;
-        calculation.Operator.Should().Be(Key.Plus);
+        calculation.OperatorToken.Should().Be(Key.Plus);
     }
 
     [Fact]
@@ -169,6 +169,13 @@ public class CalculatorTest
         tested.Input(OtherToken.Equal);
         tested.Input(OtherToken.Equal);
         tested.DisplaiedNumber.Should().Be("10");
+    }
+
+    [Fact]
+    public void 小数点を押した状態が表示できます()
+    {
+        tested.Input(new NumberToken(1) { DecimalPlaces = 0 });
+        tested.DisplaiedNumber.Should().Be("1.");
     }
 
 }

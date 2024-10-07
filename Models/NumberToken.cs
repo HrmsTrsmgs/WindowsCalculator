@@ -8,7 +8,10 @@
 /// </param>
 public class NumberToken(decimal number) : Token
 {
-    const int MaxDecimalPlaces = 5;
+    /// <summary>
+    /// 小数点以下の最大桁数です。
+    /// </summary>
+    public const int MaxDecimalPlaces = 5;
 
     /// <summary>
     /// 入力された数値を取得します。
@@ -23,12 +26,21 @@ public class NumberToken(decimal number) : Token
     /// <summary>
     /// 入力中の小数点の桁数を取得、設定します。小数の入力中でなければnullです。
     /// </summary>
-    public int? DecimalPlaces 
+    public int? DecimalPlaces
     {
         get => decimalPlaces;
-        set => decimalPlaces 
-            = value == null 
-            ? null 
+        set => decimalPlaces
+            = value == null
+            ? null
             : Math.Min(value.Value, MaxDecimalPlaces);
     }
+
+    /// <summary>
+    /// 表す数が整数であることを表します。
+    /// </summary>
+    bool IsInteger => Number == Decimal.Truncate(Number);
+
+
+    public override string ToString()
+        => Number.ToString() + (IsInteger && decimalPlaces != null ? "." : "");
 }

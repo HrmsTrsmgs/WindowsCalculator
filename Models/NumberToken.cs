@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Marimo.MauiBlazor.Models;
 
@@ -49,5 +50,9 @@ public class NumberToken(decimal number) : Token
 
 
     public override string ToString()
-        => Number.ToString() + (IsInteger && decimalPlaces != null ? "." : "");
+        => Number < 
+            Enumerable.Repeat(10m, NumberToken.MaxDigits)
+            .Aggregate(1m, (acc, val) => acc * val)
+        ? Number.ToString() + (IsInteger && decimalPlaces != null ? "." : "")
+        : string.Format($"{{0:0.{new string('#', NumberToken.MaxDigits - 1)}E+0}}", Number);
 }

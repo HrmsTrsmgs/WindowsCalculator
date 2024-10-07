@@ -11,7 +11,12 @@ public enum OtherTokenKind
     Equal,
 
     /// <summary>
-    /// BackspaceとESCの操作。
+    /// Backspaceの操作。
     /// </summary>
-    Backspace
+    Backspace,
+
+    /// <summary>
+    /// DeleteとESCの操作。
+    /// </summary>
+    Delete
 }

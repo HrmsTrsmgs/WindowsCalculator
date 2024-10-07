@@ -178,4 +178,15 @@ public class CalculatorTest
         tested.DisplaiedNumber.Should().Be("1.");
     }
 
+    [Fact]
+    public void Deleteで計算結果が削除されます()
+    {
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new NumberToken(5));
+        tested.Input(OtherToken.Delete);
+        tested.DisplaiedNumber.Should().Be("0");
+    }
+
 }
+

@@ -44,6 +44,8 @@ public class Calculator :ObservableObject
                         EqualButtonCalculation c => GetLastOperationCalculation(c),
                         _ => null
                     }),
+            OtherTokenKind.Delete =>
+                new DeleteCalculation(ActiveCaluculation),
             _ => throw new NotSupportedException()
         };
 
@@ -114,7 +116,9 @@ public class Calculator :ObservableObject
                     throw new InvalidOperationException(
                         "今の演算も前の演算も結果が出てないのはおかしいはず"),
             EqualButtonCalculation c 
+                => c.Result.ToString() ?? throw new InvalidOperationException(),
+            DeleteCalculation c
                 => c.Result.ToString() ?? throw new InvalidOperationException()
-           
+
         };
 }

@@ -74,6 +74,9 @@ public class IncrementalParser : ObservableObject
             case Key.Equal:
                 ActiveToken = OtherToken.Equal;
                 break;
+            case Key.Delete:
+                ActiveToken = OtherToken.Delete;
+                break;
             case Key.Backspace:
                 switch (ActiveToken)
                 {

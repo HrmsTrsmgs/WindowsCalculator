@@ -311,4 +311,11 @@ public class IncrementalParserTests
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1.2m);
         ;
     }
+
+    [Fact]
+    public void Deleteを受け付けその他トークンが出力されます()
+    {
+        tested.Input(Key.Delete);
+        tested.ActiveToken.Should().BeSameAs(OtherToken.Delete);
+    }
 }

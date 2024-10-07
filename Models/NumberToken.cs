@@ -1,4 +1,6 @@
-﻿namespace Marimo.MauiBlazor.Models;
+﻿using System.Runtime.InteropServices;
+
+namespace Marimo.MauiBlazor.Models;
 
 /// <summary>
 /// 入力された数値の文字列を表します。
@@ -12,6 +14,11 @@ public class NumberToken(decimal number) : Token
     /// 小数点以下の最大桁数です。
     /// </summary>
     public const int MaxDecimalPlaces = 5;
+
+    /// <summary>
+    /// 整数の最大桁数です。
+    /// </summary>
+    public const int MaxDigits = 16;
 
     /// <summary>
     /// 入力された数値を取得します。

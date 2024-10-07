@@ -35,7 +35,9 @@ public class IncrementalParser : ObservableObject
                 switch (ActiveToken)
                 {
                     case NumberToken t:
-                        if (t.DecimalPlaces == null)
+                        if (t.DecimalPlaces == null 
+                            && t.Number < Enumerable.Repeat(10m, NumberToken.MaxDigits - 1)
+                                .Aggregate(1m, (acc, val) => acc * val))
                         {
                             t.Number = t.Number * 10 + (int)key;
                         }

@@ -210,4 +210,52 @@ public class IncrementalParserTests
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1.23456m);
     }
+
+    [Fact]
+    public void 整数は16桁入力することができます()
+    {
+        tested.Input(Key.One);
+        tested.Input(Key.Two);
+        tested.Input(Key.Three);
+        tested.Input(Key.Four);
+        tested.Input(Key.Five);
+        tested.Input(Key.Six);
+        tested.Input(Key.Seven);
+        tested.Input(Key.Eight);
+        tested.Input(Key.Nine);
+        tested.Input(Key.Zero);
+        tested.Input(Key.One);
+        tested.Input(Key.Two);
+        tested.Input(Key.Three);
+        tested.Input(Key.Four);
+        tested.Input(Key.Five);
+        tested.Input(Key.Six);
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(1234567890123456m);
+    }
+
+    [Fact]
+    public void 整数は16桁までしか入力することはできません()
+    {
+
+        tested.Input(Key.One);
+        tested.Input(Key.Two);
+        tested.Input(Key.Three);
+        tested.Input(Key.Four);
+        tested.Input(Key.Five);
+        tested.Input(Key.Six);
+        tested.Input(Key.Seven);
+        tested.Input(Key.Eight);
+        tested.Input(Key.Nine);
+        tested.Input(Key.Zero);
+        tested.Input(Key.One);
+        tested.Input(Key.Two);
+        tested.Input(Key.Three);
+        tested.Input(Key.Four);
+        tested.Input(Key.Five);
+        tested.Input(Key.Six);
+        tested.Input(Key.Seven);
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(1234567890123456m);
+    }
 }

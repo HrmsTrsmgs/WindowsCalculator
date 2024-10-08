@@ -134,7 +134,8 @@ public class Calculator : ModelBase
                         EqualButtonCalculation c
                             => c.Result.ToString() ?? throw new InvalidOperationException(),
                         DeleteCalculation c
-                            => c.Result.ToString() ?? throw new InvalidOperationException()
+                            => c.Result.ToString() ?? throw new InvalidOperationException(),
+                        _ => "0"
 
                     };
             }

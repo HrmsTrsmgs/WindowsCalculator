@@ -254,5 +254,14 @@ public class CalculatorTest
         tested.ActiveCaluculation.Should().BeOfType<NumberCalculation>();
         tested.DisplaiedNumber.Should().Be("3");
     }
+
+    [Fact]
+    public void Undoで未入力の状態まで戻れます()
+    {
+        tested.Input(new NumberToken(3));
+        tested.Input(OtherToken.Undo);
+        tested.ActiveCaluculation.Should().BeNull();
+        tested.DisplaiedNumber.Should().Be("0");
+    }
 }
 

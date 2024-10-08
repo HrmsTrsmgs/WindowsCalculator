@@ -20,29 +20,31 @@
         public static CalculatorViewModel? ViewModel { get; set; }
 
         [JSInvokable("HandleKeyDown")]
-        public static void HandleKeyDown(string key)
+        public static void HandleKeyDown(string key, bool ctrl)
         {
             ViewModel?.PushKeybord?.Execute(
-            key switch
+            (ctrl, key) switch
             {
-                "0" => Key.Zero,
-                "1" => Key.One,
-                "2" => Key.Two,
-                "3" => Key.Three,
-                "4" => Key.Four,
-                "5" => Key.Five,
-                "6" => Key.Six,
-                "7" => Key.Seven,
-                "8" => Key.Eight,
-                "9" => Key.Nine,
-                "." => Key.Dot,
-                "+" => Key.Plus,
-                "-" => Key.Minus,
-                "*" => Key.Multiply,
-                "/" => Key.Divide,
-                "Enter" or "=" => Key.Equal,
-                "Delete" or"Escape" => Key.Delete,
-                "Backspace" => Key.Backspace,
+                (false, "0") => Key.Zero,
+                (false, "1") => Key.One,
+                (false, "2") => Key.Two,
+                (false, "3") => Key.Three,
+                (false, "4") => Key.Four,
+                (false, "5") => Key.Five,
+                (false, "6") => Key.Six,
+                (false, "7") => Key.Seven,
+                (false, "8") => Key.Eight,
+                (false, "9") => Key.Nine,
+                (false, ".") => Key.Dot,
+                (false, "+") => Key.Plus,
+                (false, "-") => Key.Minus,
+                (false, "*") => Key.Multiply,
+                (false, "/") => Key.Divide,
+                (false, "Enter)") or (false, "=") => Key.Equal,
+                (false, "Delete") or (false, "Escape") => Key.Delete,
+                (false, "Backspace") => Key.Backspace,
+                (true, "z") => Key.Undo,
+                (true, "y") => Key.Redo,
                 _ => throw new NotSupportedException()
             });
         }

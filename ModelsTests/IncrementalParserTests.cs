@@ -73,22 +73,6 @@ public class IncrementalParserTest : TestBase
 
     }
 
-
-    [Fact]
-    public void 数値や四則演算以外の値は受け付けません()
-    {
-        tested.Input(Key.Undo);
-        tested.ActiveToken.Should().BeNull();
-    }
-    [Fact]
-    public void すでにトークンが入力された後についても無効な値は受け付けません()
-    {
-        tested.Input(Key.One);
-        tested.Input(Key.Undo);
-        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
-        (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
-    }
-
     [Fact]
     public void 演算子トークンが入力できます()
     {
@@ -333,5 +317,12 @@ public class IncrementalParserTest : TestBase
     {
         tested.Input(Key.Delete);
         tested.ActiveToken.Should().BeSameAs(OtherToken.Delete);
+    }
+
+    [Fact]
+    public void Unsoを受け付けその他トークンが出力されます()
+    {
+        tested.Input(Key.Undo);
+        tested.ActiveToken.Should().BeSameAs(OtherToken.Undo);
     }
 }

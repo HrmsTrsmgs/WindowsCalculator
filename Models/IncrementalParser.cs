@@ -101,6 +101,9 @@ public class IncrementalParser : ModelBase
                         break;
                 }
                 break;
+            case Key.Undo:
+                ActiveToken = OtherToken.Undo;
+                break;
         }
     }
 

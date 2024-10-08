@@ -224,5 +224,35 @@ public class CalculatorTest
         tested.DisplaiedNumber.Should().Be("0");
     }
 
+    [Fact]
+    public void Undoで直前の計算が無効になります()
+    {
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new NumberToken(5));
+        tested.Input(OtherToken.Equal);
+        tested.Input(OtherToken.Undo);
+        tested.DisplaiedNumber.Should().Be("5");
+    }
+
+    [Fact]
+    public void Undoで入力中の直前の計算が無効になります()
+    {
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new NumberToken(5));
+        tested.Input(OtherToken.Undo);
+        tested.DisplaiedNumber.Should().Be("3");
+    }
+
+    [Fact]
+    public void Undoで数値入力前の直前の計算が無効になります()
+    {
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(OtherToken.Undo);
+        tested.ActiveCaluculation.Should().BeOfType<NumberCalculation>();
+        tested.DisplaiedNumber.Should().Be("3");
+    }
 }
 

@@ -4,8 +4,9 @@
 /// 演算子と数値以外のトークンを表します。
 /// </summary>
 /// <param name="kind">トークンの種類。</param>
-public class OtherToken(OtherTokenKind kind) : Token
+public class OtherToken : Token
 {
+    OtherToken(OtherTokenKind kind) => Kind = kind;
     /// <summary>
     /// イコールトークンを取得します。
     /// </summary>
@@ -22,7 +23,12 @@ public class OtherToken(OtherTokenKind kind) : Token
     public static OtherToken Delete { get; } = new OtherToken(OtherTokenKind.Delete);
 
     /// <summary>
+    /// アンドゥトークンを取得します。
+    /// </summary>
+    public static OtherToken Undo { get; } = new OtherToken(OtherTokenKind.Undo);
+
+    /// <summary>
     /// トークンの種類を取得します。
     /// </summary>
-    public OtherTokenKind Kind => kind;
+    public OtherTokenKind Kind { get; }
 }

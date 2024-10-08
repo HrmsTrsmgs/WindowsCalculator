@@ -18,5 +18,10 @@ public enum OtherTokenKind
     /// <summary>
     /// DeleteとESCの操作。
     /// </summary>
-    Delete
+    Delete,
+
+    /// <summary>
+    /// Undo操作。
+    /// </summary>
+    Undo
 }

@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Marimo.MauiBlazor.Models.Calculations;
+using System.Diagnostics;
 
 namespace Marimo.MauiBlazor.Models;
 
@@ -24,7 +25,15 @@ public class Calculator : ModelBase
                     = new OperationCalculation(ActiveCaluculation, t.Operator, null);
                 break;
             case OtherToken t:
-                ActiveCaluculation = GetCalculationOtherWhenTokenInputed(t);
+                switch(t.Kind)
+                {
+                    case OtherTokenKind.Undo:
+                        SetProperty(ref activeCaluculation, ActiveCaluculation.Receiver, nameof(ActiveCaluculation));
+                        break;
+                    default: 
+                        ActiveCaluculation = GetCalculationOtherWhenTokenInputed(t);
+                        break;
+                };
                 break;
         }
         OnPropertyChanged(nameof(DisplaiedNumber));
@@ -99,6 +108,7 @@ public class Calculator : ModelBase
         get => activeCaluculation;
         private set
         {
+            if (activeCaluculation == value) return;
             value.Receiver = activeCaluculation;
             SetProperty(ref activeCaluculation, value);
         }

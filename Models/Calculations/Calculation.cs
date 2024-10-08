@@ -6,7 +6,7 @@ namespace Marimo.MauiBlazor.Models.Calculations;
 /// 計算を表します。
 /// </summary>
 /// <param name="receiver">計算する対象。</param>
-public abstract class Calculation(Calculation? receiver) : ObservableObject
+public abstract class Calculation(Calculation? receiver) : ModelBase
 {
     /// <summary>
     /// 計算する対象を取得、設定します。

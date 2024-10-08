@@ -6,7 +6,7 @@ namespace Marimo.MauiBlazor.Models;
 /// <summary>
 /// 一文字ずつの入力を処理します。
 /// </summary>
-public class IncrementalParser : ObservableObject
+public class IncrementalParser : ModelBase
 {
 
     /// <summary>
@@ -29,6 +29,7 @@ public class IncrementalParser : ObservableObject
     /// <param name="key">入力された一文字。</param>
     public void Input(Key key)
     {
+        Log.Info($"{key}が入力されました。");
         switch (key)
         {
             case >= Key.Zero and <= Key.Nine:

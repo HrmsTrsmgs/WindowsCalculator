@@ -6,7 +6,7 @@ namespace Marimo.MauiBlazor.Models;
 /// <summary>
 /// 電卓を表します。
 /// </summary>
-public class Calculator :ObservableObject
+public class Calculator : ModelBase
 {
     /// <summary>
     /// 電卓にトークンを入力します。

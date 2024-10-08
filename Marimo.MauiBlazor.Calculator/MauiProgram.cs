@@ -1,4 +1,5 @@
-﻿using Marimo.MauiBlazor.ViewModels;
+﻿using Marimo.MauiBlazor.Models;
+using Marimo.MauiBlazor.ViewModels;
 using Microsoft.Extensions.Logging;
 
 namespace Marimo.MauiBlazor.Calculator
@@ -18,9 +19,18 @@ namespace Marimo.MauiBlazor.Calculator
 
             builder.Services.AddMauiBlazorWebView();
 
+            builder.Services.AddLog4Net(Path.Combine(AppContext.BaseDirectory, "log.txt"));
+
 #if DEBUG
     		builder.Services.AddBlazorWebViewDeveloperTools();
     		builder.Logging.AddDebug();
+#endif
+
+
+#if DEBUG
+            builder.Logging.SetMinimumLevel(LogLevel.Debug); // デバッグモードでは詳細なログを出力
+#else
+            builder.Logging.SetMinimumLevel(LogLevel.Information); // リリースモードでは警告以上を出力
 #endif
 
             return builder.Build();

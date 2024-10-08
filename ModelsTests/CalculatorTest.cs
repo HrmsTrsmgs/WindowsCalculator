@@ -1,4 +1,8 @@
 ﻿using FluentAssertions;
+using log4net;
+using log4net.Appender;
+using log4net.Config;
+using log4net.Layout;
 using Marimo.MauiBlazor.Models;
 using Marimo.MauiBlazor.Models.Calculations;
 
@@ -6,7 +10,29 @@ namespace Marimo.MauiBlazor.Tests.Models;
 
 public class CalculatorTest
 {
+    private ILog _logger;
+    private MemoryAppender _memoryAppender;
+
     Calculator tested = new();
+    public CalculatorTest()
+    {
+        _memoryAppender = new MemoryAppender
+        {
+            Layout = new PatternLayout("%-5p %m%n")
+        };
+        _memoryAppender.ActivateOptions();
+
+        BasicConfigurator.Configure(_memoryAppender);
+        _logger = LogManager.GetLogger(typeof(CalculatorTest));
+    }
+
+    [Fact]
+    public void TestLogOutput()
+    {
+        _logger.Info("テストメッセージ");
+
+        var logEvents = _memoryAppender.GetEvents().Should().NotBeEmpty();
+    }
 
     [Fact]
     public void 初期状態の計算は数値演算子です()

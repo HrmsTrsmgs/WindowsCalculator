@@ -42,7 +42,8 @@
                 "/" => Key.Divide,
                 "Enter" or "=" => Key.Equal,
                 "Delete" or"Escape" => Key.Delete,
-                "Backspace" => Key.Backspace
+                "Backspace" => Key.Backspace,
+                _ => throw new NotSupportedException()
             });
         }
     }

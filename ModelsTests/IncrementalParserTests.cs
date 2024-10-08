@@ -1,9 +1,14 @@
 ﻿using FluentAssertions;
+using log4net.Appender;
+using log4net.Config;
+using log4net.Layout;
+using log4net.Repository;
+using log4net;
 using Marimo.MauiBlazor.Models;
 
 namespace Marimo.MauiBlazor.Tests.Models;
 
-public class IncrementalParserTests
+public class IncrementalParserTest : TestBase
 {
     public IncrementalParser tested = new();
 
@@ -19,6 +24,17 @@ public class IncrementalParserTests
         tested.Input(Key.One);
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
+    }
+
+    [Fact]
+    public void 入力時にログが出力されます()
+    {
+        tested.Input(Key.One);
+
+        MemoryAppender.GetEvents().Should().HaveCount(1);
+        MemoryAppender.GetEvents().First()
+            .RenderedMessage.Should().Be("Oneが入力されました。");
+
     }
 
     [Fact]

@@ -34,6 +34,28 @@ public class Calculator : ModelBase
     }
 
     /// <summary>
+    /// 履歴用の計算結果一覧を取得します。
+    /// </summary>
+    public IEnumerable<CalculationHistoryItem> CalculationHistory
+    {
+        get
+        {
+            var current = ActiveCaluculation;
+            while(current != null)
+            {
+                if (current.Result != null && current is OperationCalculation)
+                {
+                    var operation = current as OperationCalculation;
+                    yield return new(
+                        $"{operation!.CurrentExpression} {operation.Operand} =",
+                        operation.Result!.Value);
+                }
+                current = current.Receiver;
+            }
+        }
+    }
+
+    /// <summary>
     /// Redo用に取ってある計算を取得、設定します。
     /// </summary>
     public Calculation? RedoCalculation { get; set; } = null;

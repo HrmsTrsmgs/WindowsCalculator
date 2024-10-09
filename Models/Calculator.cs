@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Marimo.MauiBlazor.Models.Calculations;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Marimo.MauiBlazor.Models;
 
@@ -9,6 +10,67 @@ namespace Marimo.MauiBlazor.Models;
 /// </summary>
 public class Calculator : ModelBase
 {
+    /// <summary>
+    /// 現在行っている計算です。
+    /// </summary>
+    Calculation activeCaluculation = new NumberCalculation(null);
+
+    /// <summary>
+    /// 現在、最新で行われている計算を取得、設定します。
+    /// </summary>
+    /// <remarks>
+    /// 現在、最新で行われている計算を取得、設定します。
+    /// 設定された値のレシーバーは、直前の計算に設定されます。
+    /// </remarks>
+    public Calculation ActiveCaluculation
+    {
+        get => activeCaluculation;
+        private set
+        {
+            if (activeCaluculation == value) return;
+            value.Receiver = activeCaluculation;
+            SetProperty(ref activeCaluculation, value);
+        }
+    }
+
+    /// <summary>
+    /// 計算結果を取得します。
+    /// </summary>
+    public string DisplaiedNumber
+    {
+        get
+        {
+            try
+            {
+                return
+                    ActiveCaluculation switch
+                    {
+                        NumberCalculation c => c.NumberToken.ToString(),
+                        OperationCalculation c
+                            => (
+                                    c.IsDisplaiedResult && c.Result != null
+                                        ? c.Result
+                                    : c.Result != null
+                                        ? c.Operand?.Number
+                                        : c.Receiver?.Result
+                                )?.ToString() ??
+                                throw new InvalidOperationException(
+                                    "今の演算も前の演算も結果が出てないのはおかしいはず"),
+                        EqualButtonCalculation c
+                            => c.Result.ToString() ?? throw new InvalidOperationException(),
+                        DeleteCalculation c
+                            => c.Result.ToString() ?? throw new InvalidOperationException(),
+                        _ => "0"
+
+                    };
+            }
+            catch (DivideByZeroException)
+            {
+                return "0 で割ることはできません";
+            }
+        }
+    }
+
     /// <summary>
     /// 電卓にトークンを入力します。
     /// </summary>
@@ -28,7 +90,13 @@ public class Calculator : ModelBase
                 switch(t.Kind)
                 {
                     case OtherTokenKind.Undo:
-                        SetProperty(ref activeCaluculation, ActiveCaluculation.Receiver, nameof(ActiveCaluculation));
+                        SetProperty(ref activeCaluculation!, ActiveCaluculation.Receiver, nameof(ActiveCaluculation));
+                        switch(ActiveCaluculation)
+                        {
+                            case OperationCalculation c:
+                                c.IsDisplaiedResult = true; 
+                                break;
+                        }
                         break;
                     default: 
                         ActiveCaluculation = GetCalculationOtherWhenTokenInputed(t);
@@ -91,58 +159,4 @@ public class Calculator : ModelBase
         }
     }
 
-    /// <summary>
-    /// 現在行っている計算です。
-    /// </summary>
-    Calculation activeCaluculation = new NumberCalculation(null);
-
-    /// <summary>
-    /// 現在、最新で行われている計算を取得、設定します。
-    /// </summary>
-    /// <remarks>
-    /// 現在、最新で行われている計算を取得、設定します。
-    /// 設定された値のレシーバーは、直前の計算に設定されます。
-    /// </remarks>
-    public Calculation ActiveCaluculation 
-    {
-        get => activeCaluculation;
-        private set
-        {
-            if (activeCaluculation == value) return;
-            value.Receiver = activeCaluculation;
-            SetProperty(ref activeCaluculation, value);
-        }
-    }
-
-    /// <summary>
-    /// 計算結果を取得します。
-    /// </summary>
-    public string DisplaiedNumber
-    {
-        get
-        {
-            try
-            {
-                return
-                    ActiveCaluculation switch
-                    {
-                        NumberCalculation c => c.NumberToken.ToString(),
-                        OperationCalculation c
-                            => (c.Result != null ? c.Operand?.Number : c.Receiver?.Result)?.ToString() ??
-                                throw new InvalidOperationException(
-                                    "今の演算も前の演算も結果が出てないのはおかしいはず"),
-                        EqualButtonCalculation c
-                            => c.Result.ToString() ?? throw new InvalidOperationException(),
-                        DeleteCalculation c
-                            => c.Result.ToString() ?? throw new InvalidOperationException(),
-                        _ => "0"
-
-                    };
-            }
-            catch(DivideByZeroException)
-            {
-                return "0 で割ることはできません";
-            }
-        }
-    }
 }

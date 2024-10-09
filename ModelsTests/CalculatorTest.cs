@@ -232,7 +232,7 @@ public class CalculatorTest
         tested.Input(new NumberToken(5));
         tested.Input(OtherToken.Equal);
         tested.Input(OtherToken.Undo);
-        tested.DisplaiedNumber.Should().Be("5");
+        tested.DisplaiedNumber.Should().Be("8");
     }
 
     [Fact]
@@ -262,6 +262,31 @@ public class CalculatorTest
         tested.Input(OtherToken.Undo);
         tested.ActiveCaluculation.Should().BeNull();
         tested.DisplaiedNumber.Should().Be("0");
+    }
+
+    [Fact]
+    public void Undoで戻った場合は演算結果が表示されます()
+    {
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new NumberToken(5));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new NumberToken(7));
+        tested.Input(OtherToken.Undo);
+        tested.DisplaiedNumber.Should().Be("8");
+    }
+
+    [Fact]
+    public void Undoで戻った後で数字が変更された場合は数字表示に戻ります()
+    {
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new NumberToken(5));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new NumberToken(7));
+        tested.Input(OtherToken.Undo);
+        tested.Input(new NumberToken(9));
+        tested.DisplaiedNumber.Should().Be("9");
     }
 }
 

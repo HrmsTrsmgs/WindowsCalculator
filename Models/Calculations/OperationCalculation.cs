@@ -6,10 +6,19 @@
 /// <param name="Operand">計算される、もしくは最初に入力された数値。</param>
 public class OperationCalculation(Calculation receiver, Key? operatorToken = null, NumberToken? operand = null) : Calculation(receiver)
 {
+    public bool IsDisplaiedResult { get; set; } = false;
+
     /// <summary>
     /// 計算の内容を表す演算子を取得、設定します。
     /// </summary>
-    public Key? OperatorToken { get; set; } = operatorToken;
+    public Key? OperatorToken 
+    {
+        get => operatorToken;
+        set
+        {
+            SetProperty(ref operatorToken, value);
+        }
+    }
 
     /// <summary>
     /// 演算子で計算される比演算子を指します。
@@ -19,8 +28,15 @@ public class OperationCalculation(Calculation receiver, Key? operatorToken = nul
     /// Receiverに対してこの数値で演算を行います。
     /// 入力されるまではnullとなります。
     /// </remarks>
-    public NumberToken? Operand { get; set; } = operand;
-
+    public NumberToken? Operand 
+    {
+        get => operand;
+        set
+        {
+            IsDisplaiedResult = false;
+            SetProperty(ref operand, value);
+        }
+    }
 
     /// <summary>
     /// 計算する対象を取得、設定します。

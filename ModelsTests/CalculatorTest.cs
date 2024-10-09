@@ -288,5 +288,80 @@ public class CalculatorTest
         tested.Input(new NumberToken(9));
         tested.DisplaiedNumber.Should().Be("9");
     }
+
+    [Fact]
+    public void Undoをする前にRedoしても何も起きません()
+    {
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new NumberToken(5));
+        var initial = tested.ActiveCaluculation;
+        tested.Input(OtherToken.Redo);
+        tested.ActiveCaluculation.Should().BeSameAs(initial);
+    }
+
+    [Fact]
+    public void RedoでUndoが元に戻ります()
+    {
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new NumberToken(5));
+        tested.Input(OtherToken.Equal);
+        tested.Input(OtherToken.Undo);
+        tested.Input(OtherToken.Redo);
+        tested.ActiveCaluculation.Should().BeOfType<EqualButtonCalculation>();
+        tested.DisplaiedNumber.Should().Be("8");
+    }
+
+    [Fact]
+    public void Redoで複数回のUndoは一つずつ元に戻ります()
+    {
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new NumberToken(5));
+        tested.Input(OtherToken.Equal);
+        tested.Input(OtherToken.Undo);
+        tested.Input(OtherToken.Undo);
+        tested.Input(OtherToken.Redo);
+        tested.ActiveCaluculation.Should().BeOfType<OperationCalculation>();
+        tested.DisplaiedNumber.Should().Be("8");
+        tested.Input(OtherToken.Redo);
+        tested.ActiveCaluculation.Should().BeOfType<EqualButtonCalculation>();
+        tested.DisplaiedNumber.Should().Be("8");
+    }
+
+    [Fact]
+    public void Undo後のRedoで入力中の直前の計算が復帰します()
+    {
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new NumberToken(5));
+        tested.Input(OtherToken.Undo);
+        tested.Input(OtherToken.Redo);
+        tested.DisplaiedNumber.Should().Be("5");
+    }
+
+    [Fact]
+    public void Undo後のRedoで数値入力前の直前の計算が復帰します()
+    {
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(OtherToken.Undo);
+        tested.Input(OtherToken.Redo);
+        tested.ActiveCaluculation.Should().BeOfType<OperationCalculation>();
+        tested.DisplaiedNumber.Should().Be("3");
+        ((OperationCalculation)tested.ActiveCaluculation)
+            .OperatorToken.Should().Be(Key.Plus);
+    }
+
+    [Fact]
+    public void Undo後のRedoでで未入力の状態が復帰します()
+    {
+        tested.Input(new NumberToken(3));
+        tested.Input(OtherToken.Undo);
+        tested.Input(OtherToken.Redo);
+        tested.ActiveCaluculation.Should().BeOfType<NumberCalculation>();
+        tested.DisplaiedNumber.Should().Be("3");
+    }
 }
 

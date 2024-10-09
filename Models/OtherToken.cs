@@ -28,6 +28,11 @@ public class OtherToken : Token
     public static OtherToken Undo { get; } = new OtherToken(OtherTokenKind.Undo);
 
     /// <summary>
+    /// リドゥトークンを取得します。
+    /// </summary>
+    public static OtherToken Redo { get; } = new OtherToken(OtherTokenKind.Redo);
+
+    /// <summary>
     /// トークンの種類を取得します。
     /// </summary>
     public OtherTokenKind Kind { get; }

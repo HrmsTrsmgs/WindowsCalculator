@@ -23,5 +23,10 @@ public enum OtherTokenKind
     /// <summary>
     /// Undo操作。
     /// </summary>
-    Undo
+    Undo,
+
+    /// <summary>
+    /// Redo操作。
+    /// </summary>
+    Redo
 }

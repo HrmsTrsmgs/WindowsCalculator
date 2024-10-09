@@ -34,6 +34,13 @@ public class Calculator : ModelBase
     }
 
     /// <summary>
+    /// Redo用に取ってある計算を取得、設定します。
+    /// </summary>
+    public Calculation? RedoCalculation { get; set; } = null;
+
+
+
+    /// <summary>
     /// 計算結果を取得します。
     /// </summary>
     public string DisplaiedNumber
@@ -90,12 +97,27 @@ public class Calculator : ModelBase
                 switch(t.Kind)
                 {
                     case OtherTokenKind.Undo:
+                        if (RedoCalculation == null)
+                        {
+                            RedoCalculation = ActiveCaluculation;
+                        }
                         SetProperty(ref activeCaluculation!, ActiveCaluculation.Receiver, nameof(ActiveCaluculation));
                         switch(ActiveCaluculation)
                         {
                             case OperationCalculation c:
                                 c.IsDisplaiedResult = true; 
                                 break;
+                        }
+                        break;
+                    case OtherTokenKind.Redo:
+                        if (RedoCalculation != null)
+                        {
+                            var nextCalculation = RedoCalculation;
+                            while (nextCalculation!.Receiver != ActiveCaluculation)
+                            {
+                                nextCalculation = nextCalculation!.Receiver;
+                            }
+                            SetProperty(ref activeCaluculation, nextCalculation, nameof(ActiveCaluculation));
                         }
                         break;
                     default: 

@@ -6,4 +6,6 @@
 internal class DeleteCalculation(Calculation? receiver) : Calculation(receiver)
 {
     public override decimal? Result => 0;
+
+    public override string CurrentExpression => throw new NotImplementedException();
 }

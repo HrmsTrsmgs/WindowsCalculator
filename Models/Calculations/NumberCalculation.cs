@@ -7,7 +7,7 @@
 public class NumberCalculation(Calculation? receiver) : Calculation(receiver)
 {
     /// <summary>
-    /// 
+    /// 計算する対象を取得、設定します。
     /// </summary>
     /// <remarks>
     /// 計算する対象を取得します。
@@ -28,4 +28,9 @@ public class NumberCalculation(Calculation? receiver) : Calculation(receiver)
     /// nullになりません。
     /// </remarks>
     public override decimal? Result => NumberToken.Number;
+
+    /// <summary>
+    /// この計算がActiveCalculatorの場合に表示される式を取得します。
+    /// </summary>
+    public override string CurrentExpression => "";
 }

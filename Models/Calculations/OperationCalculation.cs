@@ -70,4 +70,6 @@ public class OperationCalculation(Calculation receiver, Key? operatorToken = nul
             Key.Divide => Receiver.Result / Operand?.Number,
             _ => throw new NotImplementedException()
         };
+
+    public override string CurrentExpression => throw new NotImplementedException();
 }

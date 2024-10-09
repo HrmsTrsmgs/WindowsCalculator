@@ -26,4 +26,10 @@ public abstract class Calculation(Calculation? receiver) : ModelBase
     /// 演算子が入力され、計算対象が入力されていない場合などにnullとなります。
     /// </remarks>
     public abstract decimal? Result { get; }
+
+
+    /// <summary>
+    /// この計算がActiveCalculatorの場合に表示される式を取得します。
+    /// </summary>
+    public abstract string CurrentExpression { get; }
 }

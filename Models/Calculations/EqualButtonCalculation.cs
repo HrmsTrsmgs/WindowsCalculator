@@ -37,4 +37,6 @@ public class EqualButtonCalculation : Calculation
     /// イコールにより最後の演算を繰り返すとき、最後の演算を指します。
     /// </summary>
     public OperationCalculation? LastOperationCalculation { get; }
+
+    public override string CurrentExpression => throw new NotImplementedException();
 }

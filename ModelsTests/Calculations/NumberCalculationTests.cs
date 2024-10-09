@@ -1,5 +1,4 @@
-﻿using FluentAssertions;
-using Marimo.MauiBlazor.Models.Calculations;
+﻿using Marimo.MauiBlazor.Models.Calculations;
 
 namespace Marimo.MauiBlazor.Tests.Models.Calculations;
 

@@ -74,5 +74,13 @@ public class OperationCalculation(Calculation receiver, Key? operatorToken = nul
     /// <summary>
     /// この計算がActiveCalculatorの場合に表示される式を取得します。
     /// </summary>
-    public override string CurrentExpression => throw new NotImplementedException();
+    public override string CurrentExpression => $"{Receiver?.Result} {
+        OperatorToken switch
+        {
+            Key.Plus => "+",
+            Key.Minus => "-",
+            Key.Multiply => "×",
+            Key.Divide => "÷",
+            _ => throw new NotImplementedException()
+        }}";
 }

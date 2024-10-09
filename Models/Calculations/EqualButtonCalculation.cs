@@ -9,12 +9,12 @@ public class EqualButtonCalculation : Calculation
     /// EqualButtonCalculationを初期化します。
     /// </summary>
     /// <param name="receiver">計算対象。</param>
-    /// <param name="lastCalculation">イコールで演算を繰り返すとき、最後の演算となる対象。一度目のイコールではnullとなります。</param>
-    public EqualButtonCalculation(Calculation receiver, Calculation? lastCalculation)
+    /// <param name="lastOperationCalculation">イコールで演算を繰り返すとき、最後の演算となる対象。一度目のイコールではnullとなります。</param>
+    public EqualButtonCalculation(Calculation receiver, Calculation? lastOperationCalculation)
         : base(receiver)
     {
         LastOperationCalculation =
-            lastCalculation switch
+            lastOperationCalculation switch
             {
                 OperationCalculation c =>
                     new OperationCalculation(receiver, c.OperatorToken, c.Operand),
@@ -41,5 +41,13 @@ public class EqualButtonCalculation : Calculation
     /// <summary>
     /// この計算がActiveCalculatorの場合に表示される式を取得します。
     /// </summary>
-    public override string CurrentExpression => throw new NotImplementedException();
+    public override string CurrentExpression
+    {
+        get
+        {
+            OperationCalculation? calculator = (LastOperationCalculation ?? Receiver) as OperationCalculation;
+            return $"{calculator!.CurrentExpression} {calculator!.Operand?.Number} =";
+        }
+    }
+        
 }

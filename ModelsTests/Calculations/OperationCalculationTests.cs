@@ -8,7 +8,7 @@ public class OperationCalculationTests
     OperationCalculation tested { get; set; }
         = new(
             new NumberCalculation(null) { NumberToken = new(10) },
-            Key.Plus,
+            InputAction.Plus,
             new(20)
             );
 
@@ -17,15 +17,15 @@ public class OperationCalculationTests
     {
         tested.Result.Should().Be(30);
 
-        tested.OperatorToken = Key.Minus;
+        tested.OperatorToken = InputAction.Minus;
 
         tested.Result.Should().Be(-10);
 
-        tested.OperatorToken = Key.Multiply;
+        tested.OperatorToken = InputAction.Multiply;
 
         tested.Result.Should().Be(200);
 
-        tested.OperatorToken = Key.Divide;
+        tested.OperatorToken = InputAction.Divide;
 
         tested.Result.Should().Be(0.5m);
     }
@@ -35,15 +35,15 @@ public class OperationCalculationTests
     {
         tested.CurrentExpression.Should().Be("10 +");
 
-        tested.OperatorToken = Key.Minus;
+        tested.OperatorToken = InputAction.Minus;
 
         tested.CurrentExpression.Should().Be("10 -");
 
-        tested.OperatorToken = Key.Multiply;
+        tested.OperatorToken = InputAction.Multiply;
 
         tested.CurrentExpression.Should().Be("10 ×");
 
-        tested.OperatorToken = Key.Divide;
+        tested.OperatorToken = InputAction.Divide;
 
         tested.CurrentExpression.Should().Be("10 ÷");
     }

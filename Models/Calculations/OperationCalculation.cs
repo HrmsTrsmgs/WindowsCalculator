@@ -4,14 +4,14 @@
 /// 計算、もしくは最初に入力された数値を表します。
 /// </summary>
 /// <param name="Operand">計算される、もしくは最初に入力された数値。</param>
-public class OperationCalculation(Calculation receiver, Key? operatorToken = null, NumberToken? operand = null) : Calculation(receiver)
+public class OperationCalculation(Calculation receiver, InputAction? operatorToken = null, NumberToken? operand = null) : Calculation(receiver)
 {
     public bool IsDisplaiedResult { get; set; } = false;
 
     /// <summary>
     /// 計算の内容を表す演算子を取得、設定します。
     /// </summary>
-    public Key? OperatorToken 
+    public InputAction? OperatorToken 
     {
         get => operatorToken;
         set
@@ -64,10 +64,10 @@ public class OperationCalculation(Calculation receiver, Key? operatorToken = nul
         ? null 
         : OperatorToken switch
         { 
-            Key.Plus => Receiver.Result + Operand?.Number,
-            Key.Minus => Receiver.Result - Operand?.Number,
-            Key.Multiply => Receiver.Result * Operand?.Number,
-            Key.Divide => Receiver.Result / Operand?.Number,
+            InputAction.Plus => Receiver.Result + Operand?.Number,
+            InputAction.Minus => Receiver.Result - Operand?.Number,
+            InputAction.Multiply => Receiver.Result * Operand?.Number,
+            InputAction.Divide => Receiver.Result / Operand?.Number,
             _ => throw new NotImplementedException()
         };
 
@@ -77,10 +77,10 @@ public class OperationCalculation(Calculation receiver, Key? operatorToken = nul
     public override string CurrentExpression => $"{Receiver?.Result} {
         OperatorToken switch
         {
-            Key.Plus => "+",
-            Key.Minus => "-",
-            Key.Multiply => "×",
-            Key.Divide => "÷",
+            InputAction.Plus => "+",
+            InputAction.Minus => "-",
+            InputAction.Multiply => "×",
+            InputAction.Divide => "÷",
             _ => throw new NotImplementedException()
         }}";
 }

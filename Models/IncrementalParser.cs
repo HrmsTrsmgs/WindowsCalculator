@@ -27,12 +27,12 @@ public class IncrementalParser : ModelBase
     /// 一文字ずつの入力を処理します。
     /// </summary>
     /// <param name="key">入力された一文字。</param>
-    public void Input(Key key)
+    public void Input(InputAction key)
     {
         Log.Info($"{key}が入力されました。");
         switch (key)
         {
-            case >= Key.Zero and <= Key.Nine:
+            case >= InputAction.Zero and <= InputAction.Nine:
                 switch (ActiveToken)
                 {
                     case NumberToken t:
@@ -53,7 +53,7 @@ public class IncrementalParser : ModelBase
                         break;
                 }
                 break;
-            case Key.Dot:
+            case InputAction.Dot:
                 switch (ActiveToken)
                 {
                     case NumberToken t:
@@ -61,7 +61,7 @@ public class IncrementalParser : ModelBase
                         break;
                 }
                 break;
-            case Key.Plus or Key.Minus or Key.Multiply or Key.Divide:
+            case InputAction.Plus or InputAction.Minus or InputAction.Multiply or InputAction.Divide:
                 switch (ActiveToken)
                 {
                     case OperatorToken t:
@@ -72,13 +72,13 @@ public class IncrementalParser : ModelBase
                         break;
                 }
                 break;
-            case Key.Equal:
+            case InputAction.Equal:
                 ActiveToken = OtherToken.Equal;
                 break;
-            case Key.Delete:
+            case InputAction.C:
                 ActiveToken = OtherToken.Delete;
                 break;
-            case Key.Backspace:
+            case InputAction.Backspace:
                 switch (ActiveToken)
                 {
                     case NumberToken t:
@@ -95,13 +95,19 @@ public class IncrementalParser : ModelBase
                                 t.Number = Utility.Truncate(t.DecimalPlaces, t.Number);
 
                                 break;
-
                         }
-                        
                         break;
                 }
                 break;
-            case Key.Undo:
+            case InputAction.CE:
+                switch (ActiveToken)
+                {
+                    case NumberToken t:
+                        t.Number = 0;
+                        break;
+                }
+                break;
+            case InputAction.Undo:
                 ActiveToken = OtherToken.Undo;
                 break;
         }

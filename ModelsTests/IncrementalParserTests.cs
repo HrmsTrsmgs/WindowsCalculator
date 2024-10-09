@@ -16,7 +16,7 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void 最初の数字入力がトークンとして出力されます()
     {
-        tested.Input(Key.One);
+        tested.Input(InputAction.One);
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
     }
@@ -24,7 +24,7 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void 入力時にログが出力されます()
     {
-        tested.Input(Key.One);
+        tested.Input(InputAction.One);
 
         MemoryAppender.GetEvents().Should().HaveCount(1);
         MemoryAppender.GetEvents().First()
@@ -36,34 +36,34 @@ public class IncrementalParserTest : TestBase
     public void 数字入力がトークンとして出力されます()
     {
         tested = new();
-        tested.Input(Key.One);
+        tested.Input(InputAction.One);
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
         tested = new();
-        tested.Input(Key.Two);
+        tested.Input(InputAction.Two);
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(2);
         tested = new();
-        tested.Input(Key.Three);
+        tested.Input(InputAction.Three);
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(3);
         tested = new();
-        tested.Input(Key.Four);
+        tested.Input(InputAction.Four);
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(4);        tested = new();
         tested = new();
-        tested.Input(Key.Five);
+        tested.Input(InputAction.Five);
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(5);
         tested = new();
-        tested.Input(Key.Six);
+        tested.Input(InputAction.Six);
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(6);
         tested = new();
-        tested.Input(Key.Seven);
+        tested.Input(InputAction.Seven);
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(7);
         tested = new();
-        tested.Input(Key.Eight);
+        tested.Input(InputAction.Eight);
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(8);
         tested = new();
-        tested.Input(Key.Nine);
+        tested.Input(InputAction.Nine);
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(9);
         tested = new();
-        tested.Input(Key.Zero);
+        tested.Input(InputAction.Zero);
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(0);
 
     }
@@ -71,51 +71,51 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void 演算子トークンが入力できます()
     {
-        tested.Input(Key.Plus);
+        tested.Input(InputAction.Plus);
         tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
-        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(Key.Plus);
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(InputAction.Plus);
     }
 
     [Fact]
     public void 四則演算の演算子トークンが入力できます()
     {
-        tested.Input(Key.Plus);
+        tested.Input(InputAction.Plus);
         tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
-        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(Key.Plus);
-        tested.Input(Key.Minus);
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(InputAction.Plus);
+        tested.Input(InputAction.Minus);
         tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
-        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(Key.Minus);
-        tested.Input(Key.Multiply);
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(InputAction.Minus);
+        tested.Input(InputAction.Multiply);
         tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
-        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(Key.Multiply);
-        tested.Input(Key.Divide );
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(InputAction.Multiply);
+        tested.Input(InputAction.Divide );
         tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
-        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(Key.Divide  );
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(InputAction.Divide  );
     }
 
     [Fact]
     public void 演算子の後に演算子が入力されてもトークンは同じです()
     {
-        tested.Input(Key.Plus);
+        tested.Input(InputAction.Plus);
         var initial = tested.ActiveToken;
-        tested.Input(Key.Multiply);
+        tested.Input(InputAction.Multiply);
         tested.ActiveToken.Should().BeSameAs(initial);
     }
     [Fact]
     public void 演算子の後に演算子が入力されると演算子は変わります()
     {
-        tested.Input(Key.Plus);
+        tested.Input(InputAction.Plus);
         var initial = tested.ActiveToken;
-        tested.Input(Key.Multiply);
+        tested.Input(InputAction.Multiply);
         tested.ActiveToken.Should().BeSameAs(initial);
-        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(Key.Multiply);
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(InputAction.Multiply);
     }
 
     [Fact]
     public void 演算子の後に数字が入力されると数字トークンが付け足されます()
     {
-        tested.Input(Key.Plus);
-        tested.Input(Key.One);
+        tested.Input(InputAction.Plus);
+        tested.Input(InputAction.One);
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
     }
@@ -123,15 +123,15 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void イコールを受け付けその他トークンが出力されます()
     {
-        tested.Input(Key.Equal);
+        tested.Input(InputAction.Equal);
         tested.ActiveToken.Should().BeSameAs(OtherToken.Equal);
     }
 
     [Fact]
     public void 二桁の数字が入力できます()
     {
-        tested.Input(Key.One);
-        tested.Input(Key.Zero);
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Zero);
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(10);
     }
@@ -139,7 +139,7 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void 小数点の入力をするまではトークンの小数点以下桁数はnullです()
     {
-        tested.Input(Key.One);
+        tested.Input(InputAction.One);
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
         (tested.ActiveToken as NumberToken)?.DecimalPlaces.Should().BeNull();
@@ -147,8 +147,8 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void 小数点が入力できます()
     {
-        tested.Input(Key.One);
-        tested.Input(Key.Dot);
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Dot);
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
         (tested.ActiveToken as NumberToken)?.DecimalPlaces.Should().Be(0);
@@ -157,10 +157,10 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void 小数点を何回入力しても特に変わりはありません()
     {
-        tested.Input(Key.One);
-        tested.Input(Key.Dot);
-        tested.Input(Key.Dot);
-        tested.Input(Key.Dot);
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Dot);
+        tested.Input(InputAction.Dot);
+        tested.Input(InputAction.Dot);
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);
         (tested.ActiveToken as NumberToken)?.DecimalPlaces.Should().Be(0);
@@ -169,9 +169,9 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void 小数点に続いて小数を入力することができます()
     {
-        tested.Input(Key.One);
-        tested.Input(Key.Dot);
-        tested.Input(Key.Two);
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Dot);
+        tested.Input(InputAction.Two);
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1.2m);
     }
@@ -179,13 +179,13 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void 小数点に続いて小数を5桁入力することができます()
     {
-        tested.Input(Key.One);
-        tested.Input(Key.Dot);
-        tested.Input(Key.Two);
-        tested.Input(Key.Three);
-        tested.Input(Key.Four);
-        tested.Input(Key.Five);
-        tested.Input(Key.Six);
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Dot);
+        tested.Input(InputAction.Two);
+        tested.Input(InputAction.Three);
+        tested.Input(InputAction.Four);
+        tested.Input(InputAction.Five);
+        tested.Input(InputAction.Six);
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1.23456m);
     }
@@ -193,15 +193,15 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void 小数は5桁までしか入力することはできません()
     {
-        tested.Input(Key.One);
-        tested.Input(Key.Dot);
-        tested.Input(Key.Two);
-        tested.Input(Key.Three);
-        tested.Input(Key.Four);
-        tested.Input(Key.Five);
-        tested.Input(Key.Six);
-        tested.Input(Key.Seven);
-        tested.Input(Key.Eight);
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Dot);
+        tested.Input(InputAction.Two);
+        tested.Input(InputAction.Three);
+        tested.Input(InputAction.Four);
+        tested.Input(InputAction.Five);
+        tested.Input(InputAction.Six);
+        tested.Input(InputAction.Seven);
+        tested.Input(InputAction.Eight);
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1.23456m);
     }
@@ -209,22 +209,22 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void 整数は16桁入力することができます()
     {
-        tested.Input(Key.One);
-        tested.Input(Key.Two);
-        tested.Input(Key.Three);
-        tested.Input(Key.Four);
-        tested.Input(Key.Five);
-        tested.Input(Key.Six);
-        tested.Input(Key.Seven);
-        tested.Input(Key.Eight);
-        tested.Input(Key.Nine);
-        tested.Input(Key.Zero);
-        tested.Input(Key.One);
-        tested.Input(Key.Two);
-        tested.Input(Key.Three);
-        tested.Input(Key.Four);
-        tested.Input(Key.Five);
-        tested.Input(Key.Six);
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Two);
+        tested.Input(InputAction.Three);
+        tested.Input(InputAction.Four);
+        tested.Input(InputAction.Five);
+        tested.Input(InputAction.Six);
+        tested.Input(InputAction.Seven);
+        tested.Input(InputAction.Eight);
+        tested.Input(InputAction.Nine);
+        tested.Input(InputAction.Zero);
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Two);
+        tested.Input(InputAction.Three);
+        tested.Input(InputAction.Four);
+        tested.Input(InputAction.Five);
+        tested.Input(InputAction.Six);
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1234567890123456m);
     }
@@ -233,33 +233,46 @@ public class IncrementalParserTest : TestBase
     public void 整数は16桁までしか入力することはできません()
     {
 
-        tested.Input(Key.One);
-        tested.Input(Key.Two);
-        tested.Input(Key.Three);
-        tested.Input(Key.Four);
-        tested.Input(Key.Five);
-        tested.Input(Key.Six);
-        tested.Input(Key.Seven);
-        tested.Input(Key.Eight);
-        tested.Input(Key.Nine);
-        tested.Input(Key.Zero);
-        tested.Input(Key.One);
-        tested.Input(Key.Two);
-        tested.Input(Key.Three);
-        tested.Input(Key.Four);
-        tested.Input(Key.Five);
-        tested.Input(Key.Six);
-        tested.Input(Key.Seven);
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Two);
+        tested.Input(InputAction.Three);
+        tested.Input(InputAction.Four);
+        tested.Input(InputAction.Five);
+        tested.Input(InputAction.Six);
+        tested.Input(InputAction.Seven);
+        tested.Input(InputAction.Eight);
+        tested.Input(InputAction.Nine);
+        tested.Input(InputAction.Zero);
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Two);
+        tested.Input(InputAction.Three);
+        tested.Input(InputAction.Four);
+        tested.Input(InputAction.Five);
+        tested.Input(InputAction.Six);
+        tested.Input(InputAction.Seven);
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1234567890123456m);
+    }
+
+    [Fact]
+    public void 二文字以上書いた分をDeleteで削除できます()
+    {
+
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Six);
+        tested.Input(InputAction.Seven);
+        tested.Input(InputAction.CE);
+
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(0);
     }
 
     [Fact]
     public void 一文字書いた分をBackspaceで削除できます()
     {
 
-        tested.Input(Key.One);
-        tested.Input(Key.Backspace);
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Backspace);
 
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(0);
@@ -269,10 +282,10 @@ public class IncrementalParserTest : TestBase
     public void 二文字以上書いた分をBackspaceで削除できます()
     {
 
-        tested.Input(Key.One);
-        tested.Input(Key.Six);
-        tested.Input(Key.Seven);
-        tested.Input(Key.Backspace);
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Six);
+        tested.Input(InputAction.Seven);
+        tested.Input(InputAction.Backspace);
 
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(16);
@@ -282,9 +295,9 @@ public class IncrementalParserTest : TestBase
     public void 小数点のみをBackspaceで削除できます()
     {
 
-        tested.Input(Key.One);
-        tested.Input(Key.Dot);
-        tested.Input(Key.Backspace);
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Dot);
+        tested.Input(InputAction.Backspace);
 
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.DecimalPlaces.Should().BeNull();
@@ -295,11 +308,11 @@ public class IncrementalParserTest : TestBase
     public void 小数点以下の数字をBackspaceで削除できます()
     {
 
-        tested.Input(Key.One);
-        tested.Input(Key.Dot);
-        tested.Input(Key.Two);
-        tested.Input(Key.Three);
-        tested.Input(Key.Backspace);
+        tested.Input(InputAction.One);
+        tested.Input(InputAction.Dot);
+        tested.Input(InputAction.Two);
+        tested.Input(InputAction.Three);
+        tested.Input(InputAction.Backspace);
 
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.DecimalPlaces.Should().Be(1);
@@ -308,16 +321,16 @@ public class IncrementalParserTest : TestBase
     }
 
     [Fact]
-    public void Deleteを受け付けその他トークンが出力されます()
+    public void Cを受け付けその他トークンが出力されます()
     {
-        tested.Input(Key.Delete);
+        tested.Input(InputAction.C);
         tested.ActiveToken.Should().BeSameAs(OtherToken.Delete);
     }
 
     [Fact]
-    public void Unsoを受け付けその他トークンが出力されます()
+    public void Undoを受け付けその他トークンが出力されます()
     {
-        tested.Input(Key.Undo);
+        tested.Input(InputAction.Undo);
         tested.ActiveToken.Should().BeSameAs(OtherToken.Undo);
     }
 }

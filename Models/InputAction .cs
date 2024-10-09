@@ -3,7 +3,7 @@
 /// <summary>
 /// 入力されたキー入力の種類を表します。
 /// </summary>
-public enum Key
+public enum InputAction
 {
     /// <summary>
     /// 0キー。
@@ -96,9 +96,14 @@ public enum Key
     Redo,
 
     /// <summary>
-    /// Deleteキー。
+    /// 計算機のCキー。ESCキー。
     /// </summary>
-    Delete,
+    C,
+
+    /// <summary>
+    /// 計算機のCEキー。Deleteキー。
+    /// </summary>
+    CE,
 
     /// <summary>
     /// バックスペースキー。

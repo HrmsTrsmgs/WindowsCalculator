@@ -77,7 +77,7 @@ public class CalculatorTests
     {
         var initial = tested.ActiveCaluculation;
 
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
 
         tested.ActiveCaluculation.Should().NotBeSameAs(initial);
     }
@@ -85,10 +85,10 @@ public class CalculatorTests
     [Fact]
     public void 演算子が入力された場合に新しい計算の演算子は指定したものになります()
     {
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.ActiveCaluculation.Should().BeOfType<OperationCalculation>();
         var calculation = (OperationCalculation)tested.ActiveCaluculation;
-        calculation.OperatorToken.Should().Be(Key.Plus);
+        calculation.OperatorToken.Should().Be(InputAction.Plus);
     }
 
     [Fact]
@@ -102,7 +102,7 @@ public class CalculatorTests
     public void 最初に数字が入力された後に演算子が入力されても表示される数字は変わりません()
     {
         tested.Input(new NumberToken(1));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.DisplaiedNumber.Should().Be("1");
     }
 
@@ -110,7 +110,7 @@ public class CalculatorTests
     public void 数字演算子数字と入力された状態で表示は二つ目の数字となっています()
     {
         tested.Input(new NumberToken(1));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(3));
         tested.DisplaiedNumber.Should().Be("3");
     }
@@ -119,9 +119,9 @@ public class CalculatorTests
     public void 数字演算子数字演算子と入力された状態で表示は計算結果となっています()
     {
         tested.Input(new NumberToken(1));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.DisplaiedNumber.Should().Be("4");
     }
 
@@ -129,9 +129,9 @@ public class CalculatorTests
     public void 足し算が実現されています()
     {
         tested.Input(new NumberToken(1));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.DisplaiedNumber.Should().Be("4");
     }
 
@@ -139,9 +139,9 @@ public class CalculatorTests
     public void 引き算が実現されています()
     {
         tested.Input(new NumberToken(5));
-        tested.Input(new OperatorToken(Key.Minus));
+        tested.Input(new OperatorToken(InputAction.Minus));
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.DisplaiedNumber.Should().Be("2");
     }
 
@@ -149,9 +149,9 @@ public class CalculatorTests
     public void 掛け算が実現されています()
     {
         tested.Input(new NumberToken(5));
-        tested.Input(new OperatorToken(Key.Multiply));
+        tested.Input(new OperatorToken(InputAction.Multiply));
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.DisplaiedNumber.Should().Be("15");
     }
 
@@ -159,9 +159,9 @@ public class CalculatorTests
     public void 割り算が実現されています()
     {
         tested.Input(new NumberToken(8));
-        tested.Input(new OperatorToken(Key.Divide));
+        tested.Input(new OperatorToken(InputAction.Divide));
         tested.Input(new NumberToken(2));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.DisplaiedNumber.Should().Be("4");
     }
 
@@ -169,9 +169,9 @@ public class CalculatorTests
     public void 割り算のゼロ除算でエラーが表示されます()
     {
         tested.Input(new NumberToken(8));
-        tested.Input(new OperatorToken(Key.Divide));
+        tested.Input(new OperatorToken(InputAction.Divide));
         tested.Input(new NumberToken(0));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.DisplaiedNumber.Should().Be("0 で割ることはできません");
     }
 
@@ -179,7 +179,7 @@ public class CalculatorTests
     public void イコールボタンを押すと表示は計算結果となっています()
     {
         tested.Input(new NumberToken(1));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(3));
         tested.Input(OtherToken.Equal);
         tested.DisplaiedNumber.Should().Be("4");
@@ -188,7 +188,7 @@ public class CalculatorTests
     public void イコールボタンを二度押すと前の結果が繰り返されます()
     {
         tested.Input(new NumberToken(1));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(3));
         tested.Input(OtherToken.Equal);
         tested.Input(OtherToken.Equal);
@@ -198,7 +198,7 @@ public class CalculatorTests
     public void イコールボタンを3度以上押しても前の結果が繰り返されます()
     {
         tested.Input(new NumberToken(1));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(3));
         tested.Input(OtherToken.Equal);
         tested.Input(OtherToken.Equal);
@@ -217,7 +217,7 @@ public class CalculatorTests
     public void Deleteで計算結果が削除されます()
     {
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(5));
         tested.Input(OtherToken.Delete);
         tested.DisplaiedNumber.Should().Be("0");
@@ -227,7 +227,7 @@ public class CalculatorTests
     public void Undoで直前の計算が無効になります()
     {
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(5));
         tested.Input(OtherToken.Equal);
         tested.Input(OtherToken.Undo);
@@ -238,7 +238,7 @@ public class CalculatorTests
     public void Undoで入力中の直前の計算が無効になります()
     {
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(5));
         tested.Input(OtherToken.Undo);
         tested.DisplaiedNumber.Should().Be("3");
@@ -248,7 +248,7 @@ public class CalculatorTests
     public void Undoで数値入力前の直前の計算が無効になります()
     {
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(OtherToken.Undo);
         tested.ActiveCaluculation.Should().BeOfType<NumberCalculation>();
         tested.DisplaiedNumber.Should().Be("3");
@@ -267,9 +267,9 @@ public class CalculatorTests
     public void Undoで戻った場合は演算結果が表示されます()
     {
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(5));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(7));
         tested.Input(OtherToken.Undo);
         tested.DisplaiedNumber.Should().Be("8");
@@ -279,9 +279,9 @@ public class CalculatorTests
     public void Undoで戻った後で数字が変更された場合は数字表示に戻ります()
     {
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(5));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(7));
         tested.Input(OtherToken.Undo);
         tested.Input(new NumberToken(9));
@@ -292,7 +292,7 @@ public class CalculatorTests
     public void Undoをする前にRedoしても何も起きません()
     {
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(5));
         var initial = tested.ActiveCaluculation;
         tested.Input(OtherToken.Redo);
@@ -303,7 +303,7 @@ public class CalculatorTests
     public void RedoでUndoが元に戻ります()
     {
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(5));
         tested.Input(OtherToken.Equal);
         tested.Input(OtherToken.Undo);
@@ -316,7 +316,7 @@ public class CalculatorTests
     public void Redoで複数回のUndoは一つずつ元に戻ります()
     {
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(5));
         tested.Input(OtherToken.Equal);
         tested.Input(OtherToken.Undo);
@@ -333,7 +333,7 @@ public class CalculatorTests
     public void Undo後のRedoで入力中の直前の計算が復帰します()
     {
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(5));
         tested.Input(OtherToken.Undo);
         tested.Input(OtherToken.Redo);
@@ -344,13 +344,13 @@ public class CalculatorTests
     public void Undo後のRedoで数値入力前の直前の計算が復帰します()
     {
         tested.Input(new NumberToken(3));
-        tested.Input(new OperatorToken(Key.Plus));
+        tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(OtherToken.Undo);
         tested.Input(OtherToken.Redo);
         tested.ActiveCaluculation.Should().BeOfType<OperationCalculation>();
         tested.DisplaiedNumber.Should().Be("3");
         ((OperationCalculation)tested.ActiveCaluculation)
-            .OperatorToken.Should().Be(Key.Plus);
+            .OperatorToken.Should().Be(InputAction.Plus);
     }
 
     [Fact]

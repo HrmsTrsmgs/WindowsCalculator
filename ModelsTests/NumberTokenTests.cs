@@ -3,7 +3,7 @@ using Marimo.MauiBlazor.Models;
 
 namespace Marimo.MauiBlazor.Tests.Models;
 
-public class NumberTokenTest
+public class NumberTokenTests
 {
     NumberToken tested = new(3);
 

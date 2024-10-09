@@ -15,7 +15,7 @@ public class NumberCalculationTest
     }
 
     [Fact]
-    public void 数値入力の式は表示されません()
+    public void 式は表示されません()
     {
         tested.NumberToken = new(10);
         tested.CurrentExpression.Should().BeEmpty();

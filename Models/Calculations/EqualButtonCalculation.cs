@@ -38,5 +38,8 @@ public class EqualButtonCalculation : Calculation
     /// </summary>
     public OperationCalculation? LastOperationCalculation { get; }
 
+    /// <summary>
+    /// この計算がActiveCalculatorの場合に表示される式を取得します。
+    /// </summary>
     public override string CurrentExpression => throw new NotImplementedException();
 }

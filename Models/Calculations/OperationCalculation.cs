@@ -71,5 +71,8 @@ public class OperationCalculation(Calculation receiver, Key? operatorToken = nul
             _ => throw new NotImplementedException()
         };
 
+    /// <summary>
+    /// この計算がActiveCalculatorの場合に表示される式を取得します。
+    /// </summary>
     public override string CurrentExpression => throw new NotImplementedException();
 }

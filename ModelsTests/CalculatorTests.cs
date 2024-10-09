@@ -8,13 +8,13 @@ using Marimo.MauiBlazor.Models.Calculations;
 
 namespace Marimo.MauiBlazor.Tests.Models;
 
-public class CalculatorTest
+public class CalculatorTests
 {
     private ILog _logger;
     private MemoryAppender _memoryAppender;
 
     Calculator tested = new();
-    public CalculatorTest()
+    public CalculatorTests()
     {
         _memoryAppender = new MemoryAppender
         {
@@ -23,7 +23,7 @@ public class CalculatorTest
         _memoryAppender.ActivateOptions();
 
         BasicConfigurator.Configure(_memoryAppender);
-        _logger = LogManager.GetLogger(typeof(CalculatorTest));
+        _logger = LogManager.GetLogger(typeof(CalculatorTests));
     }
 
     [Fact]

@@ -1,4 +1,4 @@
-﻿namespace MauiApp4
+﻿namespace Marimo.WindowsCaliculator.MauiBlazor
 {
     public partial class App : Application
     {

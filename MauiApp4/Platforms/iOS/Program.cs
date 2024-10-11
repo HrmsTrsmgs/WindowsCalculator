@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace MauiApp4
+namespace Marimo.WindowsCaliculator.MauiBlazor
 {
     public class Program
     {

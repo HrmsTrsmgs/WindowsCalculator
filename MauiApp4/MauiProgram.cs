@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace MauiApp4
+namespace Marimo.WindowsCaliculator.MauiBlazor
 {
     public static class MauiProgram
     {

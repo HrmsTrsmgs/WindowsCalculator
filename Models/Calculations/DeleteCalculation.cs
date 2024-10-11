@@ -1,4 +1,4 @@
-﻿namespace Marimo.MauiBlazor.Models.Calculations;
+﻿namespace Marimo.WindowsCalculator.Models.Calculations;
 
 /// <summary>
 /// 削除を表す計算です。

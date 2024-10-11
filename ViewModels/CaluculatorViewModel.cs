@@ -1,9 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Marimo.MauiBlazor.Models;
+using Marimo.WindowsCalculator.Models;
 using System.Windows.Input;
 
-namespace Marimo.MauiBlazor.ViewModels;
+namespace Marimo.WindowsCalculator.ViewModels;
 
 /// <summary>
 /// 計算機のViewModelです。

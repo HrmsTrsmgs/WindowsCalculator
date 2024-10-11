@@ -4,7 +4,7 @@ using log4net.Config;
 using log4net.Layout;
 using System.Reflection;
 
-namespace Marimo.MauiBlazor.Models;
+namespace Marimo.WindowsCalculator.Models;
 
 public static class Log4NetExtensions
 {

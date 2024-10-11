@@ -1,4 +1,4 @@
-﻿namespace Marimo.MauiBlazor.Models.Calculations;
+﻿namespace Marimo.WindowsCalculator.Models.Calculations;
 
 /// <summary>
 /// 電卓の＝ボタンが行っている演算を行います。

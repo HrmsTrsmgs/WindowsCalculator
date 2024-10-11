@@ -1,4 +1,4 @@
-﻿namespace Marimo.MauiBlazor.Models;
+﻿namespace Marimo.WindowsCalculator.Models;
 
 /// <summary>
 /// 演算を表すトークンです。

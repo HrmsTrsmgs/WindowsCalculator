@@ -1,8 +1,8 @@
-﻿using Marimo.MauiBlazor.Models;
-using Marimo.MauiBlazor.ViewModels;
+﻿using Marimo.WindowsCalculator.Models;
+using Marimo.WindowsCalculator.ViewModels;
 using Microsoft.Extensions.Logging;
 
-namespace Marimo.MauiBlazor.Calculator
+namespace Marimo.WindowsCalculator.Calculator
 {
     public static class MauiProgram
     {

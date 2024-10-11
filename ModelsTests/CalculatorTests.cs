@@ -2,10 +2,10 @@
 using log4net.Appender;
 using log4net.Config;
 using log4net.Layout;
-using Marimo.MauiBlazor.Models;
-using Marimo.MauiBlazor.Models.Calculations;
+using Marimo.WindowsCalculator.Models;
+using Marimo.WindowsCalculator.Models.Calculations;
 
-namespace Marimo.MauiBlazor.Tests.Models;
+namespace Marimo.WindowsCalculator.Tests.Models;
 
 public class CalculatorTests
 {

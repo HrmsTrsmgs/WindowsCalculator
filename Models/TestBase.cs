@@ -4,7 +4,7 @@ using log4net.Layout;
 using log4net.Repository;
 using log4net;
 
-namespace Marimo.MauiBlazor.Models;
+namespace Marimo.WindowsCalculator.Models;
 
 public class TestBase
 {

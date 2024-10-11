@@ -1,6 +1,6 @@
-﻿using Marimo.MauiBlazor.Models;
+﻿using Marimo.WindowsCalculator.Models;
 
-namespace Marimo.MauiBlazor.Tests.Models;
+namespace Marimo.WindowsCalculator.Tests.Models;
 
 public class NumberTokenTests
 {

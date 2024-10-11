@@ -2,7 +2,7 @@
 using log4net;
 using log4net.Repository.Hierarchy;
 
-namespace Marimo.MauiBlazor.Models;
+namespace Marimo.WindowsCalculator.Models;
 
 public  class ModelBase : ObservableObject
 {

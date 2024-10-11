@@ -4,8 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyName>Marimo.MauiBlazor.ViewModels</AssemblyName>
-    <RootNamespace>Marimo.MauiBlazor.ViewModels</RootNamespace>
+    <AssemblyName>Marimo.WindowsCalculator.ViewModels</AssemblyName>
+    <RootNamespace>Marimo.WindowsCalculator.ViewModels</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

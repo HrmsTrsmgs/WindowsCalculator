@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace Marimo.MauiBlazor.Models.Calculations;
+namespace Marimo.WindowsCalculator.Models.Calculations;
 
 /// <summary>
 /// 計算を表します。

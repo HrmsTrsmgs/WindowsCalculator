@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Marimo.MauiBlazor.Models;
+namespace Marimo.WindowsCalculator.Models;
 
 /// <summary>
 /// 入力された数値の文字列を表します。

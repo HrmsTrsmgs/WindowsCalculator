@@ -1,9 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using Marimo.MauiBlazor.Models.Calculations;
+using Marimo.WindowsCalculator.Models.Calculations;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Marimo.MauiBlazor.Models;
+namespace Marimo.WindowsCalculator.Models;
 
 /// <summary>
 /// 電卓を表します。

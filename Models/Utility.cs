@@ -1,4 +1,4 @@
-﻿namespace Marimo.MauiBlazor.Models;
+﻿namespace Marimo.WindowsCalculator.Models;
 
 /// <summary>
 /// 便利に使える機能を提供します。

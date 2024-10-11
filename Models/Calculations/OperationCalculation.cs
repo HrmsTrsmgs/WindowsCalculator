@@ -1,4 +1,4 @@
-﻿namespace Marimo.MauiBlazor.Models.Calculations;
+﻿namespace Marimo.WindowsCalculator.Models.Calculations;
 
 /// <summary>
 /// 計算、もしくは最初に入力された数値を表します。

@@ -1,3 +1,3 @@
-﻿namespace Marimo.MauiBlazor.Models;
+﻿namespace Marimo.WindowsCalculator.Models;
 
 public record CalculationHistoryItem(string Expression, decimal Result);

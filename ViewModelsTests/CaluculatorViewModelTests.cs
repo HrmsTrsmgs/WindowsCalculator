@@ -1,8 +1,8 @@
 ﻿using FluentAssertions;
-using Marimo.MauiBlazor.Models;
-using Marimo.MauiBlazor.ViewModels;
+using Marimo.WindowsCalculator.Models;
+using Marimo.WindowsCalculator.ViewModels;
 
-namespace Marimo.MauiBlazor.Tests.ViewModels;
+namespace Marimo.WindowsCalculator.Tests.ViewModels;
 
 public class CaluculatorViewModelTests
 {

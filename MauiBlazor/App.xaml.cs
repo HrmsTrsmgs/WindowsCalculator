@@ -1,4 +1,4 @@
-﻿namespace Marimo.MauiBlazor.Calculator
+﻿namespace Marimo.WindowsCalculator.Calculator
 {
     public partial class App : Application
     {
@@ -17,8 +17,8 @@
 
             window.MinimumWidth = 332;
             window.MinimumHeight = 504;
-            //window.Width = Preferences.Get("WindowWidth", window.MinimumWidth);
-            //window.Height = Preferences.Get("WindowHeight", window.MinimumHeight);
+            window.Width = Preferences.Get("WindowWidth", window.MinimumWidth);
+            window.Height = Preferences.Get("WindowHeight", window.MinimumHeight);
             window.Destroying += (s, e) =>
             {
                 Preferences.Set("WindowWidth", window.Width);

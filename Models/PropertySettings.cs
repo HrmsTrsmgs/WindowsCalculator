@@ -1,4 +1,4 @@
-﻿namespace Marimo.MauiBlazor.Models;
+﻿namespace Marimo.WindowsCalculator.Models;
 
 /// <summary>
 /// テンキーに表示する文字を管理します。

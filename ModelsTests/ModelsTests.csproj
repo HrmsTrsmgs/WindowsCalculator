@@ -7,8 +7,8 @@
 
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
-    <AssemblyName>Marimo.MauiBlazor.Tests.Models</AssemblyName>
-    <RootNamespace>Marimo.MauiBlazor.Tests.Models</RootNamespace>
+    <AssemblyName>Marimo.WindowsCalculator.Tests.Models</AssemblyName>
+    <RootNamespace>Marimo.WindowsCalculator.Tests.Models</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

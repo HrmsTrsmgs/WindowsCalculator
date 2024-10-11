@@ -1,4 +1,4 @@
-﻿namespace Marimo.MauiBlazor.Models;
+﻿namespace Marimo.WindowsCalculator.Models;
 
 /// <summary>
 /// 入力されたキー入力の種類を表します。

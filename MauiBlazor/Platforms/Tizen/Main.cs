@@ -2,7 +2,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace Marimo.MauiBlazor.Calculator
+namespace Marimo.WindowsCalculator.Calculator
 {
     internal class Program : MauiApplication
     {

@@ -1,6 +1,6 @@
-﻿using Marimo.MauiBlazor.Models.Calculations;
+﻿using Marimo.WindowsCalculator.Models.Calculations;
 
-namespace Marimo.MauiBlazor.Tests.Models.Calculations;
+namespace Marimo.WindowsCalculator.Tests.Models.Calculations;
 
 public class DeleteCalculationTest
 {

@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace MauiApp4
+namespace Marimo.WindowsCalculator.MauiBlazor
 {
     [Application]
     public class MainApplication : MauiApplication

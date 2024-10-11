@@ -2,13 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <title>Marimo.WindowsCaliculator.MauiBlazor</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Marimo.WindowsCalculator.Calculator</title>
     <base href="/" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="Marimo.WindowsCaliculator.MauiBlazor.styles.css" />
+    <link rel="stylesheet" href="Marimo.WindowsCalculator.Calculator.styles.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
+    <script>
+        window.addEventListener('keydown', function (event) {
+            DotNet.invokeMethodAsync('Marimo.WindowsCalculator.Calculator', 'HandleKeyDown', event.key, event.ctrlKey);
+        });
+    </script>
 </head>
 
 <body>
@@ -24,7 +30,19 @@
     </div>
 
     <script src="_framework/blazor.webview.js" autostart="false"></script>
+    <script>
+        function getWindowSize() {
+            return {
+                width: window.innerWidth,
+                height: window.innerHeight
+            };
+        }
 
+        window.addEventListener("resize", () => {
+            DotNet.invokeMethodAsync("Marimo.WindowsCaliculator.MauiBlazor", "UpdateWindowSizeAsync",
+                getWindowSize().width, getWindowSize().height);
+        });
+    </script>
 </body>
 
 </html>

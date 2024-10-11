@@ -75,6 +75,13 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Compile Update="App.xaml.cs">
+        <SubType>Code</SubType>
+        <DependentUpon>%(Filename)</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
       <Content Update="Components\Layout\MainLayout.razor">
         <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       </Content>

@@ -1,5 +1,5 @@
 ﻿
-using Marimo.WindowsCaliculator.MauiBlazor;
+using Marimo.WindowsCalculator.MauiBlazor;
 
 namespace Marimo.WindowsCalculator.MauiBlazor
 {

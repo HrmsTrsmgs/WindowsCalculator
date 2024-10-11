@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace Marimo.WindowsCaliculator.MauiBlazor
+namespace Marimo.WindowsCalculator.MauiBlazor
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

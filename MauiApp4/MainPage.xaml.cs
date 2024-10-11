@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components.WebView.Maui;
 
-namespace Marimo.WindowsCaliculator.MauiBlazor
+namespace Marimo.WindowsCalculator.MauiBlazor
 {
     public partial class MainPage : ContentPage
     {

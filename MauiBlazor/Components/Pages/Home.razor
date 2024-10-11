@@ -5,16 +5,18 @@
 @inject CalculatorViewModel ViewModel
 
 <FluentBodyContent class="body-content">
-    <div class="header">
-        <div class="icons">
-            <FluentIcon Value="@(new Icons.Filled.Size24.TextAlignJustify())" class="reduced-size" />
+    <div class="layout-root" width=@windowWidth height=@windowHeight>
+        <div class="header">
+            <div class="icons">
+                <FluentIcon Value="@(new Icons.Filled.Size24.TextAlignJustify())" class="reduced-size" />
 
-            <FluentIcon Value="@(new Icons.Filled.Size48.History())" class="icon-small" />
+                <FluentIcon Value="@(new Icons.Filled.Size48.History())" class="icon-small" />
+            </div>
+            <div GridRow="2">3 + 5</div>
         </div>
-        <div GridRow="2">3 + 5</div>
-    </div>
-    <div class="calculation-result">
-        @ViewModel.DisplaiedNumber
+        <div class="calculation-result">
+            @ViewModel.DisplaiedNumber
+        </div>
     </div>
 </FluentBodyContent>
 <style>
@@ -29,8 +31,6 @@
     }
 
     html body {
-        border: 10px solid black;
-        border-radius: 5px;
         min-width: 0px; 
         width: 100%;
     }
@@ -60,12 +60,25 @@
         box-sizing: border-box;
     }
 
+    .layout-root {
+        border: 10px solid black;
+        border-radius: 5px;
+    }
+
     .calculation-result{
     }
 </style>
 @code {
+
+    private static double windowWidth;
+    private static double windowHeight;
+
+    private static Home? self;
+
     protected override void OnInitialized()
     {
+        self = this;
+
         StaticClass.ViewModel = ViewModel;
 
         ViewModel.PropertyChanged += (sender, e) =>
@@ -74,8 +87,25 @@
         };
     }
 
+     void UpdateWindowSize(double width, double height)
+    {
+        windowWidth = width;
+        windowHeight = height;
+        InvokeAsync(StateHasChanged);
+    }
+
+    [JSInvokable]
+    public static Task UpdateWindowSizeAsync(double width, double height)
+    {
+        self?.UpdateWindowSize(width, height);
+        return Task.CompletedTask;
+    }
+
+
     public static class StaticClass
     {
+
+
         
         public static CalculatorViewModel? ViewModel { get; set; }
 

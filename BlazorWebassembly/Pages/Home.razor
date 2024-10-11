@@ -4,17 +4,17 @@
 @inject CalculatorViewModel ViewModel
 
 <FluentBodyContent class="body-content">
-     <div class="header">
-         <div class="icons">
-             <FluentIcon Value="@(new Icons.Filled.Size24.TextAlignJustify())" class="reduced-size" />
+         <div class="header">
+             <div class="icons">
+                 <FluentIcon Value="@(new Icons.Filled.Size24.TextAlignJustify())" class="reduced-size" />
 
-             <FluentIcon Value="@(new Icons.Filled.Size48.History())" class="icon-small" />
+                 <FluentIcon Value="@(new Icons.Filled.Size48.History())" class="icon-small" />
+             </div>
+             <div GridRow="2">3 + 5</div>
          </div>
-         <div GridRow="2">3 + 5</div>
-     </div>
-    <div class="calculation-result">
-        @ViewModel.DisplaiedNumber
-    </div>
+        <div class="calculation-result">
+            @ViewModel.DisplaiedNumber
+        </div>
 </FluentBodyContent>
 <style>
     .reduced-size
@@ -35,6 +35,12 @@
 
     }
 
+    .layout-root {
+        border: 10px solid black;
+        border-radius: 5px;
+        display:block;
+    }
+
     .icons {
         display: flex;
         justify-content: space-between;
@@ -44,8 +50,6 @@
     }
 
     .header {
-        border: 10px solid black;
-        border-radius: 5px;
         display: flex;
         flex-direction: column;
         height: 100vh;
@@ -58,6 +62,7 @@
     }
 </style>
  @code {
+
      // protected override void OnInitialized()
      // {
      //     StaticClass.ViewModel = ViewModel;

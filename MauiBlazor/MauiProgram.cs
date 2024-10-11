@@ -2,7 +2,7 @@
 using Marimo.WindowsCalculator.ViewModels;
 using Microsoft.Extensions.Logging;
 
-namespace Marimo.WindowsCalculator.Calculator
+namespace Marimo.WindowsCalculator.MauiBlazor
 {
     public static class MauiProgram
     {

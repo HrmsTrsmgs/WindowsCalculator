@@ -1,5 +1,7 @@
-﻿namespace Marimo.WindowsCalculator.Calculator
+﻿
+namespace Marimo.WindowsCalculator.MauiBlazor
 {
+    
     public partial class App : Application
     {
         public App()
@@ -8,7 +10,7 @@
 
             MainPage = new MainPage()
             {
-                MinimumWidthRequest = 1024
+                MinimumWidthRequest = 100
             };
         }
         protected override Window CreateWindow(IActivationState? activationState)

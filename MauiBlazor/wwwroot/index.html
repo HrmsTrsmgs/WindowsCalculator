@@ -30,7 +30,19 @@
     </div>
 
     <script src="_framework/blazor.webview.js" autostart="false"></script>
+    <script>
+        function getWindowSize() {
+            return {
+                width: window.innerWidth,
+                height: window.innerHeight
+            };
+        }
 
+        window.addEventListener("resize", () => {
+            DotNet.invokeMethodAsync("Marimo.WindowsCaliculator.MauiBlazor", "UpdateWindowSizeAsync",
+                getWindowSize().width, getWindowSize().height);
+        });
+    </script>
 </body>
 
 </html>

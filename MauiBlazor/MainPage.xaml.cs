@@ -1,4 +1,4 @@
-﻿namespace Marimo.WindowsCalculator.Calculator
+﻿namespace Marimo.WindowsCalculator.MauiBlazor
 {
     public partial class MainPage : ContentPage
     {

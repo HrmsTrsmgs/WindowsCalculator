@@ -1,4 +1,5 @@
 ﻿using Marimo.WindowsCalculator.MauiBlazor;
+using Marimo.WindowsCalculator.ViewModels;
 using Microsoft.Extensions.Logging;
 
 namespace Marimo.WindowsCalculator.MauiBlazor
@@ -14,6 +15,7 @@ namespace Marimo.WindowsCalculator.MauiBlazor
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
+            builder.Services.AddSingleton<CalculatorViewModel>();
 
             builder.Services.AddMauiBlazorWebView();
 

@@ -10,7 +10,8 @@ namespace Marimo.WindowsCalculator.MauiBlazor
 
             MainPage = new MainPage()
             {
-                MinimumWidthRequest = 100
+                MinimumWidthRequest = 332,
+                MinimumHeightRequest = 504,
             };
         }
         protected override Window CreateWindow(IActivationState? activationState)

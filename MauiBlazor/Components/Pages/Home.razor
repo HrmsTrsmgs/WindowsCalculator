@@ -6,7 +6,7 @@
 @inject CalculatorViewModel ViewModel
 
 <FluentBodyContent class="body-content">
-    <div class="layout-root" width=@windowWidth height=@windowHeight>
+    <div class="layout-root" >
         <div class="header">
             <div class="icons">
                 <FluentIcon Value="@(new Icons.Filled.Size24.TextAlignJustify())" class="reduced-size" />
@@ -14,59 +14,65 @@
                 <FluentIcon Value="@(new Icons.Filled.Size48.History())" class="icon-small" />
             </div>
             <div GridRow="2">3 + 5</div>
+            <div GridRow="2">3 + 5</div>
+            <div GridRow="2">3 + 5</div>
         </div>
-        <div class="calculation-result">
-            @ViewModel.DisplaiedNumber
+        <div class="body">
+            <div class="calculation-result">
+                @ViewModel.DisplaiedNumber
+            </div>
         </div>
     </div>
 </FluentBodyContent>
-<style>
-    .reduced-size
-    {
-        transform: scale(0.8);
-        transform-origin: center;
-    }
-    .icon-small {
-        transform: scale(0.4);
-        transform-origin: center;
-    }
+<script>
+function setDivHeight() {
+    const div = document.querySelector('.layout-root');
+    div.style.height = `${document.documentElement.clientHeight}px`;
+}
 
+    window.addEventListener('resize', setDivHeight);
+    window.addEventListener('load', setDivHeight);
+</script>
+<style>
     html body {
-        min-width: 0px; 
-        width: 100%;
+        overflow: hidden;
     }
 
     .body, body-content{
 
         overflow-x: hidden;
-        width: 100vw;
-        min-width: 0;
+        overflow-y: hidden;
+    }
 
+    .header {
+        
     }
 
     .icons {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-width:0;
-        max-width: 100%;
-    }
-
-    .header {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        width: 100vw;
-        min-width:0;
-        box-sizing: border-box;
     }
 
     .layout-root {
-        border: 10px solid black;
+        border: 1px solid black;
         border-radius: 5px;
+        width: 100vw;
+        height: 100svw;
     }
 
     .calculation-result{
+        flex : 1;
+    }
+
+    .reduced-size {
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+
+    .icon-small {
+        transform: scale(0.4);
+        transform-origin: center;
     }
 </style>
 @code {
@@ -86,20 +92,6 @@
         {
             InvokeAsync(StateHasChanged);
         };
-    }
-
-     void UpdateWindowSize(double width, double height)
-    {
-        windowWidth = width;
-        windowHeight = height;
-        InvokeAsync(StateHasChanged);
-    }
-
-    [JSInvokable]
-    public static Task UpdateWindowSizeAsync(double width, double height)
-    {
-        self?.UpdateWindowSize(width, height);
-        return Task.CompletedTask;
     }
 
 

@@ -31,6 +31,11 @@ public class CalculatorViewModel : ObservableObject
     ///// </summary>
     public string DisplaiedNumber => model.DisplaiedNumber;
 
+    /// <summary>
+    /// 計算式を取得します。
+    /// </summary>
+    public object Expression => model.ActiveCaluculation.CurrentExpression;
+
     public CalculatorViewModel()
     {
         PushKeybord = new RelayCommand<InputAction>(c => Input(c));

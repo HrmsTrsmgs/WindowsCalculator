@@ -13,11 +13,18 @@ public class EqualButtonCalculation : Calculation
     public EqualButtonCalculation(Calculation receiver, Calculation? lastOperationCalculation)
         : base(receiver)
     {
+        switch (receiver)
+        {
+            case OperationCalculation c:
+                c.IsDisplaiedResult = true;
+                break;
+        }
+
         LastOperationCalculation =
             lastOperationCalculation switch
             {
                 OperationCalculation c =>
-                    new OperationCalculation(receiver, c.OperatorToken, c.Operand),
+                    new OperationCalculation(receiver, c.OperatorToken, c.Operand, true),
                 _ => null
             };
     }
@@ -49,5 +56,4 @@ public class EqualButtonCalculation : Calculation
             return $"{calculator!.CurrentExpression} {calculator!.Operand?.Number} =";
         }
     }
-        
 }

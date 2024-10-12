@@ -197,7 +197,7 @@
         [JSInvokable("HandleKeyDown")]
         public static void HandleKeyDown(string key, bool ctrl)
         {
-            ViewModel?.PushKeybord?.Execute(
+            ViewModel?.InputKeybord?.Execute(
             (ctrl, key) switch
             {
                 (false, "0") => InputAction.Zero,

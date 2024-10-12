@@ -9,8 +9,8 @@ public class OperationCalculationTests
         = new(
             new NumberCalculation(null) { NumberToken = new(10) },
             InputAction.Plus,
-            new(20)
-            );
+            new(20),
+            true);
 
     [Fact]
     public void 計算結果が出力されます()

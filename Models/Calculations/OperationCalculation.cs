@@ -4,9 +4,9 @@
 /// 計算、もしくは最初に入力された数値を表します。
 /// </summary>
 /// <param name="Operand">計算される、もしくは最初に入力された数値。</param>
-public class OperationCalculation(Calculation receiver, InputAction? operatorToken = null, NumberToken? operand = null) : Calculation(receiver)
+public class OperationCalculation(Calculation receiver, InputAction? operatorToken = null, NumberToken? operand = null, bool isDisplaiedResult = false) : Calculation(receiver)
 {
-    public bool IsDisplaiedResult { get; set; } = false;
+    public bool IsDisplaiedResult { get; set; } = isDisplaiedResult;
 
     /// <summary>
     /// 計算の内容を表す演算子を取得、設定します。
@@ -60,7 +60,7 @@ public class OperationCalculation(Calculation receiver, InputAction? operatorTok
     /// 演算子が入力され、計算対象が入力されていない場合などにnullとなります。
     /// </remarks>
     public override decimal? Result =>
-        Receiver == null 
+        Receiver == null || !IsDisplaiedResult
         ? null 
         : OperatorToken switch
         { 

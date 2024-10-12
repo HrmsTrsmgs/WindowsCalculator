@@ -166,6 +166,20 @@ public class CalculatorTests
     }
 
     [Fact]
+    public void 演算子の入れ替えで計算は入れ替わりません()
+    {
+        tested.Input(new NumberToken(8));
+        var number = tested.ActiveCaluculation;
+        tested.Input(new OperatorToken(InputAction.Divide));
+        var first = tested.ActiveCaluculation; ;
+        tested.Input(new OperatorToken(InputAction.Plus));
+        tested.ActiveCaluculation.Should().BeSameAs(first);
+        tested.ActiveCaluculation.Receiver.Should().BeSameAs(number);
+
+
+    }
+
+    [Fact]
     public void 割り算のゼロ除算でエラーが表示されます()
     {
         tested.Input(new NumberToken(8));
@@ -207,7 +221,7 @@ public class CalculatorTests
     }
 
     [Fact]
-    public void 小数点を押した状態が表示できます()
+    public void 小数点を入力した状態が表示できます()
     {
         tested.Input(new NumberToken(1) { DecimalPlaces = 0 });
         tested.DisplaiedNumber.Should().Be("1.");

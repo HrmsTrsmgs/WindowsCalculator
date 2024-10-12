@@ -106,6 +106,7 @@ public class IncrementalParser : ModelBase
                         t.Number = 0;
                         break;
                 }
+                activeToken = OtherToken.CE;
                 break;
             case InputAction.Undo:
                 ActiveToken = OtherToken.Undo;

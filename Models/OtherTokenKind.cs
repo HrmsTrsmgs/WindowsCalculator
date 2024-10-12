@@ -16,9 +16,9 @@ public enum OtherTokenKind
     Backspace,
 
     /// <summary>
-    /// DeleteとESCの操作。
+    /// Cの操作。
     /// </summary>
-    Delete,
+    C,
 
     /// <summary>
     /// Undo操作。
@@ -28,5 +28,10 @@ public enum OtherTokenKind
     /// <summary>
     /// Redo操作。
     /// </summary>
-    Redo
+    Redo,
+
+    /// <summary>
+    /// 現在の入力された数値を0にします。
+    /// </summary>
+    CE
 }

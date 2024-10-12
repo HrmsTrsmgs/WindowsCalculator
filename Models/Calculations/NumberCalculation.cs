@@ -13,7 +13,7 @@ public class NumberCalculation(Calculation? receiver) : Calculation(receiver)
     /// 計算する対象を取得します。
     /// 初期状態の計算しなくてもある数字を表しているので、なので必ずnullです。
     /// </remarks>
-    public override Calculation? Receiver => null;
+    public override Calculation? Receiver => receiver;
 
     /// <summary>
     /// 計算の最初の数値を取得、設定します。

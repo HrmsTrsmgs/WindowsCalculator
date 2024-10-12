@@ -20,7 +20,7 @@ public class OtherToken : Token
     /// <summary>
     /// デリートトークンを取得します。
     /// </summary>
-    public static OtherToken Delete { get; } = new OtherToken(OtherTokenKind.Delete);
+    public static OtherToken Delete { get; } = new OtherToken(OtherTokenKind.C);
 
     /// <summary>
     /// アンドゥトークンを取得します。
@@ -31,6 +31,7 @@ public class OtherToken : Token
     /// リドゥトークンを取得します。
     /// </summary>
     public static OtherToken Redo { get; } = new OtherToken(OtherTokenKind.Redo);
+    public static OtherToken CE { get;  } = new OtherToken(OtherTokenKind.CE);
 
     /// <summary>
     /// トークンの種類を取得します。

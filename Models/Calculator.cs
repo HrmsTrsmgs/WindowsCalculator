@@ -78,12 +78,7 @@ public class Calculator : ModelBase
                     {
                         NumberCalculation c => c.NumberToken.ToString(),
                         OperationCalculation c
-                            => (
-                                    c.IsDisplaiedResult && c.Result != null
-                                        ? c.Result
-                                    : c.Result != null
-                                        ? c.Operand?.Number
-                                        : c.Receiver?.Result
+                            => (c.Result ?? c.Operand?.Number ?? c.Receiver?.Result
                                 )?.ToString() ??
                                 throw new InvalidOperationException(
                                     "今の演算も前の演算も結果が出てないのはおかしいはず"),
@@ -144,8 +139,20 @@ public class Calculator : ModelBase
                 InputNumberToken(t);
                 break;
             case OperatorToken t:
-                ActiveCaluculation 
-                    = new OperationCalculation(ActiveCaluculation, t.Operator, null);
+                switch(ActiveCaluculation)
+                {
+                    case OperationCalculation c when c.Operand == null:
+                        c.OperatorToken = t.Operator;
+                        break;
+                    case OperationCalculation c:
+                        c.IsDisplaiedResult = true;
+                        goto default;
+                    default:
+                        ActiveCaluculation
+                            = new OperationCalculation(ActiveCaluculation, t.Operator, null);
+                        break;
+                }
+                
                 break;
             case OtherToken t:
                 switch(t.Kind)
@@ -174,6 +181,29 @@ public class Calculator : ModelBase
                             SetProperty(ref activeCaluculation, nextCalculation, nameof(ActiveCaluculation));
                         }
                         break;
+                    case OtherTokenKind.Equal:
+                        switch(ActiveCaluculation)
+                        {
+                            case OperationCalculation c:
+                                c.IsDisplaiedResult = true;
+                                break;
+                        }
+                        goto default;
+                    case OtherTokenKind.C:
+                        ActiveCaluculation = new NumberCalculation(null);
+                        ClearCalculationHistory();
+                        break;
+                    case OtherTokenKind.CE:
+                        switch(ActiveCaluculation)
+                        {
+                            case NumberCalculation c:
+                                c.NumberToken = new(0);
+                                break;
+                            default:
+                                ActiveCaluculation = new NumberCalculation(ActiveCaluculation);
+                                break;
+                        }
+                        break;
                     default: 
                         ActiveCaluculation = GetCalculationOtherWhenTokenInputed(t);
                         break;
@@ -197,7 +227,7 @@ public class Calculator : ModelBase
                         EqualButtonCalculation c => GetLastOperationCalculation(c),
                         _ => null
                     }),
-            OtherTokenKind.Delete =>
+            OtherTokenKind.C =>
                 new DeleteCalculation(ActiveCaluculation),
             _ => throw new NotSupportedException()
         };

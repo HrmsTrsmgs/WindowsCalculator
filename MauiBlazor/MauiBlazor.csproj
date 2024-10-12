@@ -41,8 +41,11 @@
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
         <AssemblyName>Marimo.WindowsCalculator.MauiBlazor</AssemblyName>
     </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Platforms\Windows\Assets\favicon.ico</ApplicationIcon>
+  </PropertyGroup>
 
-    <ItemGroup>
+  <ItemGroup>
         <!-- App Icon -->
         <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
@@ -58,6 +61,10 @@
 
         <!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
         <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="resources\images\calculator.svg" />
     </ItemGroup>
 
     <ItemGroup>
@@ -92,6 +99,10 @@
         <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
         <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Platforms\Windows\Assets\" />
     </ItemGroup>
 
 </Project>

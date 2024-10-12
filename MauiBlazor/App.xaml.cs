@@ -1,4 +1,5 @@
 ﻿
+
 namespace Marimo.WindowsCalculator.MauiBlazor
 {
     
@@ -7,19 +8,19 @@ namespace Marimo.WindowsCalculator.MauiBlazor
         public App()
         {
             InitializeComponent();
-
             MainPage = new MainPage()
             {
                 MinimumWidthRequest = 332,
-                MinimumHeightRequest = 504,
+//                MinimumHeightRequest = 504,
             };
+
         }
         protected override Window CreateWindow(IActivationState? activationState)
         {
             var window = base.CreateWindow(activationState);
 
             window.MinimumWidth = 332;
-            window.MinimumHeight = 504;
+            window.MinimumHeight = 426;
             window.Width = Preferences.Get("WindowWidth", window.MinimumWidth);
             window.Height = Preferences.Get("WindowHeight", window.MinimumHeight);
             window.Destroying += (s, e) =>

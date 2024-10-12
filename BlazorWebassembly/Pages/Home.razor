@@ -1,113 +1,229 @@
 ﻿@page "/"
+@using Microsoft.Fast.Components.FluentUI
 @using Marimo.WindowsCalculator.Models
 @using Marimo.WindowsCalculator.ViewModels
 @inject CalculatorViewModel ViewModel
 
 <FluentBodyContent class="body-content">
-         <div class="header">
-             <div class="icons">
-                 <FluentIcon Value="@(new Icons.Filled.Size24.TextAlignJustify())" class="reduced-size" />
-
-                 <FluentIcon Value="@(new Icons.Filled.Size48.History())" class="icon-small" />
-             </div>
-             <div GridRow="2">3 + 5</div>
-         </div>
-        <div class="calculation-result">
-            @ViewModel.DisplaiedNumber
+    <div class="layout-root">
+        <div class="content-header">
+            <div class="icons">
+                <FluentIcon class="icon menu-icon" Value="@(new Icons.Filled.Size24.TextAlignJustify())" />
+                <FluentIcon class="icon history-icon" Value="@(new Icons.Filled.Size48.History())" />
+            </div>
+            <div class="expression">3 + 5</div>
         </div>
+        <div class="content-body">
+
+            <div class="calculation-result">
+                @ViewModel.DisplaiedNumber
+            </div>
+            <FluentButton class="fluent-button">CE</FluentButton>
+            <FluentButton class="fluent-button">C</FluentButton>
+            <FluentButton class="fluent-button">⌫</FluentButton>
+            <FluentButton class="fluent-button">÷</FluentButton>
+            <FluentButton class="fluent-button">7</FluentButton>
+            <FluentButton class="fluent-button">8</FluentButton>
+            <FluentButton class="fluent-button">9</FluentButton>
+            <FluentButton class="fluent-button">×</FluentButton>
+            <FluentButton class="fluent-button">4</FluentButton>
+            <FluentButton class="fluent-button">5</FluentButton>
+            <FluentButton class="fluent-button">6</FluentButton>
+            <FluentButton class="fluent-button">-</FluentButton>
+            <FluentButton class="fluent-button">1</FluentButton>
+            <FluentButton class="fluent-button">2</FluentButton>
+            <FluentButton class="fluent-button">3</FluentButton>
+            <FluentButton class="fluent-button">+</FluentButton>
+            <FluentButton class="fluent-button">Undo</FluentButton>
+            <FluentButton class="fluent-button">0</FluentButton>
+            <FluentButton class="fluent-button">.</FluentButton>
+            <FluentButton class="fluent-button">=</FluentButton>
+        </div>
+    </div>
 </FluentBodyContent>
+<script>
+    function setDivHeight() {
+        const div = document.querySelector('.layout-root');
+        div.style.height = `${document.documentElement.clientHeight}px`;
+    }
+
+    window.addEventListener('resize', setDivHeight);
+    window.addEventListener('load', setDivHeight);
+</script>
 <style>
-    .reduced-size
-    {
-        transform: scale(0.8);
-        transform-origin: center;
-    }
-    .icon-small {
-        transform: scale(0.4);
-        transform-origin: center;
-    }
-
-    .body, body-content{
-
-        overflow-x: hidden;
-        width: 100vw;
-        min-width: 0;
-
+    body {
+        overflow: hidden;
     }
 
     .layout-root {
-        border: 10px solid black;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        border: 1px solid black;
         border-radius: 5px;
-        display:block;
+        width: 100vw;
+        height: 100vw;
+        border: 5px solid red;
+        border-radius: 5px;
+    }
+
+    .content-header {
+        grid-row: 1;
     }
 
     .icons {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-width:0;
-        max-width: 100%;
     }
 
-    .header {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
+    .calculation-result {
+        flex: 1;
+        border: 2px solid black;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .icon {
+        transform-origin: center;
+    }
+
+
+    .menu-icon {
+        margin: 0 12px;
+        transform: scale(0.8);
+    }
+
+    .history-icon {
+        margin: 0 9px;
+        transform: scale(0.5);
+    }
+
+    .expression {
+        text-align: right;
+        font-size: 14px;
+        margin: 1px 28px;
+    }
+
+    .content-body {
+        grid-row: 2;
+        display: grid;
+        grid-template-rows: 1.5fr repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         width: 100%;
-        min-width:0;
-        box-sizing: border-box;
+        height: 100%;
+        border: 5px solid green;
+        border-radius: 5px;
+        min-height: 0;
     }
 
-    .calculation-result{
+    .calculation-result {
+        grid-column: 1 / -1;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: right;
+        font-size: 44px;
+        font-weight: 600;
+        overflow: hidden;
     }
+
+    .fluent-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        font-size: 18px;
+        margin: 5px;
+        border-radius: 4px;
+        Q cursor: pointer;
+        border: 1px solid transparent;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        overflow: hidden;
+        min-height: 0;
+    }
+
+    @@media (prefers-color-scheme: light) {
+        .fluent-button {
+            background-color: #ffffff;
+            color: #000000;
+            border-color: #d3d3d3;
+        }
+
+            .fluent-button:hover {
+                background-color: #f0f0f0;
+                border-color: #a9a9a9;
+            }
+    }
+
+    @@media (prefers-color-scheme: dark) {
+        .fluent-button {
+            background-color: #333333;
+            color: #ffffff;
+            border-color: #555555;
+        }
+
+            .fluent-button:hover {
+                background-color: #444444;
+                border-color: #777777;
+            }
+    }
+
 </style>
- @code {
+@code {
 
-     // protected override void OnInitialized()
-     // {
-     //     StaticClass.ViewModel = ViewModel;
+    private static double windowWidth;
+    private static double windowHeight;
 
-     //     ViewModel.PropertyChanged += (sender, e) =>
-     //     {
-     //         InvokeAsync(StateHasChanged);
-     //     };
-     // }
+    private static Home? self;
 
-     // public static class StaticClass
-     // {
-        
-     //     public static CalculatorViewModel? ViewModel { get; set; }
+    protected override void OnInitialized()
+    {
+        self = this;
 
-     //     [JSInvokable("HandleKeyDown")]
-     //     public static void HandleKeyDown(string key, bool ctrl)
-     //     {
-            
-     //         ViewModel?.PushKeybord?.Execute(
-     //         (ctrl, key) switch
-     //         {
-     //             (false, "0") => InputAction.Zero,
-     //             (false, "1") => InputAction.One,
-     //             (false, "2") => InputAction.Two,
-     //             (false, "3") => InputAction.Three,
-     //             (false, "4") => InputAction.Four,
-     //             (false, "5") => InputAction.Five,
-     //             (false, "6") => InputAction.Six,
-     //             (false, "7") => InputAction.Seven,
-     //             (false, "8") => InputAction.Eight,
-     //             (false, "9") => InputAction.Nine,
-     //             (false, ".") => InputAction.Dot,
-     //             (false, "+") => InputAction.Plus,
-     //             (false, "-") => InputAction.Minus,
-     //             (false, "*") => InputAction.Multiply,
-     //             (false, "/") => InputAction.Divide,
-     //             (false, "Enter)") or (false, "=") => InputAction.Equal,
-     //             (false, "Escape") => InputAction.C,
-     //             (false, "Delete") => InputAction.CE,
-     //             (false, "Backspace") => InputAction.Backspace,
-     //             (true, "z") => InputAction.Undo,
-     //             (true, "y") => InputAction.Redo,
-     //             _ => throw new NotSupportedException()
-     //         });
-     //     }
-     // }
- }
+        StaticClass.ViewModel = ViewModel;
+
+        ViewModel.PropertyChanged += (sender, e) =>
+        {
+            InvokeAsync(StateHasChanged);
+        };
+    }
+
+
+    public static class StaticClass
+    {
+        public static CalculatorViewModel? ViewModel { get; set; }
+
+        [JSInvokable("HandleKeyDown")]
+        public static void HandleKeyDown(string key, bool ctrl)
+        {
+            ViewModel?.PushKeybord?.Execute(
+            (ctrl, key) switch
+            {
+                (false, "0") => InputAction.Zero,
+                (false, "1") => InputAction.One,
+                (false, "2") => InputAction.Two,
+                (false, "3") => InputAction.Three,
+                (false, "4") => InputAction.Four,
+                (false, "5") => InputAction.Five,
+                (false, "6") => InputAction.Six,
+                (false, "7") => InputAction.Seven,
+                (false, "8") => InputAction.Eight,
+                (false, "9") => InputAction.Nine,
+                (false, ".") => InputAction.Dot,
+                (false, "+") => InputAction.Plus,
+                (false, "-") => InputAction.Minus,
+                (false, "*") => InputAction.Multiply,
+                (false, "/") => InputAction.Divide,
+                (false, "Enter)") or (false, "=") => InputAction.Equal,
+                (false, "Escape") => InputAction.C,
+                (false, "Delete") => InputAction.CE,
+                (false, "Backspace") => InputAction.Backspace,
+                (true, "z") => InputAction.Undo,
+                (true, "y") => InputAction.Redo,
+                _ => throw new NotSupportedException()
+            });
+        }
+    }
+
+}

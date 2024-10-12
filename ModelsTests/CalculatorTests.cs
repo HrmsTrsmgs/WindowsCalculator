@@ -378,9 +378,6 @@ public class CalculatorTests
         actual.Should().HaveCount(2);
         actual[0].Should().Be(new CalculationHistoryItem("8 - 7 =", 1));
         actual[1].Should().Be(new CalculationHistoryItem("3 + 5 =", 8));
-
-
-
     }
 }
 

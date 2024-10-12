@@ -9,7 +9,7 @@
         <div class="content-header">
             <div class="icons">
                 <FluentIcon class="icon menu-icon" Value="@(new Icons.Filled.Size24.TextAlignJustify())" />
-                <FluentIcon class="icon history-icon" Value="@(new Icons.Filled.Size48.History())" />
+                <a href="/history"><FluentIcon class="icon history-icon" Value="@(new Icons.Filled.Size48.History())" /></a>
             </div>
             <div class="expression">@ViewModel.Expression</div>
         </div>
@@ -224,6 +224,7 @@
             InvokeAsync(StateHasChanged);
         };
     }
+
 
     /// <summary>
     /// JavaScript空の呼び出しは静的にしか行えないのでそのためのクラスです。

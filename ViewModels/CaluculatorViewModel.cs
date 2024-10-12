@@ -32,10 +32,18 @@ public class CalculatorViewModel : ObservableObject
     public string DisplaiedNumber => model.DisplaiedNumber;
 
     /// <summary>
+    /// 履歴を取得します。
+    /// </summary>
+    public IEnumerable<CalculationHistoryItem> History => model.CalculationHistory;
+
+    /// <summary>
     /// 計算式を取得します。
     /// </summary>
     public object Expression => model.ActiveCaluculation.CurrentExpression;
 
+    /// <summary>
+    /// CalculationViewModelクラスの新しいインスタンスを初期化します。
+    /// </summary>
     public CalculatorViewModel()
     {
         PushKeybord = new RelayCommand<InputAction>(c => Input(c));

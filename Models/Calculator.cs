@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Marimo.WindowsCalculator.Models.Calculations;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 
@@ -14,6 +15,11 @@ public class Calculator : ModelBase
     /// 現在行っている計算です。
     /// </summary>
     Calculation activeCaluculation = new NumberCalculation(null);
+
+    /// <summary>
+    /// 履歴作成のための計算です。
+    /// </summary>
+    ObservableCollection<Calculation> cumulativeCalculation = new();
 
     /// <summary>
     /// 現在、最新で行われている計算を取得、設定します。
@@ -34,33 +40,29 @@ public class Calculator : ModelBase
     }
 
     /// <summary>
+    /// Redo用に取ってある計算を取得、設定します。
+    /// </summary>
+    public Calculation? RedoCalculation { get; set; } = null;
+
+    /// <summary>
     /// 履歴用の計算結果一覧を取得します。
     /// </summary>
     public IEnumerable<CalculationHistoryItem> CalculationHistory
     {
         get
         {
-            var current = ActiveCaluculation;
-            while(current != null)
+            foreach(var calculation in cumulativeCalculation.Reverse())
             {
-                if (current.Result != null && current is OperationCalculation)
+                if (calculation.Result != null && calculation is OperationCalculation)
                 {
-                    var operation = current as OperationCalculation;
+                    var operation = calculation as OperationCalculation;
                     yield return new(
                         $"{operation!.CurrentExpression} {operation.Operand} =",
                         operation.Result!.Value);
                 }
-                current = current.Receiver;
             }
         }
     }
-
-    /// <summary>
-    /// Redo用に取ってある計算を取得、設定します。
-    /// </summary>
-    public Calculation? RedoCalculation { get; set; } = null;
-
-
 
     /// <summary>
     /// 計算結果を取得します。
@@ -98,6 +100,36 @@ public class Calculator : ModelBase
                 return "0 で割ることはできません";
             }
         }
+    }
+    /// <summary>
+    /// Calculatorクラスの新しいインスタンスを初期化します。
+    /// </summary>
+    public Calculator()
+    {
+        PropertyChanged += (sender, e) =>
+        {
+            if (e.PropertyName != nameof(ActiveCaluculation)) return;
+
+            if(!cumulativeCalculation.Contains(ActiveCaluculation))
+            {
+                cumulativeCalculation.Add(ActiveCaluculation);
+            }
+            else
+            {
+                while(cumulativeCalculation.Last() != activeCaluculation)
+                {
+                    cumulativeCalculation.Remove(cumulativeCalculation.Last());
+                }
+            }
+        };
+    }
+
+    /// <summary>
+    /// 履歴を削除します。
+    /// </summary>
+    public void ClearCalculationHistory()
+    {
+        cumulativeCalculation.Clear();
     }
 
     /// <summary>

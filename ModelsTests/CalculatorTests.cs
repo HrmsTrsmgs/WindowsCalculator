@@ -379,5 +379,20 @@ public class CalculatorTests
         actual[0].Should().Be(new CalculationHistoryItem("8 - 7 =", 1));
         actual[1].Should().Be(new CalculationHistoryItem("3 + 5 =", 8));
     }
+
+    [Fact]
+    public void 履歴は削除することができます()
+    {
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken(InputAction.Plus));
+        tested.Input(new NumberToken(5));
+        tested.Input(new OperatorToken(InputAction.Minus));
+        tested.Input(new NumberToken(7));
+        tested.Input(OtherToken.Equal);
+
+        tested.ClearCalculationHistory();
+
+        tested.CalculationHistory.Should().BeEmpty();
+    }
 }
 

@@ -26,6 +26,8 @@ public class CalculatorViewModel : ObservableObject
     /// </summary>
     Calculator model { get; } = new();
 
+    public ICommand ClearHistoryCommand { get; }
+
     ///// <summary>
     ///// 計算機に表示されている数を取得します。
     ///// </summary>
@@ -47,6 +49,8 @@ public class CalculatorViewModel : ObservableObject
     public CalculatorViewModel()
     {
         PushKeybord = new RelayCommand<InputAction>(c => Input(c));
+
+        ClearHistoryCommand = new RelayCommand(() => model.ClearCalculationHistory());
         model.PropertyChanged += 
             (sender, e) =>
             {
@@ -55,6 +59,8 @@ public class CalculatorViewModel : ObservableObject
                     OnPropertyChanged(nameof(DisplaiedNumber));
                 }
             };
+
+
     }
 
     /// <summary>

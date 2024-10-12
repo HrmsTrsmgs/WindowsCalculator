@@ -43,14 +43,27 @@
         </div>
     </div>
 </FluentBodyContent>
+
 <script>
+    // キー入力を捕捉。
+    window.addEventListener('keydown', function (event) {
+        DotNet.invokeMethodAsync('Marimo.WindowsCalculator.MauiBlazor', 'HandleKeyDown', event.key, event.ctrlKey);
+    });
+</script>
+<script>
+    //画面の大きさ変更を補足し、大きさに合った描画を行う。最初にも行う。
     function setDivHeight() {
         const div = document.querySelector('.layout-root');
         div.style.height = `${document.documentElement.clientHeight}px`;
     }
 
     window.addEventListener('resize', setDivHeight);
-    window.addEventListener('load', setDivHeight);
+
+    const observer = new MutationObserver((mutations) => {
+        setDivHeight();
+    });
+    observer.observe(document.body, { attributes: true, childList: true, subtree: true });
+
 </script>
 <style>
     body {
@@ -75,10 +88,8 @@
     }
 
     .calculation-result {
-        flex: 1;
         border: 2px solid black;
         border-radius: 5px;
-        overflow: hidden;
     }
 
     .icon {
@@ -103,11 +114,8 @@
     }
 
     .content-body {
-        grid-row: 2;
         display: grid;
         grid-template-rows: 3fr 10fr;
-        width: 100%;
-        height: 100%;
         min-height: 0;
     }
 
@@ -124,7 +132,6 @@
     }
 
     .keys {
-        
         display: grid;
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: repeat(4, 1fr);
@@ -140,11 +147,9 @@
         font-size: 18px;
         margin: 1px;
         border-radius: 4px;
-        Q cursor: pointer;
         border: 1px solid transparent;
         transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-        overflow: hidden;
-        min-height: 0;
+        
     }
 
     @@media (prefers-color-scheme: light) {
@@ -184,11 +189,24 @@
 </style>
 @code {
 
-    private static double windowWidth;
-    private static double windowHeight;
+    /// <summary>
+    /// Windowの幅を保管しておき、部品の外枠の大きさに使います。
+    /// </summary>
+    static double windowWidth;
 
+    /// <summary>
+    /// Windowの高さを保管しておき、部品の外枠の大きさに使います。
+    /// </summary>
+    static double windowHeight;
+
+    /// <summary>
+    /// 自画面を保管しておきます。
+    /// </summary>
     private static Home? self;
 
+    /// <summary>
+    /// 初期化時に呼び出されます。。
+    /// </summary>
     protected override void OnInitialized()
     {
         self = this;
@@ -201,11 +219,21 @@
         };
     }
 
-
+    /// <summary>
+    /// JavaScript空の呼び出しは静的にしか行えないのでそのためのクラスです。
+    /// </summary>
     public static class StaticClass
     {
+        /// <summary>
+        /// ViewMoelをStaticで使えるように保管しておきます。
+        /// </summary>
         public static CalculatorViewModel? ViewModel { get; set; }
 
+        /// <summary>
+        /// キーが押された時に呼び出されます。
+        /// </summary>
+        /// <param name="key">押されたキー。</param>
+        /// <param name="ctrl">Ctrlキーが同時押しされているか。</param>
         [JSInvokable("HandleKeyDown")]
         public static void HandleKeyDown(string key, bool ctrl)
         {

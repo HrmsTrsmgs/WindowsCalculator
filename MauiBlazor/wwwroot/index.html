@@ -27,21 +27,8 @@
 </script>
     <script src="_framework/blazor.webview.js" autostart="false"></script>
     <script>
-        window.addEventListener('keydown', function (event) {
-            DotNet.invokeMethodAsync('Marimo.WindowsCalculator.MauiBlazor', 'HandleKeyDown', event.key, event.ctrlKey);
-        });
 
-        function getWindowSize() {
-            return {
-                width: window.innerWidth,
-                height: window.innerHeight
-            };
-        }
 
-        window.addEventListener("resize", () => {
-            DotNet.invokeMethodAsync("Marimo.WindowsCalculator.MauiBlazor", "UpdateWindowSizeAsync",
-                getWindowSize().width, getWindowSize().height);
-        });
     </script>
 </body>
 

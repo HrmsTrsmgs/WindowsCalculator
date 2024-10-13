@@ -1,5 +1,48 @@
 ﻿@page "/settings"
-<h3>SettingsPage</h3>
+@using Marimo.WindowsCalculator.ViewModels
+@using Microsoft.Fast.Components.FluentUI
+@inject CalculatorViewModel ViewModel
+<div class="area">
+    <div class="header-container">
+        <a href="/" class="back" title="ホーム画面に戻る">
+            <FluentIcon Value="@(new Icons.Regular.Size24.ArrowLeft())" />
+        </a>
+        <header class="title">設定</header>
+    </div>
+    <main>
+        @* 引き継ぎ：
+        すみません。@bindがどうしてもエラーを出してエラーの内容も読めないのでここまでしか作ってありません。
+        引継ぎする方がいらっしゃるならお願いします。
+        エラーハンドリングのメソッドにデバッグポイントおいても到達せず。
+        ErrorBoundaryに至っては使うだけでエラーしか表示籍なくなる始末でした。
+        <FluentTextField @bind-value="ViewModel.Settings.ZeroDisplayText"/> *@
+    </main>
+</div>
+
+<style>
+    .area {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 100vh;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+    }
+
+    .back {
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+</style>
 
 @code {
 

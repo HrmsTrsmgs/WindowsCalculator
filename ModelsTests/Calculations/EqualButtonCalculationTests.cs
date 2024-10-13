@@ -50,7 +50,7 @@ public class EqualButtonCalculationTests
                 Calculation.NullObject,
                 InputAction.Plus,
                 new(20)
-            ));
+            ));　
         tested.CurrentExpression.Should().Be("30 + 20 =");
     }
 }

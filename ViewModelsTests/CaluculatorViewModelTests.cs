@@ -9,6 +9,12 @@ public class CaluculatorViewModelTests
     CalculatorViewModel tested { get; } = new();
 
     [Fact]
+    public void 初期状態で設定は取得できます()
+    {
+        tested.Settings.Should().NotBeNull();
+    }
+
+    [Fact]
     public void 入力した数値が表示されています()
     {
         tested.InputKeybord.Execute(InputAction.Five);
@@ -56,8 +62,8 @@ public class CaluculatorViewModelTests
         var actual = tested.History.ToArray();
 
         actual.Should().HaveCount(2);
-        actual[0].Should().Be(new CalculationHistoryItem("8 - 7 =", 1));
-        actual[1].Should().Be(new CalculationHistoryItem("3 + 5 =", 8));
+        actual[0].Should().Be(new CalculationHistoryItem("8　-　7 =", 1));
+        actual[1].Should().Be(new CalculationHistoryItem("3　+　5 =", 8));
     }
 
     [Fact]
@@ -179,7 +185,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputPlusCommand.Execute(null);
 
-        tested.Expression.Should().Be("0 +");
+        tested.Expression.Should().Be("0　+");
     }
 
     [Fact]
@@ -187,7 +193,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputMinusCommand.Execute(null);
 
-        tested.Expression.Should().Be("0 -");
+        tested.Expression.Should().Be("0　-");
     }
 
     [Fact]
@@ -195,7 +201,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputMultiplyCommand.Execute(null);
 
-        tested.Expression.Should().Be("0 ×");
+        tested.Expression.Should().Be("0　×");
     }
 
     [Fact]
@@ -203,7 +209,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputDivideCommand.Execute(null);
 
-        tested.Expression.Should().Be("0 ÷");
+        tested.Expression.Should().Be("0　÷");
     }
 
     [Fact]
@@ -282,7 +288,7 @@ public class CaluculatorViewModelTests
 
         tested.DisplaiedNumber.Should().Be("0");
         tested.History.Should().NotBeEmpty();
-        tested.History.First().Expression.Should().Be("3 × 3 =");
+        tested.History.First().Expression.Should().Be("3　×　3 =");
     }
 
     [Fact]

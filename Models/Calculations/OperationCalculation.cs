@@ -82,5 +82,5 @@ public class OperationCalculation(Calculation receiver, InputAction? operatorTok
             InputAction.Multiply => "×",
             InputAction.Divide => "÷",
             _ => throw new NotImplementedException()
-        }}　";
+        }}";
 }

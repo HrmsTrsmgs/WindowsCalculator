@@ -48,13 +48,13 @@ public class Calculator : ModelBase
     {
         get
         {
-            foreach(var calculation in cumulativeCalculation.Reverse())
+            foreach (var calculation in cumulativeCalculation.Reverse())
             {
                 if (calculation.Result != null && calculation is OperationCalculation)
                 {
                     var operation = calculation as OperationCalculation;
                     yield return new(
-                        $"{operation!.CurrentExpression} {operation.Operand} =",
+                        $"{operation!.CurrentExpression}　{operation.Operand} =",
                         operation.Result!.Value);
                 }
             }
@@ -73,17 +73,17 @@ public class Calculator : ModelBase
                 return
                     (ActiveCaluculation switch
                     {
-                    NumberCalculation c => c.NumberToken,
-                    OperationCalculation c
-                        => new NumberToken(c.Result ?? c.Operand?.Number ?? c.Receiver?.Result
-                             ??
-                            throw new InvalidOperationException(
-                                "今の演算も前の演算も結果が出てないのはおかしいはず")),
-                    EqualButtonCalculation c
-                        => new NumberToken(c.Result),
-                    DeleteCalculation c
-                        => new NumberToken(c.Result),
-                    _ => new NumberToken(0)
+                        NumberCalculation c => c.NumberToken,
+                        OperationCalculation c
+                            => new NumberToken(c.Result ?? c.Operand?.Number ?? c.Receiver?.Result
+                                 ??
+                                throw new InvalidOperationException(
+                                    "今の演算も前の演算も結果が出てないのはおかしいはず")),
+                        EqualButtonCalculation c
+                            => new NumberToken(c.Result),
+                        DeleteCalculation c
+                            => new NumberToken(c.Result),
+                        _ => new NumberToken(0)
 
                     } ?? throw new InvalidOperationException()).ToString();
             }
@@ -93,6 +93,8 @@ public class Calculator : ModelBase
             }
         }
     }
+
+    public PropertySettings Settings { get; } = new();
     /// <summary>
     /// Calculatorクラスの新しいインスタンスを初期化します。
     /// </summary>

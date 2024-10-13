@@ -54,6 +54,12 @@ public class CalculatorTests
     }
 
     [Fact]
+    public void 初期状態で設定は取得できます()
+    {
+        tested.Settings.Should().NotBeNull();
+    }
+
+    [Fact]
     public void 入力された数値トークンの数値は結果となります()
     {
         tested.Input(new NumberToken(3));
@@ -456,8 +462,8 @@ public class CalculatorTests
         var actual = tested.CalculationHistory.ToArray();
 
         actual.Should().HaveCount(2);
-        actual[0].Should().Be(new CalculationHistoryItem("8 - 7 =", 1));
-        actual[1].Should().Be(new CalculationHistoryItem("3 + 5 =", 8));
+        actual[0].Should().Be(new CalculationHistoryItem("8　-　7 =", 1));
+        actual[1].Should().Be(new CalculationHistoryItem("3　+　5 =", 8));
     }
 
     [Fact]

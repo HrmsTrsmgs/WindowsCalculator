@@ -149,7 +149,12 @@ public class CalculatorViewModel : ObservableObject
     /// <summary>
     /// 計算式を取得します。
     /// </summary>
-    public object Expression => model.ActiveCaluculation?.CurrentExpression;
+    public string Expression => model.ActiveCaluculation.CurrentExpression;
+
+    /// <summary>
+    /// 設定を取得します。
+    /// </summary>
+    public PropertySettings Settings => model.Settings;
 
     /// <summary>
     /// CalculationViewModelクラスの新しいインスタンスを初期化します。

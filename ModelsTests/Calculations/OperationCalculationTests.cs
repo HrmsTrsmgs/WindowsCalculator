@@ -33,18 +33,18 @@ public class OperationCalculationTests
     [Fact]
     public void 式は計算途中の式が表示されます()
     {
-        tested.CurrentExpression.Should().Be("10 +");
+        tested.CurrentExpression.Should().Be("10　+");
 
         tested.OperatorToken = InputAction.Minus;
 
-        tested.CurrentExpression.Should().Be("10 -");
+        tested.CurrentExpression.Should().Be("10　-");
 
         tested.OperatorToken = InputAction.Multiply;
 
-        tested.CurrentExpression.Should().Be("10 ×");
+        tested.CurrentExpression.Should().Be("10　×");
 
         tested.OperatorToken = InputAction.Divide;
 
-        tested.CurrentExpression.Should().Be("10 ÷");
+        tested.CurrentExpression.Should().Be("10　÷");
     }
 }

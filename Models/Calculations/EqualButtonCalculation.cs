@@ -53,7 +53,7 @@ public class EqualButtonCalculation : Calculation
         get
         {
             OperationCalculation? calculator = (LastOperationCalculation ?? Receiver) as OperationCalculation;
-            return $"{calculator!.CurrentExpression} {calculator!.Operand?.Number} =";
+            return $"{calculator!.CurrentExpression?.Replace('　',' ')} {calculator!.Operand?.Number} =";
         }
     }
 }

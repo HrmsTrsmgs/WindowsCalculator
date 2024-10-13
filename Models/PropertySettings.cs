@@ -206,7 +206,7 @@ public class PropertySettings : ModelBase
         set => SetProperty(ref divideDisplayText, value);
     }
     /// <summary>
-    /// ÷のキーのテキストです。
+    /// =のキーのテキストです。
     /// </summary>
     string equalDisplayText = "=";
 

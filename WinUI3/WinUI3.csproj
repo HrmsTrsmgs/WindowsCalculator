@@ -13,9 +13,7 @@
     <EnableMsixTooling>true</EnableMsixTooling>
   </PropertyGroup>
   <ItemGroup>
-    <Content Remove="Assets\Images\calculator.svg" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Remove="Assets\Images\Calculator.svg" />
     <None Remove="Assets\Images\History.svg" />
   </ItemGroup>
 
@@ -44,6 +42,9 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
+    <Content Update="Assets\Images\Calculator.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Update="Assets\Images\History.svg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

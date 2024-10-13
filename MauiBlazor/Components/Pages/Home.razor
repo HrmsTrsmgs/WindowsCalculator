@@ -6,14 +6,14 @@
 
 <FluentBodyContent class="body-content">
     <div class="layout-root">
-        <div class="content-header">
+        <header class="content-header">
             <div class="icons">
-                <a href="/settings"><FluentIcon class="icon settings-icon" Value="@(new Icons.Filled.Size24.Settings())" /></a>
-                <a href="/history"><FluentIcon class="icon history-icon" Value="@(new Icons.Filled.Size48.History())" /></a>
+                <a href="/settings"><FluentIcon class="icon settings-icon" Value="@(new Icons.Regular.Size24.Settings())" /></a>
+                <a href="/history"><FluentIcon class="icon history-icon" Value="@(new Icons.Regular.Size48.History())" /></a>
             </div>
             <div class="expression">@ViewModel.Expression</div>
-        </div>
-        <div class="content-body">
+        </header>
+        <main class="content-body">
 
             <div class="calculation-result">
                 @ViewModel.DisplaiedNumber
@@ -40,31 +40,9 @@
                 <FluentButton class="fluent-button" @onclick="ViewModel.InputZeroCommand.Execute">0</FluentButton>
                 <FluentButton class="fluent-button font-large blue" @onclick="ViewModel.InputEqualCommand.Execute">=</FluentButton>
             </div>
-        </div>
+        </main>
     </div>
 </FluentBodyContent>
-
-<script>
-    // キー入力を捕捉。
-    window.addEventListener('keydown', function (event) {
-        DotNet.invokeMethodAsync('Marimo.WindowsCalculator.MauiBlazor', 'HandleKeyDown', event.key, event.ctrlKey);
-    });
-</script>
-<script>
-    //画面の大きさ変更を補足し、大きさに合った描画を行う。最初にも行う。
-    function setDivHeight() {
-        const div = document.querySelector('.layout-root');
-        div.style.height = `${document.documentElement.clientHeight}px`;
-    }
-
-    window.addEventListener('resize', setDivHeight);
-
-    const observer = new MutationObserver((mutations) => {
-        setDivHeight();
-    });
-    observer.observe(document.body, { attributes: true, childList: true, subtree: true });
-
-</script>
 <style>
     body {
         overflow: hidden;
@@ -75,6 +53,7 @@
         grid-template-rows: auto 1fr;
         width: 100vw;
         height: 100vw;
+        background:#EEF7EBFF;
     }
 
     .content-header {
@@ -186,7 +165,7 @@
     }
     
     .blue{
-        background:blue;
+        background: #1875C4;
         color:white;
     }
 

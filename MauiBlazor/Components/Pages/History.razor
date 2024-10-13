@@ -1,0 +1,86 @@
+﻿@page "/history"
+@using Marimo.WindowsCalculator.ViewModels
+@using Microsoft.Fast.Components.FluentUI
+@inject CalculatorViewModel ViewModel
+<div class="area">
+    <div class="header-container">
+        <a href="/" class="back" title="ホーム画面に戻る">
+            <FluentIcon Value="@(new Icons.Regular.Size24.ArrowLeft())" />
+        </a>
+        <header class="title">履歴</header>
+    </div>
+    <main class="history">
+        @foreach (var item in ViewModel.History)
+        {
+            <div class="history-item">
+                <span class="expression">@item.Expression</span>
+                <span class="result">@item.Result</span>
+            </div>
+        }
+    </main>
+    <FluentIcon Class="delete" @onclick="ViewModel.ClearHistoryCommand.Execute" Value="@(new Icons.Regular.Size24.Delete())" />
+</div>
+
+<style>
+    .area {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 100vh;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+    }
+
+    .back {
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .history {
+        flex-grow: 1;
+        margin: 16px 0;
+        overflow-y: auto;
+    }
+
+    .history-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 28px 0;
+        padding: 0 12px;
+    }
+
+        .history-item:first-child {
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+    .expression {
+        align-self: flex-end;
+        font-size: 14px;
+    }
+
+    .result {
+        align-self: flex-end;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .delete {
+        align-self: flex-end;
+        margin: 16px;
+    }
+</style>
+
+@code {
+
+}

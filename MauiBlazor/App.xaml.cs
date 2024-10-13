@@ -1,6 +1,8 @@
 ﻿
 
 using log4net;
+using Microsoft.UI;
+using Microsoft.UI.Windowing;
 
 namespace Marimo.WindowsCalculator.MauiBlazor;
 
@@ -31,6 +33,7 @@ public partial class App : Application
             log.Error(e.Exception);
             e.SetObserved();
         };
+
 
     }
 

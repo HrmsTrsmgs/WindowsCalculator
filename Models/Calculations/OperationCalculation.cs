@@ -74,7 +74,7 @@ public class OperationCalculation(Calculation receiver, InputAction? operatorTok
     /// <summary>
     /// この計算がActiveCalculatorの場合に表示される式を取得します。
     /// </summary>
-    public override string CurrentExpression => $"{Receiver?.Result} {
+    public override string CurrentExpression => $"{Receiver?.Result}　{
         OperatorToken switch
         {
             InputAction.Plus => "+",
@@ -82,5 +82,5 @@ public class OperationCalculation(Calculation receiver, InputAction? operatorTok
             InputAction.Multiply => "×",
             InputAction.Divide => "÷",
             _ => throw new NotImplementedException()
-        }}";
+        }}　";
 }

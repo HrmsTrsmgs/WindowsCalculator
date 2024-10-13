@@ -103,6 +103,7 @@
 
     <ItemGroup>
       <Folder Include="Platforms\Windows\Assets\" />
+      <Folder Include="新しいフォルダー\" />
     </ItemGroup>
 
 </Project>

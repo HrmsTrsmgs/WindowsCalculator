@@ -66,8 +66,8 @@ public class OperationCalculation(Calculation receiver, InputAction? operatorTok
         { 
             InputAction.Plus => Receiver.Result + Operand?.Number,
             InputAction.Minus => Receiver.Result - Operand?.Number,
-            InputAction.Multiply => Receiver.Result * Operand?.Number,
-            InputAction.Divide => Receiver.Result / Operand?.Number,
+            InputAction.Multiply => Math.Round(Receiver.Result * Operand?.Number ?? 0, NumberToken.MaxDecimalPlaces, MidpointRounding.AwayFromZero),
+            InputAction.Divide => Math.Round(Receiver.Result / Operand?.Number ?? 0, NumberToken.MaxDecimalPlaces, MidpointRounding.AwayFromZero),
             _ => throw new NotImplementedException()
         };
 

@@ -158,11 +158,35 @@ public class CalculatorTests
     [Fact]
     public void 掛け算後の小数点桁数は5桁までです()
     {
-        tested.Input(new NumberToken(5.12345m));
+        tested.Input(new NumberToken(5.12344m));
         tested.Input(new OperatorToken(InputAction.Multiply));
         tested.Input(new NumberToken(0.1m));
         tested.Input(new OperatorToken(InputAction.Plus));
-        tested.DisplaiedNumber.Should().Be("0.51235");
+        tested.DisplaiedNumber.Should().Be("0.51234");
+    }
+
+    [Fact]
+    public void 掛け算後に隠れた変数をもっていたりはしません()
+    {
+        tested.Input(new NumberToken(5.12344m));
+        tested.Input(new OperatorToken(InputAction.Multiply));
+        tested.Input(new NumberToken(0.1m));
+        tested.Input(new OperatorToken(InputAction.Multiply));
+        tested.Input(new NumberToken(10));
+        tested.Input(new OperatorToken(InputAction.Equal));
+        tested.DisplaiedNumber.Should().Be("5.1234");
+    }
+
+    [Fact]
+    public void 掛け算後の丸めは四捨五入です()
+    {
+        tested.Input(new NumberToken(5.12345m));
+        tested.Input(new OperatorToken(InputAction.Multiply));
+        tested.Input(new NumberToken(0.1m));
+        tested.Input(new OperatorToken(InputAction.Multiply));
+        tested.Input(new NumberToken(10));
+        tested.Input(new OperatorToken(InputAction.Equal));
+        tested.DisplaiedNumber.Should().Be("5.1235");
     }
 
     [Fact]
@@ -173,6 +197,38 @@ public class CalculatorTests
         tested.Input(new NumberToken(2));
         tested.Input(new OperatorToken(InputAction.Plus));
         tested.DisplaiedNumber.Should().Be("4");
+    }
+
+    [Fact]
+    public void 割り算の結果の最大桁は5桁です()
+    {
+        tested.Input(new NumberToken(10));
+        tested.Input(new OperatorToken(InputAction.Divide));
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken(InputAction.Plus));
+        tested.DisplaiedNumber.Should().Be("3.33333");
+    }
+
+    [Fact]
+    public void 割り算の結果に隠れた桁が混ざっていたりはしません()
+    {
+        tested.Input(new NumberToken(10));
+        tested.Input(new OperatorToken(InputAction.Divide));
+        tested.Input(new NumberToken(3));
+        tested.Input(new OperatorToken(InputAction.Multiply));
+        tested.Input(new NumberToken(10));
+        tested.Input(new OperatorToken(InputAction.Equal));
+        tested.DisplaiedNumber.Should().Be("33.3333");
+    }
+
+    [Fact]
+    public void 割り算の丸めは四捨五入です()
+    {
+        tested.Input(new NumberToken(12345));
+        tested.Input(new OperatorToken(InputAction.Divide));
+        tested.Input(new NumberToken(1000000));
+        tested.Input(new OperatorToken(InputAction.Equal));
+        tested.DisplaiedNumber.Should().Be("0.01235");
     }
 
     [Fact]

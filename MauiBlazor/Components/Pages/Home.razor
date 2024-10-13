@@ -19,26 +19,26 @@
                 @ViewModel.DisplaiedNumber
             </div>
             <div class="keys">
-                  <FluentButton class="fluent-button font-small" @onclick="ViewModel.InputCECommand.Execute">@ViewModel</FluentButton>
-                 <FluentButton class="fluent-button font-small" @onclick="ViewModel.InputCCommand.Execute">C</FluentButton>
-                 <FluentButton class="fluent-button font-small" @onclick="ViewModel.InputBackspaceCommand.Execute">⌫</FluentButton>
-                 <FluentButton class="fluent-button font-large" @onclick="ViewModel.InputDivideCommand.Execute">÷</FluentButton>
-                 <FluentButton class="fluent-button" @onclick="ViewModel.InputSevenCommand.Execute">7</FluentButton>
-                 <FluentButton class="fluent-button" @onclick="ViewModel.InputEightCommand.Execute">8</FluentButton>
-                  <FluentButton class="fluent-button" @onclick="ViewModel.InputNineCommand.Execute">9</FluentButton>
-                <FluentButton class="fluent-button" @onclick="ViewModel.InputMultiplyCommand.Execute">×</FluentButton>
-                <FluentButton class="fluent-button" @onclick="ViewModel.InputFourCommand.Execute">4</FluentButton>
-                 <FluentButton class="fluent-button" @onclick="ViewModel.InputFiveCommand.Execute">5</FluentButton>
-                 <FluentButton class="fluent-button" @onclick="ViewModel.InputSixCommand.Execute">6</FluentButton>
-                 <FluentButton class="fluent-button font-large" @onclick="ViewModel.InputMinusCommand.Execute">-</FluentButton>
-                 <FluentButton class="fluent-button" @onclick="ViewModel.InputOneCommand.Execute">1</FluentButton>
-                 <FluentButton class="fluent-button" @onclick="ViewModel.InputTwoCommand.Execute">2</FluentButton>
-                 <FluentButton class="fluent-button" @onclick="ViewModel.InputThreeCommand.Execute">3</FluentButton>
-                 <FluentButton class="fluent-button font-large" @onclick="ViewModel.InputPlusCommand.Execute">+</FluentButton>
-                 <FluentButton class="fluent-button" @onclick="ViewModel.InputUndoCommand.Execute" >Undo</FluentButton>
-                <FluentButton class="fluent-button" @onclick="ViewModel.InputDotCommand.Execute">.</FluentButton>
-                <FluentButton class="fluent-button" @onclick="ViewModel.InputZeroCommand.Execute">0</FluentButton>
-                <FluentButton class="fluent-button font-large blue" @onclick="ViewModel.InputEqualCommand.Execute">=</FluentButton>
+                  <FluentButton class="fluent-button font-small" @onclick="ViewModel.InputCECommand.Execute">@ViewModel.Settings.CEDisplayText</FluentButton>
+                 <FluentButton class="fluent-button font-small" @onclick="ViewModel.InputCCommand.Execute">@ViewModel.Settings.CDisplayText</FluentButton>
+                <FluentButton class="fluent-button font-small" @onclick="ViewModel.InputBackspaceCommand.Execute">@ViewModel.Settings.BackspaceDisplayText</FluentButton>
+                <FluentButton class="fluent-button font-large" @onclick="ViewModel.InputDivideCommand.Execute">@ViewModel.Settings.DivideDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputSevenCommand.Execute">@ViewModel.Settings.SevenDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputEightCommand.Execute">@ViewModel.Settings.EightDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputNineCommand.Execute">@ViewModel.Settings.NineDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputMultiplyCommand.Execute">@ViewModel.Settings.MultiplyDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputFourCommand.Execute">@ViewModel.Settings.FourDisplayText</FluentButton>
+                 <FluentButton class="fluent-button" @onclick="ViewModel.InputFiveCommand.Execute">@ViewModel.Settings.FiveDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputSixCommand.Execute">@ViewModel.Settings.SixDisplayText</FluentButton>
+                <FluentButton class="fluent-button font-large" @onclick="ViewModel.InputMinusCommand.Execute">@ViewModel.Settings.MinusDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputOneCommand.Execute">@ViewModel.Settings.OneDisplayText</FluentButton>
+                 <FluentButton class="fluent-button" @onclick="ViewModel.InputTwoCommand.Execute">@ViewModel.Settings.TwoDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputThreeCommand.Execute">@ViewModel.Settings.ThreeDisplayText</FluentButton>
+                <FluentButton class="fluent-button font-large" @onclick="ViewModel.InputPlusCommand.Execute">@ViewModel.Settings.PlusDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputUndoCommand.Execute">@ViewModel.Settings.UndoDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputDotCommand.Execute">@ViewModel.Settings.DotDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputZeroCommand.Execute">@ViewModel.Settings.ZeroDisplayText</FluentButton>
+                <FluentButton class="fluent-button font-large blue" @onclick="ViewModel.InputEqualCommand.Execute">@ViewModel.Settings.EqualDisplayText</FluentButton>
             </div>
         </main>
     </div>

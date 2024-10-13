@@ -244,13 +244,27 @@ public class PropertySettings : ModelBase
         get => ceDisplayText;
         set => SetProperty(ref ceDisplayText, value);
     }
+
     /// <summary>
-    /// ÷のキーのテキストです。
+    /// Undoキーのテキストです。
+    /// </summary>
+    string undoDisplayText = "Undo";
+
+    /// <summary>
+    /// ÷のキーのテキストを取得、設定します。
+    /// </summary>
+    public string UndoDisplayText
+    {
+        get => undoDisplayText;
+        set => SetProperty(ref undoDisplayText, value);
+    }
+    /// <summary>
+    /// バックスペースのキーのテキストです。
     /// </summary>
     string backspaceDisplayText = "⌫";
 
     /// <summary>
-    /// ÷のキーのテキストを取得、設定します。
+    /// バックスペースのキーのテキストを取得、設定します。
     /// </summary>
     public string BackspaceDisplayText
     {

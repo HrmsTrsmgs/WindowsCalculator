@@ -38,15 +38,15 @@ public class NumberTokenTests
     public void 桁が16桁を超える数値は指数表記になります()
     {
         tested.Number = 9999999999999999;
-        tested.ToString().Should().Be("9999999999999999");
+        tested.ToString().Should().Be("9,999,999,999,999,999");
         tested.Number = 10000000000000000;
-        tested.ToString().Should().Be("1E+16");
+        tested.ToString().Should().Be("1e+16");
     }
 
     [Fact]
     public void 指数表記の数値部分の最大桁も16桁です()
     {
-        tested.Number = 99999999999999990;
-        tested.ToString().Should().Be("9.999999999999999E+16");
+        tested.Number = 11111111111111111;
+        tested.ToString().Should().Be("1.111111111111111e+16");
     }
 }

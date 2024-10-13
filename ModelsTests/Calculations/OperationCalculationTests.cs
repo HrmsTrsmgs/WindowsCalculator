@@ -7,7 +7,7 @@ public class OperationCalculationTests
 {
     OperationCalculation tested { get; set; }
         = new(
-            new NumberCalculation(null) { NumberToken = new(10) },
+            new NumberCalculation(null){ NumberToken = new(10) },
             InputAction.Plus,
             new(20),
             true);

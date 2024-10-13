@@ -9,7 +9,7 @@ namespace Marimo.WindowsCalculator.Models;
 /// <param name="number">
 /// 文字列で表された数値。
 /// </param>
-public class NumberToken(decimal number) : Token
+public class NumberToken(decimal? number) : Token
 {
     /// <summary>
     /// 小数点以下の最大桁数です。
@@ -24,7 +24,7 @@ public class NumberToken(decimal number) : Token
     /// <summary>
     /// 入力された数値を取得します。
     /// </summary>
-    public decimal Number { get; set; } = number;
+    public decimal Number { get; set; } = number ?? 0;
 
     /// <summary>
     /// 入力中の小数点の桁数です。小数の入力中でなければnullです。
@@ -51,6 +51,6 @@ public class NumberToken(decimal number) : Token
 
     public override string ToString()
         => Number < Utility.Pow(10, NumberToken.MaxDigits)
-        ? Number.ToString() + (IsInteger && decimalPlaces != null ? "." : "")
-        : string.Format($"{{0:0.{new string('#', NumberToken.MaxDigits - 1)}E+0}}", Number);
+        ? Number.ToString($"#,##0.{new string('#', NumberToken.MaxDecimalPlaces)}") + (IsInteger && decimalPlaces != null ? "." : "")
+        : Number.ToString($"0.{new string('#', NumberToken.MaxDigits - 1)}e+0");
 }

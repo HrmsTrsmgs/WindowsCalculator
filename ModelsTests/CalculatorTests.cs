@@ -34,18 +34,17 @@ public class CalculatorTests
     }
 
     [Fact]
-    public void 初期状態の計算は数値演算子です()
+    public void 初期状態の計算はNullオブジェクトです()
     {
-        tested.ActiveCaluculation.Should().BeOfType<NumberCalculation>();
-        (tested.ActiveCaluculation as NumberCalculation)?.NumberToken.Number.Should().Be(0);
+        tested.ActiveCaluculation.Should().BeOfType<NullCalculation>();
     }
 
     [Fact]
-    public void 初期状態の計算は比演算子が0です()
+    public void 初期状態の計算は結果が0です()
     {
-        tested.ActiveCaluculation.Should().BeOfType<NumberCalculation>();
-        var calculation = (NumberCalculation)tested.ActiveCaluculation;
-        calculation.NumberToken.Number.Should().Be(0);
+        tested.ActiveCaluculation.Should().BeOfType<NullCalculation>();
+        var calculation = (NullCalculation)tested.ActiveCaluculation;
+        calculation.Result.Should().Be(0);
     }
 
     [Fact]
@@ -63,8 +62,9 @@ public class CalculatorTests
     }
 
     [Fact]
-    public void 初期状態から数値が入力された場合に現在の計算は変わりません()
+    public void 数値が入力しなおされた場合に現在の計算は変わりません()
     {
+        tested.Input(new NumberToken(1));
         var initial = tested.ActiveCaluculation;
 
         tested.Input(new NumberToken(3));
@@ -156,6 +156,16 @@ public class CalculatorTests
     }
 
     [Fact]
+    public void 掛け算後の小数点桁数は5桁までです()
+    {
+        tested.Input(new NumberToken(5.12345m));
+        tested.Input(new OperatorToken(InputAction.Multiply));
+        tested.Input(new NumberToken(0.1m));
+        tested.Input(new OperatorToken(InputAction.Plus));
+        tested.DisplaiedNumber.Should().Be("0.51235");
+    }
+
+    [Fact]
     public void 割り算が実現されています()
     {
         tested.Input(new NumberToken(8));
@@ -228,12 +238,12 @@ public class CalculatorTests
     }
 
     [Fact]
-    public void Deleteで計算結果が削除されます()
+    public void CEで計算結果が削除されます()
     {
         tested.Input(new NumberToken(3));
         tested.Input(new OperatorToken(InputAction.Plus));
         tested.Input(new NumberToken(5));
-        tested.Input(OtherToken.Delete);
+        tested.Input(OtherToken.CE);
         tested.DisplaiedNumber.Should().Be("0");
     }
 
@@ -273,7 +283,7 @@ public class CalculatorTests
     {
         tested.Input(new NumberToken(3));
         tested.Input(OtherToken.Undo);
-        tested.ActiveCaluculation.Should().BeNull();
+        tested.ActiveCaluculation.Should().BeSameAs(Calculation.NullObject);
         tested.DisplaiedNumber.Should().Be("0");
     }
 

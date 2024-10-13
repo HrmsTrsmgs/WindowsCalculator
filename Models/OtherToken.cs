@@ -18,9 +18,9 @@ public class OtherToken : Token
     public static OtherToken Backspace { get; } = new OtherToken(OtherTokenKind.Backspace);
 
     /// <summary>
-    /// デリートトークンを取得します。
+    /// 削除トークンを取得します。
     /// </summary>
-    public static OtherToken Delete { get; } = new OtherToken(OtherTokenKind.C);
+    public static OtherToken C { get; } = new OtherToken(OtherTokenKind.C);
 
     /// <summary>
     /// アンドゥトークンを取得します。
@@ -31,6 +31,10 @@ public class OtherToken : Token
     /// リドゥトークンを取得します。
     /// </summary>
     public static OtherToken Redo { get; } = new OtherToken(OtherTokenKind.Redo);
+
+    /// <summary>
+    /// 表示分削除トークンを取得します。
+    /// </summary>
     public static OtherToken CE { get;  } = new OtherToken(OtherTokenKind.CE);
 
     /// <summary>

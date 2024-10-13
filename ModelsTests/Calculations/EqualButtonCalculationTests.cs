@@ -8,7 +8,7 @@ public class EqualButtonCalculationTests
     EqualButtonCalculation tested 
         = new(
             new OperationCalculation(
-                new NumberCalculation(null) { NumberToken = new(10) },
+                new NumberCalculation(null, numberToken: new(10)),
                 InputAction.Plus,
                 new(20)
             ),null);
@@ -26,7 +26,7 @@ public class EqualButtonCalculationTests
         = new(
             this.tested,
             new OperationCalculation(
-                new NumberCalculation(null),
+                Calculation.NullObject,
                 InputAction.Plus,
                 new(20)
             ));
@@ -47,7 +47,7 @@ public class EqualButtonCalculationTests
         = new(
             this.tested,
             new OperationCalculation(
-                new NumberCalculation(null),
+                Calculation.NullObject,
                 InputAction.Plus,
                 new(20)
             ));

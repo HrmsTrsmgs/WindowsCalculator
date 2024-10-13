@@ -11,7 +11,7 @@ public class Calculator : ModelBase
     /// <summary>
     /// 現在行っている計算です。
     /// </summary>
-    Calculation activeCaluculation = new NumberCalculation(null);
+    Calculation activeCaluculation = Calculation.NullObject;
 
     /// <summary>
     /// 履歴作成のための計算です。
@@ -73,19 +73,19 @@ public class Calculator : ModelBase
                 return
                     (ActiveCaluculation switch
                     {
-                        NumberCalculation c => c.NumberToken.Number,
-                        OperationCalculation c
-                            => (c.Result ?? c.Operand?.Number ?? c.Receiver?.Result
-                                ) ??
-                                throw new InvalidOperationException(
-                                    "今の演算も前の演算も結果が出てないのはおかしいはず"),
-                        EqualButtonCalculation c
-                            => c.Result,
-                        DeleteCalculation c
-                            => c.Result,
-                        _ => 0
+                    NumberCalculation c => c.NumberToken,
+                    OperationCalculation c
+                        => new NumberToken(c.Result ?? c.Operand?.Number ?? c.Receiver?.Result
+                             ??
+                            throw new InvalidOperationException(
+                                "今の演算も前の演算も結果が出てないのはおかしいはず")),
+                    EqualButtonCalculation c
+                        => new NumberToken(c.Result),
+                    DeleteCalculation c
+                        => new NumberToken(c.Result),
+                    _ => new NumberToken(0)
 
-                    } ?? throw new InvalidOperationException()).ToString("N");
+                    } ?? throw new InvalidOperationException()).ToString();
             }
             catch (DivideByZeroException)
             {
@@ -159,8 +159,7 @@ public class Calculator : ModelBase
                         {
                             RedoCalculation = ActiveCaluculation;
                         }
-                        if (ActiveCaluculation.Receiver == null) break;
-                        SetProperty(ref activeCaluculation!, ActiveCaluculation.Receiver, nameof(ActiveCaluculation));
+                        SetProperty(ref activeCaluculation!, ActiveCaluculation.Receiver ?? Calculation.NullObject, nameof(ActiveCaluculation));
                         switch(ActiveCaluculation)
                         {
                             case OperationCalculation c:
@@ -188,7 +187,7 @@ public class Calculator : ModelBase
                         }
                         goto default;
                     case OtherTokenKind.C:
-                        ActiveCaluculation = new NumberCalculation(null);
+                        ActiveCaluculation = Calculation.NullObject;
                         ClearCalculationHistory();
                         break;
                     case OtherTokenKind.CE:
@@ -259,6 +258,9 @@ public class Calculator : ModelBase
                 break;
             case OperationCalculation c:
                 c.Operand = token;
+                break;
+            case NullCalculation c:
+                ActiveCaluculation = new NumberCalculation(c, token);
                 break;
         }
     }

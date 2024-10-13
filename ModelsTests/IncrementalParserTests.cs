@@ -324,7 +324,7 @@ public class IncrementalParserTest : TestBase
     public void Cを受け付けその他トークンが出力されます()
     {
         tested.Input(InputAction.C);
-        tested.ActiveToken.Should().BeSameAs(OtherToken.Delete);
+        tested.ActiveToken.Should().BeSameAs(OtherToken.C);
     }
 
     [Fact]

@@ -4,7 +4,7 @@ namespace Marimo.WindowsCalculator.Tests.Models.Calculations;
 
 public class DeleteCalculationTest
 {
-    DeleteCalculation tested { get; } = new(new NumberCalculation(null));
+    DeleteCalculation tested { get; } = new(Calculation.NullObject);
 
     [Fact]
     public void 計算結果はゼロです()

@@ -76,7 +76,7 @@ public class IncrementalParser : ModelBase
                 ActiveToken = OtherToken.Equal;
                 break;
             case InputAction.C:
-                ActiveToken = OtherToken.Delete;
+                ActiveToken = OtherToken.C;
                 break;
             case InputAction.Backspace:
                 switch (ActiveToken)

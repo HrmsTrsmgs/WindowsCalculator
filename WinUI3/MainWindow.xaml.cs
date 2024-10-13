@@ -1,3 +1,4 @@
+using Marimo.WindowsCalculator.ViewModels;
 using Microsoft.UI.Xaml;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -10,11 +11,13 @@ namespace Marimo.WindowsCalculator.WinUI3;
 /// </summary>
 public sealed partial class MainWindow : Window
 {
-    public MainWindow()
+    public MainWindow(CalculatorViewModel viewModel)
     {
         InitializeComponent();
-
+        ViewModel = viewModel;
         ExtendsContentIntoTitleBar = true;
         SetTitleBar(AppTitleBar);
     }
+
+    public CalculatorViewModel ViewModel { get; }
 }

@@ -8,12 +8,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid  Background="#EEF7EB">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel x:Name="AppTitleBar" Background="#EEF7EB" Height="32" VerticalAlignment="Top" Orientation="Horizontal">
+        <StackPanel 
+            x:Name="AppTitleBar" 
+            Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="32" VerticalAlignment="Top" Orientation="Horizontal">
             <ImageIcon Margin="16,0" Width="20" Height="20" Source="ms-appx:///Assets/Images/Calculator.svg"/>
             <TextBlock Margin="-4" Text="電卓" VerticalAlignment="Center" FontSize="12" />
         </StackPanel>
@@ -31,7 +33,197 @@
             <TextBlock 
                 RelativePanel.AlignBottomWithPanel="True" 
                 RelativePanel.AlignRightWithPanel="True"
+                FontSize="14"
                 Text="{x:Bind ViewModel.Expression}"/>
         </RelativePanel>
+        <Grid Grid.Row="1" Margin="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border 
+                Grid.ColumnSpan="4" 
+                Margin="-3,4"
+                BorderThickness="2" CornerRadius="5" BorderBrush="Black"
+                HorizontalAlignment="Stretch">
+                <Viewbox 
+                    HorizontalAlignment="Right"
+                    MaxHeight="60">
+                    <TextBlock 
+                        Text="{x:Bind ViewModel.DisplaiedNumber}"
+                        FontWeight="SemiBold"/>
+                </Viewbox>
+            </Border>
+            <Button 
+                Grid.Row="1" 
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.CEDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="1" Grid.Column="1" 
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.CDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="1" Grid.Column="2" 
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.BackspaceDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="1" Grid.Column="3" 
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.DivideDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="2" 
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.SevenDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button
+                Grid.Row="2" Grid.Column="1"
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.EightDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="2" Grid.Column="2"
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.NineDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="2" Grid.Column="3"
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.MultiplyDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="3"  
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.FourDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="3" Grid.Column="1" 
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.FiveDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="3" Grid.Column="2"
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.SixDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button
+                Grid.Row="3" Grid.Column="3"
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.MinusDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="4"
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.OneDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="4" Grid.Column="1"
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.TwoDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="4" Grid.Column="2"
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.ThreeDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="4" Grid.Column="3"
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.PlusDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="5" 
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.UndoDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="5" Grid.Column="1"
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.ZeroDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="5" Grid.Column="2" 
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.DotDisplayText}"/>
+                </Viewbox>
+            </Button>
+            <Button 
+                Grid.Row="5" Grid.Column="3"
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="1">
+                <Viewbox MaxHeight="28">
+                    <TextBlock Text="{x:Bind ViewModel.Settings.EqualDisplayText}"/>
+                </Viewbox>
+            </Button>
+        </Grid>
     </Grid>
 </Window>

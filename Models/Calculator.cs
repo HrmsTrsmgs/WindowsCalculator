@@ -1,8 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using Marimo.WindowsCalculator.Models.Calculations;
+﻿using Marimo.WindowsCalculator.Models.Calculations;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
 
 namespace Marimo.WindowsCalculator.Models;
 
@@ -74,21 +71,21 @@ public class Calculator : ModelBase
             try
             {
                 return
-                    ActiveCaluculation switch
+                    (ActiveCaluculation switch
                     {
-                        NumberCalculation c => c.NumberToken.ToString(),
+                        NumberCalculation c => c.NumberToken.Number,
                         OperationCalculation c
                             => (c.Result ?? c.Operand?.Number ?? c.Receiver?.Result
-                                )?.ToString() ??
+                                ) ??
                                 throw new InvalidOperationException(
                                     "今の演算も前の演算も結果が出てないのはおかしいはず"),
                         EqualButtonCalculation c
-                            => c.Result.ToString() ?? throw new InvalidOperationException(),
+                            => c.Result,
                         DeleteCalculation c
-                            => c.Result.ToString() ?? throw new InvalidOperationException(),
-                        _ => "0"
+                            => c.Result,
+                        _ => 0
 
-                    };
+                    } ?? throw new InvalidOperationException()).ToString("N");
             }
             catch (DivideByZeroException)
             {
@@ -111,7 +108,7 @@ public class Calculator : ModelBase
             }
             else
             {
-                while(cumulativeCalculation.Last() != activeCaluculation)
+                while(cumulativeCalculation.Last() != ActiveCaluculation)
                 {
                     cumulativeCalculation.Remove(cumulativeCalculation.Last());
                 }
@@ -162,6 +159,7 @@ public class Calculator : ModelBase
                         {
                             RedoCalculation = ActiveCaluculation;
                         }
+                        if (ActiveCaluculation.Receiver == null) break;
                         SetProperty(ref activeCaluculation!, ActiveCaluculation.Receiver, nameof(ActiveCaluculation));
                         switch(ActiveCaluculation)
                         {

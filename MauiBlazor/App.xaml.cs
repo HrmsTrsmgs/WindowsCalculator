@@ -1,5 +1,7 @@
 ﻿
 
+using log4net;
+
 namespace Marimo.WindowsCalculator.MauiBlazor;
 
 
@@ -17,6 +19,17 @@ public partial class App : Application
         MainPage = new MainPage()
         {
             MinimumWidthRequest = 320,
+        };
+        var log = LogManager.GetLogger(GetType());
+        AppDomain.CurrentDomain.UnhandledException += (sender, e) =>
+        {
+            log.Error(e.ExceptionObject);
+        };
+
+        TaskScheduler.UnobservedTaskException += (sender, e) =>
+        {
+            log.Error(e.Exception);
+            e.SetObserved();
         };
 
     }

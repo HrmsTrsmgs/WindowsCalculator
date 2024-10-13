@@ -149,7 +149,7 @@ public class CalculatorViewModel : ObservableObject
     /// <summary>
     /// 計算式を取得します。
     /// </summary>
-    public object Expression => model.ActiveCaluculation.CurrentExpression;
+    public object Expression => model.ActiveCaluculation?.CurrentExpression;
 
     /// <summary>
     /// CalculationViewModelクラスの新しいインスタンスを初期化します。
@@ -170,6 +170,7 @@ public class CalculatorViewModel : ObservableObject
         InputSevenCommand = new RelayCommand(() => Input(InputAction.Seven));
         InputEightCommand = new RelayCommand(() => Input(InputAction.Eight));
         InputNineCommand = new RelayCommand(() => Input(InputAction.Nine));
+        InputDotCommand = new RelayCommand(() => Input(InputAction.Dot));
         InputZeroCommand = new RelayCommand(() => Input(InputAction.Zero));
         InputPlusCommand = new RelayCommand(() => Input(InputAction.Plus));
         InputMinusCommand = new RelayCommand(() => Input(InputAction.Minus));

@@ -18,6 +18,21 @@ public class CaluculatorViewModelTests
     }
 
     [Fact]
+    public void 入力した数値はカンマ区切りで表示されます()
+    {
+        tested.InputKeybord.Execute(InputAction.Five);
+        tested.InputKeybord.Execute(InputAction.Five);
+        tested.InputKeybord.Execute(InputAction.Five);
+        tested.InputKeybord.Execute(InputAction.Five);
+        tested.InputKeybord.Execute(InputAction.Five);
+        tested.InputKeybord.Execute(InputAction.Five);
+        tested.InputKeybord.Execute(InputAction.Five);
+
+        tested.DisplaiedNumber.Should().Be("5,555,555");
+
+    }
+
+    [Fact]
     public void 計算式が表示されています()
     {
         tested.InputKeybord.Execute(InputAction.Five);

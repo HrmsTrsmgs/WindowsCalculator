@@ -1,9 +1,9 @@
 {
   "profiles": {
-    "WinUI3 (Package)": {
+    "Marimo.WindowsCalculator.WinUI3 (Package)": {
       "commandName": "MsixPackage"
     },
-    "WinUI3 (Unpackaged)": {
+    "Marimo.WindowsCalculator.WinUI3 (Unpackaged)": {
       "commandName": "Project"
     }
   }

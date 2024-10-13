@@ -15,7 +15,7 @@
   <mp:PhoneIdentity PhoneProductId="f4400d94-e915-43d1-8434-f849922171c4" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>WinUI3</DisplayName>
+    <DisplayName>Marimo.WindowsCalculator.WinUI3</DisplayName>
     <PublisherDisplayName>potim</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -34,8 +34,8 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="WinUI3"
-        Description="WinUI3"
+        DisplayName="Marimo.WindowsCalculator.WinUI3"
+        Description="Marimo.WindowsCalculator.WinUI3"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png">

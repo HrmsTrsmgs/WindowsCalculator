@@ -5,10 +5,10 @@ namespace Marimo.WindowsCalculator.Tests.Models.Calculations;
 
 public class EqualButtonCalculationTests
 {
-    EqualButtonCalculation tested 
+    readonly EqualButtonCalculation tested 
         = new(
             new OperationCalculation(
-                new NumberCalculation(null, numberToken: new(10)),
+                new NumberCalculation(Calculation.NullObject, numberToken: new(10)),
                 InputAction.Add,
                 new(20)
             ),null);

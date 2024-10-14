@@ -7,8 +7,14 @@ public class PropertySettings : ModelBase
 {
     
 
+    /// <summary>
+    /// 画面のテーマ。
+    /// </summary>
     ApplicationTheme theme = ApplicationTheme.System;
 
+    /// <summary>
+    /// 画面のテーマを取得、設定します。
+    /// </summary>
     public ApplicationTheme Theme
     {
         get => theme;

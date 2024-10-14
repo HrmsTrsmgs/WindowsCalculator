@@ -3,29 +3,37 @@
 /// <summary>
 /// 計算の最初にある、演算の対象となるのみの数字を表します。
 /// </summary>
-/// <param name="receiver"></param>
-public class NumberCalculation(Calculation? receiver, NumberToken? numberToken = null) : Calculation(receiver)
+/// <remarks>
+/// NumberCalculationクラスの新しいインスタンスを初期化します。
+/// </remarks>
+/// <param name="receiver">計算する対象。</param>
+/// <param name="numberToken">計算される数値</param>
+public class NumberCalculation(Calculation receiver, NumberToken numberToken) : Calculation(receiver)
 {
+
+    /// <summary>
+    /// NumberCalculationクラスの新しいインスタンスを初期化します。
+    /// </summary>
+    /// <param name="receiver">計算する対象。</param>
+    public NumberCalculation(Calculation receiver) 
+        : this(receiver, new NumberToken(0))
+    { }
+
     /// <summary>
     /// 計算する対象を取得、設定します。
     /// </summary>
-    /// <remarks>
-    /// 計算する対象を取得します。
-    /// 初期状態の計算しなくてもある数字を表しているので、なので必ずnullです。
-    /// </remarks>
-    public override Calculation? Receiver => receiver;
+    public override Calculation Receiver { get; internal set; } = receiver;
 
     /// <summary>
-    /// 計算の最初の数値を取得、設定します。
+    /// 計算される数値を取得、設定します。
     /// </summary>
-    public NumberToken NumberToken { get; set; } = numberToken ?? new NumberToken(0);
+    public NumberToken NumberToken { get; set; } = numberToken;
 
     /// <summary>
     /// 計算した結果を取得、設定します。
     /// </summary>
     /// <remarks>
     /// 計算した結果です。次の計算があった場合は、計算対象となります。
-    /// nullになりません。
     /// </remarks>
     public override decimal? Result => NumberToken.Number;
 
@@ -33,8 +41,4 @@ public class NumberCalculation(Calculation? receiver, NumberToken? numberToken =
     /// この計算がActiveCalculatorの場合に表示される式を取得します。
     /// </summary>
     public override string Expression => "";
-
-    protected NumberCalculation(): this(null)
-    {
-    }
 }

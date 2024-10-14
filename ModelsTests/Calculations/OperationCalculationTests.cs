@@ -5,9 +5,9 @@ namespace Marimo.WindowsCalculator.Tests.Models.Calculations;
 
 public class OperationCalculationTests
 {
-    OperationCalculation tested { get; set; }
+    OperationCalculation Tested { get; set; }
         = new(
-            new NumberCalculation(null){ NumberToken = new(10) },
+            new NumberCalculation(Calculation.NullObject){ NumberToken = new(10) },
             InputAction.Add,
             new(20),
             true);
@@ -15,36 +15,36 @@ public class OperationCalculationTests
     [Fact]
     public void 計算結果が出力されます()
     {
-        tested.Result.Should().Be(30);
+        Tested.Result.Should().Be(30);
 
-        tested.OperatorToken = InputAction.Substract;
+        Tested.OperatorToken = InputAction.Substract;
 
-        tested.Result.Should().Be(-10);
+        Tested.Result.Should().Be(-10);
 
-        tested.OperatorToken = InputAction.Multiply;
+        Tested.OperatorToken = InputAction.Multiply;
 
-        tested.Result.Should().Be(200);
+        Tested.Result.Should().Be(200);
 
-        tested.OperatorToken = InputAction.Divide;
+        Tested.OperatorToken = InputAction.Divide;
 
-        tested.Result.Should().Be(0.5m);
+        Tested.Result.Should().Be(0.5m);
     }
 
     [Fact]
     public void 式は計算途中の式が表示されます()
     {
-        tested.Expression.Should().Be("10　+");
+        Tested.Expression.Should().Be("10　+");
 
-        tested.OperatorToken = InputAction.Substract;
+        Tested.OperatorToken = InputAction.Substract;
 
-        tested.Expression.Should().Be("10　-");
+        Tested.Expression.Should().Be("10　-");
 
-        tested.OperatorToken = InputAction.Multiply;
+        Tested.OperatorToken = InputAction.Multiply;
 
-        tested.Expression.Should().Be("10　×");
+        Tested.Expression.Should().Be("10　×");
 
-        tested.OperatorToken = InputAction.Divide;
+        Tested.OperatorToken = InputAction.Divide;
 
-        tested.Expression.Should().Be("10　÷");
+        Tested.Expression.Should().Be("10　÷");
     }
 }

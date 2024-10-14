@@ -3,9 +3,15 @@
 /// <summary>
 /// 計算、もしくは最初に入力された数値を表します。
 /// </summary>
-/// <param name="Operand">計算される、もしくは最初に入力された数値。</param>
+/// <param name="receiver">計算対象</param>
+/// <param name="operatorToken">演算子のトークン。</param>
+/// <param name="operand">計算される数値。</param>
+/// <param name="isDisplaiedResult">結果が式の表示対象になるか。</param>
 public class OperationCalculation(Calculation receiver, InputAction? operatorToken = null, NumberToken? operand = null, bool isDisplaiedResult = false) : Calculation(receiver)
 {
+    /// <summary>
+    /// 結果が式の表示対象になるかを取得、設定します。
+    /// </summary>
     public bool IsDisplaiedResult { get; set; } = isDisplaiedResult;
 
     /// <summary>
@@ -36,19 +42,6 @@ public class OperationCalculation(Calculation receiver, InputAction? operatorTok
             IsDisplaiedResult = false;
             SetProperty(ref operand, value);
         }
-    }
-
-    /// <summary>
-    /// 計算する対象を取得、設定します。
-    /// </summary>
-    /// <remarks>
-    /// 計算する対象です。
-    /// ここではnullになりません。
-    /// </remarks>
-    public override Calculation? Receiver 
-    {
-        get => base.Receiver;
-        set => base.Receiver = value;
     }
 
     /// <summary>

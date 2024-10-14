@@ -3,10 +3,14 @@
 /// <summary>
 /// 演算子と数値以外のトークンを表します。
 /// </summary>
-/// <param name="kind">トークンの種類。</param>
 public class OtherToken : Token
 {
+    /// <summary>
+    /// OtherTokenクラスの新しいインスタンスを初期化します。
+    /// </summary>
+    /// <param name="kind">トークンの種類。</param>
     OtherToken(OtherTokenKind kind) => Kind = kind;
+
     /// <summary>
     /// イコールトークンを取得します。
     /// </summary>

@@ -136,44 +136,15 @@
         font-size: 18px;
         margin: 5px;
         border-radius: 4px;
-        Q cursor: pointer;
+        cursor: pointer;
         border: 1px solid transparent;
         transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
         overflow: hidden;
         min-height: 0;
     }
 
-    @@media (prefers-color-scheme: light) {
-        .fluent-button {
-            background-color: #ffffff;
-            color: #000000;
-            border-color: #d3d3d3;
-        }
-
-            .fluent-button:hover {
-                background-color: #f0f0f0;
-                border-color: #a9a9a9;
-            }
-    }
-
-    @@media (prefers-color-scheme: dark) {
-        .fluent-button {
-            background-color: #333333;
-            color: #ffffff;
-            border-color: #555555;
-        }
-
-            .fluent-button:hover {
-                background-color: #444444;
-                border-color: #777777;
-            }
-    }
-
 </style>
 @code {
-
-    private static double windowWidth;
-    private static double windowHeight;
 
     private static Home? self;
 

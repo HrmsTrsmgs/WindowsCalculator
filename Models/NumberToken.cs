@@ -49,6 +49,10 @@ public class NumberToken(decimal? number) : Token
     bool IsInteger => Number == Decimal.Truncate(Number);
 
 
+    /// <summary>
+    /// 現在のオブジェクトを表す文字列を返します。
+    /// </summary>
+    /// <returns>現在のオブジェクトを表す文字列。</returns>
     public override string ToString()
         => Number < Utility.Pow(10, NumberToken.MaxDigits)
         ? Number.ToString($"#,##0.{new string('#', NumberToken.MaxDecimalPlaces)}") + (IsInteger && decimalPlaces != null ? "." : "")

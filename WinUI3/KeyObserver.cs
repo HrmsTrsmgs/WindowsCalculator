@@ -4,26 +4,32 @@ using Microsoft.UI.Xaml.Input;
 using System;
 using System.Reactive.Linq;
 using Windows.System;
-using Windows.UI.Core;
 
 namespace Marimo.WindowsCalculator.WinUI3;
 
-internal class KeyObserver(UIElement element, TimeSpan initialDelay, TimeSpan repeatInterval)
+internal class KeyObserver
 {
-    UIElement Element { get; } = element;
-    TimeSpan InitialDelay { get; } = initialDelay;
-    TimeSpan RepeatInterval { get; } = repeatInterval;
+    UIElement Element { get; }
+    TimeSpan InitialDelay { get; }
+    TimeSpan RepeatInterval { get; }
+    internal KeyObserver(UIElement element, TimeSpan initialDelay, TimeSpan repeatInterval)
+    {
+        Element = element;
+        InitialDelay = initialDelay;
+        RepeatInterval = repeatInterval;
+    }
+
     public IObservable<InputAction> ObserveKeys()
     {
         //:引継ぎ事項:
         //
         var keyDowns = Observable.FromEventPattern<KeyEventHandler, KeyRoutedEventArgs>(
-            h => element.KeyDown += h,
-            h => element.KeyDown -= h);
+            h => Element.KeyDown += h,
+            h => Element.KeyDown -= h);
 
         var keyUps = Observable.FromEventPattern<KeyEventHandler, KeyRoutedEventArgs>(
-            h => element.KeyUp += h,
-            h => element.KeyUp -= h);
+            h => Element.KeyUp += h,
+            h => Element.KeyUp -= h);
 
         var keyObservable =
             from e in keyDowns
@@ -32,8 +38,8 @@ internal class KeyObserver(UIElement element, TimeSpan initialDelay, TimeSpan re
         return
             keyObservable
             .SelectMany(key => Observable.Return(0L)
-                .Concat(Observable.Timer(initialDelay))
-                .Concat(Observable.Interval(repeatInterval))
+                .Concat(Observable.Timer(InitialDelay))
+                .Concat(Observable.Interval(RepeatInterval))
                 .TakeUntil(keyUps).Select(_ => key))
             .Select<KeyPress, InputAction?>(key => key switch
             {

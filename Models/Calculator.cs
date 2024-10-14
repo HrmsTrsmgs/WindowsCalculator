@@ -16,7 +16,7 @@ public class Calculator : ModelBase
     /// <summary>
     /// 履歴作成のための計算です。
     /// </summary>
-    ObservableCollection<Calculation> cumulativeCalculation = new();
+    readonly ObservableCollection<Calculation> cumulativeCalculation = [];
 
     /// <summary>
     /// 現在、最新で行われている計算を取得、設定します。
@@ -94,6 +94,9 @@ public class Calculator : ModelBase
         }
     }
 
+    /// <summary>
+    /// 設定を表します。
+    /// </summary>
     public PropertySettings Settings { get; } = new();
     /// <summary>
     /// Calculatorクラスの新しいインスタンスを初期化します。
@@ -157,10 +160,7 @@ public class Calculator : ModelBase
                 switch(t.Kind)
                 {
                     case OtherTokenKind.Undo:
-                        if (RedoCalculation == null)
-                        {
-                            RedoCalculation = ActiveCaluculation;
-                        }
+                        RedoCalculation ??= ActiveCaluculation;
                         SetProperty(ref activeCaluculation!, ActiveCaluculation.Receiver ?? Calculation.NullObject, nameof(ActiveCaluculation));
                         switch(ActiveCaluculation)
                         {
@@ -261,7 +261,7 @@ public class Calculator : ModelBase
             case OperationCalculation c:
                 c.Operand = token;
                 break;
-            case NullCalculation c:
+            case NullObjectCalculation c:
                 ActiveCaluculation = new NumberCalculation(c, token);
                 break;
         }

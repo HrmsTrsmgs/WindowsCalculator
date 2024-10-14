@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <AssemblyName>Marimo.WindowsCalculator.Models</AssemblyName>
     <RootNamespace>Marimo.WindowsCalculator.Models</RootNamespace>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

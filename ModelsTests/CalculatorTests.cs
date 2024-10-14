@@ -34,16 +34,9 @@ public class CalculatorTests
     }
 
     [Fact]
-    public void 初期状態の計算はNullオブジェクトです()
-    {
-        tested.ActiveCaluculation.Should().BeOfType<NullCalculation>();
-    }
-
-    [Fact]
     public void 初期状態の計算は結果が0です()
     {
-        tested.ActiveCaluculation.Should().BeOfType<NullCalculation>();
-        var calculation = (NullCalculation)tested.ActiveCaluculation;
+        var calculation = tested.ActiveCaluculation;
         calculation.Result.Should().Be(0);
     }
 

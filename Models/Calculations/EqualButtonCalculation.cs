@@ -52,7 +52,9 @@ public class EqualButtonCalculation : Calculation
     {
         get
         {
-            OperationCalculation? calculator = (LastOperationCalculation ?? Receiver) as OperationCalculation;
+            var calculator = (LastOperationCalculation ?? Receiver) as OperationCalculation;
+
+            //Windows電卓でここが半角スペースで表示されているので。
             return $"{calculator!.Expression?.Replace('　',' ')} {calculator!.Operand?.Number} =";
         }
     }

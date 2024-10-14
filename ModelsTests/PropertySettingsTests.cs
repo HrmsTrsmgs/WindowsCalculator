@@ -22,7 +22,7 @@ public class PropertySettingsTests
     public void OneDisplayTextは変更されたことを通知します()
     {
         tested.OneDisplayText = "A";
-        changedProperty.Should().Be("OneDisplayText");
+        changedProperty.Should().Be(nameof(tested.OneDisplayText));
     }
 
     [Fact]
@@ -35,7 +35,7 @@ public class PropertySettingsTests
     public void TwoDisplayTextは変更されたことを通知します()
     {
         tested.TwoDisplayText = "A";
-        changedProperty.Should().Be("TwoDisplayText");
+        changedProperty.Should().Be(nameof(tested.TwoDisplayText));
     }
 
     [Fact]
@@ -48,7 +48,7 @@ public class PropertySettingsTests
     public void ThreeDisplayTextは変更されたことを通知します()
     {
         tested.FiveDisplayText = "A";
-        changedProperty.Should().Be("FiveDisplayText");
+        changedProperty.Should().Be(nameof(tested.FiveDisplayText));
     }
 
     [Fact]
@@ -61,7 +61,7 @@ public class PropertySettingsTests
     public void FourDisplayTextは変更されたことを通知します()
     {
         tested.FiveDisplayText = "A";
-        changedProperty.Should().Be("FiveDisplayText");
+        changedProperty.Should().Be(nameof(tested.FiveDisplayText));
     }
 
     [Fact]
@@ -74,7 +74,7 @@ public class PropertySettingsTests
     public void FiveDisplayTextは変更されたことを通知します()
     {
         tested.FiveDisplayText = "A";
-        changedProperty.Should().Be("FiveDisplayText");
+        changedProperty.Should().Be(nameof(tested.FiveDisplayText));
     }
 
     [Fact]
@@ -87,7 +87,7 @@ public class PropertySettingsTests
     public void SixDisplayTextは変更されたことを通知します()
     {
         tested.SixDisplayText = "A";
-        changedProperty.Should().Be("SixDisplayText");
+        changedProperty.Should().Be(nameof(tested.SixDisplayText));
     }
 
     [Fact]
@@ -100,7 +100,7 @@ public class PropertySettingsTests
     public void SevenDisplayTextは変更されたことを通知します()
     {
         tested.SevenDisplayText = "A";
-        changedProperty.Should().Be("SevenDisplayText");
+        changedProperty.Should().Be(nameof(tested.SevenDisplayText));
     }
 
     [Fact]
@@ -113,7 +113,7 @@ public class PropertySettingsTests
     public void EightDisplayTextは変更されたことを通知します()
     {
         tested.EightDisplayText = "A";
-        changedProperty.Should().Be("EightDisplayText");
+        changedProperty.Should().Be(nameof(tested.EightDisplayText));
     }
 
     [Fact]
@@ -126,7 +126,7 @@ public class PropertySettingsTests
     public void NineDisplayTextは変更されたことを通知します()
     {
         tested.NineDisplayText = "A";
-        changedProperty.Should().Be("NineDisplayText");
+        changedProperty.Should().Be(nameof(tested.NineDisplayText));
     }
 
     [Fact]
@@ -139,7 +139,7 @@ public class PropertySettingsTests
     public void ZeroDisplayTextは変更されたことを通知します()
     {
         tested.ZeroDisplayText = "A";
-        changedProperty.Should().Be("ZeroDisplayText");
+        changedProperty.Should().Be(nameof(tested.ZeroDisplayText));
     }
 
     [Fact]
@@ -152,7 +152,7 @@ public class PropertySettingsTests
     public void DotDisplayTextは変更されたことを通知します()
     {
         tested.DotDisplayText = "A";
-        changedProperty.Should().Be("DotDisplayText");
+        changedProperty.Should().Be(nameof(tested.DotDisplayText));
     }
 
     [Fact]
@@ -165,7 +165,7 @@ public class PropertySettingsTests
     public void PlusDisplayTextは変更されたことを通知します()
     {
         tested.AddDisplayText = "A";
-        changedProperty.Should().Be("PlusDisplayText");
+        changedProperty.Should().Be(nameof(tested.AddDisplayText));
     }
 
     [Fact]
@@ -178,7 +178,7 @@ public class PropertySettingsTests
     public void MinusDisplayTextは変更されたことを通知します()
     {
         tested.SubstractDisplayText = "A";
-        changedProperty.Should().Be("MinusDisplayText");
+        changedProperty.Should().Be(nameof(tested.SubstractDisplayText));
     }
 
     [Fact]
@@ -191,7 +191,7 @@ public class PropertySettingsTests
     public void MultiplyDisplayTextは変更されたことを通知します()
     {
         tested.MultiplyDisplayText = "A";
-        changedProperty.Should().Be("MultiplyDisplayText");
+        changedProperty.Should().Be(nameof(tested.MultiplyDisplayText));
     }
 
     [Fact]
@@ -204,7 +204,7 @@ public class PropertySettingsTests
     public void DivideDisplayTextは変更されたことを通知します()
     {
         tested.DivideDisplayText = "A";
-        changedProperty.Should().Be("DivideDisplayText");
+        changedProperty.Should().Be(nameof(tested.DivideDisplayText));
     }
 
     [Fact]
@@ -217,7 +217,7 @@ public class PropertySettingsTests
     public void EqualDisplayTextは変更されたことを通知します()
     {
         tested.EqualDisplayText = "A";
-        changedProperty.Should().Be("EqualDisplayText");
+        changedProperty.Should().Be(nameof(tested.EqualDisplayText));
     }
 
     [Fact]
@@ -230,7 +230,7 @@ public class PropertySettingsTests
     public void CDisplayTextは変更されたことを通知します()
     {
         tested.CDisplayText = "A";
-        changedProperty.Should().Be("CDisplayText");
+        changedProperty.Should().Be(nameof(tested.CDisplayText));
     }
 
     [Fact]
@@ -256,7 +256,7 @@ public class PropertySettingsTests
     public void BackspaceDisplayTextは変更されたことを通知します()
     {
         tested.BackspaceDisplayText = "A";
-        changedProperty.Should().Be("BackspaceDisplayText");
+        changedProperty.Should().Be(nameof(tested.BackspaceDisplayText));
     }
 
 }

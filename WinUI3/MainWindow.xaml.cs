@@ -1,6 +1,8 @@
 using Marimo.WindowsCalculator.Models;
 using Marimo.WindowsCalculator.ViewModels;
 using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Input;
+using Microsoft.UI.Xaml.Media.Animation;
 using System;
 
 namespace Marimo.WindowsCalculator.WinUI3;
@@ -94,4 +96,29 @@ public sealed partial class MainWindow : Window
     }
 
     public CalculatorViewModel ViewModel { get; }
+
+    bool IsHistoryShowed { get; set; } = false;
+
+    void HistoryClick(object _, TappedRoutedEventArgs e)
+    {
+        if (IsHistoryShowed) return;
+        
+
+        var showStoryboard = (Storyboard)Root.Resources["SlideInAnimation"];
+        showStoryboard.Begin();
+
+        showStoryboard.Completed += (_, _) =>
+        {
+            IsHistoryShowed = true;
+        };
+    }
+
+    private void MainClick(object sender, TappedRoutedEventArgs e)
+    {
+        if (!IsHistoryShowed) return;
+        IsHistoryShowed = false;
+
+        var hideStoryboard = (Storyboard)Root.Resources["SlideOutAnimation"];
+        hideStoryboard.Begin();
+    }
 }

@@ -15,6 +15,6 @@ public class DeleteCalculationTest
     [Fact]
     public void 式は表示されません()
     {
-        tested.CurrentExpression.Should().BeEmpty();
+        tested.Expression.Should().BeEmpty();
     }
 }

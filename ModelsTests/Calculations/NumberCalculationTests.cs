@@ -17,6 +17,6 @@ public class NumberCalculationTest
     public void 式は表示されません()
     {
         tested.NumberToken = new(10);
-        tested.CurrentExpression.Should().BeEmpty();
+        tested.Expression.Should().BeEmpty();
     }
 }

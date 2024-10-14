@@ -4,6 +4,7 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media.Animation;
 using System;
+using System.Runtime.Serialization.DataContracts;
 
 namespace Marimo.WindowsCalculator.WinUI3;
 public sealed partial class MainWindow : Window
@@ -12,6 +13,7 @@ public sealed partial class MainWindow : Window
     {
         InitializeComponent();
         ViewModel = viewModel;
+        Root.DataContext = viewModel;
         ExtendsContentIntoTitleBar = true;
         SetTitleBar(AppTitleBar);
 

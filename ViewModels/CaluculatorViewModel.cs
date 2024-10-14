@@ -156,6 +156,9 @@ public class CalculatorViewModel : ObservableObject
     /// </summary>
     public PropertySettings Settings => model.Settings;
 
+
+    public IEnumerable<ApplicationTheme> Themes => Enum.GetValues<ApplicationTheme>();
+
     /// <summary>
     /// CalculationViewModelクラスの新しいインスタンスを初期化します。
     /// </summary>

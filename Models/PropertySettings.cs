@@ -5,6 +5,17 @@
 /// </summary>
 public class PropertySettings : ModelBase
 {
+    
+
+    ApplicationTheme theme = ApplicationTheme.System;
+
+    public ApplicationTheme Theme
+    {
+        get => theme;
+        set => SetProperty(ref theme, value);
+    }
+
+
     /// <summary>
     /// 1のキーのテキストです。
     /// </summary>

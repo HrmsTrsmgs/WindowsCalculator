@@ -7,8 +7,12 @@
     xmlns:model="using:Marimo.WindowsCalculator.Models"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
-    <Grid x:Name="Root" Background="{ThemeResource SystemControlAcrylicWindowBrush}">
+    mc:Ignorable="d"
+    >
+    <Grid 
+        x:Name="Root"
+        RequestedTheme="{Binding Settings.Theme, Mode=OneWay, Converter={StaticResource ThemesConverter}}"
+        Background="{ThemeResource SystemControlAcrylicWindowBrush}">
         <Grid.Resources>
             <Storyboard x:Key="SlideInAnimation">
                 <DoubleAnimation 
@@ -48,6 +52,10 @@
             <SplitView.Pane>
                 <StackPanel>
                     <TextBlock FontSize="24">設定</TextBlock>
+                    <ComboBox Margin="8" Header="テーマ" ItemsSource="{x:Bind ViewModel.Themes}"
+          SelectedItem="{x:Bind ViewModel.Settings.Theme, Mode=TwoWay}"
+          Width="100"/>
+
                     <TextBox Margin="8" Header="0ボタンを表すテキスト" Text="{x:Bind ViewModel.Settings.ZeroDisplayText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                     <TextBox Margin="8" Header="バックスペースボタンを表すテキスト" Text="{x:Bind ViewModel.Settings.BackspaceDisplayText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                     <TextBox Margin="8" Header="Undoボタンを表すテキスト" Text="{x:Bind ViewModel.Settings.UndoDisplayText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />

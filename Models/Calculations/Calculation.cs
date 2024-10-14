@@ -37,5 +37,5 @@ public abstract class Calculation(Calculation receiver) : ModelBase
     /// <summary>
     /// この計算がActiveCalculatorの場合に表示される式を取得します。
     /// </summary>
-    public abstract string CurrentExpression { get; }
+    public abstract string Expression { get; }
 }

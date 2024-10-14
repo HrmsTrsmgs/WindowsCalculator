@@ -64,8 +64,8 @@ public class OperationCalculation(Calculation receiver, InputAction? operatorTok
         ? null 
         : OperatorToken switch
         { 
-            InputAction.Plus => Receiver.Result + Operand?.Number,
-            InputAction.Minus => Receiver.Result - Operand?.Number,
+            InputAction.Add => Receiver.Result + Operand?.Number,
+            InputAction.Substract => Receiver.Result - Operand?.Number,
             InputAction.Multiply => Math.Round(Receiver.Result * Operand?.Number ?? 0, NumberToken.MaxDecimalPlaces, MidpointRounding.AwayFromZero),
             InputAction.Divide => Math.Round(Receiver.Result / Operand?.Number ?? 0, NumberToken.MaxDecimalPlaces, MidpointRounding.AwayFromZero),
             _ => throw new NotImplementedException()
@@ -74,11 +74,11 @@ public class OperationCalculation(Calculation receiver, InputAction? operatorTok
     /// <summary>
     /// この計算がActiveCalculatorの場合に表示される式を取得します。
     /// </summary>
-    public override string CurrentExpression => $"{Receiver?.Result}　{
+    public override string Expression => $"{Receiver?.Result}　{
         OperatorToken switch
         {
-            InputAction.Plus => "+",
-            InputAction.Minus => "-",
+            InputAction.Add => "+",
+            InputAction.Substract => "-",
             InputAction.Multiply => "×",
             InputAction.Divide => "÷",
             _ => throw new NotImplementedException()

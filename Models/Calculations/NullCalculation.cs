@@ -10,5 +10,5 @@ public class NullCalculation : Calculation
 
     public override decimal? Result => 0;
 
-    public override string CurrentExpression => "0";
+    public override string Expression => "";
 }

@@ -8,7 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:Name="Root" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
@@ -34,7 +34,7 @@
                 RelativePanel.AlignBottomWithPanel="True" 
                 RelativePanel.AlignRightWithPanel="True"
                 FontSize="14"
-                Text="{x:Bind ViewModel.Expression}"/>
+                Text="{x:Bind ViewModel.Expression, Mode=OneWay}"/>
         </RelativePanel>
         <Grid Grid.Row="1" Margin="3">
             <Grid.RowDefinitions>
@@ -60,7 +60,7 @@
                     HorizontalAlignment="Right"
                     MaxHeight="60">
                     <TextBlock 
-                        Text="{x:Bind ViewModel.DisplaiedNumber}"
+                        Text="{x:Bind ViewModel.DisplaiedNumber, Mode=OneWay}"
                         FontWeight="SemiBold"/>
                 </Viewbox>
             </Border>

@@ -13,5 +13,5 @@ public  class DeleteCalculation(Calculation? receiver) : Calculation(receiver)
     /// <summary>
     /// この計算がActiveCalculatorの場合に表示される式を取得します。
     /// </summary>
-    public override string CurrentExpression => "";
+    public override string Expression => "";
 }

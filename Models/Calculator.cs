@@ -54,7 +54,7 @@ public class Calculator : ModelBase
                 {
                     var operation = calculation as OperationCalculation;
                     yield return new(
-                        $"{operation!.CurrentExpression}　{operation.Operand} =",
+                        $"{operation!.Expression}　{operation.Operand} =",
                         operation.Result!.Value);
                 }
             }

@@ -48,12 +48,12 @@ public class EqualButtonCalculation : Calculation
     /// <summary>
     /// この計算がActiveCalculatorの場合に表示される式を取得します。
     /// </summary>
-    public override string CurrentExpression
+    public override string Expression
     {
         get
         {
             OperationCalculation? calculator = (LastOperationCalculation ?? Receiver) as OperationCalculation;
-            return $"{calculator!.CurrentExpression?.Replace('　',' ')} {calculator!.Operand?.Number} =";
+            return $"{calculator!.Expression?.Replace('　',' ')} {calculator!.Operand?.Number} =";
         }
     }
 }

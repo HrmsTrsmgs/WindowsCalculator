@@ -8,7 +8,7 @@ public class OperationCalculationTests
     OperationCalculation tested { get; set; }
         = new(
             new NumberCalculation(null){ NumberToken = new(10) },
-            InputAction.Plus,
+            InputAction.Add,
             new(20),
             true);
 
@@ -17,7 +17,7 @@ public class OperationCalculationTests
     {
         tested.Result.Should().Be(30);
 
-        tested.OperatorToken = InputAction.Minus;
+        tested.OperatorToken = InputAction.Substract;
 
         tested.Result.Should().Be(-10);
 
@@ -35,7 +35,7 @@ public class OperationCalculationTests
     {
         tested.CurrentExpression.Should().Be("10　+");
 
-        tested.OperatorToken = InputAction.Minus;
+        tested.OperatorToken = InputAction.Substract;
 
         tested.CurrentExpression.Should().Be("10　-");
 

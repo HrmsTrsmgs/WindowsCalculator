@@ -9,7 +9,7 @@ public class EqualButtonCalculationTests
         = new(
             new OperationCalculation(
                 new NumberCalculation(null, numberToken: new(10)),
-                InputAction.Plus,
+                InputAction.Add,
                 new(20)
             ),null);
 
@@ -27,7 +27,7 @@ public class EqualButtonCalculationTests
             this.tested,
             new OperationCalculation(
                 Calculation.NullObject,
-                InputAction.Plus,
+                InputAction.Add,
                 new(20)
             ));
         tested.Result.Should().Be(50);
@@ -48,7 +48,7 @@ public class EqualButtonCalculationTests
             this.tested,
             new OperationCalculation(
                 Calculation.NullObject,
-                InputAction.Plus,
+                InputAction.Add,
                 new(20)
             ));　
         tested.CurrentExpression.Should().Be("30 + 20 =");

@@ -84,12 +84,12 @@ public class CalculatorViewModel : ObservableObject
     /// <summary>
     /// +を入力するコマンドを取得します。
     /// </summary>
-    public ICommand InputPlusCommand { get; }
+    public ICommand InputAddCommand { get; }
 
     /// <summary>
     /// -を入力するコマンドを取得します。
     /// </summary>
-    public ICommand InputMinusCommand { get; }
+    public ICommand InputSubstractCommand { get; }
 
     /// <summary>
     /// ×を入力するコマンドを取得します。
@@ -149,7 +149,7 @@ public class CalculatorViewModel : ObservableObject
     /// <summary>
     /// 計算式を取得します。
     /// </summary>
-    public string Expression => model.ActiveCaluculation.CurrentExpression;
+    public string Expression => model.ActiveCaluculation.Expression;
 
     /// <summary>
     /// 設定を取得します。
@@ -177,8 +177,8 @@ public class CalculatorViewModel : ObservableObject
         InputNineCommand = new RelayCommand(() => Input(InputAction.Nine));
         InputDotCommand = new RelayCommand(() => Input(InputAction.Dot));
         InputZeroCommand = new RelayCommand(() => Input(InputAction.Zero));
-        InputPlusCommand = new RelayCommand(() => Input(InputAction.Plus));
-        InputMinusCommand = new RelayCommand(() => Input(InputAction.Minus));
+        InputAddCommand = new RelayCommand(() => Input(InputAction.Add));
+        InputSubstractCommand = new RelayCommand(() => Input(InputAction.Substract));
         InputMultiplyCommand = new RelayCommand(() => Input(InputAction.Multiply));
         InputDivideCommand = new RelayCommand(() => Input(InputAction.Divide));
         InputEqualCommand = new RelayCommand(() => Input(InputAction.Equal));

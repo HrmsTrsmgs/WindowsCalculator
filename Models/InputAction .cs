@@ -63,12 +63,12 @@ public enum InputAction
     /// <summary>
     /// +キー。
     /// </summary>
-    Plus,
+    Add,
 
     /// <summary>
     /// -キー。
     /// </summary>
-    Minus,
+    Substract,
 
     /// <summary>
     /// *キー。

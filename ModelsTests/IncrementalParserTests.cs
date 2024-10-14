@@ -71,20 +71,20 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void 演算子トークンが入力できます()
     {
-        tested.Input(InputAction.Plus);
+        tested.Input(InputAction.Add);
         tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
-        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(InputAction.Plus);
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(InputAction.Add);
     }
 
     [Fact]
     public void 四則演算の演算子トークンが入力できます()
     {
-        tested.Input(InputAction.Plus);
+        tested.Input(InputAction.Add);
         tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
-        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(InputAction.Plus);
-        tested.Input(InputAction.Minus);
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(InputAction.Add);
+        tested.Input(InputAction.Substract);
         tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
-        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(InputAction.Minus);
+        (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(InputAction.Substract);
         tested.Input(InputAction.Multiply);
         tested.ActiveToken.Should().BeAssignableTo<OperatorToken>();
         (tested.ActiveToken as OperatorToken)?.Operator.Should().Be(InputAction.Multiply);
@@ -96,7 +96,7 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void 演算子の後に演算子が入力されてもトークンは同じです()
     {
-        tested.Input(InputAction.Plus);
+        tested.Input(InputAction.Add);
         var initial = tested.ActiveToken;
         tested.Input(InputAction.Multiply);
         tested.ActiveToken.Should().BeSameAs(initial);
@@ -104,7 +104,7 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void 演算子の後に演算子が入力されると演算子は変わります()
     {
-        tested.Input(InputAction.Plus);
+        tested.Input(InputAction.Add);
         var initial = tested.ActiveToken;
         tested.Input(InputAction.Multiply);
         tested.ActiveToken.Should().BeSameAs(initial);
@@ -114,7 +114,7 @@ public class IncrementalParserTest : TestBase
     [Fact]
     public void 演算子の後に数字が入力されると数字トークンが付け足されます()
     {
-        tested.Input(InputAction.Plus);
+        tested.Input(InputAction.Add);
         tested.Input(InputAction.One);
         tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
         (tested.ActiveToken as NumberToken)?.Number.Should().Be(1);

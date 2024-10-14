@@ -42,7 +42,7 @@ public class CaluculatorViewModelTests
     public void 計算式が表示されています()
     {
         tested.InputKeybord.Execute(InputAction.Five);
-        tested.InputKeybord.Execute(InputAction.Plus);
+        tested.InputKeybord.Execute(InputAction.Add);
         tested.InputKeybord.Execute(InputAction.Three);
         tested.InputKeybord.Execute(InputAction.Equal);
 
@@ -53,9 +53,9 @@ public class CaluculatorViewModelTests
     public void 履歴が取得できます()
     {
         tested.InputKeybord.Execute(InputAction.Three);
-        tested.InputKeybord.Execute(InputAction.Plus);
+        tested.InputKeybord.Execute(InputAction.Add);
         tested.InputKeybord.Execute(InputAction.Five);
-        tested.InputKeybord.Execute(InputAction.Minus);
+        tested.InputKeybord.Execute(InputAction.Substract);
         tested.InputKeybord.Execute(InputAction.Seven);
         tested.InputKeybord.Execute(InputAction.Equal);
 
@@ -70,9 +70,9 @@ public class CaluculatorViewModelTests
     public void 履歴が削除できます()
     {
         tested.InputKeybord.Execute(InputAction.Three);
-        tested.InputKeybord.Execute(InputAction.Plus);
+        tested.InputKeybord.Execute(InputAction.Add);
         tested.InputKeybord.Execute(InputAction.Five);
-        tested.InputKeybord.Execute(InputAction.Minus);
+        tested.InputKeybord.Execute(InputAction.Substract);
         tested.InputKeybord.Execute(InputAction.Seven);
         tested.InputKeybord.Execute(InputAction.Equal);
 
@@ -85,9 +85,9 @@ public class CaluculatorViewModelTests
     public void 履歴の削除は削除する履歴が残っているときに有効です()
     {
         tested.InputKeybord.Execute(InputAction.Three);
-        tested.InputKeybord.Execute(InputAction.Plus);
+        tested.InputKeybord.Execute(InputAction.Add);
         tested.InputKeybord.Execute(InputAction.Five);
-        tested.InputKeybord.Execute(InputAction.Minus);
+        tested.InputKeybord.Execute(InputAction.Substract);
         tested.InputKeybord.Execute(InputAction.Seven);
         tested.InputKeybord.Execute(InputAction.Equal);
 
@@ -183,7 +183,7 @@ public class CaluculatorViewModelTests
     [Fact]
     public void InputPlusCommandが反応します()
     {
-        tested.InputPlusCommand.Execute(null);
+        tested.InputAddCommand.Execute(null);
 
         tested.Expression.Should().Be("0　+");
     }
@@ -191,7 +191,7 @@ public class CaluculatorViewModelTests
     [Fact]
     public void InputMinusCommandが反応します()
     {
-        tested.InputMinusCommand.Execute(null);
+        tested.InputSubstractCommand.Execute(null);
 
         tested.Expression.Should().Be("0　-");
     }
@@ -215,7 +215,7 @@ public class CaluculatorViewModelTests
     [Fact]
     public void InputEqualCommandが反応します()
     {
-        tested.InputMinusCommand.Execute(null);
+        tested.InputSubstractCommand.Execute(null);
         tested.InputThreeCommand.Execute(null);
         tested.InputEqualCommand.Execute(null);
 
@@ -227,7 +227,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputThreeCommand.Execute(null);
         tested.InputMultiplyCommand.Execute(null);
-        tested.InputMinusCommand.Execute(null);
+        tested.InputSubstractCommand.Execute(null);
 
         var action = () => tested.DisplaiedNumber;
         action.Should().NotThrow();
@@ -239,7 +239,7 @@ public class CaluculatorViewModelTests
         tested.InputThreeCommand.Execute(null);
         tested.InputMultiplyCommand.Execute(null);
         tested.InputThreeCommand.Execute(null);
-        tested.InputMinusCommand.Execute(null);
+        tested.InputSubstractCommand.Execute(null);
         tested.InputThreeCommand.Execute(null);
         tested.InputEqualCommand.Execute(null);
         tested.InputUndoCommand.Execute(null);
@@ -253,7 +253,7 @@ public class CaluculatorViewModelTests
         tested.InputThreeCommand.Execute(null);
         tested.InputMultiplyCommand.Execute(null);
         tested.InputThreeCommand.Execute(null);
-        tested.InputMinusCommand.Execute(null);
+        tested.InputSubstractCommand.Execute(null);
         tested.InputThreeCommand.Execute(null);
         tested.InputEqualCommand.Execute(null);
         tested.InputUndoCommand.Execute(null);
@@ -268,7 +268,7 @@ public class CaluculatorViewModelTests
         tested.InputThreeCommand.Execute(null);
         tested.InputMultiplyCommand.Execute(null);
         tested.InputThreeCommand.Execute(null);
-        tested.InputMinusCommand.Execute(null);
+        tested.InputSubstractCommand.Execute(null);
         tested.InputThreeCommand.Execute(null);
         tested.InputEqualCommand.Execute(null);
         tested.InputCCommand.Execute(null);

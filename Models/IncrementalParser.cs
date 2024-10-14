@@ -61,7 +61,7 @@ public class IncrementalParser : ModelBase
                         break;
                 }
                 break;
-            case InputAction.Plus or InputAction.Minus or InputAction.Multiply or InputAction.Divide:
+            case InputAction.Add or InputAction.Substract or InputAction.Multiply or InputAction.Divide:
                 switch (ActiveToken)
                 {
                     case OperatorToken t:

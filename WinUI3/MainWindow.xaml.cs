@@ -113,12 +113,17 @@ public sealed partial class MainWindow : Window
         };
     }
 
-    private void MainClick(object sender, TappedRoutedEventArgs e)
+    void MainClick(object sender, TappedRoutedEventArgs e)
     {
         if (!IsHistoryShowed) return;
         IsHistoryShowed = false;
 
         var hideStoryboard = (Storyboard)Root.Resources["SlideOutAnimation"];
         hideStoryboard.Begin();
+    }
+
+    void SettingsClick(object sender, TappedRoutedEventArgs e)
+    {
+        SplitView.IsPaneOpen = !SplitView.IsPaneOpen;
     }
 }

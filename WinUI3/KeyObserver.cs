@@ -15,6 +15,8 @@ internal class KeyObserver(UIElement element, TimeSpan initialDelay, TimeSpan re
     TimeSpan RepeatInterval { get; } = repeatInterval;
     public IObservable<InputAction> ObserveKeys()
     {
+        //:引継ぎ事項:
+        //
         var keyDowns = Observable.FromEventPattern<KeyEventHandler, KeyRoutedEventArgs>(
             h => element.KeyDown += h,
             h => element.KeyDown -= h);

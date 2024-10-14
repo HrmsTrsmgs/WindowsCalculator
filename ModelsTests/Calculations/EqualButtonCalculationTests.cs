@@ -36,7 +36,7 @@ public class EqualButtonCalculationTests
     [Fact]
     public void 式は直前の式にイコールを付けたものです()
     {
-        tested.CurrentExpression.Should().Be("10 + 20 =");
+        tested.Expression.Should().Be("10 + 20 =");
     }
 
 
@@ -51,6 +51,6 @@ public class EqualButtonCalculationTests
                 InputAction.Add,
                 new(20)
             ));　
-        tested.CurrentExpression.Should().Be("30 + 20 =");
+        tested.Expression.Should().Be("30 + 20 =");
     }
 }

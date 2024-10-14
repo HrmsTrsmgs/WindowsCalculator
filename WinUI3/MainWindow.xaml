@@ -8,14 +8,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="Root" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:Name="Root" Background="{ThemeResource SystemControlAcrylicWindowBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel 
             x:Name="AppTitleBar" 
-            Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="32" VerticalAlignment="Top" Orientation="Horizontal">
+            Background="{ThemeResource SystemControlAcrylicWindowBrush}" Height="32" VerticalAlignment="Top" Orientation="Horizontal">
             <ImageIcon Margin="16,0" Width="20" Height="20" Source="ms-appx:///Assets/Images/Calculator.svg"/>
             <TextBlock Margin="-4" Text="電卓" VerticalAlignment="Center" FontSize="12" />
         </StackPanel>
@@ -54,7 +54,7 @@
             <Border 
                 Grid.ColumnSpan="4" 
                 Margin="-3,4"
-                BorderThickness="2" CornerRadius="5" BorderBrush="Black"
+                BorderThickness="2" CornerRadius="5" BorderBrush="#1a1a1a"
                 HorizontalAlignment="Stretch">
                 <Viewbox 
                     HorizontalAlignment="Right"
@@ -67,7 +67,9 @@
             <Button 
                 Grid.Row="1" 
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Background="{ThemeResource SystemControlTransientBackgroundBrush}"
+                Command="{x:Bind ViewModel.InputCECommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.CEDisplayText}"/>
                 </Viewbox>
@@ -75,7 +77,9 @@
             <Button 
                 Grid.Row="1" Grid.Column="1" 
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Background="{ThemeResource SystemControlTransientBackgroundBrush}"
+                Command="{x:Bind ViewModel.InputCCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.CDisplayText}"/>
                 </Viewbox>
@@ -83,7 +87,9 @@
             <Button 
                 Grid.Row="1" Grid.Column="2" 
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Background="{ThemeResource SystemControlTransientBackgroundBrush}"
+                Command="{x:Bind ViewModel.InputBackspaceCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.BackspaceDisplayText}"/>
                 </Viewbox>
@@ -91,7 +97,9 @@
             <Button 
                 Grid.Row="1" Grid.Column="3" 
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Background="{ThemeResource SystemControlTransientBackgroundBrush}"
+                Command="{x:Bind ViewModel.InputDivideCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.DivideDisplayText}"/>
                 </Viewbox>
@@ -99,7 +107,8 @@
             <Button 
                 Grid.Row="2" 
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Command="{x:Bind ViewModel.InputSevenCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.SevenDisplayText}"/>
                 </Viewbox>
@@ -107,7 +116,8 @@
             <Button
                 Grid.Row="2" Grid.Column="1"
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Command="{x:Bind ViewModel.InputEightCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.EightDisplayText}"/>
                 </Viewbox>
@@ -115,7 +125,8 @@
             <Button 
                 Grid.Row="2" Grid.Column="2"
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Command="{x:Bind ViewModel.InputNineCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.NineDisplayText}"/>
                 </Viewbox>
@@ -123,7 +134,9 @@
             <Button 
                 Grid.Row="2" Grid.Column="3"
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Background="{ThemeResource SystemControlTransientBackgroundBrush}"
+                Command="{x:Bind ViewModel.InputMultiplyCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.MultiplyDisplayText}"/>
                 </Viewbox>
@@ -131,7 +144,8 @@
             <Button 
                 Grid.Row="3"  
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Command="{x:Bind ViewModel.InputFourCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.FourDisplayText}"/>
                 </Viewbox>
@@ -139,7 +153,8 @@
             <Button 
                 Grid.Row="3" Grid.Column="1" 
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Command="{x:Bind ViewModel.InputFiveCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.FiveDisplayText}"/>
                 </Viewbox>
@@ -147,7 +162,8 @@
             <Button 
                 Grid.Row="3" Grid.Column="2"
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Command="{x:Bind ViewModel.InputSixCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.SixDisplayText}"/>
                 </Viewbox>
@@ -155,15 +171,18 @@
             <Button
                 Grid.Row="3" Grid.Column="3"
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Background="{ThemeResource SystemControlTransientBackgroundBrush}"
+                Command="{x:Bind ViewModel.InputSubstractCommand}">
                 <Viewbox MaxHeight="28">
-                    <TextBlock Text="{x:Bind ViewModel.Settings.MinusDisplayText}"/>
+                    <TextBlock Text="{x:Bind ViewModel.Settings.SubstractDisplayText}"/>
                 </Viewbox>
             </Button>
             <Button 
                 Grid.Row="4"
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Command="{x:Bind ViewModel.InputOneCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.OneDisplayText}"/>
                 </Viewbox>
@@ -171,7 +190,8 @@
             <Button 
                 Grid.Row="4" Grid.Column="1"
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Command="{x:Bind ViewModel.InputTwoCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.TwoDisplayText}"/>
                 </Viewbox>
@@ -179,7 +199,8 @@
             <Button 
                 Grid.Row="4" Grid.Column="2"
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Command="{x:Bind ViewModel.InputThreeCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.ThreeDisplayText}"/>
                 </Viewbox>
@@ -187,15 +208,19 @@
             <Button 
                 Grid.Row="4" Grid.Column="3"
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Background="{ThemeResource SystemControlTransientBackgroundBrush}"
+                Command="{x:Bind ViewModel.InputAddCommand}">
                 <Viewbox MaxHeight="28">
-                    <TextBlock Text="{x:Bind ViewModel.Settings.PlusDisplayText}"/>
+                    <TextBlock Text="{x:Bind ViewModel.Settings.AddDisplayText}"/>
                 </Viewbox>
             </Button>
             <Button 
                 Grid.Row="5" 
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Background="{ThemeResource SystemControlTransientBackgroundBrush}"
+                Command="{x:Bind ViewModel.InputUndoCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.UndoDisplayText}"/>
                 </Viewbox>
@@ -203,7 +228,10 @@
             <Button 
                 Grid.Row="5" Grid.Column="1"
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Command="{x:Bind ViewModel.InputZeroCommand}">
+
+
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.ZeroDisplayText}"/>
                 </Viewbox>
@@ -211,7 +239,8 @@
             <Button 
                 Grid.Row="5" Grid.Column="2" 
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Command="{x:Bind ViewModel.InputDotCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.DotDisplayText}"/>
                 </Viewbox>
@@ -219,7 +248,9 @@
             <Button 
                 Grid.Row="5" Grid.Column="3"
                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="1">
+                Margin="1"
+                Background="#1975c5"
+                Command="{x:Bind ViewModel.InputEqualCommand}">
                 <Viewbox MaxHeight="28">
                     <TextBlock Text="{x:Bind ViewModel.Settings.EqualDisplayText}"/>
                 </Viewbox>

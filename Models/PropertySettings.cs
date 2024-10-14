@@ -161,7 +161,7 @@ public class PropertySettings : ModelBase
     /// <summary>
     /// +のキーのテキストを取得、設定します。
     /// </summary>
-    public string PlusDisplayText
+    public string AddDisplayText
     {
         get => plusDisplayText;
         set => SetProperty(ref plusDisplayText, value);
@@ -174,7 +174,7 @@ public class PropertySettings : ModelBase
     /// <summary>
     /// -のキーのテキストを取得、設定します。
     /// </summary>
-    public string MinusDisplayText
+    public string SubstractDisplayText
     {
         get => minusDisplayText;
         set => SetProperty(ref minusDisplayText, value);

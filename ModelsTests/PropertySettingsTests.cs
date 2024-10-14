@@ -158,26 +158,26 @@ public class PropertySettingsTests
     [Fact]
     public void PlusDisplayTextの初期値はプラスです()
     {
-        tested.PlusDisplayText.Should().Be("+");
+        tested.AddDisplayText.Should().Be("+");
     }
 
     [Fact]
     public void PlusDisplayTextは変更されたことを通知します()
     {
-        tested.PlusDisplayText = "A";
+        tested.AddDisplayText = "A";
         changedProperty.Should().Be("PlusDisplayText");
     }
 
     [Fact]
     public void MinusDisplayTextの初期値はマイナスです()
     {
-        tested.MinusDisplayText.Should().Be("-");
+        tested.SubstractDisplayText.Should().Be("-");
     }
 
     [Fact]
     public void MinusDisplayTextは変更されたことを通知します()
     {
-        tested.MinusDisplayText = "A";
+        tested.SubstractDisplayText = "A";
         changedProperty.Should().Be("MinusDisplayText");
     }
 

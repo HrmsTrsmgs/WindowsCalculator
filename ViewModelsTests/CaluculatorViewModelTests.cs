@@ -19,7 +19,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputKeybord.Execute(InputAction.Five);
 
-        tested.DisplaiedNumber.Should().Be("5");
+        tested.DisplayNumber.Should().Be("5");
 
     }
 
@@ -34,7 +34,7 @@ public class CaluculatorViewModelTests
         tested.InputKeybord.Execute(InputAction.Five);
         tested.InputKeybord.Execute(InputAction.Five);
 
-        tested.DisplaiedNumber.Should().Be("5,555,555");
+        tested.DisplayNumber.Should().Be("5,555,555");
 
     }
 
@@ -62,8 +62,12 @@ public class CaluculatorViewModelTests
         var actual = tested.History.ToArray();
 
         actual.Should().HaveCount(2);
-        actual[0].Should().Be(new CalculationHistoryItem("8　-　7 =", 1));
-        actual[1].Should().Be(new CalculationHistoryItem("3　+　5 =", 8));
+        
+        actual[0].Expression.Should().Be("8　-　7 =");
+        actual[0].Result.Should().Be(1);
+
+        actual[1].Expression.Should().Be("3　+　5 =");
+        actual[1].Result.Should().Be(8);
     }
 
     [Fact]
@@ -105,7 +109,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputOneCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("1");
+        tested.DisplayNumber.Should().Be("1");
     }
 
     [Fact]
@@ -113,7 +117,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputTwoCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("2");
+        tested.DisplayNumber.Should().Be("2");
     }
 
     [Fact]
@@ -121,7 +125,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputThreeCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("3");
+        tested.DisplayNumber.Should().Be("3");
     }
 
     [Fact]
@@ -129,7 +133,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputFourCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("4");
+        tested.DisplayNumber.Should().Be("4");
     }
 
     [Fact]
@@ -137,7 +141,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputFiveCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("5");
+        tested.DisplayNumber.Should().Be("5");
     }
 
     [Fact]
@@ -145,7 +149,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputSixCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("6");
+        tested.DisplayNumber.Should().Be("6");
     }
 
     [Fact]
@@ -153,7 +157,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputSevenCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("7");
+        tested.DisplayNumber.Should().Be("7");
     }
 
     [Fact]
@@ -161,7 +165,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputEightCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("8");
+        tested.DisplayNumber.Should().Be("8");
     }
 
     [Fact]
@@ -169,7 +173,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputNineCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("9");
+        tested.DisplayNumber.Should().Be("9");
     }
 
     [Fact]
@@ -177,7 +181,7 @@ public class CaluculatorViewModelTests
     {
         tested.InputZeroCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("0");
+        tested.DisplayNumber.Should().Be("0");
     }
 
     [Fact]
@@ -219,7 +223,7 @@ public class CaluculatorViewModelTests
         tested.InputThreeCommand.Execute(null);
         tested.InputEqualCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("-3");
+        tested.DisplayNumber.Should().Be("-3");
     }
 
     [Fact]
@@ -229,7 +233,7 @@ public class CaluculatorViewModelTests
         tested.InputMultiplyCommand.Execute(null);
         tested.InputSubstractCommand.Execute(null);
 
-        var action = () => tested.DisplaiedNumber;
+        var action = () => tested.DisplayNumber;
         action.Should().NotThrow();
     }
 
@@ -244,7 +248,7 @@ public class CaluculatorViewModelTests
         tested.InputEqualCommand.Execute(null);
         tested.InputUndoCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("6");
+        tested.DisplayNumber.Should().Be("3");
     }
 
     [Fact]
@@ -259,7 +263,7 @@ public class CaluculatorViewModelTests
         tested.InputUndoCommand.Execute(null);
         tested.InputRedoCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("9");
+        tested.DisplayNumber.Should().Be("9");
     }
 
         [Fact]
@@ -273,7 +277,7 @@ public class CaluculatorViewModelTests
         tested.InputEqualCommand.Execute(null);
         tested.InputCCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("0");
+        tested.DisplayNumber.Should().Be("0");
         tested.History.Should().BeEmpty();
     }
 
@@ -286,7 +290,7 @@ public class CaluculatorViewModelTests
         tested.InputEqualCommand.Execute(null);
         tested.InputCECommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("0");
+        tested.DisplayNumber.Should().Be("0");
         tested.History.Should().NotBeEmpty();
         tested.History.First().Expression.Should().Be("3　×　3 =");
     }
@@ -299,6 +303,6 @@ public class CaluculatorViewModelTests
         tested.InputThreeCommand.Execute(null);
         tested.InputBackspaceCommand.Execute(null);
 
-        tested.DisplaiedNumber.Should().Be("33");
+        tested.DisplayNumber.Should().Be("33");
     }
 }

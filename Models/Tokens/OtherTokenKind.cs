@@ -1,4 +1,4 @@
-﻿namespace Marimo.WindowsCalculator.Models;
+﻿namespace Marimo.WindowsCalculator.Models.Tokens;
 
 /// <summary>
 /// 演算子と数値以外のトークンを表します。

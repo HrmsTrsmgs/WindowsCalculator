@@ -1,4 +1,4 @@
-﻿namespace Marimo.WindowsCalculator.Models;
+﻿namespace Marimo.WindowsCalculator.Models.Tokens;
 
 /// <summary>
 /// 演算子と数値以外のトークンを表します。
@@ -39,7 +39,7 @@ public class OtherToken : Token
     /// <summary>
     /// 表示分削除トークンを取得します。
     /// </summary>
-    public static OtherToken CE { get;  } = new OtherToken(OtherTokenKind.CE);
+    public static OtherToken CE { get; } = new OtherToken(OtherTokenKind.CE);
 
     /// <summary>
     /// トークンの種類を取得します。

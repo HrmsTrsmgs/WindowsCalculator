@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Marimo.WindowsCalculator.Models.Tokens;
 using System;
 
 namespace Marimo.WindowsCalculator.Models;
@@ -92,8 +93,7 @@ public class IncrementalParser : ModelBase
                                 break;
                             case >= 1:
                                 t.DecimalPlaces--;
-                                t.Number = Utility.Truncate(t.DecimalPlaces, t.Number);
-
+                                t.Number = Utility.Truncate(t.DecimalPlaces.Value, t.Number);
                                 break;
                         }
                         break;

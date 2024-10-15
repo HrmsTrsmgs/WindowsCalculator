@@ -1,5 +1,6 @@
 ﻿using log4net.Appender;
 using Marimo.WindowsCalculator.Models;
+using Marimo.WindowsCalculator.Models.Tokens;
 
 namespace Marimo.WindowsCalculator.Tests.Models;
 

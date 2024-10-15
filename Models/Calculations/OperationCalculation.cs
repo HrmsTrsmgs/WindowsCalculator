@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using Marimo.WindowsCalculator.Models.Tokens;
 
 namespace Marimo.WindowsCalculator.Models.Calculations;
 
@@ -7,18 +8,31 @@ namespace Marimo.WindowsCalculator.Models.Calculations;
 /// </summary>
 /// <param name="receiver">計算対象</param>
 /// <param name="operand">計算される数値。</param>
-/// <param name="isDisplaiedResult">結果が式の表示対象になるか。</param>
-public abstract class OperationCalculation(Calculation receiver, NumberToken? operand = null, bool isDisplaiedResult = false) : Calculation(receiver)
+/// <param name="isDisplayResult">結果が式の表示対象になるか。</param>
+public abstract class OperationCalculation(Calculation receiver, NumberToken? operand = null, bool isDisplayResult = false) : Calculation(receiver)
 {
+
+    /// <summary>
+    /// エラーが出たときに表示されるエラーを取得、設定します。
+    /// </summary>
+    public string? DisplayError { get; set; } = null;
     /// <summary>
     /// 結果が式の表示対象になるかを取得、設定します。
     /// </summary>
-    public bool IsDisplaiedResult { get; set; } = isDisplaiedResult;
+    public bool IsDisplayResult
+    {
+        get => isDisplayResult;
+        set
+        {
+            SetProperty(ref isDisplayResult, value);
+            OnPropertyChanged(nameof(Result));
+        }
+    }
 
     /// <summary>
     /// 計算の内容を表す演算子を取得します。
     /// </summary>
-    public abstract InputAction? OperatorToken { get; }
+    public abstract InputAction? OperatorAction { get; }
 
     /// <summary>
     /// 演算子で計算される比演算子を指します。
@@ -33,7 +47,7 @@ public abstract class OperationCalculation(Calculation receiver, NumberToken? op
         get => operand;
         set
         {
-            IsDisplaiedResult = false;
+            IsDisplayResult = false;
             SetProperty(ref operand, value);
         }
     }
@@ -46,10 +60,10 @@ public abstract class OperationCalculation(Calculation receiver, NumberToken? op
     /// 基本的にはnullになりません。
     /// 演算子が入力され、計算対象が入力されていない場合などにnullとなります。
     /// </remarks>
-    public override decimal? Result =>
-        Receiver == null || !IsDisplaiedResult
-        ? null
-        : GetResult();
+    public override decimal? Result
+        => !IsDisplayResult
+            ? null
+            : GetResult();
 
     /// <summary>
     /// 結果の計算を行い、取得します。
@@ -73,14 +87,14 @@ public abstract class OperationCalculation(Calculation receiver, NumberToken? op
     /// <param name="receiver">計算対象</param>
     /// <param name="operatorAction">入力された演算子を表すトークン。</param>
     /// <param name="operand">計算される数値。</param>
-    /// <param name="isDisplaiedResult">結果が式の表示対象になるか。</param>
-    public static OperationCalculation Create(Calculation receiver, InputAction? operatorAction = null, NumberToken? operand = null, bool isDisplaiedResult = false)
+    /// <param name="isDisplayResult">結果が式の表示対象になるか。</param>
+    public static OperationCalculation Create(Calculation receiver, InputAction? operatorAction = null, NumberToken? operand = null, bool isDisplayResult = false)
          => operatorAction switch
          {
-             InputAction.Add => new AddCalculation(receiver, operand, isDisplaiedResult),
-             InputAction.Substract => new SubstractCalculation(receiver, operand, isDisplaiedResult),
-             InputAction.Multiply => new MultiplyCalculation(receiver, operand, isDisplaiedResult),
-             InputAction.Divide => new DivideCalculation(receiver, operand, isDisplaiedResult),
+             InputAction.Add => new AddCalculation(receiver, operand, isDisplayResult),
+             InputAction.Substract => new SubstractCalculation(receiver, operand, isDisplayResult),
+             InputAction.Multiply => new MultiplyCalculation(receiver, operand, isDisplayResult),
+             InputAction.Divide => new DivideCalculation(receiver, operand, isDisplayResult),
              _ => throw new InvalidOperationException()
          };
 }

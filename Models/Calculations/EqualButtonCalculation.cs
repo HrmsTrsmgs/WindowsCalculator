@@ -16,7 +16,7 @@ public class EqualButtonCalculation : Calculation
         switch (receiver)
         {
             case OperationCalculation c:
-                c.IsDisplaiedResult = true;
+                c.IsDisplayResult = true;
                 break;
         }
 
@@ -24,7 +24,7 @@ public class EqualButtonCalculation : Calculation
             lastOperationCalculation switch
             {
                 OperationCalculation c =>
- OperationCalculation.Create(receiver, c.OperatorToken, c.Operand, true),
+                    OperationCalculation.Create(receiver, c.OperatorAction, c.Operand, true),
                 _ => null
             };
     }
@@ -55,7 +55,7 @@ public class EqualButtonCalculation : Calculation
             var calculator = (LastOperationCalculation ?? Receiver) as OperationCalculation;
 
             //Windows電卓でここが半角スペースで表示されているので。
-            return $"{calculator!.Expression?.Replace('　',' ')} {calculator!.Operand?.Number} =";
+            return $"{calculator!.Expression?.Replace('　', ' ')} {calculator!.Operand?.Number} =";
         }
     }
 }

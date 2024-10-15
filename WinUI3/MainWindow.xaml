@@ -131,7 +131,7 @@
                     HorizontalAlignment="Right"
                     MaxHeight="60">
                             <TextBlock 
-                        Text="{x:Bind ViewModel.DisplaiedNumber, Mode=OneWay}"
+                        Text="{x:Bind ViewModel.DisplayNumber, Mode=OneWay}"
                         FontWeight="SemiBold"/>
                         </Viewbox>
                     </Border>
@@ -360,7 +360,7 @@
                                             <TextBlock
                                                 RelativePanel.AlignLeftWithPanel="True"
                                                 RelativePanel.AlignTopWithPanel="True"
-                                                Text="{x:Bind Result}"/>
+                                                Text="{x:Bind Result.Value}"/>
                                         </RelativePanel>
                                     </DataTemplate>
                                 </ListBox.ItemTemplate>

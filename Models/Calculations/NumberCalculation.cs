@@ -1,4 +1,6 @@
-﻿namespace Marimo.WindowsCalculator.Models.Calculations;
+﻿using Marimo.WindowsCalculator.Models.Tokens;
+
+namespace Marimo.WindowsCalculator.Models.Calculations;
 
 /// <summary>
 /// 計算の最初にある、演算の対象となるのみの数字を表します。

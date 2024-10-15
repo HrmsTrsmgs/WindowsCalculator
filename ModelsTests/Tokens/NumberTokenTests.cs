@@ -1,6 +1,6 @@
-﻿using Marimo.WindowsCalculator.Models;
+﻿using Marimo.WindowsCalculator.Models.Tokens;
 
-namespace Marimo.WindowsCalculator.Tests.Models;
+namespace Marimo.WindowsCalculator.Tests.Models.Tokens;
 
 public class NumberTokenTests
 {

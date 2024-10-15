@@ -1,17 +1,19 @@
-﻿namespace Marimo.WindowsCalculator.Models.Calculations;
+﻿using Marimo.WindowsCalculator.Models.Tokens;
+
+namespace Marimo.WindowsCalculator.Models.Calculations;
 
 /// <summary>
 /// 掛け算を表します。
 /// </summary>
 /// <param name="receiver">計算対象</param>
 /// <param name="operand">計算される数値。</param>
-/// <param name="isDisplaiedResult">結果が式の表示対象になるか。</param>
-public class MultiplyCalculation(Calculation receiver, NumberToken? operand = null, bool isDisplaiedResult = false) : OperationCalculation(receiver, operand, isDisplaiedResult)
+/// <param name="isDisplayResult">結果が式の表示対象になるか。</param>
+public class MultiplyCalculation(Calculation receiver, NumberToken? operand = null, bool isDisplayResult = false) : OperationCalculation(receiver, operand, isDisplayResult)
 {
     /// <summary>
     /// 計算の内容を表す演算子を取得します。
     /// </summary>
-    public override InputAction? OperatorToken => InputAction.Multiply;
+    public override InputAction? OperatorAction => InputAction.Multiply;
 
     /// <summary>
     /// 演算子を表す文字列を取得します。

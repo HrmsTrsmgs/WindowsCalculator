@@ -1,6 +1,8 @@
 ﻿using Marimo.WindowsCalculator.Models.Calculations;
+using Marimo.WindowsCalculator.Models.Tokens;
 using System;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 
 namespace Marimo.WindowsCalculator.Models;
 
@@ -17,7 +19,7 @@ public class Calculator : ModelBase
     /// <summary>
     /// 履歴作成のための計算です。
     /// </summary>
-    readonly ObservableCollection<Calculation> cumulativeCalculation = [];
+    readonly ObservableCollection<OperationCalculation> cumulativeCalculation = [];
 
     /// <summary>
     /// 現在、最新で行われている計算を取得、設定します。
@@ -42,61 +44,41 @@ public class Calculator : ModelBase
     /// </summary>
     public Calculation? RedoCalculation { get; set; } = null;
 
+    ObservableCollection<CalculationHistoryItem> calculationHistory = [];
+
     /// <summary>
     /// 履歴用の計算結果一覧を取得します。
     /// </summary>
-    public IEnumerable<CalculationHistoryItem> CalculationHistory
-    {
-        get
-        {
-            foreach (var calculation in cumulativeCalculation.Reverse())
-            {
-                if (calculation.Result != null && calculation is OperationCalculation)
-                {
-                    var operation = calculation as OperationCalculation;
-                    yield return new(
-                        $"{operation!.Expression}　{operation.Operand} =",
-                        operation.Result!.Value);
-                }
-            }
-        }
-    }
+    public ReadOnlyObservableCollection<CalculationHistoryItem> CalculationHistory { get; }
+
 
     /// <summary>
     /// 計算結果を取得します。
     /// </summary>
-    public string DisplaiedNumber
-    {
-        get
+    public string DisplayNumber
+        => ActiveCaluculation.Receiver switch
         {
-            try
-            {
-                return
-                    (ActiveCaluculation switch
-                    {
-                        NumberCalculation c => c.NumberToken,
-                        OperationCalculation c
-                            => new NumberToken(c.Result ?? c.Operand?.Number ?? c.Receiver?.Result
-                                 ??
-                                throw new InvalidOperationException(
-                                    "今の演算も前の演算も結果が出てないのはおかしいはず")),
-                        EqualButtonCalculation c
-                            => new NumberToken(c.Result),
-                        DeleteCalculation c
-                            => new NumberToken(c.Result),
-                        _ => new NumberToken(0)
+            OperationCalculation c => c.DisplayError,
+            _ => null
+        } ??
+        (ActiveCaluculation switch
+        {
+            NumberCalculation c => c.NumberToken,
+            OperationCalculation c
+                => new NumberToken(c.Result ?? c.Operand?.Number ?? c.Receiver?.Result
+                    ?? throw new InvalidOperationException(
+                        "今の演算も前の演算も結果が出てないのはおかしいはず")),
+            EqualButtonCalculation c
+                => new NumberToken(c.Result),
+            DeleteCalculation c
+                => new NumberToken(c.Result),
+            _ => new NumberToken(0)
 
-                    } ?? throw new InvalidOperationException()).ToString();
-            }
-            catch (DivideByZeroException)
-            {
-                return "0 で割ることはできません";
-            }
-        }
-    }
+        } ?? throw new InvalidOperationException()).ToString();
+
 
     /// <summary>
-    /// 設定を表します。
+    /// 設定を取得します。
     /// </summary>
     public PropertySettings Settings { get; } = new();
     /// <summary>
@@ -104,19 +86,75 @@ public class Calculator : ModelBase
     /// </summary>
     public Calculator()
     {
+        CalculationHistory = new(calculationHistory);
+        cumulativeCalculation.CollectionChanged += (_, args) =>
+        {
+            switch (args.Action)
+            {
+                case NotifyCollectionChangedAction.Add:
+                    var newItems = args.NewItems?.OfType<OperationCalculation>();
+                    if (newItems == null)
+                    {
+                        throw new NotSupportedException();
+                    }
+                    if (!newItems.Any()) return;
+                    var newItem = new CalculationHistoryItem(newItems.Single());
+                    newItem.PropertyChanged += (_, args) =>
+                    {
+                        if (args.PropertyName != nameof(newItem.Result)) return;
+
+                        if(newItem.Result == null)
+                        {
+                            calculationHistory.Remove(newItem);
+                        }
+                        else
+                        {
+                            calculationHistory.Insert(0, newItem);
+                        }
+                    };
+                    if (newItem.Result != null)
+                    {
+                        calculationHistory.Insert(0, newItem);
+                    }
+                        break;
+                case NotifyCollectionChangedAction.Remove:
+                    var oldItems = args.OldItems?.OfType<OperationCalculation>();
+                    if (oldItems == null)
+                    {
+                        throw new NotSupportedException();
+                    }
+                    if (!oldItems.Any()) return;
+                    var removed = calculationHistory
+                    .Where(it => it.Operation == oldItems.First())
+                    .SingleOrDefault();
+
+                    calculationHistory.Remove(removed);
+                    break;
+                case NotifyCollectionChangedAction.Reset:
+                    calculationHistory.Clear();
+                    break;
+            }
+        };
+
         PropertyChanged += (sender, e) =>
         {
             if (e.PropertyName != nameof(ActiveCaluculation)) return;
 
-            if(!cumulativeCalculation.Contains(ActiveCaluculation))
+            var calcuraton = ActiveCaluculation as OperationCalculation;
+            if (calcuraton == null) return;
+            if (!cumulativeCalculation.Contains(calcuraton))
             {
-                cumulativeCalculation.Add(ActiveCaluculation);
+                cumulativeCalculation.Add(calcuraton);
             }
             else
             {
-                while(cumulativeCalculation.Last() != ActiveCaluculation)
+                while (cumulativeCalculation?.LastOrDefault() != calcuraton)
                 {
-                    cumulativeCalculation.Remove(cumulativeCalculation.Last());
+                    cumulativeCalculation?.Remove(cumulativeCalculation.Last());
+                }
+                if (cumulativeCalculation.Any())
+                {
+                    cumulativeCalculation?.Remove(cumulativeCalculation.Last());
                 }
             }
         };
@@ -142,17 +180,17 @@ public class Calculator : ModelBase
                 InputNumberToken(t);
                 break;
             case OperatorToken t:
-                switch(ActiveCaluculation)
+                switch (ActiveCaluculation)
                 {
                     case OperationCalculation c when c.Operand == null:
                         ActiveCaluculation = OperationCalculation.Create(
                             c.Receiver,
                             t.Operator,
                             c.Operand,
-                            c.IsDisplaiedResult);
+                            c.IsDisplayResult);
                         break;
                     case OperationCalculation c:
-                        c.IsDisplaiedResult = true;
+                        c.IsDisplayResult = true;
                         goto default;
                     default:
                         ActiveCaluculation
@@ -163,20 +201,28 @@ public class Calculator : ModelBase
                             };
                         break;
                 }
-                
+
                 break;
             case OtherToken t:
-                switch(t.Kind)
+                switch (t.Kind)
                 {
                     case OtherTokenKind.Undo:
                         RedoCalculation ??= ActiveCaluculation;
-                        SetProperty(ref activeCaluculation!, ActiveCaluculation.Receiver ?? Calculation.NullObject, nameof(ActiveCaluculation));
-                        switch(ActiveCaluculation)
+                        switch (ActiveCaluculation)
                         {
                             case OperationCalculation c:
-                                c.IsDisplaiedResult = true; 
+                                c.IsDisplayResult = false;
+                                break;
+                            case EqualButtonCalculation c:
+                                switch(ActiveCaluculation.Receiver)
+                                {
+                                    case OperationCalculation cc:
+                                        cc.IsDisplayResult = false;
+                                        break;
+                                }
                                 break;
                         }
+                        SetProperty(ref activeCaluculation!, ActiveCaluculation.Receiver, nameof(ActiveCaluculation));
                         break;
                     case OtherTokenKind.Redo:
                         if (RedoCalculation != null)
@@ -186,20 +232,31 @@ public class Calculator : ModelBase
                             {
                                 nextCalculation = nextCalculation!.Receiver;
                             }
+                            switch (nextCalculation)
+                            {
+                                case EqualButtonCalculation c:
+                                    switch (activeCaluculation)
+                                    {
+                                        case OperationCalculation cc:
+                                            cc.IsDisplayResult = true;
+                                            break;
+                                    }
+                                    break;
+                            }
                             SetProperty(ref activeCaluculation, nextCalculation, nameof(ActiveCaluculation));
                         }
                         break;
                     case OtherTokenKind.Equal:
-                        switch(ActiveCaluculation)
+                        switch (ActiveCaluculation)
                         {
                             case OperationCalculation c:
-                                c.IsDisplaiedResult = true;
+                                c.IsDisplayResult = true;
                                 break;
                             case EqualButtonCalculation c:
-                                switch(c.LastOperationCalculation)
+                                switch (c.LastOperationCalculation)
                                 {
                                     case OperationCalculation cc:
-                                        cc.IsDisplaiedResult = true;
+                                        cc.IsDisplayResult = true;
                                         break;
                                 }
                                 break;
@@ -210,7 +267,7 @@ public class Calculator : ModelBase
                         ClearCalculationHistory();
                         break;
                     case OtherTokenKind.CE:
-                        switch(ActiveCaluculation)
+                        switch (ActiveCaluculation)
                         {
                             case NumberCalculation c:
                                 c.NumberToken = new(0);
@@ -220,13 +277,13 @@ public class Calculator : ModelBase
                                 break;
                         }
                         break;
-                    default: 
+                    default:
                         ActiveCaluculation = GetCalculationOtherWhenTokenInputed(t);
                         break;
                 };
                 break;
         }
-        OnPropertyChanged(nameof(DisplaiedNumber));
+        OnPropertyChanged(nameof(DisplayNumber));
     }
 
     /// <summary>
@@ -260,7 +317,7 @@ public class Calculator : ModelBase
             = lastCaluculation.LastOperationCalculation
             ?? lastCaluculation.Receiver as OperationCalculation
             ?? throw new InvalidOperationException();
-        return OperationCalculation.Create(ActiveCaluculation, before.OperatorToken, before.Operand, true);
+        return OperationCalculation.Create(ActiveCaluculation, before.OperatorAction, before.Operand, true);
     }
 
     /// <summary>

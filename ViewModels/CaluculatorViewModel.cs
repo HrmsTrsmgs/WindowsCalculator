@@ -139,7 +139,7 @@ public class CalculatorViewModel : ObservableObject
     ///// <summary>
     ///// 計算機に表示されている数を取得します。
     ///// </summary>
-    public string DisplaiedNumber => model.DisplaiedNumber;
+    public string DisplayNumber => model.DisplayNumber;
 
     /// <summary>
     /// 履歴を取得します。
@@ -193,9 +193,9 @@ public class CalculatorViewModel : ObservableObject
         model.PropertyChanged += 
             (sender, e) =>
             {
-                if (e.PropertyName == nameof(model.DisplaiedNumber))
+                if (e.PropertyName == nameof(model.DisplayNumber))
                 {
-                    OnPropertyChanged(nameof(DisplaiedNumber));
+                    OnPropertyChanged(nameof(DisplayNumber));
                 }
             };
 

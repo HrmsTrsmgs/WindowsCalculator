@@ -1,10 +1,10 @@
 ﻿using System.Runtime.InteropServices;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Marimo.WindowsCalculator.Models;
+namespace Marimo.WindowsCalculator.Models.Tokens;
 
 /// <summary>
-/// 入力された数値の文字列を表します。
+/// 入出力に使う数値の文字列を表します。
 /// </summary>
 /// <param name="number">
 /// 文字列で表された数値。
@@ -46,7 +46,7 @@ public class NumberToken(decimal? number) : Token
     /// <summary>
     /// 表す数が整数であることを表します。
     /// </summary>
-    bool IsInteger => Number == Decimal.Truncate(Number);
+    bool IsInteger => Number == decimal.Truncate(Number);
 
 
     /// <summary>
@@ -54,7 +54,7 @@ public class NumberToken(decimal? number) : Token
     /// </summary>
     /// <returns>現在のオブジェクトを表す文字列。</returns>
     public override string ToString()
-        => Number < Utility.Pow(10, NumberToken.MaxDigits)
-        ? Number.ToString($"#,##0.{new string('#', NumberToken.MaxDecimalPlaces)}") + (IsInteger && decimalPlaces != null ? "." : "")
-        : Number.ToString($"0.{new string('#', NumberToken.MaxDigits - 1)}e+0");
+        => Number < Utility.Pow(10, MaxDigits)
+        ? Number.ToString($"#,##0.{new string('#', MaxDecimalPlaces)}") + (IsInteger && decimalPlaces != null ? "." : "")
+        : Number.ToString($"0.{new string('#', MaxDigits - 1)}e+0");
 }

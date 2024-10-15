@@ -6,7 +6,7 @@ namespace Marimo.WindowsCalculator.Tests.Models.Calculations;
 public class OperationCalculationTests
 {
     OperationCalculation Tested { get; set; }
-        = new(
+        = OperationCalculation.Create(
             new NumberCalculation(Calculation.NullObject){ NumberToken = new(10) },
             InputAction.Add,
             new(20),
@@ -17,15 +17,27 @@ public class OperationCalculationTests
     {
         Tested.Result.Should().Be(30);
 
-        Tested.OperatorToken = InputAction.Substract;
+        Tested = OperationCalculation.Create(
+            Tested.Receiver,
+            InputAction.Substract,
+            Tested.Operand,
+            Tested.IsDisplaiedResult);
 
         Tested.Result.Should().Be(-10);
 
-        Tested.OperatorToken = InputAction.Multiply;
+        Tested = OperationCalculation.Create(
+            Tested.Receiver,
+            InputAction.Multiply,
+            Tested.Operand,
+            Tested.IsDisplaiedResult);
 
         Tested.Result.Should().Be(200);
 
-        Tested.OperatorToken = InputAction.Divide;
+        Tested = OperationCalculation.Create(
+            Tested.Receiver,
+            InputAction.Divide,
+            Tested.Operand,
+            Tested.IsDisplaiedResult);
 
         Tested.Result.Should().Be(0.5m);
     }
@@ -35,15 +47,27 @@ public class OperationCalculationTests
     {
         Tested.Expression.Should().Be("10　+");
 
-        Tested.OperatorToken = InputAction.Substract;
+        Tested = OperationCalculation.Create(
+            Tested.Receiver,
+            InputAction.Substract,
+            Tested.Operand,
+            Tested.IsDisplaiedResult);
 
         Tested.Expression.Should().Be("10　-");
-
-        Tested.OperatorToken = InputAction.Multiply;
+        Tested = OperationCalculation.Create(
+            Tested.Receiver,
+            InputAction.Multiply,
+            Tested.Operand,
+            Tested.IsDisplaiedResult);
 
         Tested.Expression.Should().Be("10　×");
 
-        Tested.OperatorToken = InputAction.Divide;
+
+        Tested = OperationCalculation.Create(
+            Tested.Receiver,
+            InputAction.Divide,
+            Tested.Operand,
+            Tested.IsDisplaiedResult);
 
         Tested.Expression.Should().Be("10　÷");
     }

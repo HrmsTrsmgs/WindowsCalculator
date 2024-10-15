@@ -24,7 +24,7 @@ public class EqualButtonCalculation : Calculation
             lastOperationCalculation switch
             {
                 OperationCalculation c =>
-                    new OperationCalculation(receiver, c.OperatorToken, c.Operand, true),
+ OperationCalculation.Create(receiver, c.OperatorToken, c.Operand, true),
                 _ => null
             };
     }

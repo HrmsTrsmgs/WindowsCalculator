@@ -9,28 +9,28 @@ namespace Marimo.WindowsCalculator.Tests.Models;
 
 public class CalculatorTests
 {
-    private ILog _logger;
-    private MemoryAppender _memoryAppender;
+    readonly ILog logger;
+    readonly MemoryAppender memoryAppender;
 
-    Calculator tested = new();
+    readonly Calculator tested = new();
     public CalculatorTests()
     {
-        _memoryAppender = new MemoryAppender
+        memoryAppender = new MemoryAppender
         {
             Layout = new PatternLayout("%-5p %m%n")
         };
-        _memoryAppender.ActivateOptions();
+        memoryAppender.ActivateOptions();
 
-        BasicConfigurator.Configure(_memoryAppender);
-        _logger = LogManager.GetLogger(typeof(CalculatorTests));
+        BasicConfigurator.Configure(memoryAppender);
+        logger = LogManager.GetLogger(typeof(CalculatorTests));
     }
 
     [Fact]
     public void TestLogOutput()
     {
-        _logger.Info("テストメッセージ");
+        logger.Info("テストメッセージ");
 
-        var logEvents = _memoryAppender.GetEvents().Should().NotBeEmpty();
+        memoryAppender.GetEvents().Should().NotBeEmpty();
     }
 
     [Fact]
@@ -85,7 +85,7 @@ public class CalculatorTests
     public void 演算子が入力された場合に新しい計算の演算子は指定したものになります()
     {
         tested.Input(new OperatorToken(InputAction.Add));
-        tested.ActiveCaluculation.Should().BeOfType<OperationCalculation>();
+        tested.ActiveCaluculation.Should().BeOfType<AddCalculation>();
         var calculation = (OperationCalculation)tested.ActiveCaluculation;
         calculation.OperatorToken.Should().Be(InputAction.Add);
     }
@@ -231,15 +231,15 @@ public class CalculatorTests
     }
 
     [Fact]
-    public void 演算子の入れ替えで計算は入れ替わりません()
+    public void 演算子の入れ替えで計算は入れ替わります()
     {
         tested.Input(new NumberToken(8));
         var number = tested.ActiveCaluculation;
         tested.Input(new OperatorToken(InputAction.Divide));
         var first = tested.ActiveCaluculation; ;
         tested.Input(new OperatorToken(InputAction.Add));
-        tested.ActiveCaluculation.Should().BeSameAs(first);
-        tested.ActiveCaluculation.Receiver.Should().BeSameAs(number);
+        tested.ActiveCaluculation.Should().NotBeSameAs(first);
+        tested.ActiveCaluculation.Receiver.Should().NotBeSameAs(number);
 
 
     }
@@ -401,7 +401,7 @@ public class CalculatorTests
         tested.Input(OtherToken.Undo);
         tested.Input(OtherToken.Undo);
         tested.Input(OtherToken.Redo);
-        tested.ActiveCaluculation.Should().BeOfType<OperationCalculation>();
+        tested.ActiveCaluculation.Should().BeOfType<AddCalculation>();
         tested.DisplaiedNumber.Should().Be("8");
         tested.Input(OtherToken.Redo);
         tested.ActiveCaluculation.Should().BeOfType<EqualButtonCalculation>();
@@ -426,7 +426,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Add));
         tested.Input(OtherToken.Undo);
         tested.Input(OtherToken.Redo);
-        tested.ActiveCaluculation.Should().BeOfType<OperationCalculation>();
+        tested.ActiveCaluculation.Should().BeOfType<AddCalculation>();
         tested.DisplaiedNumber.Should().Be("3");
         ((OperationCalculation)tested.ActiveCaluculation)
             .OperatorToken.Should().Be(InputAction.Add);

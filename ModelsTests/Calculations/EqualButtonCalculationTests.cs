@@ -7,7 +7,7 @@ public class EqualButtonCalculationTests
 {
     readonly EqualButtonCalculation tested 
         = new(
-            new OperationCalculation(
+            OperationCalculation.Create(
                 new NumberCalculation(Calculation.NullObject, numberToken: new(10)),
                 InputAction.Add,
                 new(20)
@@ -25,7 +25,7 @@ public class EqualButtonCalculationTests
         EqualButtonCalculation tested
         = new(
             this.tested,
-            new OperationCalculation(
+            OperationCalculation.Create(
                 Calculation.NullObject,
                 InputAction.Add,
                 new(20)
@@ -46,7 +46,7 @@ public class EqualButtonCalculationTests
         EqualButtonCalculation tested
         = new(
             this.tested,
-            new OperationCalculation(
+            OperationCalculation.Create(
                 Calculation.NullObject,
                 InputAction.Add,
                 new(20)

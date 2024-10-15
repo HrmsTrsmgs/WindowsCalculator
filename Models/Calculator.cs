@@ -1,4 +1,5 @@
 ﻿using Marimo.WindowsCalculator.Models.Calculations;
+using System;
 using System.Collections.ObjectModel;
 
 namespace Marimo.WindowsCalculator.Models;
@@ -144,14 +145,22 @@ public class Calculator : ModelBase
                 switch(ActiveCaluculation)
                 {
                     case OperationCalculation c when c.Operand == null:
-                        c.OperatorToken = t.Operator;
+                        ActiveCaluculation = OperationCalculation.Create(
+                            c.Receiver,
+                            t.Operator,
+                            c.Operand,
+                            c.IsDisplaiedResult);
                         break;
                     case OperationCalculation c:
                         c.IsDisplaiedResult = true;
                         goto default;
                     default:
                         ActiveCaluculation
-                            = new OperationCalculation(ActiveCaluculation, t.Operator, null);
+                            = t.Operator switch
+                            {
+                                InputAction.Equal => new EqualButtonCalculation(ActiveCaluculation, null),
+                                _ => OperationCalculation.Create(ActiveCaluculation, t.Operator, null, true)
+                            };
                         break;
                 }
                 
@@ -186,6 +195,14 @@ public class Calculator : ModelBase
                             case OperationCalculation c:
                                 c.IsDisplaiedResult = true;
                                 break;
+                            case EqualButtonCalculation c:
+                                switch(c.LastOperationCalculation)
+                                {
+                                    case OperationCalculation cc:
+                                        cc.IsDisplaiedResult = true;
+                                        break;
+                                }
+                                break;
                         }
                         goto default;
                     case OtherTokenKind.C:
@@ -215,7 +232,7 @@ public class Calculator : ModelBase
     /// <summary>
     /// 数値と演算子以外の入力を行います。
     /// </summary>
-    private Calculation GetCalculationOtherWhenTokenInputed(OtherToken otherToken)
+    Calculation GetCalculationOtherWhenTokenInputed(OtherToken otherToken)
         => otherToken.Kind switch
         {
             OtherTokenKind.Equal =>
@@ -243,8 +260,7 @@ public class Calculator : ModelBase
             = lastCaluculation.LastOperationCalculation
             ?? lastCaluculation.Receiver as OperationCalculation
             ?? throw new InvalidOperationException();
-        return new OperationCalculation(
-                ActiveCaluculation, before.OperatorToken, before.Operand);
+        return OperationCalculation.Create(ActiveCaluculation, before.OperatorToken, before.Operand, true);
     }
 
     /// <summary>

@@ -79,71 +79,84 @@ public class Calculator : ModelBase
     public Calculator()
     {
         CalculationHistory = new(calculationHistory);
-        cumulativeCalculation.CollectionChanged += (_, args) =>
-        {
-            switch (args.Action)
-            {
-                case NotifyCollectionChangedAction.Add:
-                    var newItems = (args.NewItems?.OfType<OperationCalculation>()) ?? throw new NotSupportedException();
-                    if (!newItems.Any()) return;
-                    var newItem = new CalculationHistoryItem(newItems.Single());
-                    newItem.PropertyChanged += (_, args) =>
-                    {
-                        if (args.PropertyName != nameof(newItem.Result)) return;
+        cumulativeCalculation.CollectionChanged += CumulativeCalculationCollectionChanged;
+        PropertyChanged += OnPropertyChanged;
+    }
 
-                        if(newItem.Result == null)
-                        {
-                            calculationHistory.Remove(newItem);
-                        }
-                        else
-                        {
-                            calculationHistory.Insert(0, newItem);
-                        }
-                    };
-                    if (newItem.Result != null)
+    /// <summary>
+    /// CumulativeCalculationが変更された時に、履歴に反映させます。
+    /// </summary>
+    /// <param name="sender">イベントが起きたオブジェクト。</param>
+    /// <param name="args">イベント情報。</param>
+    void CumulativeCalculationCollectionChanged(object? sender, NotifyCollectionChangedEventArgs args)
+    {
+        switch (args.Action)
+        {
+            case NotifyCollectionChangedAction.Add:
+                var newItems = (args.NewItems?.OfType<OperationCalculation>()) ?? throw new NotSupportedException();
+                if (!newItems.Any()) return;
+                var newItem = new CalculationHistoryItem(newItems.Single());
+                newItem.PropertyChanged += (_, args) =>
+                {
+                    if (args.PropertyName != nameof(newItem.Result)) return;
+
+                    if (newItem.Result == null)
+                    {
+                        calculationHistory.Remove(newItem);
+                    }
+                    else
                     {
                         calculationHistory.Insert(0, newItem);
                     }
-                        break;
-                case NotifyCollectionChangedAction.Remove:
-                    var oldItems 
-                    = (args.OldItems?.OfType<OperationCalculation>()) ?? throw new NotSupportedException();
-                    if (!oldItems.Any()) return;
-                    var removed = calculationHistory
-                    .Where(it => it.Operation == oldItems.First())
-                    .SingleOrDefault();
-                    if (removed != null)
-                    {
-                        calculationHistory.Remove(removed);
-                    }
-                    break;
-                case NotifyCollectionChangedAction.Reset:
-                    calculationHistory.Clear();
-                    break;
-            }
-        };
+                };
+                if (newItem.Result != null)
+                {
+                    calculationHistory.Insert(0, newItem);
+                }
+                break;
+            case NotifyCollectionChangedAction.Remove:
+                var oldItems
+                = (args.OldItems?.OfType<OperationCalculation>()) ?? throw new NotSupportedException();
+                if (!oldItems.Any()) return;
+                var removed = calculationHistory
+                .Where(it => it.Operation == oldItems.First())
+                .SingleOrDefault();
+                if (removed != null)
+                {
+                    calculationHistory.Remove(removed);
+                }
+                break;
+            case NotifyCollectionChangedAction.Reset:
+                calculationHistory.Clear();
+                break;
+        }
+    }
 
-        PropertyChanged += (sender, e) =>
+    /// <summary>
+    /// PropertyChangedイベントが起きたときの処理です。
+    /// </summary>
+    /// <param name="sender">イベントが起きたオブジェクト。</param>
+    /// <param name="e">イベント情報。</param>
+    void OnPropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
+    {
+        if (e.PropertyName != nameof(ActiveCaluculation)) return;
+
+        if (ActiveCaluculation is not OperationCalculation calcuraton) return;
+        if (!cumulativeCalculation.Contains(calcuraton))
         {
-            if (e.PropertyName != nameof(ActiveCaluculation)) return;
-
-            if (ActiveCaluculation is not OperationCalculation calcuraton) return;
-            if (!cumulativeCalculation.Contains(calcuraton))
+            cumulativeCalculation.Add(calcuraton);
+        }
+        else
+        {
+            while (cumulativeCalculation?.LastOrDefault() != calcuraton)
             {
-                cumulativeCalculation.Add(calcuraton);
+                cumulativeCalculation?.Remove(cumulativeCalculation.Last());
             }
-            else
+            if (cumulativeCalculation.Any())
             {
-                while (cumulativeCalculation?.LastOrDefault() != calcuraton)
-                {
-                    cumulativeCalculation?.Remove(cumulativeCalculation.Last());
-                }
-                if (cumulativeCalculation.Any())
-                {
-                    cumulativeCalculation?.Remove(cumulativeCalculation.Last());
-                }
+                cumulativeCalculation?.Remove(cumulativeCalculation.Last());
             }
-        };
+        }
     }
 
     /// <summary>
@@ -166,111 +179,16 @@ public class Calculator : ModelBase
                 InputNumberToken(t);
                 break;
             case OperatorToken t:
-                switch (ActiveCaluculation)
-                {
-                    case OperationCalculation c when c.Operand == null:
-                        ActiveCaluculation = OperationCalculation.Create(
-                            c.Receiver,
-                            t.Operator,
-                            c.Operand,
-                            c.IsDisplayResult);
-                        break;
-                    case OperationCalculation c:
-                        c.IsDisplayResult = true;
-                        goto default;
-                    default:
-                        ActiveCaluculation
-                            = t.Operator switch
-                            {
-                                InputAction.Equal => new EqualButtonCalculation(ActiveCaluculation, null),
-                                _ => OperationCalculation.Create(ActiveCaluculation, t.Operator, null, true)
-                            };
-                        break;
-                }
-
+                InputOperatorToken(t);
                 break;
             case OtherToken t:
-                switch (t.Kind)
-                {
-                    case OtherTokenKind.Undo:
-                        RedoCalculation ??= ActiveCaluculation;
-                        switch (ActiveCaluculation)
-                        {
-                            case OperationCalculation c:
-                                c.IsDisplayResult = false;
-                                break;
-                            case EqualButtonCalculation:
-                                switch (ActiveCaluculation.Receiver)
-                                {
-                                    case OperationCalculation cc:
-                                        cc.IsDisplayResult = false;
-                                        break;
-                                }
-                                break;
-                        }
-                        SetProperty(ref activeCaluculation!, ActiveCaluculation.Receiver, nameof(ActiveCaluculation));
-                        break;
-                    case OtherTokenKind.Redo:
-                        if (RedoCalculation != null)
-                        {
-                            var nextCalculation = RedoCalculation;
-                            while (nextCalculation!.Receiver != ActiveCaluculation)
-                            {
-                                nextCalculation = nextCalculation!.Receiver;
-                            }
-                            switch (nextCalculation)
-                            {
-                                case EqualButtonCalculation:
-                                    switch (activeCaluculation)
-                                    {
-                                        case OperationCalculation cc:
-                                            cc.IsDisplayResult = true;
-                                            break;
-                                    }
-                                    break;
-                            }
-                            SetProperty(ref activeCaluculation, nextCalculation, nameof(ActiveCaluculation));
-                        }
-                        break;
-                    case OtherTokenKind.Equal:
-                        switch (ActiveCaluculation)
-                        {
-                            case OperationCalculation c:
-                                c.IsDisplayResult = true;
-                                break;
-                            case EqualButtonCalculation c:
-                                switch (c.LastOperationCalculation)
-                                {
-                                    case OperationCalculation cc:
-                                        cc.IsDisplayResult = true;
-                                        break;
-                                }
-                                break;
-                        }
-                        goto default;
-                    case OtherTokenKind.C:
-                        ActiveCaluculation = Calculation.NullObject;
-                        ClearCalculationHistory();
-                        break;
-                    case OtherTokenKind.CE:
-                        switch (ActiveCaluculation)
-                        {
-                            case NumberCalculation c:
-                                c.NumberToken = new(0);
-                                break;
-                            default:
-                                ActiveCaluculation = new NumberCalculation(ActiveCaluculation);
-                                break;
-                        }
-                        break;
-                    default:
-                        ActiveCaluculation = GetCalculationOtherWhenTokenInputed(t);
-                        break;
-                };
+                InputOtherToken(t);
                 break;
         }
         OnPropertyChanged(nameof(DisplayResult));
     }
+
+
 
     /// <summary>
     /// 数値と演算子以外の入力を行います。
@@ -310,7 +228,7 @@ public class Calculator : ModelBase
     /// 数値トークンが入力された処理を行います。
     /// </summary>
     /// <param name="token">数値トークン。</param>
-    private void InputNumberToken(NumberToken token)
+    void InputNumberToken(NumberToken token)
     {
         switch (ActiveCaluculation)
         {
@@ -326,4 +244,157 @@ public class Calculator : ModelBase
         }
     }
 
+    /// <summary>
+    /// 演算トークンが入力された処理を行います。
+    /// </summary>
+    /// <param name="token">演算トークン</param>
+    void InputOperatorToken(OperatorToken token)
+    {
+        switch (ActiveCaluculation)
+        {
+            case OperationCalculation c when c.Operand == null:
+                ActiveCaluculation = OperationCalculation.Create(
+                    c.Receiver,
+                    token.Operator,
+                    c.Operand,
+                    c.IsDisplayResult);
+                break;
+            case OperationCalculation c:
+                c.IsDisplayResult = true;
+                goto default;
+            default:
+                ActiveCaluculation
+                    = token.Operator switch
+                    {
+                        InputAction.Equal => new EqualButtonCalculation(ActiveCaluculation, null),
+                        _ => OperationCalculation.Create(ActiveCaluculation, token.Operator, null, true)
+                    };
+                break;
+        }
+    }
+
+    /// <summary>
+    /// その他のトークンが入力された処理を行います。
+    /// </summary>
+    /// <param name="token">その他のトークン。</param>
+    void InputOtherToken(OtherToken token)
+    {
+        switch (token.Kind)
+        {
+            case OtherTokenKind.Undo:
+                InvokeUndo();
+                break;
+            case OtherTokenKind.Redo:
+                InvokeRedu();
+                break;
+            case OtherTokenKind.Equal:
+                InvokeEqual();
+                goto default;
+            case OtherTokenKind.C:
+                InvokeC();
+                break;
+            case OtherTokenKind.CE:
+                InvokeCE();
+                break;
+            default:
+                ActiveCaluculation = GetCalculationOtherWhenTokenInputed(token);
+                break;
+        };
+    }
+
+    /// <summary>
+    /// Undoキーの処理を行います。
+    /// </summary>
+    void InvokeUndo()
+    {
+        RedoCalculation ??= ActiveCaluculation;
+        switch (ActiveCaluculation)
+        {
+            case OperationCalculation c:
+                c.IsDisplayResult = false;
+                break;
+            case EqualButtonCalculation:
+                switch (ActiveCaluculation.Receiver)
+                {
+                    case OperationCalculation cc:
+                        cc.IsDisplayResult = false;
+                        break;
+                }
+                break;
+        }
+        SetProperty(ref activeCaluculation!, ActiveCaluculation.Receiver, nameof(ActiveCaluculation));
+    }
+
+    /// <summary>
+    /// Redoの処理を行います。
+    /// </summary>
+    void InvokeRedu()
+    {
+        if (RedoCalculation != null)
+        {
+            var nextCalculation = RedoCalculation;
+            while (nextCalculation!.Receiver != ActiveCaluculation)
+            {
+                nextCalculation = nextCalculation!.Receiver;
+            }
+            switch (nextCalculation)
+            {
+                case EqualButtonCalculation:
+                    switch (activeCaluculation)
+                    {
+                        case OperationCalculation cc:
+                            cc.IsDisplayResult = true;
+                            break;
+                    }
+                    break;
+            }
+            SetProperty(ref activeCaluculation, nextCalculation, nameof(ActiveCaluculation));
+        }
+    }
+
+    /// <summary>
+    /// イコールキーの処理を行います。
+    /// </summary>
+    void InvokeEqual()
+    {
+        switch (ActiveCaluculation)
+        {
+            case OperationCalculation c:
+                c.IsDisplayResult = true;
+                break;
+            case EqualButtonCalculation c:
+                switch (c.LastOperationCalculation)
+                {
+                    case OperationCalculation cc:
+                        cc.IsDisplayResult = true;
+                        break;
+                }
+                break;
+        }
+    }
+
+    /// <summary>
+    /// Cキーの処理を行います。
+    /// </summary>
+    void InvokeC()
+    {
+        ActiveCaluculation = Calculation.NullObject;
+        ClearCalculationHistory();
+    }
+
+    /// <summary>
+    /// CEキーの処理を行いまうs。。
+    /// </summary>
+    void InvokeCE()
+    {
+        switch (ActiveCaluculation)
+        {
+            case NumberCalculation c:
+                c.NumberToken = new(0);
+                break;
+            default:
+                ActiveCaluculation = new NumberCalculation(ActiveCaluculation);
+                break;
+        }
+    }
 }

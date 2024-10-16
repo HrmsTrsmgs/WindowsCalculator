@@ -48,6 +48,61 @@ public class NumberToken(decimal? number) : Token
     /// </summary>
     bool IsInteger => Number == decimal.Truncate(Number);
 
+    public bool CanRead(InputAction input)
+        => input
+            is InputAction.Zero and <= InputAction.Nine
+                or InputAction.Dot
+                or InputAction.Backspace
+                or InputAction.CE;
+
+    /// <summary>
+    /// inputを読み込ませます。NumberTokenに関係あるinputだったらtrueを、そうでないならfalseを返します。
+    /// </summary>
+    /// <param name="input">入力されたキー。</param>
+    /// <returns>NumberTokenに関係あるinputか。</returns>
+    public bool Input(InputAction input)
+    {
+        if (!CanRead(input)) return false;
+        switch(input)
+        {
+            case InputAction.Dot:
+                DecimalPlaces ??= 0;
+                break;
+            case InputAction.Backspace:
+                switch (DecimalPlaces)
+                {
+                    case null:
+                        Number = Decimal.Truncate(Number / 10);
+                        break;
+                    case 0:
+                        DecimalPlaces = null;
+                        break;
+                    case >= 1:
+                        DecimalPlaces--;
+                        Number = Utility.Truncate(DecimalPlaces.Value, Number);
+                        break;
+                }
+                break;
+            case InputAction.CE:
+                Number = 0;
+                break;
+            default:
+                if (DecimalPlaces == null
+                && Number < Utility.Pow(10m, NumberToken.MaxDigits - 1))
+                {
+                    Number = Number * 10 + (int)input;
+                }
+                else if (DecimalPlaces < NumberToken.MaxDecimalPlaces)
+                {
+                    DecimalPlaces++;
+                    Number
+                        += (int)input
+                            * Utility.Pow(0.1m, DecimalPlaces.Value);
+                }
+                break;
+        }
+        return true;
+    }
 
     /// <summary>
     /// 現在のオブジェクトを表す文字列を返します。

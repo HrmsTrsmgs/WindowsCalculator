@@ -1,6 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using Marimo.WindowsCalculator.Models.Tokens;
-using System;
+﻿using Marimo.WindowsCalculator.Models.Tokens;
 
 namespace Marimo.WindowsCalculator.Models;
 
@@ -27,49 +25,34 @@ public class IncrementalParser : ModelBase
     /// <summary>
     /// 一文字ずつの入力を処理します。
     /// </summary>
-    /// <param name="key">入力された一文字。</param>
-    public void Input(InputAction key)
+    /// <param name="input">入力された一文字。</param>
+    public void Input(InputAction input)
     {
-        Log.Info($"{key}が入力されました。");
-        switch (key)
+        Log.Info($"{input}が入力されました。");
+        switch (ActiveToken)
         {
-            case >= InputAction.Zero and <= InputAction.Nine:
-                switch (ActiveToken)
+            case NumberToken t:
+                if (t.Input(input)) return;
+                break;
+            default:
+                if (input is not InputAction.Backspace or InputAction.CE)
                 {
-                    case NumberToken t:
-                        if (t.DecimalPlaces == null
-                            && t.Number < Utility.Pow(10m, NumberToken.MaxDigits - 1))                       {
-                            t.Number = t.Number * 10 + (int)key;
-                        }
-                        else if(t.DecimalPlaces < NumberToken.MaxDecimalPlaces)
-                        {
-                            t.DecimalPlaces++;
-                            t.Number
-                                += (int)key
-                                    * Utility.Pow(0.1m, t.DecimalPlaces.Value);
-                        }
-                        break;
-                    default:
-                        ActiveToken = new NumberToken((int)key);
-                        break;
+                    ActiveToken = new NumberToken((int)input);
+                    return;
                 }
                 break;
-            case InputAction.Dot:
-                switch (ActiveToken)
-                {
-                    case NumberToken t:
-                        t.DecimalPlaces ??= 0;
-                        break;
-                }
-                break;
+        }
+
+        switch(input)
+        { 
             case InputAction.Add or InputAction.Substract or InputAction.Multiply or InputAction.Divide:
                 switch (ActiveToken)
                 {
                     case OperatorToken t:
-                        t.Operator = key;
+                        t.Operator = input;
                         break;
                     default:
-                        ActiveToken = new OperatorToken(key);
+                        ActiveToken = new OperatorToken(input);
                         break;
                 }
                 break;
@@ -79,40 +62,9 @@ public class IncrementalParser : ModelBase
             case InputAction.C:
                 ActiveToken = OtherToken.C;
                 break;
-            case InputAction.Backspace:
-                switch (ActiveToken)
-                {
-                    case NumberToken t:
-                        switch (t.DecimalPlaces)
-                        {
-                            case null:
-                                t.Number = Decimal.Truncate(t.Number / 10);
-                                break;
-                            case 0:
-                                t.DecimalPlaces = null;
-                                break;
-                            case >= 1:
-                                t.DecimalPlaces--;
-                                t.Number = Utility.Truncate(t.DecimalPlaces.Value, t.Number);
-                                break;
-                        }
-                        break;
-                }
-                break;
-            case InputAction.CE:
-                switch (ActiveToken)
-                {
-                    case NumberToken t:
-                        t.Number = 0;
-                        break;
-                }
-                activeToken = OtherToken.CE;
-                break;
             case InputAction.Undo:
                 ActiveToken = OtherToken.Undo;
                 break;
         }
     }
-
-
 }

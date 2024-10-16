@@ -1,4 +1,6 @@
-﻿namespace Marimo.WindowsCalculator.Models.Calculations;
+﻿using Marimo.WindowsCalculator.Models.Tokens;
+
+namespace Marimo.WindowsCalculator.Models.Calculations;
 
 
 /// <summary>

@@ -12,6 +12,10 @@ namespace Marimo.WindowsCalculator.Models.Calculations;
 /// <param name="numberToken">計算される数値</param>
 public class NumberCalculation(Calculation receiver, NumberToken numberToken) : Calculation(receiver)
 {
+    /// <summary>
+    /// 表示する計算結果を取得します。
+    /// </summary>
+    public override NumberToken DisplayNumber => NumberToken;
 
     /// <summary>
     /// NumberCalculationクラスの新しいインスタンスを初期化します。

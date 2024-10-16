@@ -44,6 +44,10 @@ public class Calculator : ModelBase
     /// </summary>
     public Calculation? RedoCalculation { get; set; } = null;
 
+
+    /// <summary>
+    /// 履歴のもととなる計算のリストです。
+    /// </summary>
     readonly ObservableCollection<CalculationHistoryItem> calculationHistory = [];
 
     /// <summary>
@@ -54,28 +58,15 @@ public class Calculator : ModelBase
     /// <summary>
     /// 計算結果を取得します。
     /// </summary>
-    public string DisplayNumber
+    public string DisplayResult
         // :引継ぎ事項:
         // エラーが出たときに解除する方法の実装がWindows電卓通りにできていません。
         // Windows電卓では、数値とC,CE,バックスペース以外は受け付けなくなります。
         // 数値入力では計算式が消えて数字が表示され、他のものでは式が消えて0が表示されます。
         // ICommandのCanExecuteの設定も行ったほうがいいですね。
         // きちんとテストを実装してから実装を行ってください。
-        => activeCaluculation.Receiver.DisplayError ??
-        (ActiveCaluculation switch
-        {
-            NumberCalculation c => c.NumberToken,
-            OperationCalculation c
-                => new NumberToken(c.Result ?? c.Operand?.Number ?? c.Receiver?.Result
-                    ?? throw new InvalidOperationException(
-                        "今の演算も前の演算も結果が出てないのはおかしいはず")),
-            EqualButtonCalculation c
-                => new NumberToken(c.Result),
-            DeleteCalculation c
-                => new NumberToken(c.Result),
-            _ => new NumberToken(0)
-
-        } ?? throw new InvalidOperationException()).ToString();
+        => ActiveCaluculation.Receiver.DisplayError 
+            ??ActiveCaluculation.DisplayNumber.ToString();
 
 
     /// <summary>
@@ -278,7 +269,7 @@ public class Calculator : ModelBase
                 };
                 break;
         }
-        OnPropertyChanged(nameof(DisplayNumber));
+        OnPropertyChanged(nameof(DisplayResult));
     }
 
     /// <summary>

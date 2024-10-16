@@ -44,7 +44,7 @@ public class CalculatorTests
     [Fact]
     public void 初期状態の表示は0です()
     {
-        tested.DisplayNumber.Should().Be("0");
+        tested.DisplayResult.Should().Be("0");
     }
 
     [Fact]
@@ -58,7 +58,7 @@ public class CalculatorTests
     {
         tested.Input(new NumberToken(3));
 
-        tested.DisplayNumber.Should().Be("3");
+        tested.DisplayResult.Should().Be("3");
     }
 
     [Fact]
@@ -95,7 +95,7 @@ public class CalculatorTests
     public void 最初に数字が入力された場合に表示される数字はその数字になります()
     {
         tested.Input(new NumberToken(1));
-        tested.DisplayNumber.Should().Be("1");
+        tested.DisplayResult.Should().Be("1");
     }
 
     [Fact]
@@ -103,7 +103,7 @@ public class CalculatorTests
     {
         tested.Input(new NumberToken(1));
         tested.Input(new OperatorToken(InputAction.Add));
-        tested.DisplayNumber.Should().Be("1");
+        tested.DisplayResult.Should().Be("1");
     }
 
     [Fact]
@@ -112,7 +112,7 @@ public class CalculatorTests
         tested.Input(new NumberToken(1));
         tested.Input(new OperatorToken(InputAction.Add));
         tested.Input(new NumberToken(3));
-        tested.DisplayNumber.Should().Be("3");
+        tested.DisplayResult.Should().Be("3");
     }
 
     [Fact]
@@ -122,7 +122,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Add));
         tested.Input(new NumberToken(3));
         tested.Input(new OperatorToken(InputAction.Add));
-        tested.DisplayNumber.Should().Be("4");
+        tested.DisplayResult.Should().Be("4");
     }
 
     [Fact]
@@ -132,7 +132,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Add));
         tested.Input(new NumberToken(3));
         tested.Input(new OperatorToken(InputAction.Add));
-        tested.DisplayNumber.Should().Be("4");
+        tested.DisplayResult.Should().Be("4");
     }
 
     [Fact]
@@ -142,7 +142,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Substract));
         tested.Input(new NumberToken(3));
         tested.Input(new OperatorToken(InputAction.Add));
-        tested.DisplayNumber.Should().Be("2");
+        tested.DisplayResult.Should().Be("2");
     }
 
     [Fact]
@@ -152,7 +152,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Multiply));
         tested.Input(new NumberToken(3));
         tested.Input(new OperatorToken(InputAction.Add));
-        tested.DisplayNumber.Should().Be("15");
+        tested.DisplayResult.Should().Be("15");
     }
 
     [Fact]
@@ -162,7 +162,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Multiply));
         tested.Input(new NumberToken(0.1m));
         tested.Input(new OperatorToken(InputAction.Add));
-        tested.DisplayNumber.Should().Be("0.51234");
+        tested.DisplayResult.Should().Be("0.51234");
     }
 
     [Fact]
@@ -174,7 +174,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Multiply));
         tested.Input(new NumberToken(10));
         tested.Input(new OperatorToken(InputAction.Equal));
-        tested.DisplayNumber.Should().Be("5.1234");
+        tested.DisplayResult.Should().Be("5.1234");
     }
 
     [Fact]
@@ -186,7 +186,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Multiply));
         tested.Input(new NumberToken(10));
         tested.Input(new OperatorToken(InputAction.Equal));
-        tested.DisplayNumber.Should().Be("5.1235");
+        tested.DisplayResult.Should().Be("5.1235");
     }
 
     [Fact]
@@ -196,7 +196,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Divide));
         tested.Input(new NumberToken(2));
         tested.Input(new OperatorToken(InputAction.Add));
-        tested.DisplayNumber.Should().Be("4");
+        tested.DisplayResult.Should().Be("4");
     }
 
     [Fact]
@@ -206,7 +206,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Divide));
         tested.Input(new NumberToken(3));
         tested.Input(new OperatorToken(InputAction.Add));
-        tested.DisplayNumber.Should().Be("3.33333");
+        tested.DisplayResult.Should().Be("3.33333");
     }
 
     [Fact]
@@ -218,7 +218,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Multiply));
         tested.Input(new NumberToken(10));
         tested.Input(new OperatorToken(InputAction.Equal));
-        tested.DisplayNumber.Should().Be("33.3333");
+        tested.DisplayResult.Should().Be("33.3333");
     }
 
     [Fact]
@@ -228,7 +228,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Divide));
         tested.Input(new NumberToken(1000000));
         tested.Input(new OperatorToken(InputAction.Equal));
-        tested.DisplayNumber.Should().Be("0.01235");
+        tested.DisplayResult.Should().Be("0.01235");
     }
 
     [Fact]
@@ -252,7 +252,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Divide));
         tested.Input(new NumberToken(0));
         tested.Input(new OperatorToken(InputAction.Add));
-        tested.DisplayNumber.Should().Be("0 で割ることはできません");
+        tested.DisplayResult.Should().Be("0 で割ることはできません");
     }
 
     [Fact]
@@ -262,7 +262,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Divide));
         tested.Input(new NumberToken(0));
         tested.Input(new OperatorToken(InputAction.Equal));
-        tested.DisplayNumber.Should().Be("0 で割ることはできません");
+        tested.DisplayResult.Should().Be("0 で割ることはできません");
     }
 
     [Fact]
@@ -272,7 +272,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Add));
         tested.Input(new NumberToken(3));
         tested.Input(OtherToken.Equal);
-        tested.DisplayNumber.Should().Be("4");
+        tested.DisplayResult.Should().Be("4");
     }
     [Fact]
     public void イコールボタンを二度押すと前の結果が繰り返されます()
@@ -282,7 +282,7 @@ public class CalculatorTests
         tested.Input(new NumberToken(3));
         tested.Input(OtherToken.Equal);
         tested.Input(OtherToken.Equal);
-        tested.DisplayNumber.Should().Be("7");
+        tested.DisplayResult.Should().Be("7");
     }
     [Fact]
     public void イコールボタンを3度以上押しても前の結果が繰り返されます()
@@ -293,14 +293,14 @@ public class CalculatorTests
         tested.Input(OtherToken.Equal);
         tested.Input(OtherToken.Equal);
         tested.Input(OtherToken.Equal);
-        tested.DisplayNumber.Should().Be("10");
+        tested.DisplayResult.Should().Be("10");
     }
 
     [Fact]
     public void 小数点を入力した状態が表示できます()
     {
         tested.Input(new NumberToken(1) { DecimalPlaces = 0 });
-        tested.DisplayNumber.Should().Be("1.");
+        tested.DisplayResult.Should().Be("1.");
     }
 
     [Fact]
@@ -310,7 +310,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Add));
         tested.Input(new NumberToken(5));
         tested.Input(OtherToken.CE);
-        tested.DisplayNumber.Should().Be("0");
+        tested.DisplayResult.Should().Be("0");
     }
 
     [Fact]
@@ -321,7 +321,7 @@ public class CalculatorTests
         tested.Input(new NumberToken(5));
         tested.Input(OtherToken.Equal);
         tested.Input(OtherToken.Undo);
-        tested.DisplayNumber.Should().Be("5");
+        tested.DisplayResult.Should().Be("5");
     }
 
     [Fact]
@@ -331,7 +331,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Add));
         tested.Input(new NumberToken(5));
         tested.Input(OtherToken.Undo);
-        tested.DisplayNumber.Should().Be("3");
+        tested.DisplayResult.Should().Be("3");
     }
 
     [Fact]
@@ -341,7 +341,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Add));
         tested.Input(OtherToken.Undo);
         tested.ActiveCaluculation.Should().BeOfType<NumberCalculation>();
-        tested.DisplayNumber.Should().Be("3");
+        tested.DisplayResult.Should().Be("3");
     }
 
     [Fact]
@@ -350,7 +350,7 @@ public class CalculatorTests
         tested.Input(new NumberToken(3));
         tested.Input(OtherToken.Undo);
         tested.ActiveCaluculation.Should().BeSameAs(Calculation.NullObject);
-        tested.DisplayNumber.Should().Be("0");
+        tested.DisplayResult.Should().Be("0");
     }
 
     [Fact]
@@ -362,7 +362,7 @@ public class CalculatorTests
         tested.Input(new OperatorToken(InputAction.Add));
         tested.Input(new NumberToken(7));
         tested.Input(OtherToken.Undo);
-        tested.DisplayNumber.Should().Be("8");
+        tested.DisplayResult.Should().Be("8");
     }
 
     [Fact]
@@ -375,7 +375,7 @@ public class CalculatorTests
         tested.Input(new NumberToken(7));
         tested.Input(OtherToken.Undo);
         tested.Input(new NumberToken(9));
-        tested.DisplayNumber.Should().Be("9");
+        tested.DisplayResult.Should().Be("9");
     }
 
     [Fact]
@@ -399,7 +399,7 @@ public class CalculatorTests
         tested.Input(OtherToken.Undo);
         tested.Input(OtherToken.Redo);
         tested.ActiveCaluculation.Should().BeOfType<EqualButtonCalculation>();
-        tested.DisplayNumber.Should().Be("8");
+        tested.DisplayResult.Should().Be("8");
     }
 
     [Fact]
@@ -412,13 +412,13 @@ public class CalculatorTests
         tested.Input(OtherToken.Undo);
         tested.Input(OtherToken.Undo);
         tested.ActiveCaluculation.Should().BeOfType<NumberCalculation>();
-        tested.DisplayNumber.Should().Be("3");
+        tested.DisplayResult.Should().Be("3");
         tested.Input(OtherToken.Redo);
         tested.ActiveCaluculation.Should().BeOfType<AddCalculation>();
-        tested.DisplayNumber.Should().Be("5");
+        tested.DisplayResult.Should().Be("5");
         tested.Input(OtherToken.Redo);
         tested.ActiveCaluculation.Should().BeOfType<EqualButtonCalculation>();
-        tested.DisplayNumber.Should().Be("8");
+        tested.DisplayResult.Should().Be("8");
     }
 
     [Fact]
@@ -429,7 +429,7 @@ public class CalculatorTests
         tested.Input(new NumberToken(5));
         tested.Input(OtherToken.Undo);
         tested.Input(OtherToken.Redo);
-        tested.DisplayNumber.Should().Be("5");
+        tested.DisplayResult.Should().Be("5");
     }
 
     [Fact]
@@ -440,7 +440,7 @@ public class CalculatorTests
         tested.Input(OtherToken.Undo);
         tested.Input(OtherToken.Redo);
         tested.ActiveCaluculation.Should().BeOfType<AddCalculation>();
-        tested.DisplayNumber.Should().Be("3");
+        tested.DisplayResult.Should().Be("3");
         ((OperationCalculation)tested.ActiveCaluculation)
             .OperatorAction.Should().Be(InputAction.Add);
     }
@@ -452,7 +452,7 @@ public class CalculatorTests
         tested.Input(OtherToken.Undo);
         tested.Input(OtherToken.Redo);
         tested.ActiveCaluculation.Should().BeOfType<NumberCalculation>();
-        tested.DisplayNumber.Should().Be("3");
+        tested.DisplayResult.Should().Be("3");
     }
 
     [Fact]

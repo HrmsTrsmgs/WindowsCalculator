@@ -63,6 +63,13 @@ public abstract class OperationCalculation(Calculation receiver, NumberToken? op
             SetProperty(ref operand, value);
         }
     }
+    /// <summary>
+    /// 表示する計算結果を取得します。
+    /// </summary>
+    public override NumberToken DisplayNumber 
+        => new NumberToken(Result ?? Operand?.Number ?? Receiver?.Result
+                    ?? throw new InvalidOperationException(
+                        "今の演算も前の演算も結果が出てないのはおかしいはず"));
 
     /// <summary>
     /// 計算した結果を取得、設定します。
@@ -109,6 +116,7 @@ public abstract class OperationCalculation(Calculation receiver, NumberToken? op
              InputAction.Divide => new DivideCalculation(receiver, operand, isDisplayResult),
              _ => throw new InvalidOperationException()
          };
+
 }
 
 

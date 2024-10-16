@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using Marimo.WindowsCalculator.Models.Tokens;
+using System.ComponentModel;
 
 namespace Marimo.WindowsCalculator.Models.Calculations;
 
@@ -7,6 +8,10 @@ namespace Marimo.WindowsCalculator.Models.Calculations;
 /// </summary>
 public abstract class Calculation : ModelBase
 {
+    /// <summary>
+    /// Nullのように扱うCalculationを取得します。計算の初期値などにも使います。
+    /// </summary>
+    public static Calculation NullObject { get; } = new NullObjectCalculation();
 
     /// <summary>
     /// エラーが出たときに表示されるエラーを取得、設定します。
@@ -14,9 +19,9 @@ public abstract class Calculation : ModelBase
     public virtual string? DisplayError => Receiver.DisplayError;
 
     /// <summary>
-    /// Nullのように扱うCalculationを取得します。計算の初期値などにも使います。
+    /// 表示する計算結果を取得します。
     /// </summary>
-    public static Calculation NullObject { get; } = new NullObjectCalculation();
+    public virtual NumberToken DisplayNumber { get; } = new(0);
 
     /// <summary>
     /// 計算する対象。

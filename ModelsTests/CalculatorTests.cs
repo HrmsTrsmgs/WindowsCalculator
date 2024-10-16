@@ -493,6 +493,28 @@ public class CalculatorTests
     }
 
     [Fact]
+    public void 履歴は式がResultを持った時点で追加されます()
+    {
+        tested.Input(new NumberToken(8));
+        tested.Input(new OperatorToken(InputAction.Substract));
+        tested.Input(new NumberToken(7));
+        tested.CalculationHistory.Should().BeEmpty();
+        tested.Input(OtherToken.Equal);
+        tested.CalculationHistory.Should().HaveCount(1);
+    }
+
+    [Fact]
+    public void 履歴は式が演算子を起点の場合もResultを持った時点で追加されます()
+    {
+        tested.Input(new NumberToken(8));
+        tested.Input(new OperatorToken(InputAction.Substract));
+        tested.Input(new NumberToken(7));
+        tested.CalculationHistory.Should().BeEmpty();
+        tested.Input(new OperatorToken(InputAction.Add));
+        tested.CalculationHistory.Should().HaveCount(1);
+    }
+
+    [Fact]
     public void Undoで最新の履歴は見えなくなります()
     {
         tested.Input(new NumberToken(8));

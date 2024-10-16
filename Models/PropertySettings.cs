@@ -1,7 +1,7 @@
 ﻿namespace Marimo.WindowsCalculator.Models;
 
 /// <summary>
-/// テンキーに表示する文字を管理します。
+/// アプリケーションの設定を表します。。
 /// </summary>
 public class PropertySettings : ModelBase
 {

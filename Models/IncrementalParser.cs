@@ -7,7 +7,6 @@ namespace Marimo.WindowsCalculator.Models;
 /// </summary>
 public class IncrementalParser : ModelBase
 {
-
     /// <summary>
     /// 現在入力されているトークンです。
     /// </summary>
@@ -29,20 +28,27 @@ public class IncrementalParser : ModelBase
     public void Input(InputAction input)
     {
         Log.Info($"{input}が入力されました。");
+        bool isCompleted = false;
         switch (ActiveToken)
         {
             case NumberToken t:
-                if (t.Input(input)) return;
+                isCompleted = t.Input(input);
                 break;
             default:
-                if (input is not InputAction.Backspace or InputAction.CE)
+                if (!(input is InputAction.Backspace or InputAction.CE)
+                    && NumberToken.CanRead(input))
                 {
                     ActiveToken = new NumberToken((int)input);
-                    return;
+                    isCompleted = true;
+                }
+                else if (input is InputAction.CE)
+                {
+                    ActiveToken = OtherToken.CE;
+                    isCompleted = true;
                 }
                 break;
         }
-
+        if (isCompleted) return;
         switch(input)
         { 
             case InputAction.Add or InputAction.Substract or InputAction.Multiply or InputAction.Divide:

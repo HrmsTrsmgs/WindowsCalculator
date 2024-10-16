@@ -44,7 +44,7 @@ public class Calculator : ModelBase
     /// </summary>
     public Calculation? RedoCalculation { get; set; } = null;
 
-    ObservableCollection<CalculationHistoryItem> calculationHistory = [];
+    readonly ObservableCollection<CalculationHistoryItem> calculationHistory = [];
 
     /// <summary>
     /// 履歴用の計算結果一覧を取得します。
@@ -92,11 +92,7 @@ public class Calculator : ModelBase
             switch (args.Action)
             {
                 case NotifyCollectionChangedAction.Add:
-                    var newItems = args.NewItems?.OfType<OperationCalculation>();
-                    if (newItems == null)
-                    {
-                        throw new NotSupportedException();
-                    }
+                    var newItems = (args.NewItems?.OfType<OperationCalculation>()) ?? throw new NotSupportedException();
                     if (!newItems.Any()) return;
                     var newItem = new CalculationHistoryItem(newItems.Single());
                     newItem.PropertyChanged += (_, args) =>
@@ -118,17 +114,16 @@ public class Calculator : ModelBase
                     }
                         break;
                 case NotifyCollectionChangedAction.Remove:
-                    var oldItems = args.OldItems?.OfType<OperationCalculation>();
-                    if (oldItems == null)
-                    {
-                        throw new NotSupportedException();
-                    }
+                    var oldItems 
+                    = (args.OldItems?.OfType<OperationCalculation>()) ?? throw new NotSupportedException();
                     if (!oldItems.Any()) return;
                     var removed = calculationHistory
                     .Where(it => it.Operation == oldItems.First())
                     .SingleOrDefault();
-
-                    calculationHistory.Remove(removed);
+                    if (removed != null)
+                    {
+                        calculationHistory.Remove(removed);
+                    }
                     break;
                 case NotifyCollectionChangedAction.Reset:
                     calculationHistory.Clear();
@@ -140,8 +135,7 @@ public class Calculator : ModelBase
         {
             if (e.PropertyName != nameof(ActiveCaluculation)) return;
 
-            var calcuraton = ActiveCaluculation as OperationCalculation;
-            if (calcuraton == null) return;
+            if (ActiveCaluculation is not OperationCalculation calcuraton) return;
             if (!cumulativeCalculation.Contains(calcuraton))
             {
                 cumulativeCalculation.Add(calcuraton);
@@ -213,8 +207,8 @@ public class Calculator : ModelBase
                             case OperationCalculation c:
                                 c.IsDisplayResult = false;
                                 break;
-                            case EqualButtonCalculation c:
-                                switch(ActiveCaluculation.Receiver)
+                            case EqualButtonCalculation:
+                                switch (ActiveCaluculation.Receiver)
                                 {
                                     case OperationCalculation cc:
                                         cc.IsDisplayResult = false;
@@ -234,7 +228,7 @@ public class Calculator : ModelBase
                             }
                             switch (nextCalculation)
                             {
-                                case EqualButtonCalculation c:
+                                case EqualButtonCalculation:
                                     switch (activeCaluculation)
                                     {
                                         case OperationCalculation cc:

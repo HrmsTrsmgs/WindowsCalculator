@@ -264,8 +264,9 @@ public class IncrementalParserTest : TestBase
         tested.Input(InputAction.Seven);
         tested.Input(InputAction.CE);
 
-        tested.ActiveToken.Should().BeAssignableTo<OtherToken>();
-        (tested.ActiveToken as OtherToken).Should().Be(OtherToken.CE);
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        ((tested.ActiveToken as NumberToken) ?? throw new InvalidOperationException())
+            .Number.Should().Be(0);
     }
 
     [Fact]

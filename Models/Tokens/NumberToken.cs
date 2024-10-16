@@ -48,9 +48,14 @@ public class NumberToken(decimal? number) : Token
     /// </summary>
     bool IsInteger => Number == decimal.Truncate(Number);
 
-    public bool CanRead(InputAction input)
+    /// <summary>
+    /// NumberTokenに関係がある種類かどうかを取得します。関係あればtrue,そうでなければfalseです。
+    /// </summary>
+    /// <param name="input">確認するキー入力。</param>
+    /// <returns>関係があるかどうか。</returns>
+    public static bool CanRead(InputAction input)
         => input
-            is InputAction.Zero and <= InputAction.Nine
+            is >= InputAction.Zero and <= InputAction.Nine
                 or InputAction.Dot
                 or InputAction.Backspace
                 or InputAction.CE;

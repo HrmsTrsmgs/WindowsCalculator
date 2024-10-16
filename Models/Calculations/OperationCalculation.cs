@@ -11,11 +11,23 @@ namespace Marimo.WindowsCalculator.Models.Calculations;
 /// <param name="isDisplayResult">結果が式の表示対象になるか。</param>
 public abstract class OperationCalculation(Calculation receiver, NumberToken? operand = null, bool isDisplayResult = false) : Calculation(receiver)
 {
+    /// <summary>
+    /// エラーが実際に起きる可能性があるので値を持ちます。
+    /// </summary>
+    string? displayError = null;
 
     /// <summary>
-    /// エラーが出たときに表示されるエラーを取得、設定します。
+    /// 画面に表示するエラーを取得します。
     /// </summary>
-    public string? DisplayError { get; set; } = null;
+    public override string? DisplayError => displayError ?? base.DisplayError;
+
+    /// <summary>
+    /// 画面に表示するエラーを設定します。
+    /// </summary>
+    /// <param name="value">設定するエラーメッセージ。</param>
+    protected void SetDisplayError(string? value)
+        => SetProperty(ref displayError, value, nameof(DisplayError));
+
     /// <summary>
     /// 結果が式の表示対象になるかを取得、設定します。
     /// </summary>

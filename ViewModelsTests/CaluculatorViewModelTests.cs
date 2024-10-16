@@ -6,7 +6,7 @@ namespace Marimo.WindowsCalculator.Tests.ViewModels;
 
 public class CaluculatorViewModelTests
 {
-    readonly CalculatorViewModel tested = new();
+    CalculatorViewModel tested { get; } = new();
 
     [Fact]
     public void 初期状態で設定は取得できます()

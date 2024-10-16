@@ -51,16 +51,17 @@ public class Calculator : ModelBase
     /// </summary>
     public ReadOnlyObservableCollection<CalculationHistoryItem> CalculationHistory { get; }
 
-
     /// <summary>
     /// 計算結果を取得します。
     /// </summary>
     public string DisplayNumber
-        => ActiveCaluculation.Receiver switch
-        {
-            OperationCalculation c => c.DisplayError,
-            _ => null
-        } ??
+        // :引継ぎ事項:
+        // エラーが出たときに解除する方法の実装がWindows電卓通りにできていません。
+        // Windows電卓では、数値とC,CE,バックスペース以外は受け付けなくなります。
+        // 数値入力では計算式が消えて数字が表示され、他のものでは式が消えて0が表示されます。
+        // ICommandのCanExecuteの設定も行ったほうがいいですね。
+        // きちんとテストを実装してから実装を行ってください。
+        => activeCaluculation.Receiver.DisplayError ??
         (ActiveCaluculation switch
         {
             NumberCalculation c => c.NumberToken,

@@ -256,6 +256,16 @@ public class CalculatorTests
     }
 
     [Fact]
+    public void 割り算のゼロ除算はイコールで計算した場合もエラーが発生します()
+    {
+        tested.Input(new NumberToken(8));
+        tested.Input(new OperatorToken(InputAction.Divide));
+        tested.Input(new NumberToken(0));
+        tested.Input(new OperatorToken(InputAction.Equal));
+        tested.DisplayNumber.Should().Be("0 で割ることはできません");
+    }
+
+    [Fact]
     public void イコールボタンを押すと表示は計算結果となっています()
     {
         tested.Input(new NumberToken(1));

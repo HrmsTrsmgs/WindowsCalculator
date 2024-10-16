@@ -32,8 +32,8 @@ public class DivideCalculation(Calculation receiver, NumberToken? operand = null
         }
         catch(DivideByZeroException)
         {
-            DisplayError = "0 で割ることはできません";
-            return decimal.MaxValue;
+            SetDisplayError("0 で割ることはできません");
+            return null;
         }
     }
 }

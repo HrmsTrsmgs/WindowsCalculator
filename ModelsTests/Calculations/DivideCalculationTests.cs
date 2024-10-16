@@ -57,7 +57,7 @@ public class DivideCaluclationTests
                     true);
 
         tested.DisplayError.Should().BeNull();
-        tested.Result.Should().Be(decimal.MaxValue);
+        tested.Result.Should().Be(null);
         tested.DisplayError.Should().Be("0 で割ることはできません");
     }
 

@@ -1,6 +1,5 @@
 ﻿using Marimo.WindowsCalculator.Models.Calculations;
 using Marimo.WindowsCalculator.Models.Tokens;
-using System;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 

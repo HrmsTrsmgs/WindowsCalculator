@@ -157,6 +157,9 @@ public class CalculatorViewModel : ObservableObject
     public PropertySettings Settings => model.Settings;
 
 
+    /// <summary>
+    /// 画面のテーマです。
+    /// </summary>
     public IEnumerable<ApplicationTheme> Themes => Enum.GetValues<ApplicationTheme>();
 
     /// <summary>

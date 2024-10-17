@@ -1,43 +1,41 @@
-﻿using Marimo.WindowsCalculator.ViewModels;
+﻿using Marimo.WindowsCalculator.Models;
+using Marimo.WindowsCalculator.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.UI.Xaml;
-
-// To learn more about WinUI, the WinUI project structure,
-// and more about our project templates, see: http://aka.ms/winui-project-info.
+using System;
+using System.IO;
 
 namespace Marimo.WindowsCalculator.WinUI3;
 
+
 /// <summary>
-/// Provides application-specific behavior to supplement the default Application class.
+/// アプリケーションです。
 /// </summary>
 public partial class App : Application
 {
+    //:引継ぎ事項:
+    // Rereaceモードで起動しません。
+    // 原因追及には時間がかかると思われます。
+
     IHost Host { get; }
     Window m_window;
-    /// <summary>
-    /// Initializes the singleton application object.  This is the first line of authored code
-    /// executed, and as such is the logical equivalent of main() or WinMain().
-    /// </summary>
+    
     public App()
     {
 
         this.InitializeComponent();
 
-
         Host = new HostBuilder()
            .ConfigureServices((context, services) =>
            {
+               services.AddLog4Net(Path.Combine(AppContext.BaseDirectory, "log.txt"));
                services.AddSingleton<MainWindow>();
                services.AddSingleton<CalculatorViewModel>();
            })
            .Build();
     }
 
-    /// <summary>
-    /// Invoked when the application is launched.
-    /// </summary>
-    /// <param name="args">Details about the launch request and process.</param>
     protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
     {
         m_window = Host.Services.GetRequiredService<MainWindow>();

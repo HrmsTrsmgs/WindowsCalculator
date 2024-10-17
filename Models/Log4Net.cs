@@ -2,6 +2,7 @@
 using log4net.Appender;
 using log4net.Config;
 using log4net.Layout;
+using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 namespace Marimo.WindowsCalculator.Models;

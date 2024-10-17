@@ -4,6 +4,7 @@ using Microsoft.UI.Xaml.Input;
 using System;
 using System.Reactive.Linq;
 using Windows.System;
+using Windows.UI.Core;
 
 namespace Marimo.WindowsCalculator.WinUI3;
 
@@ -31,9 +32,16 @@ internal class KeyObserver
             h => Element.KeyUp += h,
             h => Element.KeyUp -= h);
 
+        bool isPushedCtrl = false;
+        keyDowns
+            .Where(it => it.EventArgs.Key is VirtualKey.Control)
+            .Subscribe(_ => isPushedCtrl = true);
+        keyUps
+            .Where(it => it.EventArgs.Key is VirtualKey.Control)
+            .Subscribe(it => isPushedCtrl = false);
         var keyObservable =
             from e in keyDowns
-            select new KeyPress(e.EventArgs.Key, false);
+            select new KeyPress(e.EventArgs.Key, isPushedCtrl);
 
         return
             keyObservable

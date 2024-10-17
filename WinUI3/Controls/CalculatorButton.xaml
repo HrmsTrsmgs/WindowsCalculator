@@ -11,7 +11,7 @@
         HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
         Margin="1"
         Background="{ThemeResource SystemControlTransientBackgroundBrush}"
-        Command="{x:Bind Comand}">
+        Command="{x:Bind Command}">
         <Viewbox MaxHeight="28">
             <TextBlock Text="{x:Bind Text, Mode=OneWay}"/>
         </Viewbox>

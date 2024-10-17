@@ -4,6 +4,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:control="using:Marimo.WindowsCalculator.WinUI3.Controls"
+    xmlns:vm="using:Marimo.WindowsCalculator.ViewModels"
     xmlns:model="using:Marimo.WindowsCalculator.Models"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:control1="using:Marimo.WindowsCalculator.WinUI3.Controls"
@@ -147,92 +148,92 @@
                         Grid.Row="1"         
                         Background="{ThemeResource SystemControlTransientBackgroundBrush}"
                         Text="{x:Bind ViewModel.Settings.CEDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputCECommand}"/>
+                        Command="{x:Bind ViewModel.InputCECommand}"/>
 
                     <control:CalculatorButton
                         Grid.Row="1" Grid.Column="1"
                         Background="{ThemeResource SystemControlTransientBackgroundBrush}"
                         Text="{x:Bind ViewModel.Settings.CDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputCCommand}"/>
+                        Command="{x:Bind ViewModel.InputCCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="1" Grid.Column="2"         
                         Background="{ThemeResource SystemControlTransientBackgroundBrush}"
                         Text="{x:Bind ViewModel.Settings.BackspaceDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputBackspaceCommand}"/>
+                        Command="{x:Bind ViewModel.InputBackspaceCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="1" Grid.Column="3"         
                         Background="{ThemeResource SystemControlTransientBackgroundBrush}"
                         Text="{x:Bind ViewModel.Settings.DivideDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputDivideCommand}"/>
+                        Command="{x:Bind ViewModel.InputDivideCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="2"
                         Text="{x:Bind ViewModel.Settings.SevenDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputSevenCommand}"/>
+                        Command="{x:Bind ViewModel.InputSevenCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="2" Grid.Column="1"
                         Text="{x:Bind ViewModel.Settings.EightDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputEightCommand}"/>
+                        Command="{x:Bind ViewModel.InputEightCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="2" Grid.Column="2"
                         Text="{x:Bind ViewModel.Settings.NineDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputNineCommand}"/>
+                        Command="{x:Bind ViewModel.InputNineCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="2" Grid.Column="3"
                         Background="{ThemeResource SystemControlTransientBackgroundBrush}"
                         Text="{x:Bind ViewModel.Settings.MultiplyDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputMultiplyCommand}"/>
+                        Command="{x:Bind ViewModel.InputMultiplyCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="3"
                         Text="{x:Bind ViewModel.Settings.FourDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputFourCommand}"/>
+                        Command="{x:Bind ViewModel.InputFourCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="3" Grid.Column="1"
                         Text="{x:Bind ViewModel.Settings.FiveDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputFiveCommand}"/>
+                        Command="{x:Bind ViewModel.InputFiveCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="3" Grid.Column="2"
                         Text="{x:Bind ViewModel.Settings.SixDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputSixCommand}"/>
+                        Command="{x:Bind ViewModel.InputSixCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="3" Grid.Column="3"
                         Background="{ThemeResource SystemControlTransientBackgroundBrush}"
                         Text="{x:Bind ViewModel.Settings.SubstractDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputSubstractCommand}"/>
+                        Command="{x:Bind ViewModel.InputSubstractCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="4"
                         Text="{x:Bind ViewModel.Settings.OneDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputOneCommand}"/>
+                        Command="{x:Bind ViewModel.InputOneCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="4" Grid.Column="1"
                         Text="{x:Bind ViewModel.Settings.TwoDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputTwoCommand}"/>
+                        Command="{x:Bind ViewModel.InputTwoCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="4" Grid.Column="2"
                         Text="{x:Bind ViewModel.Settings.ThreeDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputThreeCommand}"/>
+                        Command="{x:Bind ViewModel.InputThreeCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="4" Grid.Column="3"
                         Background="{ThemeResource SystemControlTransientBackgroundBrush}"
                         Text="{x:Bind ViewModel.Settings.AddDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputAddCommand}"/>
+                        Command="{x:Bind ViewModel.InputAddCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="5"
                         Background="{ThemeResource SystemControlTransientBackgroundBrush}"
                         Text="{x:Bind ViewModel.Settings.UndoDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputUndoCommand}"/>
+                        Command="{x:Bind ViewModel.InputUndoCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="5" Grid.Column="1"
                         Text="{x:Bind ViewModel.Settings.ZeroDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputZeroCommand}"/>
+                        Command="{x:Bind ViewModel.InputZeroCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="5" Grid.Column="2"
                         Text="{x:Bind ViewModel.Settings.DotDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputDotCommand}"/>
+                        Command="{x:Bind ViewModel.InputDotCommand}"/>
                     <control:CalculatorButton
                         Grid.Row="5" Grid.Column="3"
                         Foreground="{ThemeResource TextOnAccentFillColorPrimaryBrush}"
                         Text="{x:Bind ViewModel.Settings.EqualDisplayText, Mode=OneWay}"
-                        Comand="{x:Bind ViewModel.InputEqualCommand}"/>
+                        Command="{x:Bind ViewModel.InputEqualCommand}"/>
                 </Grid>
                 <Grid
                     x:Name="HistoryPane"
@@ -259,27 +260,8 @@
                 <Grid Height="300">
                     <Viewbox>
                         <ScrollViewer>
-                            <ListBox ItemsSource="{x:Bind ViewModel.History}">
-                                <ListBox.ItemsPanel>
-                                    <ItemsPanelTemplate>
-                                        <StackPanel/>
-                                    </ItemsPanelTemplate>
-                                </ListBox.ItemsPanel>
-                                <ListBox.ItemTemplate>
-                                    <DataTemplate x:DataType="model:CalculationHistoryItem">
-                                        <RelativePanel>
-                                            <TextBlock
-                                                RelativePanel.AlignLeftWithPanel="True"
-                                                RelativePanel.AlignTopWithPanel="True"
-                                                Text="{x:Bind Expression}"/>
-                                            <TextBlock
-                                                RelativePanel.AlignLeftWithPanel="True"
-                                                RelativePanel.AlignTopWithPanel="True"
-                                                Text="{x:Bind Result.Value}"/>
-                                        </RelativePanel>
-                                    </DataTemplate>
-                                </ListBox.ItemTemplate>
-                            </ListBox>
+                            <control:HistoryListBox 
+                                ItemsSource="{x:Bind ViewModel.History}" />
                         </ScrollViewer>
                     </Viewbox>
                 </Grid>

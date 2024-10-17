@@ -2,4 +2,4 @@
 
 namespace Marimo.WindowsCalculator.WinUI3;
 
-public record KeyPress(VirtualKey key, bool IsCtrlPressed);
+public record KeyPress(VirtualKey Key, bool IsCtrlPressed);

@@ -11,11 +11,13 @@
     <PublishProfile>win-$(Platform).pubxml</PublishProfile>
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Assets\Images\Calculator.svg" />
     <None Remove="Assets\Images\History.svg" />
     <None Remove="CalculatorButton.xaml" />
+    <None Remove="Controls\HistoryListBox.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -57,7 +59,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controls\" />
+    <Page Update="Controls\HistoryListBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="CalculatorButton.xaml">

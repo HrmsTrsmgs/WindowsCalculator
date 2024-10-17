@@ -67,7 +67,7 @@ public abstract class OperationCalculation(Calculation receiver, NumberToken? op
     /// 表示する計算結果を取得します。
     /// </summary>
     public override NumberToken DisplayNumber 
-        => new NumberToken(Result ?? Operand?.Number ?? Receiver?.Result
+        => new(Result ?? Operand?.Number ?? Receiver?.Result
                     ?? throw new InvalidOperationException(
                         "今の演算も前の演算も結果が出てないのはおかしいはず"));
 

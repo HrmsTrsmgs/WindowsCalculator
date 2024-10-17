@@ -19,12 +19,12 @@ public class CalculatorViewModel : ObservableObject
     /// <summary>
     /// 押された文字のパースを行います。
     /// </summary>
-    IncrementalParser parser { get; } = new();
+    IncrementalParser Parser { get; } = new();
 
     /// <summary>
     /// 計算機を表します。
     /// </summary>
-    Calculator model { get; } = new();
+    Calculator Model { get; } = new();
 
     /// <summary>
     /// 1を入力するコマンドを取得します。
@@ -136,25 +136,25 @@ public class CalculatorViewModel : ObservableObject
     /// </summary>
     public ICommand ClearHistoryCommand { get; }
 
-    ///// <summary>
-    ///// 計算機に表示されている数を取得します。
-    ///// </summary>
-    public string DisplayNumber => model.DisplayResult;
+    /// <summary>
+    /// 計算機に表示されている数を取得します。
+    /// </summary>
+    public string DisplayNumber => Model.DisplayResult;
 
     /// <summary>
     /// 履歴を取得します。
     /// </summary>
-    public IEnumerable<CalculationHistoryItem> History => model.CalculationHistory;
+    public IEnumerable<CalculationHistoryItem> History => Model.CalculationHistory;
 
     /// <summary>
     /// 計算式を取得します。
     /// </summary>
-    public string Expression => model.ActiveCaluculation.Expression;
+    public string Expression => Model.ActiveCaluculation.Expression;
 
     /// <summary>
     /// 設定を取得します。
     /// </summary>
-    public PropertySettings Settings => model.Settings;
+    public PropertySettings Settings => Model.Settings;
 
 
     /// <summary>
@@ -167,9 +167,9 @@ public class CalculatorViewModel : ObservableObject
     /// </summary>
     public CalculatorViewModel()
     {
-        model.PropertyChanged += (_, args) =>
+        Model.PropertyChanged += (_, args) =>
         {
-            if (args.PropertyName is nameof(model.ActiveCaluculation))
+            if (args.PropertyName is nameof(Model.ActiveCaluculation))
             {
                 OnPropertyChanged(nameof(Expression));
             }
@@ -178,8 +178,8 @@ public class CalculatorViewModel : ObservableObject
         InputKeybord = new RelayCommand<InputAction>(c => Input(c));
 
         ClearHistoryCommand = new RelayCommand(
-            () => model.ClearCalculationHistory(),
-            () => model.CalculationHistory.Any());
+            () => Model.ClearCalculationHistory(),
+            () => Model.CalculationHistory.Any());
         InputOneCommand = new RelayCommand(() => Input(InputAction.One));
         InputTwoCommand = new RelayCommand(() => Input(InputAction.Two));
         InputThreeCommand = new RelayCommand(() => Input(InputAction.Three));
@@ -201,10 +201,10 @@ public class CalculatorViewModel : ObservableObject
         InputCCommand = new RelayCommand(() => Input(InputAction.C));
         InputCECommand = new RelayCommand(() => Input(InputAction.CE));
         InputBackspaceCommand = new RelayCommand(() => Input(InputAction.Backspace));
-        model.PropertyChanged += 
+        Model.PropertyChanged += 
             (sender, e) =>
             {
-                if (e.PropertyName == nameof(model.DisplayResult))
+                if (e.PropertyName == nameof(Model.DisplayResult))
                 {
                     OnPropertyChanged(nameof(DisplayNumber));
                 }
@@ -219,10 +219,10 @@ public class CalculatorViewModel : ObservableObject
     /// <param name="input">一文字。</param>
     void Input(InputAction input)
     {
-        parser.Input(input);
-        if (parser.ActiveToken != null)
+        Parser.Input(input);
+        if (Parser.ActiveToken != null)
         {
-            model.Input(parser.ActiveToken);
+            Model.Input(Parser.ActiveToken);
         }
     }
 }

@@ -156,6 +156,15 @@ public class IncrementalParserTest : TestBase
     }
 
     [Fact]
+    public void 数値を入れる前に小数点から入力が始められます()
+    {
+        tested.Input(InputAction.Dot);
+        tested.ActiveToken.Should().BeAssignableTo<NumberToken>();
+        (tested.ActiveToken as NumberToken)?.Number.Should().Be(0);
+        (tested.ActiveToken as NumberToken)?.DecimalPlaces.Should().Be(0);
+    }
+
+    [Fact]
     public void 小数点を何回入力しても特に変わりはありません()
     {
         tested.Input(InputAction.One);

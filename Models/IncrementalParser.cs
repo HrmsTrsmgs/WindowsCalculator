@@ -35,10 +35,15 @@ public class IncrementalParser : ModelBase
                 isCompleted = t.Input(input);
                 break;
             default:
-                if (!(input is InputAction.Backspace or InputAction.CE)
+                if (!(input is InputAction.Backspace or InputAction.CE or InputAction.Dot)
                     && NumberToken.CanRead(input))
                 {
                     ActiveToken = new NumberToken((int)input);
+                    isCompleted = true;
+                }
+                else if (input is InputAction.Dot)
+                {
+                    ActiveToken = new NumberToken(0) { DecimalPlaces = 0 };
                     isCompleted = true;
                 }
                 else if (input is InputAction.CE)
@@ -46,6 +51,7 @@ public class IncrementalParser : ModelBase
                     ActiveToken = OtherToken.CE;
                     isCompleted = true;
                 }
+                
                 break;
         }
         if (isCompleted) return;

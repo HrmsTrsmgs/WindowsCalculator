@@ -20,7 +20,7 @@
                 <DoubleAnimation 
                     Storyboard.TargetName="OverlayPanel"
                      Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
-                     From="200" To="-100" Duration="0:0:0.3" />
+                     From="300" To="0" Duration="0:0:0.3" />
                 <DoubleAnimation Storyboard.TargetName="OverlayPanel"
                     Storyboard.TargetProperty="Opacity"
                     From="0" To="1" Duration="0:0:0.3" />
@@ -235,15 +235,32 @@
                         Text="{x:Bind ViewModel.Settings.EqualDisplayText, Mode=OneWay}"
                         Command="{x:Bind ViewModel.InputEqualCommand}"/>
                 </Grid>
-                <Grid
+                <RelativePanel
                     x:Name="HistoryPane"
                     RelativePanel.AlignTopWithPanel="True"
                     RelativePanel.AlignBottomWithPanel="True"
                     RelativePanel.AlignRightWithPanel="True"
                     Width="0"
                     >
-                    <TextBlock>履歴</TextBlock>
-                </Grid>
+                    <TextBlock 
+                        x:Name="HistoryHeader"
+                        RelativePanel.AlignTopWithPanel="True"
+                        RelativePanel.AlignLeftWithPanel="True"
+                        FontSize="24" Margin="12,24">履歴</TextBlock>
+                    <ScrollViewer
+                        RelativePanel.Below="HistoryHeader"
+                        RelativePanel.Above="RightHistoryDelete"
+                        RelativePanel.AlignRightWithPanel="True">
+                        <control:HistoryListBox 
+                            ItemsSource="{x:Bind ViewModel.History}" />
+                    </ScrollViewer>
+                    <AppBarButton 
+                        x:Name="RightHistoryDelete"
+                        RelativePanel.AlignBottomWithPanel="True"
+                        RelativePanel.AlignRightWithPanel="True"
+                        Icon="Delete"
+                        Command="{x:Bind ViewModel.ClearHistoryCommand}"/>
+                </RelativePanel>
             </RelativePanel>
         </SplitView>
         <Grid 
@@ -251,21 +268,29 @@
             Opacity="0" IsHitTestVisible="false"/>
         <Border 
             x:Name="OverlayPanel" 
-            Background="{ThemeResource LayerFillColorAltBrush}" Height="200" VerticalAlignment="Bottom" Opacity="0"
+            Background="{ThemeResource LayerFillColorAltBrush}"
+            CornerRadius="8"
+            Height="200"
+            VerticalAlignment="Bottom"
+            Opacity="0"
             RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
-                <TranslateTransform Y="200"/>
+                <TranslateTransform Y="300"/>
             </Border.RenderTransform>
-            <Border CornerRadius="10">
-                <Grid Height="300">
-                    <Viewbox>
-                        <ScrollViewer>
-                            <control:HistoryListBox 
-                                ItemsSource="{x:Bind ViewModel.History}" />
-                        </ScrollViewer>
-                    </Viewbox>
-                </Grid>
-            </Border>
+            <RelativePanel>
+                <ScrollViewer
+                    RelativePanel.AlignTopWithPanel="True"
+                    RelativePanel.Above="UnderHistoryDelete">
+                    <control:HistoryListBox 
+                        ItemsSource="{x:Bind ViewModel.History}" />
+                </ScrollViewer>
+                <AppBarButton 
+                    x:Name="UnderHistoryDelete"
+                    RelativePanel.AlignBottomWithPanel="True"
+                    RelativePanel.AlignRightWithPanel="True"
+                    Icon="Delete"
+                    Command="{x:Bind ViewModel.ClearHistoryCommand}"/>
+            </RelativePanel>
         </Border>
     </Grid>
 </Window>

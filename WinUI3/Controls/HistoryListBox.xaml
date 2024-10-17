@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <UserControl
+    x:Name="Root"
     x:Class="Marimo.WindowsCalculator.WinUI3.Controls.HistoryListBox"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -8,26 +9,44 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     mc:Ignorable="d">
-
-    <ListBox ItemsSource="{x:Bind ItemsSource}">
-        <ListBox.ItemsPanel>
+    <Grid>
+    <ListBox
+        ItemsSource="{x:Bind ItemsSource}"
+        Background="{ThemeResource SystemControlTransientBackgroundBrush}">
+            <ListBox.ItemContainerTransitions>
+                <TransitionCollection>
+                    <AddDeleteThemeTransition />
+                    <ContentThemeTransition />
+                </TransitionCollection>
+            </ListBox.ItemContainerTransitions>
+            <ListBox.ItemContainerStyle>
+            <Style TargetType="ListBoxItem">
+                <Setter Property="HorizontalAlignment" Value="Stretch"/>
+             </Style>
+        </ListBox.ItemContainerStyle>
+       <ListBox.ItemsPanel>
             <ItemsPanelTemplate>
                 <StackPanel/>
             </ItemsPanelTemplate>
         </ListBox.ItemsPanel>
         <ListBox.ItemTemplate>
             <DataTemplate x:DataType="model:CalculationHistoryItem">
-                <RelativePanel>
-                    <TextBlock
-                        RelativePanel.AlignLeftWithPanel="True"
+                <RelativePanel HorizontalAlignment="Right">
+                    <TextBlock x:Name="ExpressionTextBlock"
+                        RelativePanel.AlignRightWithPanel="True"
                         RelativePanel.AlignTopWithPanel="True"
+                        FontSize="14"
                         Text="{x:Bind Expression}"/>
                     <TextBlock
-                        RelativePanel.AlignLeftWithPanel="True"
-                        RelativePanel.AlignTopWithPanel="True"
+                        RelativePanel.AlignRightWithPanel="True"
+                        RelativePanel.Below="ExpressionTextBlock"
+                        FontSize="20"
+                        FontWeight="Bold"
                         Text="{x:Bind Result.Value}"/>
                 </RelativePanel>
             </DataTemplate>
         </ListBox.ItemTemplate>
     </ListBox>
+        <TextBlock Text="まだ履歴がありません。" Visibility="{x:Bind IsItemsSourceEmpty, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}"/>
+    </Grid>
 </UserControl>

@@ -1,6 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Marimo.WindowsCalculator.Models;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+using System.Reflection;
 using System.Windows.Input;
 
 namespace Marimo.WindowsCalculator.ViewModels;
@@ -144,7 +147,7 @@ public class CalculatorViewModel : ObservableObject
     /// <summary>
     /// 履歴を取得します。
     /// </summary>
-    public IEnumerable<CalculationHistoryItem> History => Model.CalculationHistory;
+    public ReadOnlyObservableCollection<CalculationHistoryItem> History => Model.CalculationHistory;
 
     /// <summary>
     /// 計算式を取得します。
@@ -180,6 +183,9 @@ public class CalculatorViewModel : ObservableObject
         ClearHistoryCommand = new RelayCommand(
             () => Model.ClearCalculationHistory(),
             () => Model.CalculationHistory.Any());
+        ((INotifyCollectionChanged)Model.CalculationHistory)
+            .CollectionChanged += (s, e) 
+                => ((RelayCommand)ClearHistoryCommand).NotifyCanExecuteChanged();
         InputOneCommand = new RelayCommand(() => Input(InputAction.One));
         InputTwoCommand = new RelayCommand(() => Input(InputAction.Two));
         InputThreeCommand = new RelayCommand(() => Input(InputAction.Three));

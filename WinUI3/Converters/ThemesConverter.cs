@@ -5,23 +5,19 @@ using ApplicationTheme = Marimo.WindowsCalculator.Models.ApplicationTheme;
 
 namespace Marimo.WindowsCalculator.WinUI3.Converters
 {
-    public class ThemesConverter : IValueConverter
+    public partial class ThemesConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
             if (value is ApplicationTheme appTheme)
             {
-                switch (appTheme)
+                return appTheme switch
                 {
-                    case ApplicationTheme.Light:
-                        return ElementTheme.Light;
-                    case ApplicationTheme.Dark:
-                        return ElementTheme.Dark;
-                    case ApplicationTheme.System:
-                        return ElementTheme.Default;
-                    default:
-                        return ElementTheme.Default;
-                }
+                    ApplicationTheme.Light => ElementTheme.Light,
+                    ApplicationTheme.Dark => ElementTheme.Dark,
+                    ApplicationTheme.System => ElementTheme.Default,
+                    _ => (object)ElementTheme.Default,
+                };
             }
             return ElementTheme.Default;
         }
@@ -30,17 +26,13 @@ namespace Marimo.WindowsCalculator.WinUI3.Converters
         {
             if (value is ElementTheme elementTheme)
             {
-                switch (elementTheme)
+                return elementTheme switch
                 {
-                    case ElementTheme.Light:
-                        return ApplicationTheme.Light;
-                    case ElementTheme.Dark:
-                        return ApplicationTheme.Dark;
-                    case ElementTheme.Default:
-                        return ApplicationTheme.System;
-                    default:
-                        return ApplicationTheme.System;
-                }
+                    ElementTheme.Light => ApplicationTheme.Light,
+                    ElementTheme.Dark => ApplicationTheme.Dark,
+                    ElementTheme.Default => ApplicationTheme.System,
+                    _ => (object)ApplicationTheme.System,
+                };
             }
             return ApplicationTheme.System;
         }

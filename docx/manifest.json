@@ -1,0 +1,1060 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/potim/source/repos/MAUIBlazorCalculator",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "source_relative_path": "MauiBlazor/Resources/Images/calculator.svg",
+      "output": {
+        "resource": {
+          "relative_path": "MauiBlazor/Resources/Images/calculator.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "G4BAt0BsKNEaK+78PXD2zcxDaHADVdQG9XK6drlVxRE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "WinUI3/Assets/Images/Calculator.svg",
+      "output": {
+        "resource": {
+          "relative_path": "WinUI3/Assets/Images/Calculator.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "WinUI3/Assets/Images/History.svg",
+      "output": {
+        "resource": {
+          "relative_path": "WinUI3/Assets/Images/History.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "WinUI3/bin/x64/Debug/net8.0-windows10.0.19041.0/win-x64/AppX/Assets/Images/Calculator.svg",
+      "output": {
+        "resource": {
+          "relative_path": "WinUI3/bin/x64/Debug/net8.0-windows10.0.19041.0/win-x64/AppX/Assets/Images/Calculator.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "WinUI3/bin/x64/Debug/net8.0-windows10.0.19041.0/win-x64/AppX/Assets/Images/History.svg",
+      "output": {
+        "resource": {
+          "relative_path": "WinUI3/bin/x64/Debug/net8.0-windows10.0.19041.0/win-x64/AppX/Assets/Images/History.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "WinUI3/bin/x64/Debug/net8.0-windows10.0.19041.0/win-x64/Assets/Images/Calculator.svg",
+      "output": {
+        "resource": {
+          "relative_path": "WinUI3/bin/x64/Debug/net8.0-windows10.0.19041.0/win-x64/Assets/Images/Calculator.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "WinUI3/bin/x64/Debug/net8.0-windows10.0.19041.0/win-x64/Assets/Images/History.svg",
+      "output": {
+        "resource": {
+          "relative_path": "WinUI3/bin/x64/Debug/net8.0-windows10.0.19041.0/win-x64/Assets/Images/History.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "WinUI3/bin/x64/Release/net8.0-windows10.0.19041.0/win-x64/AppX/Assets/Images/Calculator.svg",
+      "output": {
+        "resource": {
+          "relative_path": "WinUI3/bin/x64/Release/net8.0-windows10.0.19041.0/win-x64/AppX/Assets/Images/Calculator.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "WinUI3/bin/x64/Release/net8.0-windows10.0.19041.0/win-x64/AppX/Assets/Images/History.svg",
+      "output": {
+        "resource": {
+          "relative_path": "WinUI3/bin/x64/Release/net8.0-windows10.0.19041.0/win-x64/AppX/Assets/Images/History.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "WinUI3/bin/x64/Release/net8.0-windows10.0.19041.0/win-x64/Assets/Images/Calculator.svg",
+      "output": {
+        "resource": {
+          "relative_path": "WinUI3/bin/x64/Release/net8.0-windows10.0.19041.0/win-x64/Assets/Images/Calculator.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "WinUI3/bin/x64/Release/net8.0-windows10.0.19041.0/win-x64/Assets/Images/History.svg",
+      "output": {
+        "resource": {
+          "relative_path": "WinUI3/bin/x64/Release/net8.0-windows10.0.19041.0/win-x64/Assets/Images/History.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.App.html",
+          "hash": "DL6NJaX6InIuOrooTq8qHmG0t7m0cwvDgObJ8BUlVRY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.MainPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.MainPage.html",
+          "hash": "kLIbxqS2l4KBgrNEK8Jr/WiFyMwVk2a6RjXQMctSVQc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.html",
+          "hash": "si9VID1/DHZba/MzpHhRUmfSvrI6OpSCUOInrvvgt5w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.html",
+          "hash": "AXI94VvU8rGnn+Obu83OZpyatty2y+Nga+RBbfRFVm0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.MauiProgram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.MauiProgram.html",
+          "hash": "ZDSlAjr6Po05qBGvG1Zy4mbTPkhAyRhv4Rof/Maw57s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.WinUI.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.WinUI.App.html",
+          "hash": "BwFiOJmriOvMjNuYitEhqM4zv3B2JAS13lSka5lPD+M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.WinUI.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.WinUI.Program.html",
+          "hash": "CulVA4tmGnsvigzbFdxgcyfY4gAJJR8uSUVEMoRfM0s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.WinUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.WinUI.html",
+          "hash": "6AGoVCOApR49Wr2NS9gn8eaMGisselYHXVEXCukf2Bo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.MauiBlazor.html",
+          "hash": "yjePe+RxOu754pwXnf7OtqzlelUIb1j+ofusGyn3yBQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.ApplicationTheme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.ApplicationTheme.html",
+          "hash": "e3T3bSSpb8Z5hN1HHQdl1c67bNTP1DeNv90JVheLab8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.CalculationHistoryItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.CalculationHistoryItem.html",
+          "hash": "gnWSYjoC/GsazXZwTrz6suWVxvqZd1szKrzNnU8gfIM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.AddCalculation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.AddCalculation.html",
+          "hash": "sbigNsB4IYZ6ok70vMnxlueR48HgnVxwiyC6ywlirww="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.Calculation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.Calculation.html",
+          "hash": "QwNd92RgGieHfQQE6hQca2LtvbxsSDI90SKhpqV/mX8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.DeleteCalculation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.DeleteCalculation.html",
+          "hash": "g+Q6MZvnYCxME+WFT2LjFIa0Y7hQMm09aflKxo4WzB0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.DivideCalculation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.DivideCalculation.html",
+          "hash": "tr0MkOcDtABFRQ+dKeqKcIYJq7C0onAsd0x3SZIE1es="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.EqualButtonCalculation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.EqualButtonCalculation.html",
+          "hash": "dZy9bXV4aEVM8/fvlyJUG8YkyloVE7vSyKiPHayVDoI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.MultiplyCalculation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.MultiplyCalculation.html",
+          "hash": "jGdSf/GyZTxipOHC2QqsCkXgGvT2mfvcMifrR1T9ssE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.NumberCalculation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.NumberCalculation.html",
+          "hash": "qCUr+w3dFMySeuzH6R6ktRwx5x7cQ+5++A+Zow1hkyo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.OperationCalculation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.OperationCalculation.html",
+          "hash": "xrbZIH0+UIpiq5m0G5PmmPUS/Xs0jXsvCUAM0RwHFmg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.SubstractCalculation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.SubstractCalculation.html",
+          "hash": "54k50v1Xc2IedFlMKf6J4xlGIcSsTSIAKeh6qY/XYeM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Calculations.html",
+          "hash": "NVTtk9CltmoO+heutbAXv0jM1LmXfqAbjVhH1bC029U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Calculator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Calculator.html",
+          "hash": "5vYuNjeDGZ8iqtmXv4oAe0rQXWOI/SO8zwVTETHdoRE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.IncrementalParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.IncrementalParser.html",
+          "hash": "bZQ7eLIhYqS2T3EY0V1R0eO+J1xFtMb93COXofwiSUY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.InputAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.InputAction.html",
+          "hash": "gKbg+M405YUbo/OWZjuoQ78LREDtLgnWGtxjC7SJ4To="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Log4NetExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Log4NetExtensions.html",
+          "hash": "bzzrBgyILw48ZOYd0X8gB054afLVnJGPR83sZANVUwQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.ModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.ModelBase.html",
+          "hash": "xfBVqrbPcSxJLAsDBrKkutxnneEqJwD021/gNKX3lic="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.PropertySettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.PropertySettings.html",
+          "hash": "kYHUpWZ/qrgfOd9QWQV9E1Ll0Eo0Y/56NUbKj+U0qyo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Tokens.NumberToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Tokens.NumberToken.html",
+          "hash": "hjBliWeBmk61bzPMXsk1TtrA2u0Eb7TxYaxDDuA4Q3s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Tokens.OperatorToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Tokens.OperatorToken.html",
+          "hash": "rZgACt+VjYX6wkDL198fD3Ca4cdFQqJi9CkcZClnr0U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Tokens.OtherToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Tokens.OtherToken.html",
+          "hash": "VJYLxeqcv65Ly3t3zOvBjsvr16xBkr53MUL99x6DuOo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.html",
+          "hash": "KHE3ex4MPFu+UlvHPHL20NAfJyRny2iRIr3cTO4k1Pw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Tokens.Token.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Tokens.Token.html",
+          "hash": "9n6ajvxJziLd+RmkV4m4j2RoPZdx0txHp3vrZjWtqvg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.Tokens.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.Tokens.html",
+          "hash": "Q1TeigaXtSrrvNhXfqo8S4cizXrKYWbH6TePEQ0zzdg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Models.html",
+          "hash": "MN0GRNcE5C2Y0+GX5A/885iHSFWOf5A38zCLsTmd/vc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.html",
+          "hash": "ZyxzlgDiGBYQze9B9xYjbwS8LnRlVqE9E1O4ma3Zq6U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.AddCaluclationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.AddCaluclationTests.html",
+          "hash": "Shc8s6bP5dHhUQJlULcr9cNVOcXMbgs5esn5/1pPPsA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.html",
+          "hash": "Ecyzbb/EzJsWHLg4wxMkiSSGduHuyyjmQG4EU6eRAX4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.DeleteCalculationTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.DeleteCalculationTest.html",
+          "hash": "UHbiLYPa0I8+KT99PMPdHzsBI0e4YNvQF15+SYnTxrM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.DivideCaluclationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.DivideCaluclationTests.html",
+          "hash": "zytOk4g02ovImRxOARZNERlKkFj2zJGjSgvN/qpE7vU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.html",
+          "hash": "O7sWniX8cE6lF9qjbHaDIm4SNbkcqZt74fmcd0ZGbo0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.MultiplyCaluclationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.MultiplyCaluclationTests.html",
+          "hash": "urCT0QmShEM6wdO4jbagLh9uHjDQqZxr7VrS4aSjZvc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.NullCalculationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.NullCalculationTests.html",
+          "hash": "uUpAh2CFEBZyRroIC2Kqm9flVbm7k/EtQ7dyvZr5E7A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.NumberCalculationTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.NumberCalculationTest.html",
+          "hash": "6DPI1p16d6stekXqZzTn+w2pJMPquHrTmOEgTkpXots="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.OperationCalculationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.OperationCalculationTests.html",
+          "hash": "y6oMQUFbVJAKEiD3V+ZZkwjgFHwiSXfxyHh/THIN+9g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.html",
+          "hash": "Wdgj5g2NEGgzpP0cljhlgdo67pbFHsU8Z7qv8ZPMkF0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Calculations.html",
+          "hash": "JzDyhre1+zqjb5ashsbUcAAVXWxuUI0qALgsKisJkTg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.CalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.CalculatorTests.html",
+          "hash": "Qz+CnPxIFLesP5GmQLxkQ6l0qUilR/hDX1vj+vwYMu0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.html",
+          "hash": "eqvlc25BSQ6rDheZwZkVXe5avZ3DKYVhHM6xnBV8y2A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.html",
+          "hash": "eommwsLGi6IKwZAWsdjMog4Gpr4qtCsajJvzdp7ZGpQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.TestBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.TestBase.html",
+          "hash": "EQPPWMgHBiuFmHe+E7oIUBBxLOeObZM+15l7rQChqUo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.html",
+          "hash": "88IC7ou9IZMUs2WfhhhE5vR1cgeZOA25I2cUBPURnqU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Tokens.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.Tokens.html",
+          "hash": "rs4qc+lbNwq+hfjqGaEPgS2AJ66cqvhqQEICkxlU7uM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.Models.html",
+          "hash": "KiQBrrvlSB2QS9TntgnHgpC/qGnmcLYQDFI7oXiOOUQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.html",
+          "hash": "YUnhHAJ6FQ079mglHPWmVo+FO/mrqSrHKD1qxWtyAok="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.Tests.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.Tests.ViewModels.html",
+          "hash": "U3vDqklXhp+OIDyJTUMtdZL0zk2FmtwgzqcjymRqQXg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.html",
+          "hash": "sqB0bb23jNGqa4IyIaW7g1aH8WwO+dfxoc4Kul1PZAg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.ViewModels.html",
+          "hash": "dymr5Nxu6cdl3Acdz7RKQEpuGn38jWlmGe8giB0xYg0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.WinUI3.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.WinUI3.App.html",
+          "hash": "tXw8oPJ56FOI7mO21MTuhjZh14civP0D9jAEPqG8cwk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.WinUI3.Controls.CalculatorButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.WinUI3.Controls.CalculatorButton.html",
+          "hash": "QV4LnEMPesU2KSLJPSPhMoUTRzDZeo/by9khRFrpocE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.WinUI3.Controls.HistoryListBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.WinUI3.Controls.HistoryListBox.html",
+          "hash": "+4KyeuUgmb5QuhmhpiILz+geTED/vrzBmyAX+R3ZWHo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.WinUI3.Controls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.WinUI3.Controls.html",
+          "hash": "K1ZykkT/kUdu3y/7OA7dDbOWXAcuXtYeF4HWJerknAo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.html",
+          "hash": "g1GPxbx6dLVz+rehkWtJC32RdS2KGoI9TVMQqHrQdYU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.WinUI3.Converters.ThemesConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.WinUI3.Converters.ThemesConverter.html",
+          "hash": "dSfCpKgPGjVMbH/M7fB089QwSAwhZoQMptG5kDkmWOw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.WinUI3.Converters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.WinUI3.Converters.html",
+          "hash": "eBHTww5dQWpRP6Sg1/hMz0QIUsQqNfeJnJu1kyyI0Ag="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.WinUI3.KeyPress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.WinUI3.KeyPress.html",
+          "hash": "kSWW+nyLG7+ER5sRoYMYpdAEZld7F3SSfi9GKh3/O+0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.WinUI3.MainWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.WinUI3.MainWindow.html",
+          "hash": "KURnGBMkJpbtMGEJHl7yFaWlu+54NkdbS5BZXO8AJrQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.WinUI3.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.WinUI3.Program.html",
+          "hash": "o4iKwdk6D4tPrS9GkZLHwyxbDsKXl6Uxh90M5a8qi1A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Marimo.WindowsCalculator.WinUI3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Marimo.WindowsCalculator.WinUI3.html",
+          "hash": "hVIkIeUnixu4by++6bvfVXQB3OtzPiLWPZRKZfjsqQo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "c/hfS6lOGAnaS3pq88vVNAr/yYPOSq6v63AgHh39JqM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docfx_project/api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docfx_project/api/index.html",
+          "hash": "VIPc7QMu5WYpvV3pcVdUx03djQKA1v+KrSARREcFGs0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docfx_project/articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "docfx_project/articles/intro.html",
+          "hash": "tt2Nqh6Eb2Wc/BtVDONMk+edfJIGT4Z27Xv0tr6fFWU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docfx_project/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docfx_project/index.html",
+          "hash": "H4Xj2MSru+5ojZIMRwmVxdSIhTBgQ4GSWAeRknlyAHA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ConfigChanged"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 68,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

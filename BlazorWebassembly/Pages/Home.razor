@@ -6,50 +6,43 @@
 
 <FluentBodyContent class="body-content">
     <div class="layout-root">
-        <div class="content-header">
+        <header class="content-header">
             <div class="icons">
-                <FluentIcon class="icon menu-icon" Value="@(new Icons.Filled.Size24.TextAlignJustify())" />
-                <FluentIcon class="icon history-icon" Value="@(new Icons.Filled.Size48.History())" />
+                <a href="/settings"><FluentIcon class="icon settings-icon" Value="@(new Icons.Regular.Size24.Settings())" /></a>
+                <a href="/history"><FluentIcon class="icon history-icon" Value="@(new Icons.Regular.Size48.History())" /></a>
             </div>
-            <div class="expression">3 + 5</div>
-        </div>
-        <div class="content-body">
+            <div class="expression">@ViewModel.Expression</div>
+        </header>
+        <main class="content-body">
 
             <div class="calculation-result">
                 @ViewModel.DisplayNumber
             </div>
-            <FluentButton class="fluent-button">CE</FluentButton>
-            <FluentButton class="fluent-button">C</FluentButton>
-            <FluentButton class="fluent-button">⌫</FluentButton>
-            <FluentButton class="fluent-button">÷</FluentButton>
-            <FluentButton class="fluent-button">7</FluentButton>
-            <FluentButton class="fluent-button">8</FluentButton>
-            <FluentButton class="fluent-button">9</FluentButton>
-            <FluentButton class="fluent-button">×</FluentButton>
-            <FluentButton class="fluent-button">4</FluentButton>
-            <FluentButton class="fluent-button">5</FluentButton>
-            <FluentButton class="fluent-button">6</FluentButton>
-            <FluentButton class="fluent-button">-</FluentButton>
-            <FluentButton class="fluent-button">1</FluentButton>
-            <FluentButton class="fluent-button">2</FluentButton>
-            <FluentButton class="fluent-button">3</FluentButton>
-            <FluentButton class="fluent-button">+</FluentButton>
-            <FluentButton class="fluent-button">Undo</FluentButton>
-            <FluentButton class="fluent-button">0</FluentButton>
-            <FluentButton class="fluent-button">.</FluentButton>
-            <FluentButton class="fluent-button">=</FluentButton>
-        </div>
+            <div class="keys">
+                <FluentButton class="fluent-button font-small" @onclick="ViewModel.InputCECommand.Execute">@ViewModel.Settings.CEDisplayText</FluentButton>
+                <FluentButton class="fluent-button font-small" @onclick="ViewModel.InputCCommand.Execute">@ViewModel.Settings.CDisplayText</FluentButton>
+                <FluentButton class="fluent-button font-small" @onclick="ViewModel.InputBackspaceCommand.Execute">@ViewModel.Settings.BackspaceDisplayText</FluentButton>
+                <FluentButton class="fluent-button font-large" @onclick="ViewModel.InputDivideCommand.Execute">@ViewModel.Settings.DivideDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputSevenCommand.Execute">@ViewModel.Settings.SevenDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputEightCommand.Execute">@ViewModel.Settings.EightDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputNineCommand.Execute">@ViewModel.Settings.NineDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputMultiplyCommand.Execute">@ViewModel.Settings.MultiplyDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputFourCommand.Execute">@ViewModel.Settings.FourDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputFiveCommand.Execute">@ViewModel.Settings.FiveDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputSixCommand.Execute">@ViewModel.Settings.SixDisplayText</FluentButton>
+                <FluentButton class="fluent-button font-large" @onclick="ViewModel.InputSubstractCommand.Execute">@ViewModel.Settings.SubstractDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputOneCommand.Execute">@ViewModel.Settings.OneDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputTwoCommand.Execute">@ViewModel.Settings.TwoDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputThreeCommand.Execute">@ViewModel.Settings.ThreeDisplayText</FluentButton>
+                <FluentButton class="fluent-button font-large" @onclick="ViewModel.InputAddCommand.Execute">@ViewModel.Settings.AddDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputUndoCommand.Execute">@ViewModel.Settings.UndoDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputDotCommand.Execute">@ViewModel.Settings.DotDisplayText</FluentButton>
+                <FluentButton class="fluent-button" @onclick="ViewModel.InputZeroCommand.Execute">@ViewModel.Settings.ZeroDisplayText</FluentButton>
+                <FluentButton class="fluent-button font-large blue" @onclick="ViewModel.InputEqualCommand.Execute">@ViewModel.Settings.EqualDisplayText</FluentButton>
+            </div>
+        </main>
     </div>
 </FluentBodyContent>
-<script>
-    function setDivHeight() {
-        const div = document.querySelector('.layout-root');
-        div.style.height = `${document.documentElement.clientHeight}px`;
-    }
-
-    window.addEventListener('resize', setDivHeight);
-    window.addEventListener('load', setDivHeight);
-</script>
 <style>
     body {
         overflow: hidden;
@@ -58,16 +51,12 @@
     .layout-root {
         display: grid;
         grid-template-rows: auto 1fr;
-        border: 1px solid black;
-        border-radius: 5px;
         width: 100vw;
         height: 100vw;
-        border: 5px solid red;
-        border-radius: 5px;
+        background: #EEF7EBFF;
     }
 
     .content-header {
-        grid-row: 1;
     }
 
     .icons {
@@ -77,10 +66,8 @@
     }
 
     .calculation-result {
-        flex: 1;
         border: 2px solid black;
         border-radius: 5px;
-        overflow: hidden;
     }
 
     .icon {
@@ -88,9 +75,8 @@
     }
 
 
-    .menu-icon {
+    .settings-icon {
         margin: 0 12px;
-        transform: scale(0.8);
     }
 
     .history-icon {
@@ -105,26 +91,28 @@
     }
 
     .content-body {
-        grid-row: 2;
         display: grid;
-        grid-template-rows: 1.5fr repeat(5, 1fr);
-        grid-template-columns: repeat(4, 1fr);
-        width: 100%;
-        height: 100%;
-        border: 5px solid green;
-        border-radius: 5px;
+        grid-template-rows: 3fr 10fr;
         min-height: 0;
     }
 
     .calculation-result {
+        display: grid;
+        align-items: start;
         grid-column: 1 / -1;
-        padding: 20px;
         border: 2px solid black;
         border-radius: 5px;
         text-align: right;
         font-size: 44px;
         font-weight: 600;
         overflow: hidden;
+    }
+
+    .keys {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        margin: 2px;
     }
 
     .fluent-button {
@@ -134,20 +122,35 @@
         flex-grow: 1;
         flex-shrink: 1;
         font-size: 18px;
-        margin: 5px;
+        margin: 1px;
         border-radius: 4px;
-        cursor: pointer;
         border: 1px solid transparent;
         transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-        overflow: hidden;
-        min-height: 0;
+    }
+
+    .font-large {
+        font-size: 32px;
+    }
+
+    .font-small {
+        font-size: 13px;
+    }
+
+    .blue {
+        background: #1875C4;
+        color: white;
     }
 
 </style>
 @code {
-
+    /// <summary>
+    /// 自画面を保管しておきます。
+    /// </summary>
     private static Home? self;
 
+    /// <summary>
+    /// 初期化時に呼び出されます。。
+    /// </summary>
     protected override void OnInitialized()
     {
         self = this;
@@ -161,10 +164,21 @@
     }
 
 
+    /// <summary>
+    /// JavaScript空の呼び出しは静的にしか行えないのでそのためのクラスです。
+    /// </summary>
     public static class StaticClass
     {
+        /// <summary>
+        /// ViewMoelをStaticで使えるように保管しておきます。
+        /// </summary>
         public static CalculatorViewModel? ViewModel { get; set; }
 
+        /// <summary>
+        /// キーが押された時に呼び出されます。
+        /// </summary>
+        /// <param name="key">押されたキー。</param>
+        /// <param name="ctrl">Ctrlキーが同時押しされているか。</param>
         [JSInvokable("HandleKeyDown")]
         public static void HandleKeyDown(string key, bool ctrl)
         {
@@ -186,7 +200,7 @@
                 (false, "-") => InputAction.Substract,
                 (false, "*") => InputAction.Multiply,
                 (false, "/") => InputAction.Divide,
-                (false, "Enter)") or (false, "=") => InputAction.Equal,
+                (false, "Enter") or (false, "=") => InputAction.Equal,
                 (false, "Escape") => InputAction.C,
                 (false, "Delete") => InputAction.CE,
                 (false, "Backspace") => InputAction.Backspace,

@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.WinUI3.Controls
+  commentId: N:Marimo.WindowsCalculator.WinUI3.Controls
+  id: Marimo.WindowsCalculator.WinUI3.Controls
+  children:
+  - Marimo.WindowsCalculator.WinUI3.Controls.CalculatorButton
+  - Marimo.WindowsCalculator.WinUI3.Controls.HistoryListBox
+  langs:
+  - csharp
+  - vb
+  name: Marimo.WindowsCalculator.WinUI3.Controls
+  nameWithType: Marimo.WindowsCalculator.WinUI3.Controls
+  fullName: Marimo.WindowsCalculator.WinUI3.Controls
+  type: Namespace
+  assemblies:
+  - WinUI3
+references:
+- uid: Marimo.WindowsCalculator.WinUI3.Controls.CalculatorButton
+  commentId: T:Marimo.WindowsCalculator.WinUI3.Controls.CalculatorButton
+  name: CalculatorButton
+  nameWithType: CalculatorButton
+  fullName: Marimo.WindowsCalculator.WinUI3.Controls.CalculatorButton
+- uid: Marimo.WindowsCalculator.WinUI3.Controls.HistoryListBox
+  commentId: T:Marimo.WindowsCalculator.WinUI3.Controls.HistoryListBox
+  name: HistoryListBox
+  nameWithType: HistoryListBox
+  fullName: Marimo.WindowsCalculator.WinUI3.Controls.HistoryListBox

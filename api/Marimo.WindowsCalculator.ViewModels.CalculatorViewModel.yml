@@ -1,0 +1,4145 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  commentId: T:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  id: CalculatorViewModel
+  parent: Marimo.WindowsCalculator.ViewModels
+  children:
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.#ctor
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.ClearHistoryCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.DisplayNumber
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Expression
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.History
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputAddCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputBackspaceCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCECommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDivideCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDotCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEightCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEqualCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFiveCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFourCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputKeybord
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputMultiplyCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputNineCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputOneCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputRedoCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSevenCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSixCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSubstractCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputThreeCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputTwoCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputUndoCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputZeroCommand
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Settings
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Themes
+  langs:
+  - csharp
+  - vb
+  name: CalculatorViewModel
+  nameWithType: CalculatorViewModel
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  type: Class
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: CalculatorViewModel
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 13
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n計算機のViewModelです。\n"
+  example: []
+  syntax:
+    content: 'public class CalculatorViewModel : ObservableObject, INotifyPropertyChanged, INotifyPropertyChanging'
+    content.vb: >-
+      Public Class CalculatorViewModel
+          Inherits ObservableObject
+          Implements INotifyPropertyChanged, INotifyPropertyChanging
+  inheritance:
+  - System.Object
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - System.ComponentModel.INotifyPropertyChanging
+  inheritedMembers:
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.ComponentModel.PropertyChangingEventArgs)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T}@,{T},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T}@,{T},System.Collections.Generic.IEqualityComparer{{T}},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T},{T},System.Action{{T}},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T},{T},System.Collections.Generic.IEqualityComparer{{T}},System.Action{{T}},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2({T},{T},{TModel},System.Action{{TModel},{T}},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2({T},{T},System.Collections.Generic.IEqualityComparer{{T}},{TModel},System.Action{{TModel},{T}},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.Action{System.Threading.Tasks.Task},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{{T}}@,System.Threading.Tasks.Task{{T}},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{{T}}@,System.Threading.Tasks.Task{{T}},System.Action{System.Threading.Tasks.Task{{T}}},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputKeybord
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputKeybord
+  id: InputKeybord
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputKeybord
+  nameWithType: CalculatorViewModel.InputKeybord
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputKeybord
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputKeybord
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 18
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\nキーボードを入力した事を表すコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputKeybord { get; set; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public Property InputKeybord As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputKeybord*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputOneCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputOneCommand
+  id: InputOneCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputOneCommand
+  nameWithType: CalculatorViewModel.InputOneCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputOneCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputOneCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 34
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n1を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputOneCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputOneCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputOneCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputTwoCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputTwoCommand
+  id: InputTwoCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputTwoCommand
+  nameWithType: CalculatorViewModel.InputTwoCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputTwoCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputTwoCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 39
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n2を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputTwoCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputTwoCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputTwoCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputThreeCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputThreeCommand
+  id: InputThreeCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputThreeCommand
+  nameWithType: CalculatorViewModel.InputThreeCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputThreeCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputThreeCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 44
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n3を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputThreeCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputThreeCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputThreeCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFourCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFourCommand
+  id: InputFourCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputFourCommand
+  nameWithType: CalculatorViewModel.InputFourCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFourCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputFourCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 49
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n4を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputFourCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputFourCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFourCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFiveCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFiveCommand
+  id: InputFiveCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputFiveCommand
+  nameWithType: CalculatorViewModel.InputFiveCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFiveCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputFiveCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 54
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n5を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputFiveCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputFiveCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFiveCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSixCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSixCommand
+  id: InputSixCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputSixCommand
+  nameWithType: CalculatorViewModel.InputSixCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSixCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputSixCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 59
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n6を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputSixCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputSixCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSixCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSevenCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSevenCommand
+  id: InputSevenCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputSevenCommand
+  nameWithType: CalculatorViewModel.InputSevenCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSevenCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputSevenCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 64
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n7を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputSevenCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputSevenCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSevenCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEightCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEightCommand
+  id: InputEightCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputEightCommand
+  nameWithType: CalculatorViewModel.InputEightCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEightCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputEightCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 69
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n8を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputEightCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputEightCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEightCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputNineCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputNineCommand
+  id: InputNineCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputNineCommand
+  nameWithType: CalculatorViewModel.InputNineCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputNineCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputNineCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 74
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n9を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputNineCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputNineCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputNineCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputZeroCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputZeroCommand
+  id: InputZeroCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputZeroCommand
+  nameWithType: CalculatorViewModel.InputZeroCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputZeroCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputZeroCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 79
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n0を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputZeroCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputZeroCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputZeroCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDotCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDotCommand
+  id: InputDotCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputDotCommand
+  nameWithType: CalculatorViewModel.InputDotCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDotCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputDotCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 84
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n小数点を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputDotCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputDotCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDotCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputAddCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputAddCommand
+  id: InputAddCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputAddCommand
+  nameWithType: CalculatorViewModel.InputAddCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputAddCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputAddCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 89
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n+を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputAddCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputAddCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputAddCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSubstractCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSubstractCommand
+  id: InputSubstractCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputSubstractCommand
+  nameWithType: CalculatorViewModel.InputSubstractCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSubstractCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputSubstractCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 94
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n-を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputSubstractCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputSubstractCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSubstractCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputMultiplyCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputMultiplyCommand
+  id: InputMultiplyCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputMultiplyCommand
+  nameWithType: CalculatorViewModel.InputMultiplyCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputMultiplyCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputMultiplyCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 99
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n×を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputMultiplyCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputMultiplyCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputMultiplyCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDivideCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDivideCommand
+  id: InputDivideCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputDivideCommand
+  nameWithType: CalculatorViewModel.InputDivideCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDivideCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputDivideCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 104
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n÷を入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputDivideCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputDivideCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDivideCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEqualCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEqualCommand
+  id: InputEqualCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputEqualCommand
+  nameWithType: CalculatorViewModel.InputEqualCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEqualCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputEqualCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 109
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n＝ボタンを入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputEqualCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputEqualCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEqualCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputUndoCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputUndoCommand
+  id: InputUndoCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputUndoCommand
+  nameWithType: CalculatorViewModel.InputUndoCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputUndoCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputUndoCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 114
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\nUndoを入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputUndoCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputUndoCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputUndoCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputRedoCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputRedoCommand
+  id: InputRedoCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputRedoCommand
+  nameWithType: CalculatorViewModel.InputRedoCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputRedoCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputRedoCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 119
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\nRedoを入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputRedoCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputRedoCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputRedoCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCCommand
+  id: InputCCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputCCommand
+  nameWithType: CalculatorViewModel.InputCCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputCCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 124
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\nCボタンを入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputCCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputCCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCECommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCECommand
+  id: InputCECommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputCECommand
+  nameWithType: CalculatorViewModel.InputCECommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCECommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputCECommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 129
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\nCEボタンを入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputCECommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputCECommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCECommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputBackspaceCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputBackspaceCommand
+  id: InputBackspaceCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: InputBackspaceCommand
+  nameWithType: CalculatorViewModel.InputBackspaceCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputBackspaceCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputBackspaceCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 134
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\nBackspaceを入力するコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand InputBackspaceCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property InputBackspaceCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputBackspaceCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.ClearHistoryCommand
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.ClearHistoryCommand
+  id: ClearHistoryCommand
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: ClearHistoryCommand
+  nameWithType: CalculatorViewModel.ClearHistoryCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.ClearHistoryCommand
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: ClearHistoryCommand
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 139
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n履歴をクリアするコマンドを取得します。\n"
+  example: []
+  syntax:
+    content: public ICommand ClearHistoryCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ClearHistoryCommand As ICommand
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.ClearHistoryCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.DisplayNumber
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.DisplayNumber
+  id: DisplayNumber
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: DisplayNumber
+  nameWithType: CalculatorViewModel.DisplayNumber
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.DisplayNumber
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: DisplayNumber
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 144
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n計算機に表示されている数を取得します。\n"
+  example: []
+  syntax:
+    content: public string DisplayNumber { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DisplayNumber As String
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.DisplayNumber*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.History
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.History
+  id: History
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: History
+  nameWithType: CalculatorViewModel.History
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.History
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: History
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 149
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n履歴を取得します。\n"
+  example: []
+  syntax:
+    content: public ReadOnlyObservableCollection<CalculationHistoryItem> History { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyObservableCollection{Marimo.WindowsCalculator.Models.CalculationHistoryItem}
+    content.vb: Public ReadOnly Property History As ReadOnlyObservableCollection(Of CalculationHistoryItem)
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.History*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Expression
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Expression
+  id: Expression
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: Expression
+  nameWithType: CalculatorViewModel.Expression
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Expression
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Expression
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 154
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n計算式を取得します。\n"
+  example: []
+  syntax:
+    content: public string Expression { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Expression As String
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Expression*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Settings
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Settings
+  id: Settings
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: CalculatorViewModel.Settings
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Settings
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Settings
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 159
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n設定を取得します。\n"
+  example: []
+  syntax:
+    content: public PropertySettings Settings { get; }
+    parameters: []
+    return:
+      type: Marimo.WindowsCalculator.Models.PropertySettings
+    content.vb: Public ReadOnly Property Settings As PropertySettings
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Settings*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Themes
+  commentId: P:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Themes
+  id: Themes
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: Themes
+  nameWithType: CalculatorViewModel.Themes
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Themes
+  type: Property
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Themes
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 165
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\n画面のテーマです。\n"
+  example: []
+  syntax:
+    content: public IEnumerable<ApplicationTheme> Themes { get; }
+    parameters: []
+    return:
+      type: IEnumerable{Marimo.WindowsCalculator.Models.ApplicationTheme}
+    content.vb: Public ReadOnly Property Themes As IEnumerable(Of ApplicationTheme)
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Themes*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.#ctor
+  commentId: M:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.#ctor
+  id: '#ctor'
+  parent: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: CalculatorViewModel()
+  nameWithType: CalculatorViewModel.CalculatorViewModel()
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.CalculatorViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: ViewModels/CaluculatorViewModel.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: .ctor
+    path: ViewModels/CaluculatorViewModel.cs
+    startLine: 170
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+  namespace: Marimo.WindowsCalculator.ViewModels
+  summary: "\nCalculationViewModelクラスの新しいインスタンスを初期化します。\n"
+  example: []
+  syntax:
+    content: public CalculatorViewModel()
+    content.vb: Public Sub New
+  overload: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Marimo.WindowsCalculator.ViewModels
+  commentId: N:Marimo.WindowsCalculator.ViewModels
+  name: Marimo.WindowsCalculator.ViewModels
+  nameWithType: Marimo.WindowsCalculator.ViewModels
+  fullName: Marimo.WindowsCalculator.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  commentId: T:CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  parent: CommunityToolkit.Mvvm.ComponentModel
+  isExternal: true
+  name: ObservableObject
+  nameWithType: ObservableObject
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.ComponentModel.INotifyPropertyChanging
+  commentId: T:System.ComponentModel.INotifyPropertyChanging
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanging
+  nameWithType: INotifyPropertyChanging
+  fullName: System.ComponentModel.INotifyPropertyChanging
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  name: OnPropertyChanged(PropertyChangedEventArgs)
+  nameWithType: ObservableObject.OnPropertyChanged(PropertyChangedEventArgs)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    nameWithType: ObservableObject.OnPropertyChanged
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    nameWithType: PropertyChangedEventArgs
+    fullName: System.ComponentModel.PropertyChangedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    nameWithType: ObservableObject.OnPropertyChanged
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    nameWithType: PropertyChangedEventArgs
+    fullName: System.ComponentModel.PropertyChangedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.ComponentModel.PropertyChangingEventArgs)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.ComponentModel.PropertyChangingEventArgs)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  name: OnPropertyChanging(PropertyChangingEventArgs)
+  nameWithType: ObservableObject.OnPropertyChanging(PropertyChangingEventArgs)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.ComponentModel.PropertyChangingEventArgs)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.ComponentModel.PropertyChangingEventArgs)
+    name: OnPropertyChanging
+    nameWithType: ObservableObject.OnPropertyChanging
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.ComponentModel.PropertyChangingEventArgs
+    name: PropertyChangingEventArgs
+    nameWithType: PropertyChangingEventArgs
+    fullName: System.ComponentModel.PropertyChangingEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.ComponentModel.PropertyChangingEventArgs)
+    name: OnPropertyChanging
+    nameWithType: ObservableObject.OnPropertyChanging
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.ComponentModel.PropertyChangingEventArgs
+    name: PropertyChangingEventArgs
+    nameWithType: PropertyChangingEventArgs
+    fullName: System.ComponentModel.PropertyChangingEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  name: OnPropertyChanged(String)
+  nameWithType: ObservableObject.OnPropertyChanged(String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    nameWithType: ObservableObject.OnPropertyChanged
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    nameWithType: ObservableObject.OnPropertyChanged
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  name: OnPropertyChanging(String)
+  nameWithType: ObservableObject.OnPropertyChanging(String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)
+    name: OnPropertyChanging
+    nameWithType: ObservableObject.OnPropertyChanging
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)
+    name: OnPropertyChanging
+    nameWithType: ObservableObject.OnPropertyChanging
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T}@,{T},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ObservableObject.SetProperty<T>(T, T, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ObservableObject.SetProperty<T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ObservableObject.SetProperty(Of T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T}@,{T},System.Collections.Generic.IEqualityComparer{{T}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+  name: SetProperty<T>(T, T, IEqualityComparer<T>, String)
+  nameWithType: ObservableObject.SetProperty<T>(T, T, IEqualityComparer<T>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(T, T, System.Collections.Generic.IEqualityComparer<T>, System.String)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, IEqualityComparer(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), System.String)
+  name.vb: SetProperty(Of T)(T, T, IEqualityComparer(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+    name: SetProperty<T>
+    nameWithType: ObservableObject.SetProperty<T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+    name: SetProperty(Of T)
+    nameWithType: ObservableObject.SetProperty(Of T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T},{T},System.Action{{T}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+  name: SetProperty<T>(T, T, Action<T>, String)
+  nameWithType: ObservableObject.SetProperty<T>(T, T, Action<T>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(T, T, System.Action<T>, System.String)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, Action(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, System.Action(Of T), System.String)
+  name.vb: SetProperty(Of T)(T, T, Action(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+    name: SetProperty<T>
+    nameWithType: ObservableObject.SetProperty<T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+    name: SetProperty(Of T)
+    nameWithType: ObservableObject.SetProperty(Of T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T},{T},System.Collections.Generic.IEqualityComparer{{T}},System.Action{{T}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+  name: SetProperty<T>(T, T, IEqualityComparer<T>, Action<T>, String)
+  nameWithType: ObservableObject.SetProperty<T>(T, T, IEqualityComparer<T>, Action<T>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(T, T, System.Collections.Generic.IEqualityComparer<T>, System.Action<T>, System.String)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, IEqualityComparer(Of T), Action(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), System.Action(Of T), System.String)
+  name.vb: SetProperty(Of T)(T, T, IEqualityComparer(Of T), Action(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+    name: SetProperty<T>
+    nameWithType: ObservableObject.SetProperty<T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+    name: SetProperty(Of T)
+    nameWithType: ObservableObject.SetProperty(Of T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2({T},{T},{TModel},System.Action{{TModel},{T}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+  name: SetProperty<TModel, T>(T, T, TModel, Action<TModel, T>, String)
+  nameWithType: ObservableObject.SetProperty<TModel, T>(T, T, TModel, Action<TModel, T>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<TModel, T>(T, T, TModel, System.Action<TModel, T>, System.String)
+  nameWithType.vb: ObservableObject.SetProperty(Of TModel, T)(T, T, TModel, Action(Of TModel, T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of TModel, T)(T, T, TModel, System.Action(Of TModel, T), System.String)
+  name.vb: SetProperty(Of TModel, T)(T, T, TModel, Action(Of TModel, T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+    name: SetProperty<TModel, T>
+    nameWithType: ObservableObject.SetProperty<TModel, T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<TModel, T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+    name: SetProperty(Of TModel, T)
+    nameWithType: ObservableObject.SetProperty(Of TModel, T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of TModel, T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2({T},{T},System.Collections.Generic.IEqualityComparer{{T}},{TModel},System.Action{{TModel},{T}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+  name: SetProperty<TModel, T>(T, T, IEqualityComparer<T>, TModel, Action<TModel, T>, String)
+  nameWithType: ObservableObject.SetProperty<TModel, T>(T, T, IEqualityComparer<T>, TModel, Action<TModel, T>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<TModel, T>(T, T, System.Collections.Generic.IEqualityComparer<T>, TModel, System.Action<TModel, T>, System.String)
+  nameWithType.vb: ObservableObject.SetProperty(Of TModel, T)(T, T, IEqualityComparer(Of T), TModel, Action(Of TModel, T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of TModel, T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), TModel, System.Action(Of TModel, T), System.String)
+  name.vb: SetProperty(Of TModel, T)(T, T, IEqualityComparer(Of T), TModel, Action(Of TModel, T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+    name: SetProperty<TModel, T>
+    nameWithType: ObservableObject.SetProperty<TModel, T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<TModel, T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+    name: SetProperty(Of TModel, T)
+    nameWithType: ObservableObject.SetProperty(Of TModel, T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of TModel, T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  name: SetPropertyAndNotifyOnCompletion(ObservableObject.TaskNotifier, Task, String)
+  nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion(ObservableObject.TaskNotifier, Task, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier, System.Threading.Tasks.Task, System.String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    name: ObservableObject.TaskNotifier
+    nameWithType: ObservableObject.TaskNotifier
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    name: ObservableObject.TaskNotifier
+    nameWithType: ObservableObject.TaskNotifier
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.Action{System.Threading.Tasks.Task},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.Action{System.Threading.Tasks.Task},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  name: SetPropertyAndNotifyOnCompletion(ObservableObject.TaskNotifier, Task, Action<Task>, String)
+  nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion(ObservableObject.TaskNotifier, Task, Action<Task>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier, System.Threading.Tasks.Task, System.Action<System.Threading.Tasks.Task>, System.String)
+  nameWithType.vb: ObservableObject.SetPropertyAndNotifyOnCompletion(ObservableObject.TaskNotifier, Task, Action(Of Task), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier, System.Threading.Tasks.Task, System.Action(Of System.Threading.Tasks.Task), System.String)
+  name.vb: SetPropertyAndNotifyOnCompletion(ObservableObject.TaskNotifier, Task, Action(Of Task), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.Action{System.Threading.Tasks.Task},System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    name: ObservableObject.TaskNotifier
+    nameWithType: ObservableObject.TaskNotifier
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.Action{System.Threading.Tasks.Task},System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    name: ObservableObject.TaskNotifier
+    nameWithType: ObservableObject.TaskNotifier
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{{T}}@,System.Threading.Tasks.Task{{T}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+  name: SetPropertyAndNotifyOnCompletion<T>(ObservableObject.TaskNotifier<T>, Task<T>, String)
+  nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion<T>(ObservableObject.TaskNotifier<T>, Task<T>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion<T>(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier<T>, System.Threading.Tasks.Task<T>, System.String)
+  nameWithType.vb: ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(ObservableObject.TaskNotifier(Of T), Task(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier(Of T), System.Threading.Tasks.Task(Of T), System.String)
+  name.vb: SetPropertyAndNotifyOnCompletion(Of T)(ObservableObject.TaskNotifier(Of T), Task(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+    name: SetPropertyAndNotifyOnCompletion<T>
+    nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion<T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: ObservableObject.TaskNotifier
+    nameWithType: ObservableObject.TaskNotifier
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+    name: SetPropertyAndNotifyOnCompletion(Of T)
+    nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: ObservableObject.TaskNotifier
+    nameWithType: ObservableObject.TaskNotifier
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{{T}}@,System.Threading.Tasks.Task{{T}},System.Action{System.Threading.Tasks.Task{{T}}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+  name: SetPropertyAndNotifyOnCompletion<T>(ObservableObject.TaskNotifier<T>, Task<T>, Action<Task<T>>, String)
+  nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion<T>(ObservableObject.TaskNotifier<T>, Task<T>, Action<Task<T>>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion<T>(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier<T>, System.Threading.Tasks.Task<T>, System.Action<System.Threading.Tasks.Task<T>>, System.String)
+  nameWithType.vb: ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(ObservableObject.TaskNotifier(Of T), Task(Of T), Action(Of Task(Of T)), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier(Of T), System.Threading.Tasks.Task(Of T), System.Action(Of System.Threading.Tasks.Task(Of T)), System.String)
+  name.vb: SetPropertyAndNotifyOnCompletion(Of T)(ObservableObject.TaskNotifier(Of T), Task(Of T), Action(Of Task(Of T)), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+    name: SetPropertyAndNotifyOnCompletion<T>
+    nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion<T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: ObservableObject.TaskNotifier
+    nameWithType: ObservableObject.TaskNotifier
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+    name: SetPropertyAndNotifyOnCompletion(Of T)
+    nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: ObservableObject.TaskNotifier
+    nameWithType: ObservableObject.TaskNotifier
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged
+  commentId: E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  name: PropertyChanged
+  nameWithType: ObservableObject.PropertyChanged
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging
+  commentId: E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  name: PropertyChanging
+  nameWithType: ObservableObject.PropertyChanging
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CommunityToolkit.Mvvm.ComponentModel
+  commentId: N:CommunityToolkit.Mvvm.ComponentModel
+  isExternal: true
+  name: CommunityToolkit.Mvvm.ComponentModel
+  nameWithType: CommunityToolkit.Mvvm.ComponentModel
+  fullName: CommunityToolkit.Mvvm.ComponentModel
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ObservableObject.SetProperty<T>(T, T, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ObservableObject.SetProperty<T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ObservableObject.SetProperty(Of T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+  isExternal: true
+  name: SetProperty<T>(T, T, IEqualityComparer<T>, String)
+  nameWithType: ObservableObject.SetProperty<T>(T, T, IEqualityComparer<T>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(T, T, System.Collections.Generic.IEqualityComparer<T>, System.String)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, IEqualityComparer(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), System.String)
+  name.vb: SetProperty(Of T)(T, T, IEqualityComparer(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+    name: SetProperty<T>
+    nameWithType: ObservableObject.SetProperty<T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+    name: SetProperty(Of T)
+    nameWithType: ObservableObject.SetProperty(Of T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+  isExternal: true
+  name: SetProperty<T>(T, T, Action<T>, String)
+  nameWithType: ObservableObject.SetProperty<T>(T, T, Action<T>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(T, T, System.Action<T>, System.String)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, Action(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, System.Action(Of T), System.String)
+  name.vb: SetProperty(Of T)(T, T, Action(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+    name: SetProperty<T>
+    nameWithType: ObservableObject.SetProperty<T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+    name: SetProperty(Of T)
+    nameWithType: ObservableObject.SetProperty(Of T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+  isExternal: true
+  name: SetProperty<T>(T, T, IEqualityComparer<T>, Action<T>, String)
+  nameWithType: ObservableObject.SetProperty<T>(T, T, IEqualityComparer<T>, Action<T>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(T, T, System.Collections.Generic.IEqualityComparer<T>, System.Action<T>, System.String)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, IEqualityComparer(Of T), Action(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), System.Action(Of T), System.String)
+  name.vb: SetProperty(Of T)(T, T, IEqualityComparer(Of T), Action(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+    name: SetProperty<T>
+    nameWithType: ObservableObject.SetProperty<T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+    name: SetProperty(Of T)
+    nameWithType: ObservableObject.SetProperty(Of T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+  isExternal: true
+  name: SetProperty<TModel, T>(T, T, TModel, Action<TModel, T>, String)
+  nameWithType: ObservableObject.SetProperty<TModel, T>(T, T, TModel, Action<TModel, T>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<TModel, T>(T, T, TModel, System.Action<TModel, T>, System.String)
+  nameWithType.vb: ObservableObject.SetProperty(Of TModel, T)(T, T, TModel, Action(Of TModel, T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of TModel, T)(T, T, TModel, System.Action(Of TModel, T), System.String)
+  name.vb: SetProperty(Of TModel, T)(T, T, TModel, Action(Of TModel, T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+    name: SetProperty<TModel, T>
+    nameWithType: ObservableObject.SetProperty<TModel, T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<TModel, T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+    name: SetProperty(Of TModel, T)
+    nameWithType: ObservableObject.SetProperty(Of TModel, T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of TModel, T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+  isExternal: true
+  name: SetProperty<TModel, T>(T, T, IEqualityComparer<T>, TModel, Action<TModel, T>, String)
+  nameWithType: ObservableObject.SetProperty<TModel, T>(T, T, IEqualityComparer<T>, TModel, Action<TModel, T>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<TModel, T>(T, T, System.Collections.Generic.IEqualityComparer<T>, TModel, System.Action<TModel, T>, System.String)
+  nameWithType.vb: ObservableObject.SetProperty(Of TModel, T)(T, T, IEqualityComparer(Of T), TModel, Action(Of TModel, T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of TModel, T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), TModel, System.Action(Of TModel, T), System.String)
+  name.vb: SetProperty(Of TModel, T)(T, T, IEqualityComparer(Of T), TModel, Action(Of TModel, T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+    name: SetProperty<TModel, T>
+    nameWithType: ObservableObject.SetProperty<TModel, T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<TModel, T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+    name: SetProperty(Of TModel, T)
+    nameWithType: ObservableObject.SetProperty(Of TModel, T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of TModel, T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+  isExternal: true
+  name: SetPropertyAndNotifyOnCompletion<T>(ObservableObject.TaskNotifier<T>, Task<T>, String)
+  nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion<T>(ObservableObject.TaskNotifier<T>, Task<T>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion<T>(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier<T>, System.Threading.Tasks.Task<T>, System.String)
+  nameWithType.vb: ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(ObservableObject.TaskNotifier(Of T), Task(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier(Of T), System.Threading.Tasks.Task(Of T), System.String)
+  name.vb: SetPropertyAndNotifyOnCompletion(Of T)(ObservableObject.TaskNotifier(Of T), Task(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+    name: SetPropertyAndNotifyOnCompletion<T>
+    nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion<T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: ObservableObject.TaskNotifier
+    nameWithType: ObservableObject.TaskNotifier
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+    name: SetPropertyAndNotifyOnCompletion(Of T)
+    nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: ObservableObject.TaskNotifier
+    nameWithType: ObservableObject.TaskNotifier
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+  isExternal: true
+  name: SetPropertyAndNotifyOnCompletion<T>(ObservableObject.TaskNotifier<T>, Task<T>, Action<Task<T>>, String)
+  nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion<T>(ObservableObject.TaskNotifier<T>, Task<T>, Action<Task<T>>, String)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion<T>(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier<T>, System.Threading.Tasks.Task<T>, System.Action<System.Threading.Tasks.Task<T>>, System.String)
+  nameWithType.vb: ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(ObservableObject.TaskNotifier(Of T), Task(Of T), Action(Of Task(Of T)), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier(Of T), System.Threading.Tasks.Task(Of T), System.Action(Of System.Threading.Tasks.Task(Of T)), System.String)
+  name.vb: SetPropertyAndNotifyOnCompletion(Of T)(ObservableObject.TaskNotifier(Of T), Task(Of T), Action(Of Task(Of T)), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+    name: SetPropertyAndNotifyOnCompletion<T>
+    nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion<T>
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: ObservableObject.TaskNotifier
+    nameWithType: ObservableObject.TaskNotifier
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+    name: SetPropertyAndNotifyOnCompletion(Of T)
+    nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: ObservableObject.TaskNotifier
+    nameWithType: ObservableObject.TaskNotifier
+    fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputKeybord*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputKeybord
+  name: InputKeybord
+  nameWithType: CalculatorViewModel.InputKeybord
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputKeybord
+- uid: System.Windows.Input.ICommand
+  commentId: T:System.Windows.Input.ICommand
+  parent: System.Windows.Input
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: System.Windows.Input.ICommand
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputOneCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputOneCommand
+  name: InputOneCommand
+  nameWithType: CalculatorViewModel.InputOneCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputOneCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputTwoCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputTwoCommand
+  name: InputTwoCommand
+  nameWithType: CalculatorViewModel.InputTwoCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputTwoCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputThreeCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputThreeCommand
+  name: InputThreeCommand
+  nameWithType: CalculatorViewModel.InputThreeCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputThreeCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFourCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFourCommand
+  name: InputFourCommand
+  nameWithType: CalculatorViewModel.InputFourCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFourCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFiveCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFiveCommand
+  name: InputFiveCommand
+  nameWithType: CalculatorViewModel.InputFiveCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputFiveCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSixCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSixCommand
+  name: InputSixCommand
+  nameWithType: CalculatorViewModel.InputSixCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSixCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSevenCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSevenCommand
+  name: InputSevenCommand
+  nameWithType: CalculatorViewModel.InputSevenCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSevenCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEightCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEightCommand
+  name: InputEightCommand
+  nameWithType: CalculatorViewModel.InputEightCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEightCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputNineCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputNineCommand
+  name: InputNineCommand
+  nameWithType: CalculatorViewModel.InputNineCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputNineCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputZeroCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputZeroCommand
+  name: InputZeroCommand
+  nameWithType: CalculatorViewModel.InputZeroCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputZeroCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDotCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDotCommand
+  name: InputDotCommand
+  nameWithType: CalculatorViewModel.InputDotCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDotCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputAddCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputAddCommand
+  name: InputAddCommand
+  nameWithType: CalculatorViewModel.InputAddCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputAddCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSubstractCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSubstractCommand
+  name: InputSubstractCommand
+  nameWithType: CalculatorViewModel.InputSubstractCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputSubstractCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputMultiplyCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputMultiplyCommand
+  name: InputMultiplyCommand
+  nameWithType: CalculatorViewModel.InputMultiplyCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputMultiplyCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDivideCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDivideCommand
+  name: InputDivideCommand
+  nameWithType: CalculatorViewModel.InputDivideCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputDivideCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEqualCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEqualCommand
+  name: InputEqualCommand
+  nameWithType: CalculatorViewModel.InputEqualCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputEqualCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputUndoCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputUndoCommand
+  name: InputUndoCommand
+  nameWithType: CalculatorViewModel.InputUndoCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputUndoCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputRedoCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputRedoCommand
+  name: InputRedoCommand
+  nameWithType: CalculatorViewModel.InputRedoCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputRedoCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCCommand
+  name: InputCCommand
+  nameWithType: CalculatorViewModel.InputCCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCECommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCECommand
+  name: InputCECommand
+  nameWithType: CalculatorViewModel.InputCECommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputCECommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputBackspaceCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputBackspaceCommand
+  name: InputBackspaceCommand
+  nameWithType: CalculatorViewModel.InputBackspaceCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.InputBackspaceCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.ClearHistoryCommand*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.ClearHistoryCommand
+  name: ClearHistoryCommand
+  nameWithType: CalculatorViewModel.ClearHistoryCommand
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.ClearHistoryCommand
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.DisplayNumber*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.DisplayNumber
+  name: DisplayNumber
+  nameWithType: CalculatorViewModel.DisplayNumber
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.DisplayNumber
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.History*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.History
+  name: History
+  nameWithType: CalculatorViewModel.History
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.History
+- uid: System.Collections.ObjectModel.ReadOnlyObservableCollection{Marimo.WindowsCalculator.Models.CalculationHistoryItem}
+  commentId: T:System.Collections.ObjectModel.ReadOnlyObservableCollection{Marimo.WindowsCalculator.Models.CalculationHistoryItem}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+  name: ReadOnlyObservableCollection<CalculationHistoryItem>
+  nameWithType: ReadOnlyObservableCollection<CalculationHistoryItem>
+  fullName: System.Collections.ObjectModel.ReadOnlyObservableCollection<Marimo.WindowsCalculator.Models.CalculationHistoryItem>
+  nameWithType.vb: ReadOnlyObservableCollection(Of CalculationHistoryItem)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyObservableCollection(Of Marimo.WindowsCalculator.Models.CalculationHistoryItem)
+  name.vb: ReadOnlyObservableCollection(Of CalculationHistoryItem)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+    name: ReadOnlyObservableCollection
+    nameWithType: ReadOnlyObservableCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyObservableCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Marimo.WindowsCalculator.Models.CalculationHistoryItem
+    name: CalculationHistoryItem
+    nameWithType: CalculationHistoryItem
+    fullName: Marimo.WindowsCalculator.Models.CalculationHistoryItem
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+    name: ReadOnlyObservableCollection
+    nameWithType: ReadOnlyObservableCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyObservableCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Marimo.WindowsCalculator.Models.CalculationHistoryItem
+    name: CalculationHistoryItem
+    nameWithType: CalculationHistoryItem
+    fullName: Marimo.WindowsCalculator.Models.CalculationHistoryItem
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+  isExternal: true
+  name: ReadOnlyObservableCollection<T>
+  nameWithType: ReadOnlyObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ReadOnlyObservableCollection<T>
+  nameWithType.vb: ReadOnlyObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyObservableCollection(Of T)
+  name.vb: ReadOnlyObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+    name: ReadOnlyObservableCollection
+    nameWithType: ReadOnlyObservableCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyObservableCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+    name: ReadOnlyObservableCollection
+    nameWithType: ReadOnlyObservableCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyObservableCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Expression*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Expression
+  name: Expression
+  nameWithType: CalculatorViewModel.Expression
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Expression
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Settings*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Settings
+  name: Settings
+  nameWithType: CalculatorViewModel.Settings
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Settings
+- uid: Marimo.WindowsCalculator.Models.PropertySettings
+  commentId: T:Marimo.WindowsCalculator.Models.PropertySettings
+  parent: Marimo.WindowsCalculator.Models
+  name: PropertySettings
+  nameWithType: PropertySettings
+  fullName: Marimo.WindowsCalculator.Models.PropertySettings
+- uid: Marimo.WindowsCalculator.Models
+  commentId: N:Marimo.WindowsCalculator.Models
+  name: Marimo.WindowsCalculator.Models
+  nameWithType: Marimo.WindowsCalculator.Models
+  fullName: Marimo.WindowsCalculator.Models
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Themes*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Themes
+  name: Themes
+  nameWithType: CalculatorViewModel.Themes
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.Themes
+- uid: IEnumerable{Marimo.WindowsCalculator.Models.ApplicationTheme}
+  commentId: '!:IEnumerable{Marimo.WindowsCalculator.Models.ApplicationTheme}'
+  definition: IEnumerable`1
+  name: IEnumerable<ApplicationTheme>
+  nameWithType: IEnumerable<ApplicationTheme>
+  fullName: IEnumerable<Marimo.WindowsCalculator.Models.ApplicationTheme>
+  nameWithType.vb: IEnumerable(Of ApplicationTheme)
+  fullName.vb: IEnumerable(Of Marimo.WindowsCalculator.Models.ApplicationTheme)
+  name.vb: IEnumerable(Of ApplicationTheme)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Marimo.WindowsCalculator.Models.ApplicationTheme
+    name: ApplicationTheme
+    nameWithType: ApplicationTheme
+    fullName: Marimo.WindowsCalculator.Models.ApplicationTheme
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Marimo.WindowsCalculator.Models.ApplicationTheme
+    name: ApplicationTheme
+    nameWithType: ApplicationTheme
+    fullName: Marimo.WindowsCalculator.Models.ApplicationTheme
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  commentId: '!:IEnumerable`1'
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.#ctor*
+  commentId: Overload:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.#ctor
+  name: CalculatorViewModel
+  nameWithType: CalculatorViewModel.CalculatorViewModel
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel.CalculatorViewModel

@@ -1,0 +1,151 @@
+### YamlMime:TableOfContent
+- uid: Marimo.WindowsCalculator.MauiBlazor
+  name: Marimo.WindowsCalculator.MauiBlazor
+  items:
+  - uid: Marimo.WindowsCalculator.MauiBlazor.App
+    name: App
+  - uid: Marimo.WindowsCalculator.MauiBlazor.MainPage
+    name: MainPage
+  - uid: Marimo.WindowsCalculator.MauiBlazor.MauiProgram
+    name: MauiProgram
+- uid: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  name: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  items:
+  - uid: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider
+    name: XamlMetaDataProvider
+- uid: Marimo.WindowsCalculator.MauiBlazor.WinUI
+  name: Marimo.WindowsCalculator.MauiBlazor.WinUI
+  items:
+  - uid: Marimo.WindowsCalculator.MauiBlazor.WinUI.App
+    name: App
+  - uid: Marimo.WindowsCalculator.MauiBlazor.WinUI.Program
+    name: Program
+- uid: Marimo.WindowsCalculator.Models
+  name: Marimo.WindowsCalculator.Models
+  items:
+  - uid: Marimo.WindowsCalculator.Models.ApplicationTheme
+    name: ApplicationTheme
+  - uid: Marimo.WindowsCalculator.Models.CalculationHistoryItem
+    name: CalculationHistoryItem
+  - uid: Marimo.WindowsCalculator.Models.Calculator
+    name: Calculator
+  - uid: Marimo.WindowsCalculator.Models.IncrementalParser
+    name: IncrementalParser
+  - uid: Marimo.WindowsCalculator.Models.InputAction
+    name: InputAction
+  - uid: Marimo.WindowsCalculator.Models.Log4NetExtensions
+    name: Log4NetExtensions
+  - uid: Marimo.WindowsCalculator.Models.ModelBase
+    name: ModelBase
+  - uid: Marimo.WindowsCalculator.Models.PropertySettings
+    name: PropertySettings
+- uid: Marimo.WindowsCalculator.Models.Calculations
+  name: Marimo.WindowsCalculator.Models.Calculations
+  items:
+  - uid: Marimo.WindowsCalculator.Models.Calculations.AddCalculation
+    name: AddCalculation
+  - uid: Marimo.WindowsCalculator.Models.Calculations.Calculation
+    name: Calculation
+  - uid: Marimo.WindowsCalculator.Models.Calculations.DeleteCalculation
+    name: DeleteCalculation
+  - uid: Marimo.WindowsCalculator.Models.Calculations.DivideCalculation
+    name: DivideCalculation
+  - uid: Marimo.WindowsCalculator.Models.Calculations.EqualButtonCalculation
+    name: EqualButtonCalculation
+  - uid: Marimo.WindowsCalculator.Models.Calculations.MultiplyCalculation
+    name: MultiplyCalculation
+  - uid: Marimo.WindowsCalculator.Models.Calculations.NumberCalculation
+    name: NumberCalculation
+  - uid: Marimo.WindowsCalculator.Models.Calculations.OperationCalculation
+    name: OperationCalculation
+  - uid: Marimo.WindowsCalculator.Models.Calculations.SubstractCalculation
+    name: SubstractCalculation
+- uid: Marimo.WindowsCalculator.Models.Tokens
+  name: Marimo.WindowsCalculator.Models.Tokens
+  items:
+  - uid: Marimo.WindowsCalculator.Models.Tokens.NumberToken
+    name: NumberToken
+  - uid: Marimo.WindowsCalculator.Models.Tokens.OperatorToken
+    name: OperatorToken
+  - uid: Marimo.WindowsCalculator.Models.Tokens.OtherToken
+    name: OtherToken
+  - uid: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+    name: OtherTokenKind
+  - uid: Marimo.WindowsCalculator.Models.Tokens.Token
+    name: Token
+- uid: Marimo.WindowsCalculator.Tests.Models
+  name: Marimo.WindowsCalculator.Tests.Models
+  items:
+  - uid: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests
+    name: CalculationHistoryItemTests
+  - uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+    name: CalculatorTests
+  - uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+    name: IncrementalParserTest
+  - uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+    name: PropertySettingsTests
+  - uid: Marimo.WindowsCalculator.Tests.Models.TestBase
+    name: TestBase
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations
+  name: Marimo.WindowsCalculator.Tests.Models.Calculations
+  items:
+  - uid: Marimo.WindowsCalculator.Tests.Models.Calculations.AddCaluclationTests
+    name: AddCaluclationTests
+  - uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+    name: CalculationTests
+  - uid: Marimo.WindowsCalculator.Tests.Models.Calculations.DeleteCalculationTest
+    name: DeleteCalculationTest
+  - uid: Marimo.WindowsCalculator.Tests.Models.Calculations.DivideCaluclationTests
+    name: DivideCaluclationTests
+  - uid: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests
+    name: EqualButtonCalculationTests
+  - uid: Marimo.WindowsCalculator.Tests.Models.Calculations.MultiplyCaluclationTests
+    name: MultiplyCaluclationTests
+  - uid: Marimo.WindowsCalculator.Tests.Models.Calculations.NullCalculationTests
+    name: NullCalculationTests
+  - uid: Marimo.WindowsCalculator.Tests.Models.Calculations.NumberCalculationTest
+    name: NumberCalculationTest
+  - uid: Marimo.WindowsCalculator.Tests.Models.Calculations.OperationCalculationTests
+    name: OperationCalculationTests
+  - uid: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests
+    name: SupstractCaluclationTests
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens
+  name: Marimo.WindowsCalculator.Tests.Models.Tokens
+  items:
+  - uid: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests
+    name: NumberTokenTests
+- uid: Marimo.WindowsCalculator.Tests.ViewModels
+  name: Marimo.WindowsCalculator.Tests.ViewModels
+  items:
+  - uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+    name: CaluculatorViewModelTests
+- uid: Marimo.WindowsCalculator.ViewModels
+  name: Marimo.WindowsCalculator.ViewModels
+  items:
+  - uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+    name: CalculatorViewModel
+- uid: Marimo.WindowsCalculator.WinUI3
+  name: Marimo.WindowsCalculator.WinUI3
+  items:
+  - uid: Marimo.WindowsCalculator.WinUI3.App
+    name: App
+  - uid: Marimo.WindowsCalculator.WinUI3.KeyPress
+    name: KeyPress
+  - uid: Marimo.WindowsCalculator.WinUI3.MainWindow
+    name: MainWindow
+  - uid: Marimo.WindowsCalculator.WinUI3.Program
+    name: Program
+- uid: Marimo.WindowsCalculator.WinUI3.Controls
+  name: Marimo.WindowsCalculator.WinUI3.Controls
+  items:
+  - uid: Marimo.WindowsCalculator.WinUI3.Controls.CalculatorButton
+    name: CalculatorButton
+  - uid: Marimo.WindowsCalculator.WinUI3.Controls.HistoryListBox
+    name: HistoryListBox
+- uid: Marimo.WindowsCalculator.WinUI3.Converters
+  name: Marimo.WindowsCalculator.WinUI3.Converters
+  items:
+  - uid: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter
+    name: BoolToVisibilityConverter
+  - uid: Marimo.WindowsCalculator.WinUI3.Converters.ThemesConverter
+    name: ThemesConverter

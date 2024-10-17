@@ -1,0 +1,1386 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  commentId: T:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  id: CaluculatorViewModelTests
+  parent: Marimo.WindowsCalculator.Tests.ViewModels
+  children:
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputBackspaceCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCECommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputDivideCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEightCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEqualCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFiveCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFourCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMinusCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMultiplyCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputNineCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputOneCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputPlusCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputRedoCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSevenCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSixCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputThreeCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputTwoCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputUndoCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputZeroCommandが反応します
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.演算子を入れ替えても結果がエラーにはなりません
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式が表示されています
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式の変更は通知されます
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.初期状態で設定は取得できます
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値が表示されています
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値はカンマ区切りで表示されます
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が削除できます
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が取得できます
+  - Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴の削除は削除する履歴が残っているときに有効です
+  langs:
+  - csharp
+  - vb
+  name: CaluculatorViewModelTests
+  nameWithType: CaluculatorViewModelTests
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  type: Class
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: CaluculatorViewModelTests
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 6
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public class CaluculatorViewModelTests
+    content.vb: Public Class CaluculatorViewModelTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.初期状態で設定は取得できます
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.初期状態で設定は取得できます
+  id: 初期状態で設定は取得できます
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: 初期状態で設定は取得できます()
+  nameWithType: CaluculatorViewModelTests.初期状態で設定は取得できます()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.初期状態で設定は取得できます()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 初期状態で設定は取得できます
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 10
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void 初期状態で設定は取得できます()
+    content.vb: Public Sub 初期状態で設定は取得できます
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.初期状態で設定は取得できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値が表示されています
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値が表示されています
+  id: 入力した数値が表示されています
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: 入力した数値が表示されています()
+  nameWithType: CaluculatorViewModelTests.入力した数値が表示されています()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値が表示されています()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 入力した数値が表示されています
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 16
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void 入力した数値が表示されています()
+    content.vb: Public Sub 入力した数値が表示されています
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値が表示されています*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値はカンマ区切りで表示されます
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値はカンマ区切りで表示されます
+  id: 入力した数値はカンマ区切りで表示されます
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: 入力した数値はカンマ区切りで表示されます()
+  nameWithType: CaluculatorViewModelTests.入力した数値はカンマ区切りで表示されます()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値はカンマ区切りで表示されます()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 入力した数値はカンマ区切りで表示されます
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 25
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void 入力した数値はカンマ区切りで表示されます()
+    content.vb: Public Sub 入力した数値はカンマ区切りで表示されます
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値はカンマ区切りで表示されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式が表示されています
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式が表示されています
+  id: 計算式が表示されています
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: 計算式が表示されています()
+  nameWithType: CaluculatorViewModelTests.計算式が表示されています()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式が表示されています()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 計算式が表示されています
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 40
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void 計算式が表示されています()
+    content.vb: Public Sub 計算式が表示されています
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式が表示されています*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式の変更は通知されます
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式の変更は通知されます
+  id: 計算式の変更は通知されます
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: 計算式の変更は通知されます()
+  nameWithType: CaluculatorViewModelTests.計算式の変更は通知されます()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式の変更は通知されます()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 計算式の変更は通知されます
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 51
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void 計算式の変更は通知されます()
+    content.vb: Public Sub 計算式の変更は通知されます
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式の変更は通知されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が取得できます
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が取得できます
+  id: 履歴が取得できます
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: 履歴が取得できます()
+  nameWithType: CaluculatorViewModelTests.履歴が取得できます()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が取得できます()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 履歴が取得できます
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 68
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void 履歴が取得できます()
+    content.vb: Public Sub 履歴が取得できます
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が取得できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が削除できます
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が削除できます
+  id: 履歴が削除できます
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: 履歴が削除できます()
+  nameWithType: CaluculatorViewModelTests.履歴が削除できます()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が削除できます()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 履歴が削除できます
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 89
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void 履歴が削除できます()
+    content.vb: Public Sub 履歴が削除できます
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が削除できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴の削除は削除する履歴が残っているときに有効です
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴の削除は削除する履歴が残っているときに有効です
+  id: 履歴の削除は削除する履歴が残っているときに有効です
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: 履歴の削除は削除する履歴が残っているときに有効です()
+  nameWithType: CaluculatorViewModelTests.履歴の削除は削除する履歴が残っているときに有効です()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴の削除は削除する履歴が残っているときに有効です()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 履歴の削除は削除する履歴が残っているときに有効です
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 104
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void 履歴の削除は削除する履歴が残っているときに有効です()
+    content.vb: Public Sub 履歴の削除は削除する履歴が残っているときに有効です
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴の削除は削除する履歴が残っているときに有効です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputOneCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputOneCommandが反応します
+  id: InputOneCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputOneCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputOneCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputOneCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputOneCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 123
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputOneCommandが反応します()
+    content.vb: Public Sub InputOneCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputOneCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputTwoCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputTwoCommandが反応します
+  id: InputTwoCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputTwoCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputTwoCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputTwoCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputTwoCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 131
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputTwoCommandが反応します()
+    content.vb: Public Sub InputTwoCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputTwoCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputThreeCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputThreeCommandが反応します
+  id: InputThreeCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputThreeCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputThreeCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputThreeCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputThreeCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 139
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputThreeCommandが反応します()
+    content.vb: Public Sub InputThreeCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputThreeCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFourCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFourCommandが反応します
+  id: InputFourCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputFourCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputFourCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFourCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputFourCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 147
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputFourCommandが反応します()
+    content.vb: Public Sub InputFourCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFourCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFiveCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFiveCommandが反応します
+  id: InputFiveCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputFiveCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputFiveCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFiveCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputFiveCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 155
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputFiveCommandが反応します()
+    content.vb: Public Sub InputFiveCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFiveCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSixCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSixCommandが反応します
+  id: InputSixCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputSixCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputSixCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSixCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputSixCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 163
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputSixCommandが反応します()
+    content.vb: Public Sub InputSixCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSixCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSevenCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSevenCommandが反応します
+  id: InputSevenCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputSevenCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputSevenCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSevenCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputSevenCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 171
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputSevenCommandが反応します()
+    content.vb: Public Sub InputSevenCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSevenCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEightCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEightCommandが反応します
+  id: InputEightCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputEightCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputEightCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEightCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputEightCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 179
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputEightCommandが反応します()
+    content.vb: Public Sub InputEightCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEightCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputNineCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputNineCommandが反応します
+  id: InputNineCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputNineCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputNineCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputNineCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputNineCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 187
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputNineCommandが反応します()
+    content.vb: Public Sub InputNineCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputNineCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputZeroCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputZeroCommandが反応します
+  id: InputZeroCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputZeroCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputZeroCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputZeroCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputZeroCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 195
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputZeroCommandが反応します()
+    content.vb: Public Sub InputZeroCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputZeroCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputPlusCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputPlusCommandが反応します
+  id: InputPlusCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputPlusCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputPlusCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputPlusCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputPlusCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 203
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputPlusCommandが反応します()
+    content.vb: Public Sub InputPlusCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputPlusCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMinusCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMinusCommandが反応します
+  id: InputMinusCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputMinusCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputMinusCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMinusCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputMinusCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 211
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputMinusCommandが反応します()
+    content.vb: Public Sub InputMinusCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMinusCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMultiplyCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMultiplyCommandが反応します
+  id: InputMultiplyCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputMultiplyCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputMultiplyCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMultiplyCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputMultiplyCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 219
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputMultiplyCommandが反応します()
+    content.vb: Public Sub InputMultiplyCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMultiplyCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputDivideCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputDivideCommandが反応します
+  id: InputDivideCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputDivideCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputDivideCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputDivideCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputDivideCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 227
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputDivideCommandが反応します()
+    content.vb: Public Sub InputDivideCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputDivideCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEqualCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEqualCommandが反応します
+  id: InputEqualCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputEqualCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputEqualCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEqualCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputEqualCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 235
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputEqualCommandが反応します()
+    content.vb: Public Sub InputEqualCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEqualCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.演算子を入れ替えても結果がエラーにはなりません
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.演算子を入れ替えても結果がエラーにはなりません
+  id: 演算子を入れ替えても結果がエラーにはなりません
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: 演算子を入れ替えても結果がエラーにはなりません()
+  nameWithType: CaluculatorViewModelTests.演算子を入れ替えても結果がエラーにはなりません()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.演算子を入れ替えても結果がエラーにはなりません()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 演算子を入れ替えても結果がエラーにはなりません
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 245
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void 演算子を入れ替えても結果がエラーにはなりません()
+    content.vb: Public Sub 演算子を入れ替えても結果がエラーにはなりません
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.演算子を入れ替えても結果がエラーにはなりません*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputUndoCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputUndoCommandが反応します
+  id: InputUndoCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputUndoCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputUndoCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputUndoCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputUndoCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 256
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputUndoCommandが反応します()
+    content.vb: Public Sub InputUndoCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputUndoCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputRedoCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputRedoCommandが反応します
+  id: InputRedoCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputRedoCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputRedoCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputRedoCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputRedoCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 270
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputRedoCommandが反応します()
+    content.vb: Public Sub InputRedoCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputRedoCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCCommandが反応します
+  id: InputCCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputCCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputCCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputCCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 285
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputCCommandが反応します()
+    content.vb: Public Sub InputCCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCECommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCECommandが反応します
+  id: InputCECommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputCECommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputCECommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCECommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputCECommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 300
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputCECommandが反応します()
+    content.vb: Public Sub InputCECommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCECommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputBackspaceCommandが反応します
+  commentId: M:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputBackspaceCommandが反応します
+  id: InputBackspaceCommandが反応します
+  parent: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests
+  langs:
+  - csharp
+  - vb
+  name: InputBackspaceCommandが反応します()
+  nameWithType: CaluculatorViewModelTests.InputBackspaceCommandが反応します()
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputBackspaceCommandが反応します()
+  type: Method
+  source:
+    remote:
+      path: ViewModelsTests/CaluculatorViewModelTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputBackspaceCommandが反応します
+    path: ViewModelsTests/CaluculatorViewModelTests.cs
+    startLine: 314
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.ViewModels
+  namespace: Marimo.WindowsCalculator.Tests.ViewModels
+  syntax:
+    content: public void InputBackspaceCommandが反応します()
+    content.vb: Public Sub InputBackspaceCommandが反応します
+  overload: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputBackspaceCommandが反応します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Marimo.WindowsCalculator.Tests.ViewModels
+  commentId: N:Marimo.WindowsCalculator.Tests.ViewModels
+  name: Marimo.WindowsCalculator.Tests.ViewModels
+  nameWithType: Marimo.WindowsCalculator.Tests.ViewModels
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.初期状態で設定は取得できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.初期状態で設定は取得できます
+  name: 初期状態で設定は取得できます
+  nameWithType: CaluculatorViewModelTests.初期状態で設定は取得できます
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.初期状態で設定は取得できます
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値が表示されています*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値が表示されています
+  name: 入力した数値が表示されています
+  nameWithType: CaluculatorViewModelTests.入力した数値が表示されています
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値が表示されています
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値はカンマ区切りで表示されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値はカンマ区切りで表示されます
+  name: 入力した数値はカンマ区切りで表示されます
+  nameWithType: CaluculatorViewModelTests.入力した数値はカンマ区切りで表示されます
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.入力した数値はカンマ区切りで表示されます
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式が表示されています*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式が表示されています
+  name: 計算式が表示されています
+  nameWithType: CaluculatorViewModelTests.計算式が表示されています
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式が表示されています
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式の変更は通知されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式の変更は通知されます
+  name: 計算式の変更は通知されます
+  nameWithType: CaluculatorViewModelTests.計算式の変更は通知されます
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.計算式の変更は通知されます
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が取得できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が取得できます
+  name: 履歴が取得できます
+  nameWithType: CaluculatorViewModelTests.履歴が取得できます
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が取得できます
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が削除できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が削除できます
+  name: 履歴が削除できます
+  nameWithType: CaluculatorViewModelTests.履歴が削除できます
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴が削除できます
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴の削除は削除する履歴が残っているときに有効です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴の削除は削除する履歴が残っているときに有効です
+  name: 履歴の削除は削除する履歴が残っているときに有効です
+  nameWithType: CaluculatorViewModelTests.履歴の削除は削除する履歴が残っているときに有効です
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.履歴の削除は削除する履歴が残っているときに有効です
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputOneCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputOneCommandが反応します
+  name: InputOneCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputOneCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputOneCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputTwoCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputTwoCommandが反応します
+  name: InputTwoCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputTwoCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputTwoCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputThreeCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputThreeCommandが反応します
+  name: InputThreeCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputThreeCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputThreeCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFourCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFourCommandが反応します
+  name: InputFourCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputFourCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFourCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFiveCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFiveCommandが反応します
+  name: InputFiveCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputFiveCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputFiveCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSixCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSixCommandが反応します
+  name: InputSixCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputSixCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSixCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSevenCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSevenCommandが反応します
+  name: InputSevenCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputSevenCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputSevenCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEightCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEightCommandが反応します
+  name: InputEightCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputEightCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEightCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputNineCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputNineCommandが反応します
+  name: InputNineCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputNineCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputNineCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputZeroCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputZeroCommandが反応します
+  name: InputZeroCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputZeroCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputZeroCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputPlusCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputPlusCommandが反応します
+  name: InputPlusCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputPlusCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputPlusCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMinusCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMinusCommandが反応します
+  name: InputMinusCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputMinusCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMinusCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMultiplyCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMultiplyCommandが反応します
+  name: InputMultiplyCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputMultiplyCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputMultiplyCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputDivideCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputDivideCommandが反応します
+  name: InputDivideCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputDivideCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputDivideCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEqualCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEqualCommandが反応します
+  name: InputEqualCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputEqualCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputEqualCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.演算子を入れ替えても結果がエラーにはなりません*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.演算子を入れ替えても結果がエラーにはなりません
+  name: 演算子を入れ替えても結果がエラーにはなりません
+  nameWithType: CaluculatorViewModelTests.演算子を入れ替えても結果がエラーにはなりません
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.演算子を入れ替えても結果がエラーにはなりません
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputUndoCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputUndoCommandが反応します
+  name: InputUndoCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputUndoCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputUndoCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputRedoCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputRedoCommandが反応します
+  name: InputRedoCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputRedoCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputRedoCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCCommandが反応します
+  name: InputCCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputCCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCCommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCECommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCECommandが反応します
+  name: InputCECommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputCECommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputCECommandが反応します
+- uid: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputBackspaceCommandが反応します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputBackspaceCommandが反応します
+  name: InputBackspaceCommandが反応します
+  nameWithType: CaluculatorViewModelTests.InputBackspaceCommandが反応します
+  fullName: Marimo.WindowsCalculator.Tests.ViewModels.CaluculatorViewModelTests.InputBackspaceCommandが反応します

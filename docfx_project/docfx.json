@@ -1,0 +1,11 @@
+"metadata": [
+  {
+    "src": [
+      {
+        "files": [ "*.sln" ],
+        "cwd": "."
+      }
+    ],
+    "dest": "api"
+  }
+]

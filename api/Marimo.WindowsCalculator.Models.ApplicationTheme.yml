@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Models.ApplicationTheme
+  commentId: T:Marimo.WindowsCalculator.Models.ApplicationTheme
+  id: ApplicationTheme
+  parent: Marimo.WindowsCalculator.Models
+  children:
+  - Marimo.WindowsCalculator.Models.ApplicationTheme.Dark
+  - Marimo.WindowsCalculator.Models.ApplicationTheme.Light
+  - Marimo.WindowsCalculator.Models.ApplicationTheme.System
+  langs:
+  - csharp
+  - vb
+  name: ApplicationTheme
+  nameWithType: ApplicationTheme
+  fullName: Marimo.WindowsCalculator.Models.ApplicationTheme
+  type: Enum
+  source:
+    remote:
+      path: Models/ApplicationTheme.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: ApplicationTheme
+    path: Models/ApplicationTheme.cs
+    startLine: 5
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\nアプリケーションの表示テーマを表します。\n"
+  example: []
+  syntax:
+    content: public enum ApplicationTheme
+    content.vb: Public Enum ApplicationTheme
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Marimo.WindowsCalculator.Models.ApplicationTheme.Light
+  commentId: F:Marimo.WindowsCalculator.Models.ApplicationTheme.Light
+  id: Light
+  parent: Marimo.WindowsCalculator.Models.ApplicationTheme
+  langs:
+  - csharp
+  - vb
+  name: Light
+  nameWithType: ApplicationTheme.Light
+  fullName: Marimo.WindowsCalculator.Models.ApplicationTheme.Light
+  type: Field
+  source:
+    remote:
+      path: Models/ApplicationTheme.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Light
+    path: Models/ApplicationTheme.cs
+    startLine: 10
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\nライトです。\n"
+  example: []
+  syntax:
+    content: Light = 0
+    return:
+      type: Marimo.WindowsCalculator.Models.ApplicationTheme
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.ApplicationTheme.Dark
+  commentId: F:Marimo.WindowsCalculator.Models.ApplicationTheme.Dark
+  id: Dark
+  parent: Marimo.WindowsCalculator.Models.ApplicationTheme
+  langs:
+  - csharp
+  - vb
+  name: Dark
+  nameWithType: ApplicationTheme.Dark
+  fullName: Marimo.WindowsCalculator.Models.ApplicationTheme.Dark
+  type: Field
+  source:
+    remote:
+      path: Models/ApplicationTheme.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Dark
+    path: Models/ApplicationTheme.cs
+    startLine: 15
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\nダークです。\n"
+  example: []
+  syntax:
+    content: Dark = 1
+    return:
+      type: Marimo.WindowsCalculator.Models.ApplicationTheme
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.ApplicationTheme.System
+  commentId: F:Marimo.WindowsCalculator.Models.ApplicationTheme.System
+  id: System
+  parent: Marimo.WindowsCalculator.Models.ApplicationTheme
+  langs:
+  - csharp
+  - vb
+  name: System
+  nameWithType: ApplicationTheme.System
+  fullName: Marimo.WindowsCalculator.Models.ApplicationTheme.System
+  type: Field
+  source:
+    remote:
+      path: Models/ApplicationTheme.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: System
+    path: Models/ApplicationTheme.cs
+    startLine: 20
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\nシステムの状態に合わせます。\n"
+  example: []
+  syntax:
+    content: System = 2
+    return:
+      type: Marimo.WindowsCalculator.Models.ApplicationTheme
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Marimo.WindowsCalculator.Models
+  commentId: N:Marimo.WindowsCalculator.Models
+  name: Marimo.WindowsCalculator.Models
+  nameWithType: Marimo.WindowsCalculator.Models
+  fullName: Marimo.WindowsCalculator.Models
+- uid: Marimo.WindowsCalculator.Models.ApplicationTheme
+  commentId: T:Marimo.WindowsCalculator.Models.ApplicationTheme
+  parent: Marimo.WindowsCalculator.Models
+  name: ApplicationTheme
+  nameWithType: ApplicationTheme
+  fullName: Marimo.WindowsCalculator.Models.ApplicationTheme

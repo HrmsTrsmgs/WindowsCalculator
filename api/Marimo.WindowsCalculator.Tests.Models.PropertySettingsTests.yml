@@ -1,0 +1,1746 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  id: PropertySettingsTests
+  parent: Marimo.WindowsCalculator.Tests.Models
+  children:
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.#ctor
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextの初期値はバックスペース記号です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextの初期値はCです
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextの初期値は割る記号です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextの初期値は割る記号です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextの初期値は小数点です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextの初期値は8です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextの初期値はイコール記号です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextの初期値は5です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextの初期値は4です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextの初期値はマイナスです
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextの初期値は掛ける記号です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextの初期値は9です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextの初期値は1です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextの初期値はプラスです
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextの初期値は7です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextの初期値は6です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextの初期値は4です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextの初期値は2です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextは変更されたことを通知します
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextの初期値は0です
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextは変更されたことを通知します
+  langs:
+  - csharp
+  - vb
+  name: PropertySettingsTests
+  nameWithType: PropertySettingsTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  type: Class
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: PropertySettingsTests
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 4
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public class PropertySettingsTests
+    content.vb: Public Class PropertySettingsTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.#ctor
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.#ctor
+  id: '#ctor'
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: PropertySettingsTests()
+  nameWithType: PropertySettingsTests.PropertySettingsTests()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PropertySettingsTests()
+  type: Constructor
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: .ctor
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 9
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public PropertySettingsTests()
+    content.vb: Public Sub New
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextの初期値は1です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextの初期値は1です
+  id: OneDisplayTextの初期値は1です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: OneDisplayTextの初期値は1です()
+  nameWithType: PropertySettingsTests.OneDisplayTextの初期値は1です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextの初期値は1です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: OneDisplayTextの初期値は1です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 14
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void OneDisplayTextの初期値は1です()
+    content.vb: Public Sub OneDisplayTextの初期値は1です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextの初期値は1です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextは変更されたことを通知します
+  id: OneDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: OneDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.OneDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: OneDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 20
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void OneDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub OneDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextの初期値は2です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextの初期値は2です
+  id: TwoDisplayTextの初期値は2です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: TwoDisplayTextの初期値は2です()
+  nameWithType: PropertySettingsTests.TwoDisplayTextの初期値は2です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextの初期値は2です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: TwoDisplayTextの初期値は2です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 27
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void TwoDisplayTextの初期値は2です()
+    content.vb: Public Sub TwoDisplayTextの初期値は2です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextの初期値は2です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextは変更されたことを通知します
+  id: TwoDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: TwoDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.TwoDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: TwoDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 33
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void TwoDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub TwoDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextの初期値は4です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextの初期値は4です
+  id: ThreeDisplayTextの初期値は4です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: ThreeDisplayTextの初期値は4です()
+  nameWithType: PropertySettingsTests.ThreeDisplayTextの初期値は4です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextの初期値は4です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: ThreeDisplayTextの初期値は4です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 40
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void ThreeDisplayTextの初期値は4です()
+    content.vb: Public Sub ThreeDisplayTextの初期値は4です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextの初期値は4です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextは変更されたことを通知します
+  id: ThreeDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: ThreeDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.ThreeDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: ThreeDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 46
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void ThreeDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub ThreeDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextの初期値は4です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextの初期値は4です
+  id: FourDisplayTextの初期値は4です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: FourDisplayTextの初期値は4です()
+  nameWithType: PropertySettingsTests.FourDisplayTextの初期値は4です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextの初期値は4です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: FourDisplayTextの初期値は4です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 53
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void FourDisplayTextの初期値は4です()
+    content.vb: Public Sub FourDisplayTextの初期値は4です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextの初期値は4です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextは変更されたことを通知します
+  id: FourDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: FourDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.FourDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: FourDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 59
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void FourDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub FourDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextの初期値は5です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextの初期値は5です
+  id: FiveDisplayTextの初期値は5です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: FiveDisplayTextの初期値は5です()
+  nameWithType: PropertySettingsTests.FiveDisplayTextの初期値は5です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextの初期値は5です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: FiveDisplayTextの初期値は5です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 66
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void FiveDisplayTextの初期値は5です()
+    content.vb: Public Sub FiveDisplayTextの初期値は5です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextの初期値は5です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextは変更されたことを通知します
+  id: FiveDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: FiveDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.FiveDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: FiveDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 72
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void FiveDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub FiveDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextの初期値は6です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextの初期値は6です
+  id: SixDisplayTextの初期値は6です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: SixDisplayTextの初期値は6です()
+  nameWithType: PropertySettingsTests.SixDisplayTextの初期値は6です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextの初期値は6です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: SixDisplayTextの初期値は6です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 79
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void SixDisplayTextの初期値は6です()
+    content.vb: Public Sub SixDisplayTextの初期値は6です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextの初期値は6です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextは変更されたことを通知します
+  id: SixDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: SixDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.SixDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: SixDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 85
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void SixDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub SixDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextの初期値は7です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextの初期値は7です
+  id: SevenDisplayTextの初期値は7です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: SevenDisplayTextの初期値は7です()
+  nameWithType: PropertySettingsTests.SevenDisplayTextの初期値は7です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextの初期値は7です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: SevenDisplayTextの初期値は7です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 92
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void SevenDisplayTextの初期値は7です()
+    content.vb: Public Sub SevenDisplayTextの初期値は7です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextの初期値は7です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextは変更されたことを通知します
+  id: SevenDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: SevenDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.SevenDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: SevenDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 98
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void SevenDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub SevenDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextの初期値は8です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextの初期値は8です
+  id: EightDisplayTextの初期値は8です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: EightDisplayTextの初期値は8です()
+  nameWithType: PropertySettingsTests.EightDisplayTextの初期値は8です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextの初期値は8です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: EightDisplayTextの初期値は8です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 105
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void EightDisplayTextの初期値は8です()
+    content.vb: Public Sub EightDisplayTextの初期値は8です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextの初期値は8です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextは変更されたことを通知します
+  id: EightDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: EightDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.EightDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: EightDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 111
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void EightDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub EightDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextの初期値は9です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextの初期値は9です
+  id: NineDisplayTextの初期値は9です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: NineDisplayTextの初期値は9です()
+  nameWithType: PropertySettingsTests.NineDisplayTextの初期値は9です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextの初期値は9です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: NineDisplayTextの初期値は9です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 118
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void NineDisplayTextの初期値は9です()
+    content.vb: Public Sub NineDisplayTextの初期値は9です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextの初期値は9です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextは変更されたことを通知します
+  id: NineDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: NineDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.NineDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: NineDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 124
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void NineDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub NineDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextの初期値は0です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextの初期値は0です
+  id: ZeroDisplayTextの初期値は0です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: ZeroDisplayTextの初期値は0です()
+  nameWithType: PropertySettingsTests.ZeroDisplayTextの初期値は0です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextの初期値は0です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: ZeroDisplayTextの初期値は0です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 131
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void ZeroDisplayTextの初期値は0です()
+    content.vb: Public Sub ZeroDisplayTextの初期値は0です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextの初期値は0です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextは変更されたことを通知します
+  id: ZeroDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: ZeroDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.ZeroDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: ZeroDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 137
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void ZeroDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub ZeroDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextの初期値は小数点です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextの初期値は小数点です
+  id: DotDisplayTextの初期値は小数点です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: DotDisplayTextの初期値は小数点です()
+  nameWithType: PropertySettingsTests.DotDisplayTextの初期値は小数点です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextの初期値は小数点です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: DotDisplayTextの初期値は小数点です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 144
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void DotDisplayTextの初期値は小数点です()
+    content.vb: Public Sub DotDisplayTextの初期値は小数点です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextの初期値は小数点です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextは変更されたことを通知します
+  id: DotDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: DotDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.DotDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: DotDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 150
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void DotDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub DotDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextの初期値はプラスです
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextの初期値はプラスです
+  id: PlusDisplayTextの初期値はプラスです
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: PlusDisplayTextの初期値はプラスです()
+  nameWithType: PropertySettingsTests.PlusDisplayTextの初期値はプラスです()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextの初期値はプラスです()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: PlusDisplayTextの初期値はプラスです
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 157
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void PlusDisplayTextの初期値はプラスです()
+    content.vb: Public Sub PlusDisplayTextの初期値はプラスです
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextの初期値はプラスです*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextは変更されたことを通知します
+  id: PlusDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: PlusDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.PlusDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: PlusDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 163
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void PlusDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub PlusDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextの初期値はマイナスです
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextの初期値はマイナスです
+  id: MinusDisplayTextの初期値はマイナスです
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: MinusDisplayTextの初期値はマイナスです()
+  nameWithType: PropertySettingsTests.MinusDisplayTextの初期値はマイナスです()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextの初期値はマイナスです()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: MinusDisplayTextの初期値はマイナスです
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 170
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void MinusDisplayTextの初期値はマイナスです()
+    content.vb: Public Sub MinusDisplayTextの初期値はマイナスです
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextの初期値はマイナスです*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextは変更されたことを通知します
+  id: MinusDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: MinusDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.MinusDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: MinusDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 176
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void MinusDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub MinusDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextの初期値は掛ける記号です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextの初期値は掛ける記号です
+  id: MultiplyDisplayTextの初期値は掛ける記号です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: MultiplyDisplayTextの初期値は掛ける記号です()
+  nameWithType: PropertySettingsTests.MultiplyDisplayTextの初期値は掛ける記号です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextの初期値は掛ける記号です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: MultiplyDisplayTextの初期値は掛ける記号です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 183
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void MultiplyDisplayTextの初期値は掛ける記号です()
+    content.vb: Public Sub MultiplyDisplayTextの初期値は掛ける記号です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextの初期値は掛ける記号です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextは変更されたことを通知します
+  id: MultiplyDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: MultiplyDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.MultiplyDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: MultiplyDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 189
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void MultiplyDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub MultiplyDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextの初期値は割る記号です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextの初期値は割る記号です
+  id: DivideDisplayTextの初期値は割る記号です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: DivideDisplayTextの初期値は割る記号です()
+  nameWithType: PropertySettingsTests.DivideDisplayTextの初期値は割る記号です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextの初期値は割る記号です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: DivideDisplayTextの初期値は割る記号です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 196
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void DivideDisplayTextの初期値は割る記号です()
+    content.vb: Public Sub DivideDisplayTextの初期値は割る記号です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextの初期値は割る記号です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextは変更されたことを通知します
+  id: DivideDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: DivideDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.DivideDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: DivideDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 202
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void DivideDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub DivideDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextの初期値はイコール記号です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextの初期値はイコール記号です
+  id: EqualDisplayTextの初期値はイコール記号です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: EqualDisplayTextの初期値はイコール記号です()
+  nameWithType: PropertySettingsTests.EqualDisplayTextの初期値はイコール記号です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextの初期値はイコール記号です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: EqualDisplayTextの初期値はイコール記号です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 209
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void EqualDisplayTextの初期値はイコール記号です()
+    content.vb: Public Sub EqualDisplayTextの初期値はイコール記号です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextの初期値はイコール記号です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextは変更されたことを通知します
+  id: EqualDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: EqualDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.EqualDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: EqualDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 215
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void EqualDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub EqualDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextの初期値はCです
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextの初期値はCです
+  id: CDisplayTextの初期値はCです
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: CDisplayTextの初期値はCです()
+  nameWithType: PropertySettingsTests.CDisplayTextの初期値はCです()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextの初期値はCです()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: CDisplayTextの初期値はCです
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 222
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void CDisplayTextの初期値はCです()
+    content.vb: Public Sub CDisplayTextの初期値はCです
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextの初期値はCです*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextは変更されたことを通知します
+  id: CDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: CDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.CDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: CDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 228
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void CDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub CDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextの初期値は割る記号です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextの初期値は割る記号です
+  id: CEDisplayTextの初期値は割る記号です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: CEDisplayTextの初期値は割る記号です()
+  nameWithType: PropertySettingsTests.CEDisplayTextの初期値は割る記号です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextの初期値は割る記号です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: CEDisplayTextの初期値は割る記号です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 235
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void CEDisplayTextの初期値は割る記号です()
+    content.vb: Public Sub CEDisplayTextの初期値は割る記号です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextの初期値は割る記号です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextは変更されたことを通知します
+  id: CEDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: CEDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.CEDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: CEDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 241
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void CEDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub CEDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextの初期値はバックスペース記号です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextの初期値はバックスペース記号です
+  id: BackspaceDisplayTextの初期値はバックスペース記号です
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: BackspaceDisplayTextの初期値はバックスペース記号です()
+  nameWithType: PropertySettingsTests.BackspaceDisplayTextの初期値はバックスペース記号です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextの初期値はバックスペース記号です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: BackspaceDisplayTextの初期値はバックスペース記号です
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 248
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void BackspaceDisplayTextの初期値はバックスペース記号です()
+    content.vb: Public Sub BackspaceDisplayTextの初期値はバックスペース記号です
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextの初期値はバックスペース記号です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextは変更されたことを通知します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextは変更されたことを通知します
+  id: BackspaceDisplayTextは変更されたことを通知します
+  parent: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  langs:
+  - csharp
+  - vb
+  name: BackspaceDisplayTextは変更されたことを通知します()
+  nameWithType: PropertySettingsTests.BackspaceDisplayTextは変更されたことを通知します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextは変更されたことを通知します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/PropertySettingsTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: BackspaceDisplayTextは変更されたことを通知します
+    path: ModelsTests/PropertySettingsTests.cs
+    startLine: 254
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void BackspaceDisplayTextは変更されたことを通知します()
+    content.vb: Public Sub BackspaceDisplayTextは変更されたことを通知します
+  overload: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextは変更されたことを通知します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Marimo.WindowsCalculator.Tests.Models
+  commentId: N:Marimo.WindowsCalculator.Tests.Models
+  name: Marimo.WindowsCalculator.Tests.Models
+  nameWithType: Marimo.WindowsCalculator.Tests.Models
+  fullName: Marimo.WindowsCalculator.Tests.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.#ctor*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.#ctor
+  name: PropertySettingsTests
+  nameWithType: PropertySettingsTests.PropertySettingsTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PropertySettingsTests
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextの初期値は1です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextの初期値は1です
+  name: OneDisplayTextの初期値は1です
+  nameWithType: PropertySettingsTests.OneDisplayTextの初期値は1です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextの初期値は1です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextは変更されたことを通知します
+  name: OneDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.OneDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.OneDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextの初期値は2です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextの初期値は2です
+  name: TwoDisplayTextの初期値は2です
+  nameWithType: PropertySettingsTests.TwoDisplayTextの初期値は2です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextの初期値は2です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextは変更されたことを通知します
+  name: TwoDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.TwoDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.TwoDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextの初期値は4です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextの初期値は4です
+  name: ThreeDisplayTextの初期値は4です
+  nameWithType: PropertySettingsTests.ThreeDisplayTextの初期値は4です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextの初期値は4です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextは変更されたことを通知します
+  name: ThreeDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.ThreeDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ThreeDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextの初期値は4です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextの初期値は4です
+  name: FourDisplayTextの初期値は4です
+  nameWithType: PropertySettingsTests.FourDisplayTextの初期値は4です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextの初期値は4です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextは変更されたことを通知します
+  name: FourDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.FourDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FourDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextの初期値は5です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextの初期値は5です
+  name: FiveDisplayTextの初期値は5です
+  nameWithType: PropertySettingsTests.FiveDisplayTextの初期値は5です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextの初期値は5です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextは変更されたことを通知します
+  name: FiveDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.FiveDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.FiveDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextの初期値は6です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextの初期値は6です
+  name: SixDisplayTextの初期値は6です
+  nameWithType: PropertySettingsTests.SixDisplayTextの初期値は6です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextの初期値は6です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextは変更されたことを通知します
+  name: SixDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.SixDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SixDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextの初期値は7です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextの初期値は7です
+  name: SevenDisplayTextの初期値は7です
+  nameWithType: PropertySettingsTests.SevenDisplayTextの初期値は7です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextの初期値は7です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextは変更されたことを通知します
+  name: SevenDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.SevenDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.SevenDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextの初期値は8です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextの初期値は8です
+  name: EightDisplayTextの初期値は8です
+  nameWithType: PropertySettingsTests.EightDisplayTextの初期値は8です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextの初期値は8です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextは変更されたことを通知します
+  name: EightDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.EightDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EightDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextの初期値は9です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextの初期値は9です
+  name: NineDisplayTextの初期値は9です
+  nameWithType: PropertySettingsTests.NineDisplayTextの初期値は9です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextの初期値は9です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextは変更されたことを通知します
+  name: NineDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.NineDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.NineDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextの初期値は0です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextの初期値は0です
+  name: ZeroDisplayTextの初期値は0です
+  nameWithType: PropertySettingsTests.ZeroDisplayTextの初期値は0です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextの初期値は0です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextは変更されたことを通知します
+  name: ZeroDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.ZeroDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.ZeroDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextの初期値は小数点です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextの初期値は小数点です
+  name: DotDisplayTextの初期値は小数点です
+  nameWithType: PropertySettingsTests.DotDisplayTextの初期値は小数点です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextの初期値は小数点です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextは変更されたことを通知します
+  name: DotDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.DotDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DotDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextの初期値はプラスです*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextの初期値はプラスです
+  name: PlusDisplayTextの初期値はプラスです
+  nameWithType: PropertySettingsTests.PlusDisplayTextの初期値はプラスです
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextの初期値はプラスです
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextは変更されたことを通知します
+  name: PlusDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.PlusDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.PlusDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextの初期値はマイナスです*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextの初期値はマイナスです
+  name: MinusDisplayTextの初期値はマイナスです
+  nameWithType: PropertySettingsTests.MinusDisplayTextの初期値はマイナスです
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextの初期値はマイナスです
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextは変更されたことを通知します
+  name: MinusDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.MinusDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MinusDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextの初期値は掛ける記号です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextの初期値は掛ける記号です
+  name: MultiplyDisplayTextの初期値は掛ける記号です
+  nameWithType: PropertySettingsTests.MultiplyDisplayTextの初期値は掛ける記号です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextの初期値は掛ける記号です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextは変更されたことを通知します
+  name: MultiplyDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.MultiplyDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.MultiplyDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextの初期値は割る記号です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextの初期値は割る記号です
+  name: DivideDisplayTextの初期値は割る記号です
+  nameWithType: PropertySettingsTests.DivideDisplayTextの初期値は割る記号です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextの初期値は割る記号です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextは変更されたことを通知します
+  name: DivideDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.DivideDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.DivideDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextの初期値はイコール記号です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextの初期値はイコール記号です
+  name: EqualDisplayTextの初期値はイコール記号です
+  nameWithType: PropertySettingsTests.EqualDisplayTextの初期値はイコール記号です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextの初期値はイコール記号です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextは変更されたことを通知します
+  name: EqualDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.EqualDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.EqualDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextの初期値はCです*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextの初期値はCです
+  name: CDisplayTextの初期値はCです
+  nameWithType: PropertySettingsTests.CDisplayTextの初期値はCです
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextの初期値はCです
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextは変更されたことを通知します
+  name: CDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.CDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextの初期値は割る記号です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextの初期値は割る記号です
+  name: CEDisplayTextの初期値は割る記号です
+  nameWithType: PropertySettingsTests.CEDisplayTextの初期値は割る記号です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextの初期値は割る記号です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextは変更されたことを通知します
+  name: CEDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.CEDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.CEDisplayTextは変更されたことを通知します
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextの初期値はバックスペース記号です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextの初期値はバックスペース記号です
+  name: BackspaceDisplayTextの初期値はバックスペース記号です
+  nameWithType: PropertySettingsTests.BackspaceDisplayTextの初期値はバックスペース記号です
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextの初期値はバックスペース記号です
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextは変更されたことを通知します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextは変更されたことを通知します
+  name: BackspaceDisplayTextは変更されたことを通知します
+  nameWithType: PropertySettingsTests.BackspaceDisplayTextは変更されたことを通知します
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests.BackspaceDisplayTextは変更されたことを通知します

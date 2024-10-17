@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.WinUI3.Converters
+  commentId: N:Marimo.WindowsCalculator.WinUI3.Converters
+  id: Marimo.WindowsCalculator.WinUI3.Converters
+  children:
+  - Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter
+  - Marimo.WindowsCalculator.WinUI3.Converters.ThemesConverter
+  langs:
+  - csharp
+  - vb
+  name: Marimo.WindowsCalculator.WinUI3.Converters
+  nameWithType: Marimo.WindowsCalculator.WinUI3.Converters
+  fullName: Marimo.WindowsCalculator.WinUI3.Converters
+  type: Namespace
+  assemblies:
+  - WinUI3
+references:
+- uid: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter
+  commentId: T:Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter
+  name: BoolToVisibilityConverter
+  nameWithType: BoolToVisibilityConverter
+  fullName: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter
+- uid: Marimo.WindowsCalculator.WinUI3.Converters.ThemesConverter
+  commentId: T:Marimo.WindowsCalculator.WinUI3.Converters.ThemesConverter
+  name: ThemesConverter
+  nameWithType: ThemesConverter
+  fullName: Marimo.WindowsCalculator.WinUI3.Converters.ThemesConverter

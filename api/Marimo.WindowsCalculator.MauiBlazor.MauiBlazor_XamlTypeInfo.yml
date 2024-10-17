@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  commentId: N:Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  id: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  children:
+  - Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider
+  langs:
+  - csharp
+  - vb
+  name: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  nameWithType: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  fullName: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  type: Namespace
+  assemblies:
+  - Marimo.WindowsCalculator.MauiBlazor
+references:
+- uid: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider
+  commentId: T:Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider
+  name: XamlMetaDataProvider
+  nameWithType: XamlMetaDataProvider
+  fullName: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider

@@ -1,0 +1,522 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests
+  id: CalculationHistoryItemTests
+  parent: Marimo.WindowsCalculator.Tests.Models
+  children:
+  - Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.#ctor
+  - Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionの初期値はWindows電卓と同じです
+  - Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionはoperationを変更することで追随します
+  - Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultの初期値はoperationのものです
+  - Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultはoperationを変更することで追随します
+  langs:
+  - csharp
+  - vb
+  name: CalculationHistoryItemTests
+  nameWithType: CalculationHistoryItemTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests
+  type: Class
+  source:
+    remote:
+      path: ModelsTests/CalculationHistoryItemTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: CalculationHistoryItemTests
+    path: ModelsTests/CalculationHistoryItemTests.cs
+    startLine: 6
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public class CalculationHistoryItemTests
+    content.vb: Public Class CalculationHistoryItemTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.#ctor
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.#ctor
+  id: '#ctor'
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests
+  langs:
+  - csharp
+  - vb
+  name: CalculationHistoryItemTests()
+  nameWithType: CalculationHistoryItemTests.CalculationHistoryItemTests()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.CalculationHistoryItemTests()
+  type: Constructor
+  source:
+    remote:
+      path: ModelsTests/CalculationHistoryItemTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: .ctor
+    path: ModelsTests/CalculationHistoryItemTests.cs
+    startLine: 16
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public CalculationHistoryItemTests()
+    content.vb: Public Sub New
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionの初期値はWindows電卓と同じです
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionの初期値はWindows電卓と同じです
+  id: Expressionの初期値はWindows電卓と同じです
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests
+  langs:
+  - csharp
+  - vb
+  name: Expressionの初期値はWindows電卓と同じです()
+  nameWithType: CalculationHistoryItemTests.Expressionの初期値はWindows電卓と同じです()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionの初期値はWindows電卓と同じです()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculationHistoryItemTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Expressionの初期値はWindows電卓と同じです
+    path: ModelsTests/CalculationHistoryItemTests.cs
+    startLine: 21
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Expressionの初期値はWindows電卓と同じです()
+    content.vb: Public Sub Expressionの初期値はWindows電卓と同じです
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionの初期値はWindows電卓と同じです*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultの初期値はoperationのものです
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultの初期値はoperationのものです
+  id: Resultの初期値はoperationのものです
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests
+  langs:
+  - csharp
+  - vb
+  name: Resultの初期値はoperationのものです()
+  nameWithType: CalculationHistoryItemTests.Resultの初期値はoperationのものです()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultの初期値はoperationのものです()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculationHistoryItemTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Resultの初期値はoperationのものです
+    path: ModelsTests/CalculationHistoryItemTests.cs
+    startLine: 27
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Resultの初期値はoperationのものです()
+    content.vb: Public Sub Resultの初期値はoperationのものです
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultの初期値はoperationのものです*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionはoperationを変更することで追随します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionはoperationを変更することで追随します
+  id: Expressionはoperationを変更することで追随します
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests
+  langs:
+  - csharp
+  - vb
+  name: Expressionはoperationを変更することで追随します()
+  nameWithType: CalculationHistoryItemTests.Expressionはoperationを変更することで追随します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionはoperationを変更することで追随します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculationHistoryItemTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Expressionはoperationを変更することで追随します
+    path: ModelsTests/CalculationHistoryItemTests.cs
+    startLine: 33
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Expressionはoperationを変更することで追随します()
+    content.vb: Public Sub Expressionはoperationを変更することで追随します
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionはoperationを変更することで追随します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultはoperationを変更することで追随します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultはoperationを変更することで追随します
+  id: Resultはoperationを変更することで追随します
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests
+  langs:
+  - csharp
+  - vb
+  name: Resultはoperationを変更することで追随します()
+  nameWithType: CalculationHistoryItemTests.Resultはoperationを変更することで追随します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultはoperationを変更することで追随します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculationHistoryItemTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Resultはoperationを変更することで追随します
+    path: ModelsTests/CalculationHistoryItemTests.cs
+    startLine: 40
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Resultはoperationを変更することで追随します()
+    content.vb: Public Sub Resultはoperationを変更することで追随します
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultはoperationを変更することで追随します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Marimo.WindowsCalculator.Tests.Models
+  commentId: N:Marimo.WindowsCalculator.Tests.Models
+  name: Marimo.WindowsCalculator.Tests.Models
+  nameWithType: Marimo.WindowsCalculator.Tests.Models
+  fullName: Marimo.WindowsCalculator.Tests.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.#ctor*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.#ctor
+  name: CalculationHistoryItemTests
+  nameWithType: CalculationHistoryItemTests.CalculationHistoryItemTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.CalculationHistoryItemTests
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionの初期値はWindows電卓と同じです*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionの初期値はWindows電卓と同じです
+  name: Expressionの初期値はWindows電卓と同じです
+  nameWithType: CalculationHistoryItemTests.Expressionの初期値はWindows電卓と同じです
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionの初期値はWindows電卓と同じです
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultの初期値はoperationのものです*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultの初期値はoperationのものです
+  name: Resultの初期値はoperationのものです
+  nameWithType: CalculationHistoryItemTests.Resultの初期値はoperationのものです
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultの初期値はoperationのものです
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionはoperationを変更することで追随します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionはoperationを変更することで追随します
+  name: Expressionはoperationを変更することで追随します
+  nameWithType: CalculationHistoryItemTests.Expressionはoperationを変更することで追随します
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Expressionはoperationを変更することで追随します
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultはoperationを変更することで追随します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultはoperationを変更することで追随します
+  name: Resultはoperationを変更することで追随します
+  nameWithType: CalculationHistoryItemTests.Resultはoperationを変更することで追随します
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests.Resultはoperationを変更することで追随します

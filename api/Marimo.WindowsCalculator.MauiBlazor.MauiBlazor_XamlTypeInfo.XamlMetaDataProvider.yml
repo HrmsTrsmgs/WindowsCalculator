@@ -1,0 +1,660 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider
+  commentId: T:Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider
+  id: XamlMetaDataProvider
+  parent: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  children:
+  - Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)
+  - Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)
+  - Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions
+  langs:
+  - csharp
+  - vb
+  name: XamlMetaDataProvider
+  nameWithType: XamlMetaDataProvider
+  fullName: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider
+  type: Class
+  source:
+    remote:
+      path: MauiBlazor/obj/Release/net8.0-windows10.0.19041.0/win10-x64/XamlTypeInfo.g.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: XamlMetaDataProvider
+    path: MauiBlazor/obj/Release/net8.0-windows10.0.19041.0/win10-x64/XamlTypeInfo.g.cs
+    startLine: 68
+  assemblies:
+  - Marimo.WindowsCalculator.MauiBlazor
+  namespace: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  summary: "\nMain class for providing metadata for the app or library\n"
+  example: []
+  syntax:
+    content: 'public sealed class XamlMetaDataProvider : IXamlMetadataProvider'
+    content.vb: >-
+      Public NotInheritable Class XamlMetaDataProvider
+          Implements IXamlMetadataProvider
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)
+  commentId: M:Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)
+  id: GetXamlType(System.Type)
+  parent: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider
+  langs:
+  - csharp
+  - vb
+  name: GetXamlType(Type)
+  nameWithType: XamlMetaDataProvider.GetXamlType(Type)
+  fullName: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)
+  type: Method
+  source:
+    remote:
+      path: MauiBlazor/obj/Release/net8.0-windows10.0.19041.0/win10-x64/XamlTypeInfo.g.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: GetXamlType
+    path: MauiBlazor/obj/Release/net8.0-windows10.0.19041.0/win10-x64/XamlTypeInfo.g.cs
+    startLine: 89
+  assemblies:
+  - Marimo.WindowsCalculator.MauiBlazor
+  namespace: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  summary: "\nGetXamlType(Type)\n"
+  example: []
+  syntax:
+    content: >-
+      [DefaultOverload]
+
+      public IXamlType GetXamlType(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: Microsoft.UI.Xaml.Markup.IXamlType
+    content.vb: >-
+      <DefaultOverload>
+
+      Public Function GetXamlType(type As Type) As IXamlType
+  overload: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXamlType*
+  implements:
+  - Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.Type)
+  attributes:
+  - type: Windows.Foundation.Metadata.DefaultOverloadAttribute
+    ctor: Windows.Foundation.Metadata.DefaultOverloadAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)
+  commentId: M:Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)
+  id: GetXamlType(System.String)
+  parent: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider
+  langs:
+  - csharp
+  - vb
+  name: GetXamlType(String)
+  nameWithType: XamlMetaDataProvider.GetXamlType(String)
+  fullName: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)
+  type: Method
+  source:
+    remote:
+      path: MauiBlazor/obj/Release/net8.0-windows10.0.19041.0/win10-x64/XamlTypeInfo.g.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: GetXamlType
+    path: MauiBlazor/obj/Release/net8.0-windows10.0.19041.0/win10-x64/XamlTypeInfo.g.cs
+    startLine: 98
+  assemblies:
+  - Marimo.WindowsCalculator.MauiBlazor
+  namespace: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  summary: "\nGetXamlType(String)\n"
+  example: []
+  syntax:
+    content: public IXamlType GetXamlType(string fullName)
+    parameters:
+    - id: fullName
+      type: System.String
+    return:
+      type: Microsoft.UI.Xaml.Markup.IXamlType
+    content.vb: Public Function GetXamlType(fullName As String) As IXamlType
+  overload: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXamlType*
+  implements:
+  - Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions
+  commentId: M:Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions
+  id: GetXmlnsDefinitions
+  parent: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider
+  langs:
+  - csharp
+  - vb
+  name: GetXmlnsDefinitions()
+  nameWithType: XamlMetaDataProvider.GetXmlnsDefinitions()
+  fullName: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions()
+  type: Method
+  source:
+    remote:
+      path: MauiBlazor/obj/Release/net8.0-windows10.0.19041.0/win10-x64/XamlTypeInfo.g.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: GetXmlnsDefinitions
+    path: MauiBlazor/obj/Release/net8.0-windows10.0.19041.0/win10-x64/XamlTypeInfo.g.cs
+    startLine: 106
+  assemblies:
+  - Marimo.WindowsCalculator.MauiBlazor
+  namespace: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  summary: "\nGetXmlnsDefinitions()\n"
+  example: []
+  syntax:
+    content: public XmlnsDefinition[] GetXmlnsDefinitions()
+    return:
+      type: Microsoft.UI.Xaml.Markup.XmlnsDefinition[]
+    content.vb: Public Function GetXmlnsDefinitions As XmlnsDefinition()
+  overload: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions*
+  implements:
+  - Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  commentId: N:Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  name: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  nameWithType: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+  fullName: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
+  commentId: T:Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
+  parent: Microsoft.UI.Xaml.Markup
+  isExternal: true
+  name: IXamlMetadataProvider
+  nameWithType: IXamlMetadataProvider
+  fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.UI.Xaml.Markup
+  commentId: N:Microsoft.UI.Xaml.Markup
+  isExternal: true
+  name: Microsoft.UI.Xaml.Markup
+  nameWithType: Microsoft.UI.Xaml.Markup
+  fullName: Microsoft.UI.Xaml.Markup
+- uid: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXamlType*
+  commentId: Overload:Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXamlType
+  name: GetXamlType
+  nameWithType: XamlMetaDataProvider.GetXamlType
+  fullName: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXamlType
+- uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.Type)
+  commentId: M:Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.Type)
+  parent: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
+  isExternal: true
+  name: GetXamlType(Type)
+  nameWithType: IXamlMetadataProvider.GetXamlType(Type)
+  fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.Type)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.Type)
+    name: GetXamlType
+    nameWithType: IXamlMetadataProvider.GetXamlType
+    fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.Type)
+    name: GetXamlType
+    nameWithType: IXamlMetadataProvider.GetXamlType
+    fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.UI.Xaml.Markup.IXamlType
+  commentId: T:Microsoft.UI.Xaml.Markup.IXamlType
+  parent: Microsoft.UI.Xaml.Markup
+  isExternal: true
+  name: IXamlType
+  nameWithType: IXamlType
+  fullName: Microsoft.UI.Xaml.Markup.IXamlType
+- uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.String)
+  commentId: M:Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.String)
+  parent: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
+  isExternal: true
+  name: GetXamlType(String)
+  nameWithType: IXamlMetadataProvider.GetXamlType(String)
+  fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.String)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.String)
+    name: GetXamlType
+    nameWithType: IXamlMetadataProvider.GetXamlType
+    fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.String)
+    name: GetXamlType
+    nameWithType: IXamlMetadataProvider.GetXamlType
+    fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions*
+  commentId: Overload:Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions
+  name: GetXmlnsDefinitions
+  nameWithType: XamlMetaDataProvider.GetXmlnsDefinitions
+  fullName: Marimo.WindowsCalculator.MauiBlazor.MauiBlazor_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions
+- uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions
+  commentId: M:Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions
+  parent: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
+  isExternal: true
+  name: GetXmlnsDefinitions()
+  nameWithType: IXamlMetadataProvider.GetXmlnsDefinitions()
+  fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions
+    name: GetXmlnsDefinitions
+    nameWithType: IXamlMetadataProvider.GetXmlnsDefinitions
+    fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions
+    name: GetXmlnsDefinitions
+    nameWithType: IXamlMetadataProvider.GetXmlnsDefinitions
+    fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.UI.Xaml.Markup.XmlnsDefinition[]
+  isExternal: true
+  name: XmlnsDefinition[]
+  nameWithType: XmlnsDefinition[]
+  fullName: Microsoft.UI.Xaml.Markup.XmlnsDefinition[]
+  nameWithType.vb: XmlnsDefinition()
+  fullName.vb: Microsoft.UI.Xaml.Markup.XmlnsDefinition()
+  name.vb: XmlnsDefinition()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Markup.XmlnsDefinition
+    name: XmlnsDefinition
+    nameWithType: XmlnsDefinition
+    fullName: Microsoft.UI.Xaml.Markup.XmlnsDefinition
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Markup.XmlnsDefinition
+    name: XmlnsDefinition
+    nameWithType: XmlnsDefinition
+    fullName: Microsoft.UI.Xaml.Markup.XmlnsDefinition
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

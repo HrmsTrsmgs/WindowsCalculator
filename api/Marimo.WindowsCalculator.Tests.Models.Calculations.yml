@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations
+  commentId: N:Marimo.WindowsCalculator.Tests.Models.Calculations
+  id: Marimo.WindowsCalculator.Tests.Models.Calculations
+  children:
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.AddCaluclationTests
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.DeleteCalculationTest
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.DivideCaluclationTests
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.MultiplyCaluclationTests
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.NullCalculationTests
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.NumberCalculationTest
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.OperationCalculationTests
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests
+  langs:
+  - csharp
+  - vb
+  name: Marimo.WindowsCalculator.Tests.Models.Calculations
+  nameWithType: Marimo.WindowsCalculator.Tests.Models.Calculations
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations
+  type: Namespace
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+references:
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.AddCaluclationTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.Calculations.AddCaluclationTests
+  name: AddCaluclationTests
+  nameWithType: AddCaluclationTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.AddCaluclationTests
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  name: CalculationTests
+  nameWithType: CalculationTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.DeleteCalculationTest
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.Calculations.DeleteCalculationTest
+  name: DeleteCalculationTest
+  nameWithType: DeleteCalculationTest
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.DeleteCalculationTest
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.DivideCaluclationTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.Calculations.DivideCaluclationTests
+  name: DivideCaluclationTests
+  nameWithType: DivideCaluclationTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.DivideCaluclationTests
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests
+  name: EqualButtonCalculationTests
+  nameWithType: EqualButtonCalculationTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.MultiplyCaluclationTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.Calculations.MultiplyCaluclationTests
+  name: MultiplyCaluclationTests
+  nameWithType: MultiplyCaluclationTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.MultiplyCaluclationTests
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.NullCalculationTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.Calculations.NullCalculationTests
+  name: NullCalculationTests
+  nameWithType: NullCalculationTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.NullCalculationTests
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.NumberCalculationTest
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.Calculations.NumberCalculationTest
+  name: NumberCalculationTest
+  nameWithType: NumberCalculationTest
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.NumberCalculationTest
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.OperationCalculationTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.Calculations.OperationCalculationTests
+  name: OperationCalculationTests
+  nameWithType: OperationCalculationTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.OperationCalculationTests
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests
+  name: SupstractCaluclationTests
+  nameWithType: SupstractCaluclationTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests

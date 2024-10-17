@@ -1,0 +1,74 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Models
+  commentId: N:Marimo.WindowsCalculator.Models
+  id: Marimo.WindowsCalculator.Models
+  children:
+  - Marimo.WindowsCalculator.Models.ApplicationTheme
+  - Marimo.WindowsCalculator.Models.CalculationHistoryItem
+  - Marimo.WindowsCalculator.Models.Calculator
+  - Marimo.WindowsCalculator.Models.IncrementalParser
+  - Marimo.WindowsCalculator.Models.InputAction
+  - Marimo.WindowsCalculator.Models.Log4NetExtensions
+  - Marimo.WindowsCalculator.Models.ModelBase
+  - Marimo.WindowsCalculator.Models.PropertySettings
+  langs:
+  - csharp
+  - vb
+  name: Marimo.WindowsCalculator.Models
+  nameWithType: Marimo.WindowsCalculator.Models
+  fullName: Marimo.WindowsCalculator.Models
+  type: Namespace
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+references:
+- uid: Marimo.WindowsCalculator.Models.ApplicationTheme
+  commentId: T:Marimo.WindowsCalculator.Models.ApplicationTheme
+  parent: Marimo.WindowsCalculator.Models
+  name: ApplicationTheme
+  nameWithType: ApplicationTheme
+  fullName: Marimo.WindowsCalculator.Models.ApplicationTheme
+- uid: Marimo.WindowsCalculator.Models.CalculationHistoryItem
+  commentId: T:Marimo.WindowsCalculator.Models.CalculationHistoryItem
+  name: CalculationHistoryItem
+  nameWithType: CalculationHistoryItem
+  fullName: Marimo.WindowsCalculator.Models.CalculationHistoryItem
+- uid: Marimo.WindowsCalculator.Models.Calculator
+  commentId: T:Marimo.WindowsCalculator.Models.Calculator
+  name: Calculator
+  nameWithType: Calculator
+  fullName: Marimo.WindowsCalculator.Models.Calculator
+- uid: Marimo.WindowsCalculator.Models.IncrementalParser
+  commentId: T:Marimo.WindowsCalculator.Models.IncrementalParser
+  parent: Marimo.WindowsCalculator.Models
+  name: IncrementalParser
+  nameWithType: IncrementalParser
+  fullName: Marimo.WindowsCalculator.Models.IncrementalParser
+- uid: Marimo.WindowsCalculator.Models.InputAction
+  commentId: T:Marimo.WindowsCalculator.Models.InputAction
+  parent: Marimo.WindowsCalculator.Models
+  name: InputAction
+  nameWithType: InputAction
+  fullName: Marimo.WindowsCalculator.Models.InputAction
+- uid: Marimo.WindowsCalculator.Models.Log4NetExtensions
+  commentId: T:Marimo.WindowsCalculator.Models.Log4NetExtensions
+  name: Log4NetExtensions
+  nameWithType: Log4NetExtensions
+  fullName: Marimo.WindowsCalculator.Models.Log4NetExtensions
+- uid: Marimo.WindowsCalculator.Models.ModelBase
+  commentId: T:Marimo.WindowsCalculator.Models.ModelBase
+  parent: Marimo.WindowsCalculator.Models
+  name: ModelBase
+  nameWithType: ModelBase
+  fullName: Marimo.WindowsCalculator.Models.ModelBase
+- uid: Marimo.WindowsCalculator.Models.PropertySettings
+  commentId: T:Marimo.WindowsCalculator.Models.PropertySettings
+  parent: Marimo.WindowsCalculator.Models
+  name: PropertySettings
+  nameWithType: PropertySettings
+  fullName: Marimo.WindowsCalculator.Models.PropertySettings
+- uid: Marimo.WindowsCalculator.Models
+  commentId: N:Marimo.WindowsCalculator.Models
+  name: Marimo.WindowsCalculator.Models
+  nameWithType: Marimo.WindowsCalculator.Models
+  fullName: Marimo.WindowsCalculator.Models

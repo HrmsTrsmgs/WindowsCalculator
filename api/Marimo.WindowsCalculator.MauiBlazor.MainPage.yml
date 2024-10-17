@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.MauiBlazor.MainPage
+  commentId: T:Marimo.WindowsCalculator.MauiBlazor.MainPage
+  id: MainPage
+  parent: Marimo.WindowsCalculator.MauiBlazor
+  children:
+  - Marimo.WindowsCalculator.MauiBlazor.MainPage.#ctor
+  langs:
+  - csharp
+  - vb
+  name: MainPage
+  nameWithType: MainPage
+  fullName: Marimo.WindowsCalculator.MauiBlazor.MainPage
+  type: Class
+  source:
+    remote:
+      path: MauiBlazor/MainPage.xaml.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: MainPage
+    path: MauiBlazor/MainPage.xaml.cs
+    startLine: 2
+  assemblies:
+  - Marimo.WindowsCalculator.MauiBlazor
+  namespace: Marimo.WindowsCalculator.MauiBlazor
+  syntax:
+    content: 'public class MainPage : ContentPage'
+    content.vb: >-
+      Public Class MainPage
+          Inherits ContentPage
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Marimo.WindowsCalculator.MauiBlazor.MainPage.#ctor
+  commentId: M:Marimo.WindowsCalculator.MauiBlazor.MainPage.#ctor
+  id: '#ctor'
+  parent: Marimo.WindowsCalculator.MauiBlazor.MainPage
+  langs:
+  - csharp
+  - vb
+  name: MainPage()
+  nameWithType: MainPage.MainPage()
+  fullName: Marimo.WindowsCalculator.MauiBlazor.MainPage.MainPage()
+  type: Constructor
+  source:
+    remote:
+      path: MauiBlazor/MainPage.xaml.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: .ctor
+    path: MauiBlazor/MainPage.xaml.cs
+    startLine: 4
+  assemblies:
+  - Marimo.WindowsCalculator.MauiBlazor
+  namespace: Marimo.WindowsCalculator.MauiBlazor
+  syntax:
+    content: public MainPage()
+    content.vb: Public Sub New
+  overload: Marimo.WindowsCalculator.MauiBlazor.MainPage.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Marimo.WindowsCalculator.MauiBlazor
+  commentId: N:Marimo.WindowsCalculator.MauiBlazor
+  name: Marimo.WindowsCalculator.MauiBlazor
+  nameWithType: Marimo.WindowsCalculator.MauiBlazor
+  fullName: Marimo.WindowsCalculator.MauiBlazor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Marimo.WindowsCalculator.MauiBlazor.MainPage.#ctor*
+  commentId: Overload:Marimo.WindowsCalculator.MauiBlazor.MainPage.#ctor
+  name: MainPage
+  nameWithType: MainPage.MainPage
+  fullName: Marimo.WindowsCalculator.MauiBlazor.MainPage.MainPage

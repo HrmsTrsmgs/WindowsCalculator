@@ -1,0 +1,236 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.MauiBlazor.App
+  commentId: T:Marimo.WindowsCalculator.MauiBlazor.App
+  id: App
+  parent: Marimo.WindowsCalculator.MauiBlazor
+  children:
+  - Marimo.WindowsCalculator.MauiBlazor.App.#ctor
+  - Marimo.WindowsCalculator.MauiBlazor.App.CreateWindow(System.Nullable{IActivationState})
+  langs:
+  - csharp
+  - vb
+  name: App
+  nameWithType: App
+  fullName: Marimo.WindowsCalculator.MauiBlazor.App
+  type: Class
+  source:
+    remote:
+      path: MauiBlazor/App.xaml.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: App
+    path: MauiBlazor/App.xaml.cs
+    startLine: 12
+  assemblies:
+  - Marimo.WindowsCalculator.MauiBlazor
+  namespace: Marimo.WindowsCalculator.MauiBlazor
+  summary: "\nアプリケーションを表します。\n"
+  example: []
+  syntax:
+    content: 'public class App : Application'
+    content.vb: >-
+      Public Class App
+          Inherits Application
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Marimo.WindowsCalculator.MauiBlazor.App.#ctor
+  commentId: M:Marimo.WindowsCalculator.MauiBlazor.App.#ctor
+  id: '#ctor'
+  parent: Marimo.WindowsCalculator.MauiBlazor.App
+  langs:
+  - csharp
+  - vb
+  name: App()
+  nameWithType: App.App()
+  fullName: Marimo.WindowsCalculator.MauiBlazor.App.App()
+  type: Constructor
+  source:
+    remote:
+      path: MauiBlazor/App.xaml.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: .ctor
+    path: MauiBlazor/App.xaml.cs
+    startLine: 17
+  assemblies:
+  - Marimo.WindowsCalculator.MauiBlazor
+  namespace: Marimo.WindowsCalculator.MauiBlazor
+  summary: "\nAppクラスの新しいインスタンスを初期化します。\n"
+  example: []
+  syntax:
+    content: public App()
+    content.vb: Public Sub New
+  overload: Marimo.WindowsCalculator.MauiBlazor.App.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.MauiBlazor.App.CreateWindow(System.Nullable{IActivationState})
+  commentId: M:Marimo.WindowsCalculator.MauiBlazor.App.CreateWindow(System.Nullable{IActivationState})
+  id: CreateWindow(System.Nullable{IActivationState})
+  parent: Marimo.WindowsCalculator.MauiBlazor.App
+  langs:
+  - csharp
+  - vb
+  name: CreateWindow(Nullable<IActivationState>)
+  nameWithType: App.CreateWindow(Nullable<IActivationState>)
+  fullName: Marimo.WindowsCalculator.MauiBlazor.App.CreateWindow(System.Nullable<IActivationState>)
+  type: Method
+  source:
+    remote:
+      path: MauiBlazor/App.xaml.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: CreateWindow
+    path: MauiBlazor/App.xaml.cs
+    startLine: 44
+  assemblies:
+  - Marimo.WindowsCalculator.MauiBlazor
+  namespace: Marimo.WindowsCalculator.MauiBlazor
+  summary: "\nWindowが作られる時の初期設定を行います。\n"
+  example: []
+  syntax:
+    content: protected override Window CreateWindow(IActivationState? activationState)
+    parameters:
+    - id: activationState
+      type: System.Nullable{IActivationState}
+      description: その時の状態。
+    return:
+      type: Window
+      description: 作られたWindow
+    content.vb: Protected Overrides Function CreateWindow(activationState As IActivationState?) As Window
+  overload: Marimo.WindowsCalculator.MauiBlazor.App.CreateWindow*
+  nameWithType.vb: App.CreateWindow(Nullable(Of IActivationState))
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Marimo.WindowsCalculator.MauiBlazor.App.CreateWindow(System.Nullable(Of IActivationState))
+  name.vb: CreateWindow(Nullable(Of IActivationState))
+references:
+- uid: Marimo.WindowsCalculator.MauiBlazor
+  commentId: N:Marimo.WindowsCalculator.MauiBlazor
+  name: Marimo.WindowsCalculator.MauiBlazor
+  nameWithType: Marimo.WindowsCalculator.MauiBlazor
+  fullName: Marimo.WindowsCalculator.MauiBlazor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Marimo.WindowsCalculator.MauiBlazor.App.#ctor*
+  commentId: Overload:Marimo.WindowsCalculator.MauiBlazor.App.#ctor
+  name: App
+  nameWithType: App.App
+  fullName: Marimo.WindowsCalculator.MauiBlazor.App.App
+- uid: Marimo.WindowsCalculator.MauiBlazor.App.CreateWindow*
+  commentId: Overload:Marimo.WindowsCalculator.MauiBlazor.App.CreateWindow
+  name: CreateWindow
+  nameWithType: App.CreateWindow
+  fullName: Marimo.WindowsCalculator.MauiBlazor.App.CreateWindow
+- uid: System.Nullable{IActivationState}
+  commentId: T:System.Nullable{IActivationState}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<IActivationState>
+  nameWithType: Nullable<IActivationState>
+  fullName: System.Nullable<IActivationState>
+  nameWithType.vb: Nullable(Of IActivationState)
+  fullName.vb: System.Nullable(Of IActivationState)
+  name.vb: Nullable(Of IActivationState)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IActivationState
+    name: IActivationState
+    nameWithType: IActivationState
+    fullName: IActivationState
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IActivationState
+    name: IActivationState
+    nameWithType: IActivationState
+    fullName: IActivationState
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Window
+  commentId: '!:Window'
+  isExternal: true
+  name: Window
+  nameWithType: Window
+  fullName: Window
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,450 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests
+  id: SupstractCaluclationTests
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations
+  children:
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.InputActionはSubstractです
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.引き算を行います
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.式表記で演算子はマイナス記号です
+  langs:
+  - csharp
+  - vb
+  name: SupstractCaluclationTests
+  nameWithType: SupstractCaluclationTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests
+  type: Class
+  source:
+    remote:
+      path: ModelsTests/Calculations/SubstractCalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: SupstractCaluclationTests
+    path: ModelsTests/Calculations/SubstractCalculationTests.cs
+    startLine: 6
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public class SupstractCaluclationTests
+    content.vb: Public Class SupstractCaluclationTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.InputActionはSubstractです
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.InputActionはSubstractです
+  id: InputActionはSubstractです
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests
+  langs:
+  - csharp
+  - vb
+  name: InputActionはSubstractです()
+  nameWithType: SupstractCaluclationTests.InputActionはSubstractです()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.InputActionはSubstractです()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/SubstractCalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputActionはSubstractです
+    path: ModelsTests/Calculations/SubstractCalculationTests.cs
+    startLine: 19
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void InputActionはSubstractです()
+    content.vb: Public Sub InputActionはSubstractです
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.InputActionはSubstractです*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.引き算を行います
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.引き算を行います
+  id: 引き算を行います
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests
+  langs:
+  - csharp
+  - vb
+  name: 引き算を行います()
+  nameWithType: SupstractCaluclationTests.引き算を行います()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.引き算を行います()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/SubstractCalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 引き算を行います
+    path: ModelsTests/Calculations/SubstractCalculationTests.cs
+    startLine: 25
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void 引き算を行います()
+    content.vb: Public Sub 引き算を行います
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.引き算を行います*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.式表記で演算子はマイナス記号です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.式表記で演算子はマイナス記号です
+  id: 式表記で演算子はマイナス記号です
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests
+  langs:
+  - csharp
+  - vb
+  name: 式表記で演算子はマイナス記号です()
+  nameWithType: SupstractCaluclationTests.式表記で演算子はマイナス記号です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.式表記で演算子はマイナス記号です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/SubstractCalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 式表記で演算子はマイナス記号です
+    path: ModelsTests/Calculations/SubstractCalculationTests.cs
+    startLine: 31
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void 式表記で演算子はマイナス記号です()
+    content.vb: Public Sub 式表記で演算子はマイナス記号です
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.式表記で演算子はマイナス記号です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations
+  commentId: N:Marimo.WindowsCalculator.Tests.Models.Calculations
+  name: Marimo.WindowsCalculator.Tests.Models.Calculations
+  nameWithType: Marimo.WindowsCalculator.Tests.Models.Calculations
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.InputActionはSubstractです*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.InputActionはSubstractです
+  name: InputActionはSubstractです
+  nameWithType: SupstractCaluclationTests.InputActionはSubstractです
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.InputActionはSubstractです
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.引き算を行います*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.引き算を行います
+  name: 引き算を行います
+  nameWithType: SupstractCaluclationTests.引き算を行います
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.引き算を行います
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.式表記で演算子はマイナス記号です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.式表記で演算子はマイナス記号です
+  name: 式表記で演算子はマイナス記号です
+  nameWithType: SupstractCaluclationTests.式表記で演算子はマイナス記号です
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.SupstractCaluclationTests.式表記で演算子はマイナス記号です

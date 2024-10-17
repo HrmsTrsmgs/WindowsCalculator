@@ -1,0 +1,2142 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  id: CalculatorTests
+  parent: Marimo.WindowsCalculator.Tests.Models
+  children:
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.#ctor
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.CEで計算結果が削除されます
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.RedoでUndoが元に戻ります
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Redoで複数回のUndoは一つずつ元に戻ります
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.TestLogOutput
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで最新の履歴は見えなくなります
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで数値入力前の直前の計算が無効になります
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで直前の計算が無効になります
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで入力中の直前の計算が無効になります
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで未入力の状態まで戻れます
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った後で数字が変更された場合は数字表示に戻ります
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った場合は演算結果が表示されます
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoをする前にRedoしても何も起きません
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoでで未入力の状態が復帰します
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで数値入力前の直前の計算が復帰します
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで入力中の直前の計算が復帰します
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで履歴は元に戻ります
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを3度以上押しても前の結果が繰り返されます
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを押すと表示は計算結果となっています
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを二度押すと前の結果が繰り返されます
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.引き算が実現されています
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に現在の計算が変わります
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に新しい計算の演算子は指定したものになります
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子の入れ替えで計算は入れ替わります
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算が実現されています
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後に隠れた変数をもっていたりはしません
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の丸めは四捨五入です
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の小数点桁数は5桁までです
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算が実現されています
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算でエラーが表示されます
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算はイコールで計算した場合もエラーが発生します
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の丸めは四捨五入です
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果に隠れた桁が混ざっていたりはしません
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果の最大桁は5桁です
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された後に演算子が入力されても表示される数字は変わりません
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された場合に表示される数字はその数字になります
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態で設定は取得できます
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の計算は結果が0です
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の表示は0です
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.小数点を入力した状態が表示できます
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字と入力された状態で表示は二つ目の数字となっています
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字演算子と入力された状態で表示は計算結果となっています
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数値が入力しなおされた場合に現在の計算は変わりません
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.足し算が実現されています
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.入力された数値トークンの数値は結果となります
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴が出力できます
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は削除することができます
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は時間の降順となります
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式がResultを持った時点で追加されます
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式が演算子を起点の場合もResultを持った時点で追加されます
+  langs:
+  - csharp
+  - vb
+  name: CalculatorTests
+  nameWithType: CalculatorTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  type: Class
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: CalculatorTests
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 10
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public class CalculatorTests
+    content.vb: Public Class CalculatorTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.#ctor
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.#ctor
+  id: '#ctor'
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CalculatorTests()
+  nameWithType: CalculatorTests.CalculatorTests()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.CalculatorTests()
+  type: Constructor
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: .ctor
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 16
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public CalculatorTests()
+    content.vb: Public Sub New
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.TestLogOutput
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.TestLogOutput
+  id: TestLogOutput
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: TestLogOutput()
+  nameWithType: CalculatorTests.TestLogOutput()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.TestLogOutput()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: TestLogOutput
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 28
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void TestLogOutput()
+    content.vb: Public Sub TestLogOutput
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.TestLogOutput*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の計算は結果が0です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の計算は結果が0です
+  id: 初期状態の計算は結果が0です
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 初期状態の計算は結果が0です()
+  nameWithType: CalculatorTests.初期状態の計算は結果が0です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の計算は結果が0です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 初期状態の計算は結果が0です
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 36
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 初期状態の計算は結果が0です()
+    content.vb: Public Sub 初期状態の計算は結果が0です
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の計算は結果が0です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の表示は0です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の表示は0です
+  id: 初期状態の表示は0です
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 初期状態の表示は0です()
+  nameWithType: CalculatorTests.初期状態の表示は0です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の表示は0です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 初期状態の表示は0です
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 43
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 初期状態の表示は0です()
+    content.vb: Public Sub 初期状態の表示は0です
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の表示は0です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態で設定は取得できます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態で設定は取得できます
+  id: 初期状態で設定は取得できます
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 初期状態で設定は取得できます()
+  nameWithType: CalculatorTests.初期状態で設定は取得できます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態で設定は取得できます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 初期状態で設定は取得できます
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 49
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 初期状態で設定は取得できます()
+    content.vb: Public Sub 初期状態で設定は取得できます
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態で設定は取得できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.入力された数値トークンの数値は結果となります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.入力された数値トークンの数値は結果となります
+  id: 入力された数値トークンの数値は結果となります
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 入力された数値トークンの数値は結果となります()
+  nameWithType: CalculatorTests.入力された数値トークンの数値は結果となります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.入力された数値トークンの数値は結果となります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 入力された数値トークンの数値は結果となります
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 55
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 入力された数値トークンの数値は結果となります()
+    content.vb: Public Sub 入力された数値トークンの数値は結果となります
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.入力された数値トークンの数値は結果となります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数値が入力しなおされた場合に現在の計算は変わりません
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数値が入力しなおされた場合に現在の計算は変わりません
+  id: 数値が入力しなおされた場合に現在の計算は変わりません
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 数値が入力しなおされた場合に現在の計算は変わりません()
+  nameWithType: CalculatorTests.数値が入力しなおされた場合に現在の計算は変わりません()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数値が入力しなおされた場合に現在の計算は変わりません()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 数値が入力しなおされた場合に現在の計算は変わりません
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 63
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 数値が入力しなおされた場合に現在の計算は変わりません()
+    content.vb: Public Sub 数値が入力しなおされた場合に現在の計算は変わりません
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数値が入力しなおされた場合に現在の計算は変わりません*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に現在の計算が変わります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に現在の計算が変わります
+  id: 演算子が入力された場合に現在の計算が変わります
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 演算子が入力された場合に現在の計算が変わります()
+  nameWithType: CalculatorTests.演算子が入力された場合に現在の計算が変わります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に現在の計算が変わります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 演算子が入力された場合に現在の計算が変わります
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 74
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 演算子が入力された場合に現在の計算が変わります()
+    content.vb: Public Sub 演算子が入力された場合に現在の計算が変わります
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に現在の計算が変わります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に新しい計算の演算子は指定したものになります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に新しい計算の演算子は指定したものになります
+  id: 演算子が入力された場合に新しい計算の演算子は指定したものになります
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 演算子が入力された場合に新しい計算の演算子は指定したものになります()
+  nameWithType: CalculatorTests.演算子が入力された場合に新しい計算の演算子は指定したものになります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に新しい計算の演算子は指定したものになります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 演算子が入力された場合に新しい計算の演算子は指定したものになります
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 84
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 演算子が入力された場合に新しい計算の演算子は指定したものになります()
+    content.vb: Public Sub 演算子が入力された場合に新しい計算の演算子は指定したものになります
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に新しい計算の演算子は指定したものになります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された場合に表示される数字はその数字になります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された場合に表示される数字はその数字になります
+  id: 最初に数字が入力された場合に表示される数字はその数字になります
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 最初に数字が入力された場合に表示される数字はその数字になります()
+  nameWithType: CalculatorTests.最初に数字が入力された場合に表示される数字はその数字になります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された場合に表示される数字はその数字になります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 最初に数字が入力された場合に表示される数字はその数字になります
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 93
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 最初に数字が入力された場合に表示される数字はその数字になります()
+    content.vb: Public Sub 最初に数字が入力された場合に表示される数字はその数字になります
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された場合に表示される数字はその数字になります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された後に演算子が入力されても表示される数字は変わりません
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された後に演算子が入力されても表示される数字は変わりません
+  id: 最初に数字が入力された後に演算子が入力されても表示される数字は変わりません
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 最初に数字が入力された後に演算子が入力されても表示される数字は変わりません()
+  nameWithType: CalculatorTests.最初に数字が入力された後に演算子が入力されても表示される数字は変わりません()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された後に演算子が入力されても表示される数字は変わりません()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 最初に数字が入力された後に演算子が入力されても表示される数字は変わりません
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 100
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 最初に数字が入力された後に演算子が入力されても表示される数字は変わりません()
+    content.vb: Public Sub 最初に数字が入力された後に演算子が入力されても表示される数字は変わりません
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された後に演算子が入力されても表示される数字は変わりません*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字と入力された状態で表示は二つ目の数字となっています
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字と入力された状態で表示は二つ目の数字となっています
+  id: 数字演算子数字と入力された状態で表示は二つ目の数字となっています
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 数字演算子数字と入力された状態で表示は二つ目の数字となっています()
+  nameWithType: CalculatorTests.数字演算子数字と入力された状態で表示は二つ目の数字となっています()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字と入力された状態で表示は二つ目の数字となっています()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 数字演算子数字と入力された状態で表示は二つ目の数字となっています
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 108
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 数字演算子数字と入力された状態で表示は二つ目の数字となっています()
+    content.vb: Public Sub 数字演算子数字と入力された状態で表示は二つ目の数字となっています
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字と入力された状態で表示は二つ目の数字となっています*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字演算子と入力された状態で表示は計算結果となっています
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字演算子と入力された状態で表示は計算結果となっています
+  id: 数字演算子数字演算子と入力された状態で表示は計算結果となっています
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 数字演算子数字演算子と入力された状態で表示は計算結果となっています()
+  nameWithType: CalculatorTests.数字演算子数字演算子と入力された状態で表示は計算結果となっています()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字演算子と入力された状態で表示は計算結果となっています()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 数字演算子数字演算子と入力された状態で表示は計算結果となっています
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 117
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 数字演算子数字演算子と入力された状態で表示は計算結果となっています()
+    content.vb: Public Sub 数字演算子数字演算子と入力された状態で表示は計算結果となっています
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字演算子と入力された状態で表示は計算結果となっています*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.足し算が実現されています
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.足し算が実現されています
+  id: 足し算が実現されています
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 足し算が実現されています()
+  nameWithType: CalculatorTests.足し算が実現されています()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.足し算が実現されています()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 足し算が実現されています
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 127
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 足し算が実現されています()
+    content.vb: Public Sub 足し算が実現されています
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.足し算が実現されています*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.引き算が実現されています
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.引き算が実現されています
+  id: 引き算が実現されています
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 引き算が実現されています()
+  nameWithType: CalculatorTests.引き算が実現されています()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.引き算が実現されています()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 引き算が実現されています
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 137
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 引き算が実現されています()
+    content.vb: Public Sub 引き算が実現されています
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.引き算が実現されています*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算が実現されています
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算が実現されています
+  id: 掛け算が実現されています
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 掛け算が実現されています()
+  nameWithType: CalculatorTests.掛け算が実現されています()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算が実現されています()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 掛け算が実現されています
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 147
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 掛け算が実現されています()
+    content.vb: Public Sub 掛け算が実現されています
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算が実現されています*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の小数点桁数は5桁までです
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の小数点桁数は5桁までです
+  id: 掛け算後の小数点桁数は5桁までです
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 掛け算後の小数点桁数は5桁までです()
+  nameWithType: CalculatorTests.掛け算後の小数点桁数は5桁までです()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の小数点桁数は5桁までです()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 掛け算後の小数点桁数は5桁までです
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 157
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 掛け算後の小数点桁数は5桁までです()
+    content.vb: Public Sub 掛け算後の小数点桁数は5桁までです
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の小数点桁数は5桁までです*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後に隠れた変数をもっていたりはしません
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後に隠れた変数をもっていたりはしません
+  id: 掛け算後に隠れた変数をもっていたりはしません
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 掛け算後に隠れた変数をもっていたりはしません()
+  nameWithType: CalculatorTests.掛け算後に隠れた変数をもっていたりはしません()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後に隠れた変数をもっていたりはしません()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 掛け算後に隠れた変数をもっていたりはしません
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 167
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 掛け算後に隠れた変数をもっていたりはしません()
+    content.vb: Public Sub 掛け算後に隠れた変数をもっていたりはしません
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後に隠れた変数をもっていたりはしません*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の丸めは四捨五入です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の丸めは四捨五入です
+  id: 掛け算後の丸めは四捨五入です
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 掛け算後の丸めは四捨五入です()
+  nameWithType: CalculatorTests.掛け算後の丸めは四捨五入です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の丸めは四捨五入です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 掛け算後の丸めは四捨五入です
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 179
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 掛け算後の丸めは四捨五入です()
+    content.vb: Public Sub 掛け算後の丸めは四捨五入です
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の丸めは四捨五入です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算が実現されています
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算が実現されています
+  id: 割り算が実現されています
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 割り算が実現されています()
+  nameWithType: CalculatorTests.割り算が実現されています()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算が実現されています()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 割り算が実現されています
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 191
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 割り算が実現されています()
+    content.vb: Public Sub 割り算が実現されています
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算が実現されています*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果の最大桁は5桁です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果の最大桁は5桁です
+  id: 割り算の結果の最大桁は5桁です
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 割り算の結果の最大桁は5桁です()
+  nameWithType: CalculatorTests.割り算の結果の最大桁は5桁です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果の最大桁は5桁です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 割り算の結果の最大桁は5桁です
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 201
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 割り算の結果の最大桁は5桁です()
+    content.vb: Public Sub 割り算の結果の最大桁は5桁です
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果の最大桁は5桁です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果に隠れた桁が混ざっていたりはしません
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果に隠れた桁が混ざっていたりはしません
+  id: 割り算の結果に隠れた桁が混ざっていたりはしません
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 割り算の結果に隠れた桁が混ざっていたりはしません()
+  nameWithType: CalculatorTests.割り算の結果に隠れた桁が混ざっていたりはしません()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果に隠れた桁が混ざっていたりはしません()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 割り算の結果に隠れた桁が混ざっていたりはしません
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 211
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 割り算の結果に隠れた桁が混ざっていたりはしません()
+    content.vb: Public Sub 割り算の結果に隠れた桁が混ざっていたりはしません
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果に隠れた桁が混ざっていたりはしません*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の丸めは四捨五入です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の丸めは四捨五入です
+  id: 割り算の丸めは四捨五入です
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 割り算の丸めは四捨五入です()
+  nameWithType: CalculatorTests.割り算の丸めは四捨五入です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の丸めは四捨五入です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 割り算の丸めは四捨五入です
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 223
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 割り算の丸めは四捨五入です()
+    content.vb: Public Sub 割り算の丸めは四捨五入です
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の丸めは四捨五入です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子の入れ替えで計算は入れ替わります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子の入れ替えで計算は入れ替わります
+  id: 演算子の入れ替えで計算は入れ替わります
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 演算子の入れ替えで計算は入れ替わります()
+  nameWithType: CalculatorTests.演算子の入れ替えで計算は入れ替わります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子の入れ替えで計算は入れ替わります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 演算子の入れ替えで計算は入れ替わります
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 233
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 演算子の入れ替えで計算は入れ替わります()
+    content.vb: Public Sub 演算子の入れ替えで計算は入れ替わります
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子の入れ替えで計算は入れ替わります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算でエラーが表示されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算でエラーが表示されます
+  id: 割り算のゼロ除算でエラーが表示されます
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 割り算のゼロ除算でエラーが表示されます()
+  nameWithType: CalculatorTests.割り算のゼロ除算でエラーが表示されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算でエラーが表示されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 割り算のゼロ除算でエラーが表示されます
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 247
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 割り算のゼロ除算でエラーが表示されます()
+    content.vb: Public Sub 割り算のゼロ除算でエラーが表示されます
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算でエラーが表示されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算はイコールで計算した場合もエラーが発生します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算はイコールで計算した場合もエラーが発生します
+  id: 割り算のゼロ除算はイコールで計算した場合もエラーが発生します
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 割り算のゼロ除算はイコールで計算した場合もエラーが発生します()
+  nameWithType: CalculatorTests.割り算のゼロ除算はイコールで計算した場合もエラーが発生します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算はイコールで計算した場合もエラーが発生します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 割り算のゼロ除算はイコールで計算した場合もエラーが発生します
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 257
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 割り算のゼロ除算はイコールで計算した場合もエラーが発生します()
+    content.vb: Public Sub 割り算のゼロ除算はイコールで計算した場合もエラーが発生します
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算はイコールで計算した場合もエラーが発生します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを押すと表示は計算結果となっています
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを押すと表示は計算結果となっています
+  id: イコールボタンを押すと表示は計算結果となっています
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: イコールボタンを押すと表示は計算結果となっています()
+  nameWithType: CalculatorTests.イコールボタンを押すと表示は計算結果となっています()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを押すと表示は計算結果となっています()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: イコールボタンを押すと表示は計算結果となっています
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 267
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void イコールボタンを押すと表示は計算結果となっています()
+    content.vb: Public Sub イコールボタンを押すと表示は計算結果となっています
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを押すと表示は計算結果となっています*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを二度押すと前の結果が繰り返されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを二度押すと前の結果が繰り返されます
+  id: イコールボタンを二度押すと前の結果が繰り返されます
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: イコールボタンを二度押すと前の結果が繰り返されます()
+  nameWithType: CalculatorTests.イコールボタンを二度押すと前の結果が繰り返されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを二度押すと前の結果が繰り返されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: イコールボタンを二度押すと前の結果が繰り返されます
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 276
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void イコールボタンを二度押すと前の結果が繰り返されます()
+    content.vb: Public Sub イコールボタンを二度押すと前の結果が繰り返されます
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを二度押すと前の結果が繰り返されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを3度以上押しても前の結果が繰り返されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを3度以上押しても前の結果が繰り返されます
+  id: イコールボタンを3度以上押しても前の結果が繰り返されます
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: イコールボタンを3度以上押しても前の結果が繰り返されます()
+  nameWithType: CalculatorTests.イコールボタンを3度以上押しても前の結果が繰り返されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを3度以上押しても前の結果が繰り返されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: イコールボタンを3度以上押しても前の結果が繰り返されます
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 286
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void イコールボタンを3度以上押しても前の結果が繰り返されます()
+    content.vb: Public Sub イコールボタンを3度以上押しても前の結果が繰り返されます
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを3度以上押しても前の結果が繰り返されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.小数点を入力した状態が表示できます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.小数点を入力した状態が表示できます
+  id: 小数点を入力した状態が表示できます
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 小数点を入力した状態が表示できます()
+  nameWithType: CalculatorTests.小数点を入力した状態が表示できます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.小数点を入力した状態が表示できます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 小数点を入力した状態が表示できます
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 298
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 小数点を入力した状態が表示できます()
+    content.vb: Public Sub 小数点を入力した状態が表示できます
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.小数点を入力した状態が表示できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.CEで計算結果が削除されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.CEで計算結果が削除されます
+  id: CEで計算結果が削除されます
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CEで計算結果が削除されます()
+  nameWithType: CalculatorTests.CEで計算結果が削除されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.CEで計算結果が削除されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: CEで計算結果が削除されます
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 305
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void CEで計算結果が削除されます()
+    content.vb: Public Sub CEで計算結果が削除されます
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.CEで計算結果が削除されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで直前の計算が無効になります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで直前の計算が無効になります
+  id: Undoで直前の計算が無効になります
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Undoで直前の計算が無効になります()
+  nameWithType: CalculatorTests.Undoで直前の計算が無効になります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで直前の計算が無効になります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undoで直前の計算が無効になります
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 315
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Undoで直前の計算が無効になります()
+    content.vb: Public Sub Undoで直前の計算が無効になります
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで直前の計算が無効になります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで入力中の直前の計算が無効になります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで入力中の直前の計算が無効になります
+  id: Undoで入力中の直前の計算が無効になります
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Undoで入力中の直前の計算が無効になります()
+  nameWithType: CalculatorTests.Undoで入力中の直前の計算が無効になります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで入力中の直前の計算が無効になります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undoで入力中の直前の計算が無効になります
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 326
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Undoで入力中の直前の計算が無効になります()
+    content.vb: Public Sub Undoで入力中の直前の計算が無効になります
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで入力中の直前の計算が無効になります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで数値入力前の直前の計算が無効になります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで数値入力前の直前の計算が無効になります
+  id: Undoで数値入力前の直前の計算が無効になります
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Undoで数値入力前の直前の計算が無効になります()
+  nameWithType: CalculatorTests.Undoで数値入力前の直前の計算が無効になります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで数値入力前の直前の計算が無効になります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undoで数値入力前の直前の計算が無効になります
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 336
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Undoで数値入力前の直前の計算が無効になります()
+    content.vb: Public Sub Undoで数値入力前の直前の計算が無効になります
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで数値入力前の直前の計算が無効になります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで未入力の状態まで戻れます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで未入力の状態まで戻れます
+  id: Undoで未入力の状態まで戻れます
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Undoで未入力の状態まで戻れます()
+  nameWithType: CalculatorTests.Undoで未入力の状態まで戻れます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで未入力の状態まで戻れます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undoで未入力の状態まで戻れます
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 346
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Undoで未入力の状態まで戻れます()
+    content.vb: Public Sub Undoで未入力の状態まで戻れます
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで未入力の状態まで戻れます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った場合は演算結果が表示されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った場合は演算結果が表示されます
+  id: Undoで戻った場合は演算結果が表示されます
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Undoで戻った場合は演算結果が表示されます()
+  nameWithType: CalculatorTests.Undoで戻った場合は演算結果が表示されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った場合は演算結果が表示されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undoで戻った場合は演算結果が表示されます
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 355
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Undoで戻った場合は演算結果が表示されます()
+    content.vb: Public Sub Undoで戻った場合は演算結果が表示されます
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った場合は演算結果が表示されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った後で数字が変更された場合は数字表示に戻ります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った後で数字が変更された場合は数字表示に戻ります
+  id: Undoで戻った後で数字が変更された場合は数字表示に戻ります
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Undoで戻った後で数字が変更された場合は数字表示に戻ります()
+  nameWithType: CalculatorTests.Undoで戻った後で数字が変更された場合は数字表示に戻ります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った後で数字が変更された場合は数字表示に戻ります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undoで戻った後で数字が変更された場合は数字表示に戻ります
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 367
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Undoで戻った後で数字が変更された場合は数字表示に戻ります()
+    content.vb: Public Sub Undoで戻った後で数字が変更された場合は数字表示に戻ります
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った後で数字が変更された場合は数字表示に戻ります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoをする前にRedoしても何も起きません
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoをする前にRedoしても何も起きません
+  id: Undoをする前にRedoしても何も起きません
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Undoをする前にRedoしても何も起きません()
+  nameWithType: CalculatorTests.Undoをする前にRedoしても何も起きません()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoをする前にRedoしても何も起きません()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undoをする前にRedoしても何も起きません
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 380
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Undoをする前にRedoしても何も起きません()
+    content.vb: Public Sub Undoをする前にRedoしても何も起きません
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoをする前にRedoしても何も起きません*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.RedoでUndoが元に戻ります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.RedoでUndoが元に戻ります
+  id: RedoでUndoが元に戻ります
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: RedoでUndoが元に戻ります()
+  nameWithType: CalculatorTests.RedoでUndoが元に戻ります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.RedoでUndoが元に戻ります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: RedoでUndoが元に戻ります
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 391
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void RedoでUndoが元に戻ります()
+    content.vb: Public Sub RedoでUndoが元に戻ります
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.RedoでUndoが元に戻ります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Redoで複数回のUndoは一つずつ元に戻ります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Redoで複数回のUndoは一つずつ元に戻ります
+  id: Redoで複数回のUndoは一つずつ元に戻ります
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Redoで複数回のUndoは一つずつ元に戻ります()
+  nameWithType: CalculatorTests.Redoで複数回のUndoは一つずつ元に戻ります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Redoで複数回のUndoは一つずつ元に戻ります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Redoで複数回のUndoは一つずつ元に戻ります
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 404
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Redoで複数回のUndoは一つずつ元に戻ります()
+    content.vb: Public Sub Redoで複数回のUndoは一つずつ元に戻ります
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Redoで複数回のUndoは一つずつ元に戻ります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで入力中の直前の計算が復帰します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで入力中の直前の計算が復帰します
+  id: Undo後のRedoで入力中の直前の計算が復帰します
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Undo後のRedoで入力中の直前の計算が復帰します()
+  nameWithType: CalculatorTests.Undo後のRedoで入力中の直前の計算が復帰します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで入力中の直前の計算が復帰します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undo後のRedoで入力中の直前の計算が復帰します
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 423
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Undo後のRedoで入力中の直前の計算が復帰します()
+    content.vb: Public Sub Undo後のRedoで入力中の直前の計算が復帰します
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで入力中の直前の計算が復帰します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで数値入力前の直前の計算が復帰します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで数値入力前の直前の計算が復帰します
+  id: Undo後のRedoで数値入力前の直前の計算が復帰します
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Undo後のRedoで数値入力前の直前の計算が復帰します()
+  nameWithType: CalculatorTests.Undo後のRedoで数値入力前の直前の計算が復帰します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで数値入力前の直前の計算が復帰します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undo後のRedoで数値入力前の直前の計算が復帰します
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 434
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Undo後のRedoで数値入力前の直前の計算が復帰します()
+    content.vb: Public Sub Undo後のRedoで数値入力前の直前の計算が復帰します
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで数値入力前の直前の計算が復帰します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoでで未入力の状態が復帰します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoでで未入力の状態が復帰します
+  id: Undo後のRedoでで未入力の状態が復帰します
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Undo後のRedoでで未入力の状態が復帰します()
+  nameWithType: CalculatorTests.Undo後のRedoでで未入力の状態が復帰します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoでで未入力の状態が復帰します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undo後のRedoでで未入力の状態が復帰します
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 447
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Undo後のRedoでで未入力の状態が復帰します()
+    content.vb: Public Sub Undo後のRedoでで未入力の状態が復帰します
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoでで未入力の状態が復帰します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴が出力できます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴が出力できます
+  id: 履歴が出力できます
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 履歴が出力できます()
+  nameWithType: CalculatorTests.履歴が出力できます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴が出力できます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 履歴が出力できます
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 457
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 履歴が出力できます()
+    content.vb: Public Sub 履歴が出力できます
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴が出力できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は削除することができます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は削除することができます
+  id: 履歴は削除することができます
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 履歴は削除することができます()
+  nameWithType: CalculatorTests.履歴は削除することができます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は削除することができます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 履歴は削除することができます
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 472
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 履歴は削除することができます()
+    content.vb: Public Sub 履歴は削除することができます
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は削除することができます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は時間の降順となります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は時間の降順となります
+  id: 履歴は時間の降順となります
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 履歴は時間の降順となります()
+  nameWithType: CalculatorTests.履歴は時間の降順となります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は時間の降順となります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 履歴は時間の降順となります
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 485
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 履歴は時間の降順となります()
+    content.vb: Public Sub 履歴は時間の降順となります
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は時間の降順となります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式がResultを持った時点で追加されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式がResultを持った時点で追加されます
+  id: 履歴は式がResultを持った時点で追加されます
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 履歴は式がResultを持った時点で追加されます()
+  nameWithType: CalculatorTests.履歴は式がResultを持った時点で追加されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式がResultを持った時点で追加されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 履歴は式がResultを持った時点で追加されます
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 504
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 履歴は式がResultを持った時点で追加されます()
+    content.vb: Public Sub 履歴は式がResultを持った時点で追加されます
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式がResultを持った時点で追加されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式が演算子を起点の場合もResultを持った時点で追加されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式が演算子を起点の場合もResultを持った時点で追加されます
+  id: 履歴は式が演算子を起点の場合もResultを持った時点で追加されます
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: 履歴は式が演算子を起点の場合もResultを持った時点で追加されます()
+  nameWithType: CalculatorTests.履歴は式が演算子を起点の場合もResultを持った時点で追加されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式が演算子を起点の場合もResultを持った時点で追加されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 履歴は式が演算子を起点の場合もResultを持った時点で追加されます
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 515
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 履歴は式が演算子を起点の場合もResultを持った時点で追加されます()
+    content.vb: Public Sub 履歴は式が演算子を起点の場合もResultを持った時点で追加されます
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式が演算子を起点の場合もResultを持った時点で追加されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで最新の履歴は見えなくなります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで最新の履歴は見えなくなります
+  id: Undoで最新の履歴は見えなくなります
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Undoで最新の履歴は見えなくなります()
+  nameWithType: CalculatorTests.Undoで最新の履歴は見えなくなります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで最新の履歴は見えなくなります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undoで最新の履歴は見えなくなります
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 526
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Undoで最新の履歴は見えなくなります()
+    content.vb: Public Sub Undoで最新の履歴は見えなくなります
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで最新の履歴は見えなくなります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで履歴は元に戻ります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで履歴は元に戻ります
+  id: Undo後のRedoで履歴は元に戻ります
+  parent: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Undo後のRedoで履歴は元に戻ります()
+  nameWithType: CalculatorTests.Undo後のRedoで履歴は元に戻ります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで履歴は元に戻ります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undo後のRedoで履歴は元に戻ります
+    path: ModelsTests/CalculatorTests.cs
+    startLine: 544
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Undo後のRedoで履歴は元に戻ります()
+    content.vb: Public Sub Undo後のRedoで履歴は元に戻ります
+  overload: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで履歴は元に戻ります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Marimo.WindowsCalculator.Tests.Models
+  commentId: N:Marimo.WindowsCalculator.Tests.Models
+  name: Marimo.WindowsCalculator.Tests.Models
+  nameWithType: Marimo.WindowsCalculator.Tests.Models
+  fullName: Marimo.WindowsCalculator.Tests.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.#ctor*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.#ctor
+  name: CalculatorTests
+  nameWithType: CalculatorTests.CalculatorTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.CalculatorTests
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.TestLogOutput*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.TestLogOutput
+  name: TestLogOutput
+  nameWithType: CalculatorTests.TestLogOutput
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.TestLogOutput
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の計算は結果が0です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の計算は結果が0です
+  name: 初期状態の計算は結果が0です
+  nameWithType: CalculatorTests.初期状態の計算は結果が0です
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の計算は結果が0です
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の表示は0です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の表示は0です
+  name: 初期状態の表示は0です
+  nameWithType: CalculatorTests.初期状態の表示は0です
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態の表示は0です
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態で設定は取得できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態で設定は取得できます
+  name: 初期状態で設定は取得できます
+  nameWithType: CalculatorTests.初期状態で設定は取得できます
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.初期状態で設定は取得できます
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.入力された数値トークンの数値は結果となります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.入力された数値トークンの数値は結果となります
+  name: 入力された数値トークンの数値は結果となります
+  nameWithType: CalculatorTests.入力された数値トークンの数値は結果となります
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.入力された数値トークンの数値は結果となります
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数値が入力しなおされた場合に現在の計算は変わりません*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数値が入力しなおされた場合に現在の計算は変わりません
+  name: 数値が入力しなおされた場合に現在の計算は変わりません
+  nameWithType: CalculatorTests.数値が入力しなおされた場合に現在の計算は変わりません
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数値が入力しなおされた場合に現在の計算は変わりません
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に現在の計算が変わります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に現在の計算が変わります
+  name: 演算子が入力された場合に現在の計算が変わります
+  nameWithType: CalculatorTests.演算子が入力された場合に現在の計算が変わります
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に現在の計算が変わります
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に新しい計算の演算子は指定したものになります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に新しい計算の演算子は指定したものになります
+  name: 演算子が入力された場合に新しい計算の演算子は指定したものになります
+  nameWithType: CalculatorTests.演算子が入力された場合に新しい計算の演算子は指定したものになります
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子が入力された場合に新しい計算の演算子は指定したものになります
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された場合に表示される数字はその数字になります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された場合に表示される数字はその数字になります
+  name: 最初に数字が入力された場合に表示される数字はその数字になります
+  nameWithType: CalculatorTests.最初に数字が入力された場合に表示される数字はその数字になります
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された場合に表示される数字はその数字になります
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された後に演算子が入力されても表示される数字は変わりません*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された後に演算子が入力されても表示される数字は変わりません
+  name: 最初に数字が入力された後に演算子が入力されても表示される数字は変わりません
+  nameWithType: CalculatorTests.最初に数字が入力された後に演算子が入力されても表示される数字は変わりません
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.最初に数字が入力された後に演算子が入力されても表示される数字は変わりません
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字と入力された状態で表示は二つ目の数字となっています*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字と入力された状態で表示は二つ目の数字となっています
+  name: 数字演算子数字と入力された状態で表示は二つ目の数字となっています
+  nameWithType: CalculatorTests.数字演算子数字と入力された状態で表示は二つ目の数字となっています
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字と入力された状態で表示は二つ目の数字となっています
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字演算子と入力された状態で表示は計算結果となっています*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字演算子と入力された状態で表示は計算結果となっています
+  name: 数字演算子数字演算子と入力された状態で表示は計算結果となっています
+  nameWithType: CalculatorTests.数字演算子数字演算子と入力された状態で表示は計算結果となっています
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.数字演算子数字演算子と入力された状態で表示は計算結果となっています
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.足し算が実現されています*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.足し算が実現されています
+  name: 足し算が実現されています
+  nameWithType: CalculatorTests.足し算が実現されています
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.足し算が実現されています
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.引き算が実現されています*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.引き算が実現されています
+  name: 引き算が実現されています
+  nameWithType: CalculatorTests.引き算が実現されています
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.引き算が実現されています
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算が実現されています*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算が実現されています
+  name: 掛け算が実現されています
+  nameWithType: CalculatorTests.掛け算が実現されています
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算が実現されています
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の小数点桁数は5桁までです*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の小数点桁数は5桁までです
+  name: 掛け算後の小数点桁数は5桁までです
+  nameWithType: CalculatorTests.掛け算後の小数点桁数は5桁までです
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の小数点桁数は5桁までです
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後に隠れた変数をもっていたりはしません*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後に隠れた変数をもっていたりはしません
+  name: 掛け算後に隠れた変数をもっていたりはしません
+  nameWithType: CalculatorTests.掛け算後に隠れた変数をもっていたりはしません
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後に隠れた変数をもっていたりはしません
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の丸めは四捨五入です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の丸めは四捨五入です
+  name: 掛け算後の丸めは四捨五入です
+  nameWithType: CalculatorTests.掛け算後の丸めは四捨五入です
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.掛け算後の丸めは四捨五入です
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算が実現されています*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算が実現されています
+  name: 割り算が実現されています
+  nameWithType: CalculatorTests.割り算が実現されています
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算が実現されています
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果の最大桁は5桁です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果の最大桁は5桁です
+  name: 割り算の結果の最大桁は5桁です
+  nameWithType: CalculatorTests.割り算の結果の最大桁は5桁です
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果の最大桁は5桁です
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果に隠れた桁が混ざっていたりはしません*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果に隠れた桁が混ざっていたりはしません
+  name: 割り算の結果に隠れた桁が混ざっていたりはしません
+  nameWithType: CalculatorTests.割り算の結果に隠れた桁が混ざっていたりはしません
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の結果に隠れた桁が混ざっていたりはしません
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の丸めは四捨五入です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の丸めは四捨五入です
+  name: 割り算の丸めは四捨五入です
+  nameWithType: CalculatorTests.割り算の丸めは四捨五入です
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算の丸めは四捨五入です
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子の入れ替えで計算は入れ替わります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子の入れ替えで計算は入れ替わります
+  name: 演算子の入れ替えで計算は入れ替わります
+  nameWithType: CalculatorTests.演算子の入れ替えで計算は入れ替わります
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.演算子の入れ替えで計算は入れ替わります
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算でエラーが表示されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算でエラーが表示されます
+  name: 割り算のゼロ除算でエラーが表示されます
+  nameWithType: CalculatorTests.割り算のゼロ除算でエラーが表示されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算でエラーが表示されます
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算はイコールで計算した場合もエラーが発生します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算はイコールで計算した場合もエラーが発生します
+  name: 割り算のゼロ除算はイコールで計算した場合もエラーが発生します
+  nameWithType: CalculatorTests.割り算のゼロ除算はイコールで計算した場合もエラーが発生します
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.割り算のゼロ除算はイコールで計算した場合もエラーが発生します
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを押すと表示は計算結果となっています*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを押すと表示は計算結果となっています
+  name: イコールボタンを押すと表示は計算結果となっています
+  nameWithType: CalculatorTests.イコールボタンを押すと表示は計算結果となっています
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを押すと表示は計算結果となっています
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを二度押すと前の結果が繰り返されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを二度押すと前の結果が繰り返されます
+  name: イコールボタンを二度押すと前の結果が繰り返されます
+  nameWithType: CalculatorTests.イコールボタンを二度押すと前の結果が繰り返されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを二度押すと前の結果が繰り返されます
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを3度以上押しても前の結果が繰り返されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを3度以上押しても前の結果が繰り返されます
+  name: イコールボタンを3度以上押しても前の結果が繰り返されます
+  nameWithType: CalculatorTests.イコールボタンを3度以上押しても前の結果が繰り返されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.イコールボタンを3度以上押しても前の結果が繰り返されます
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.小数点を入力した状態が表示できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.小数点を入力した状態が表示できます
+  name: 小数点を入力した状態が表示できます
+  nameWithType: CalculatorTests.小数点を入力した状態が表示できます
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.小数点を入力した状態が表示できます
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.CEで計算結果が削除されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.CEで計算結果が削除されます
+  name: CEで計算結果が削除されます
+  nameWithType: CalculatorTests.CEで計算結果が削除されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.CEで計算結果が削除されます
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで直前の計算が無効になります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで直前の計算が無効になります
+  name: Undoで直前の計算が無効になります
+  nameWithType: CalculatorTests.Undoで直前の計算が無効になります
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで直前の計算が無効になります
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで入力中の直前の計算が無効になります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで入力中の直前の計算が無効になります
+  name: Undoで入力中の直前の計算が無効になります
+  nameWithType: CalculatorTests.Undoで入力中の直前の計算が無効になります
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで入力中の直前の計算が無効になります
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで数値入力前の直前の計算が無効になります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで数値入力前の直前の計算が無効になります
+  name: Undoで数値入力前の直前の計算が無効になります
+  nameWithType: CalculatorTests.Undoで数値入力前の直前の計算が無効になります
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで数値入力前の直前の計算が無効になります
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで未入力の状態まで戻れます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで未入力の状態まで戻れます
+  name: Undoで未入力の状態まで戻れます
+  nameWithType: CalculatorTests.Undoで未入力の状態まで戻れます
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで未入力の状態まで戻れます
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った場合は演算結果が表示されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った場合は演算結果が表示されます
+  name: Undoで戻った場合は演算結果が表示されます
+  nameWithType: CalculatorTests.Undoで戻った場合は演算結果が表示されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った場合は演算結果が表示されます
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った後で数字が変更された場合は数字表示に戻ります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った後で数字が変更された場合は数字表示に戻ります
+  name: Undoで戻った後で数字が変更された場合は数字表示に戻ります
+  nameWithType: CalculatorTests.Undoで戻った後で数字が変更された場合は数字表示に戻ります
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで戻った後で数字が変更された場合は数字表示に戻ります
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoをする前にRedoしても何も起きません*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoをする前にRedoしても何も起きません
+  name: Undoをする前にRedoしても何も起きません
+  nameWithType: CalculatorTests.Undoをする前にRedoしても何も起きません
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoをする前にRedoしても何も起きません
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.RedoでUndoが元に戻ります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.RedoでUndoが元に戻ります
+  name: RedoでUndoが元に戻ります
+  nameWithType: CalculatorTests.RedoでUndoが元に戻ります
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.RedoでUndoが元に戻ります
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Redoで複数回のUndoは一つずつ元に戻ります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Redoで複数回のUndoは一つずつ元に戻ります
+  name: Redoで複数回のUndoは一つずつ元に戻ります
+  nameWithType: CalculatorTests.Redoで複数回のUndoは一つずつ元に戻ります
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Redoで複数回のUndoは一つずつ元に戻ります
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで入力中の直前の計算が復帰します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで入力中の直前の計算が復帰します
+  name: Undo後のRedoで入力中の直前の計算が復帰します
+  nameWithType: CalculatorTests.Undo後のRedoで入力中の直前の計算が復帰します
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで入力中の直前の計算が復帰します
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで数値入力前の直前の計算が復帰します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで数値入力前の直前の計算が復帰します
+  name: Undo後のRedoで数値入力前の直前の計算が復帰します
+  nameWithType: CalculatorTests.Undo後のRedoで数値入力前の直前の計算が復帰します
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで数値入力前の直前の計算が復帰します
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoでで未入力の状態が復帰します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoでで未入力の状態が復帰します
+  name: Undo後のRedoでで未入力の状態が復帰します
+  nameWithType: CalculatorTests.Undo後のRedoでで未入力の状態が復帰します
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoでで未入力の状態が復帰します
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴が出力できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴が出力できます
+  name: 履歴が出力できます
+  nameWithType: CalculatorTests.履歴が出力できます
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴が出力できます
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は削除することができます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は削除することができます
+  name: 履歴は削除することができます
+  nameWithType: CalculatorTests.履歴は削除することができます
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は削除することができます
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は時間の降順となります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は時間の降順となります
+  name: 履歴は時間の降順となります
+  nameWithType: CalculatorTests.履歴は時間の降順となります
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は時間の降順となります
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式がResultを持った時点で追加されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式がResultを持った時点で追加されます
+  name: 履歴は式がResultを持った時点で追加されます
+  nameWithType: CalculatorTests.履歴は式がResultを持った時点で追加されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式がResultを持った時点で追加されます
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式が演算子を起点の場合もResultを持った時点で追加されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式が演算子を起点の場合もResultを持った時点で追加されます
+  name: 履歴は式が演算子を起点の場合もResultを持った時点で追加されます
+  nameWithType: CalculatorTests.履歴は式が演算子を起点の場合もResultを持った時点で追加されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.履歴は式が演算子を起点の場合もResultを持った時点で追加されます
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで最新の履歴は見えなくなります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで最新の履歴は見えなくなります
+  name: Undoで最新の履歴は見えなくなります
+  nameWithType: CalculatorTests.Undoで最新の履歴は見えなくなります
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undoで最新の履歴は見えなくなります
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで履歴は元に戻ります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで履歴は元に戻ります
+  name: Undo後のRedoで履歴は元に戻ります
+  nameWithType: CalculatorTests.Undo後のRedoで履歴は元に戻ります
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests.Undo後のRedoで履歴は元に戻ります

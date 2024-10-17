@@ -1,0 +1,649 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter
+  commentId: T:Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter
+  id: BoolToVisibilityConverter
+  parent: Marimo.WindowsCalculator.WinUI3.Converters
+  children:
+  - Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)
+  - Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)
+  langs:
+  - csharp
+  - vb
+  name: BoolToVisibilityConverter
+  nameWithType: BoolToVisibilityConverter
+  fullName: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter
+  type: Class
+  source:
+    remote:
+      path: WinUI3/Converters/BoolToVisibilityConverter.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: BoolToVisibilityConverter
+    path: WinUI3/Converters/BoolToVisibilityConverter.cs
+    startLine: 6
+  assemblies:
+  - WinUI3
+  namespace: Marimo.WindowsCalculator.WinUI3.Converters
+  syntax:
+    content: 'public class BoolToVisibilityConverter : IValueConverter'
+    content.vb: >-
+      Public Class BoolToVisibilityConverter
+          Implements IValueConverter
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.UI.Xaml.Data.IValueConverter
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)
+  commentId: M:Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)
+  id: Convert(System.Object,System.Type,System.Object,System.String)
+  parent: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter
+  langs:
+  - csharp
+  - vb
+  name: Convert(Object, Type, Object, String)
+  nameWithType: BoolToVisibilityConverter.Convert(Object, Type, Object, String)
+  fullName: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.Convert(System.Object, System.Type, System.Object, System.String)
+  type: Method
+  source:
+    remote:
+      path: WinUI3/Converters/BoolToVisibilityConverter.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Convert
+    path: WinUI3/Converters/BoolToVisibilityConverter.cs
+    startLine: 8
+  assemblies:
+  - WinUI3
+  namespace: Marimo.WindowsCalculator.WinUI3.Converters
+  syntax:
+    content: public object Convert(object value, Type targetType, object parameter, string language)
+    parameters:
+    - id: value
+      type: System.Object
+    - id: targetType
+      type: System.Type
+    - id: parameter
+      type: System.Object
+    - id: language
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Function Convert(value As Object, targetType As Type, parameter As Object, language As String) As Object
+  overload: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.Convert*
+  implements:
+  - Microsoft.UI.Xaml.Data.IValueConverter.Convert(System.Object,System.Type,System.Object,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)
+  commentId: M:Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)
+  id: ConvertBack(System.Object,System.Type,System.Object,System.String)
+  parent: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter
+  langs:
+  - csharp
+  - vb
+  name: ConvertBack(Object, Type, Object, String)
+  nameWithType: BoolToVisibilityConverter.ConvertBack(Object, Type, Object, String)
+  fullName: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.ConvertBack(System.Object, System.Type, System.Object, System.String)
+  type: Method
+  source:
+    remote:
+      path: WinUI3/Converters/BoolToVisibilityConverter.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: ConvertBack
+    path: WinUI3/Converters/BoolToVisibilityConverter.cs
+    startLine: 17
+  assemblies:
+  - WinUI3
+  namespace: Marimo.WindowsCalculator.WinUI3.Converters
+  syntax:
+    content: public object ConvertBack(object value, Type targetType, object parameter, string language)
+    parameters:
+    - id: value
+      type: System.Object
+    - id: targetType
+      type: System.Type
+    - id: parameter
+      type: System.Object
+    - id: language
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Function ConvertBack(value As Object, targetType As Type, parameter As Object, language As String) As Object
+  overload: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.ConvertBack*
+  implements:
+  - Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Marimo.WindowsCalculator.WinUI3.Converters
+  commentId: N:Marimo.WindowsCalculator.WinUI3.Converters
+  name: Marimo.WindowsCalculator.WinUI3.Converters
+  nameWithType: Marimo.WindowsCalculator.WinUI3.Converters
+  fullName: Marimo.WindowsCalculator.WinUI3.Converters
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.UI.Xaml.Data.IValueConverter
+  commentId: T:Microsoft.UI.Xaml.Data.IValueConverter
+  parent: Microsoft.UI.Xaml.Data
+  isExternal: true
+  name: IValueConverter
+  nameWithType: IValueConverter
+  fullName: Microsoft.UI.Xaml.Data.IValueConverter
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.UI.Xaml.Data
+  commentId: N:Microsoft.UI.Xaml.Data
+  isExternal: true
+  name: Microsoft.UI.Xaml.Data
+  nameWithType: Microsoft.UI.Xaml.Data
+  fullName: Microsoft.UI.Xaml.Data
+- uid: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.Convert*
+  commentId: Overload:Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.Convert
+  name: Convert
+  nameWithType: BoolToVisibilityConverter.Convert
+  fullName: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.Convert
+- uid: Microsoft.UI.Xaml.Data.IValueConverter.Convert(System.Object,System.Type,System.Object,System.String)
+  commentId: M:Microsoft.UI.Xaml.Data.IValueConverter.Convert(System.Object,System.Type,System.Object,System.String)
+  parent: Microsoft.UI.Xaml.Data.IValueConverter
+  isExternal: true
+  name: Convert(Object, Type, Object, String)
+  nameWithType: IValueConverter.Convert(Object, Type, Object, String)
+  fullName: Microsoft.UI.Xaml.Data.IValueConverter.Convert(System.Object, System.Type, System.Object, System.String)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Data.IValueConverter.Convert(System.Object,System.Type,System.Object,System.String)
+    name: Convert
+    nameWithType: IValueConverter.Convert
+    fullName: Microsoft.UI.Xaml.Data.IValueConverter.Convert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Data.IValueConverter.Convert(System.Object,System.Type,System.Object,System.String)
+    name: Convert
+    nameWithType: IValueConverter.Convert
+    fullName: Microsoft.UI.Xaml.Data.IValueConverter.Convert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.ConvertBack*
+  commentId: Overload:Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.ConvertBack
+  name: ConvertBack
+  nameWithType: BoolToVisibilityConverter.ConvertBack
+  fullName: Marimo.WindowsCalculator.WinUI3.Converters.BoolToVisibilityConverter.ConvertBack
+- uid: Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)
+  commentId: M:Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)
+  parent: Microsoft.UI.Xaml.Data.IValueConverter
+  isExternal: true
+  name: ConvertBack(Object, Type, Object, String)
+  nameWithType: IValueConverter.ConvertBack(Object, Type, Object, String)
+  fullName: Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack(System.Object, System.Type, System.Object, System.String)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)
+    name: ConvertBack
+    nameWithType: IValueConverter.ConvertBack
+    fullName: Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)
+    name: ConvertBack
+    nameWithType: IValueConverter.ConvertBack
+    fullName: Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

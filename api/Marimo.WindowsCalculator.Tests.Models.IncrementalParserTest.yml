@@ -1,0 +1,1373 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  id: IncrementalParserTest
+  parent: Marimo.WindowsCalculator.Tests.Models
+  children:
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.ActiveTokenの初期値はnullです
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Cを受け付けその他トークンが出力されます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.tested
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Undoを受け付けその他トークンが出力されます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.イコールを受け付けその他トークンが出力されます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.一文字書いた分をBackspaceで削除できます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子トークンが入力できます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されてもトークンは同じです
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されると演算子は変わります
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に数字が入力されると数字トークンが付け足されます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.最初の数字入力がトークンとして出力されます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.四則演算の演算子トークンが入力できます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数は5桁までしか入力することはできません
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点が入力できます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を5桁入力することができます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を入力することができます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点のみをBackspaceで削除できます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点の入力をするまではトークンの小数点以下桁数はnullです
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点を何回入力しても特に変わりはありません
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点以下の数字をBackspaceで削除できます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数字入力がトークンとして出力されます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数値を入れる前に小数点から入力が始められます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁までしか入力することはできません
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁入力することができます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二桁の数字が入力できます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をBackspaceで削除できます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をDeleteで削除できます
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.入力時にログが出力されます
+  langs:
+  - csharp
+  - vb
+  name: IncrementalParserTest
+  nameWithType: IncrementalParserTest
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  type: Class
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: IncrementalParserTest
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 6
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: 'public class IncrementalParserTest : TestBase'
+    content.vb: >-
+      Public Class IncrementalParserTest
+          Inherits TestBase
+  inheritance:
+  - System.Object
+  - Marimo.WindowsCalculator.Tests.Models.TestBase
+  inheritedMembers:
+  - Marimo.WindowsCalculator.Tests.Models.TestBase.MemoryAppender
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.tested
+  commentId: F:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.tested
+  id: tested
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: tested
+  nameWithType: IncrementalParserTest.tested
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.tested
+  type: Field
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: tested
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 8
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public IncrementalParser tested
+    return:
+      type: Marimo.WindowsCalculator.Models.IncrementalParser
+    content.vb: Public tested As IncrementalParser
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.ActiveTokenの初期値はnullです
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.ActiveTokenの初期値はnullです
+  id: ActiveTokenの初期値はnullです
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: ActiveTokenの初期値はnullです()
+  nameWithType: IncrementalParserTest.ActiveTokenの初期値はnullです()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.ActiveTokenの初期値はnullです()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: ActiveTokenの初期値はnullです
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 10
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void ActiveTokenの初期値はnullです()
+    content.vb: Public Sub ActiveTokenの初期値はnullです
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.ActiveTokenの初期値はnullです*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.最初の数字入力がトークンとして出力されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.最初の数字入力がトークンとして出力されます
+  id: 最初の数字入力がトークンとして出力されます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 最初の数字入力がトークンとして出力されます()
+  nameWithType: IncrementalParserTest.最初の数字入力がトークンとして出力されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.最初の数字入力がトークンとして出力されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 最初の数字入力がトークンとして出力されます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 16
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 最初の数字入力がトークンとして出力されます()
+    content.vb: Public Sub 最初の数字入力がトークンとして出力されます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.最初の数字入力がトークンとして出力されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.入力時にログが出力されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.入力時にログが出力されます
+  id: 入力時にログが出力されます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 入力時にログが出力されます()
+  nameWithType: IncrementalParserTest.入力時にログが出力されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.入力時にログが出力されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 入力時にログが出力されます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 24
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 入力時にログが出力されます()
+    content.vb: Public Sub 入力時にログが出力されます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.入力時にログが出力されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数字入力がトークンとして出力されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数字入力がトークンとして出力されます
+  id: 数字入力がトークンとして出力されます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 数字入力がトークンとして出力されます()
+  nameWithType: IncrementalParserTest.数字入力がトークンとして出力されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数字入力がトークンとして出力されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 数字入力がトークンとして出力されます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 35
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 数字入力がトークンとして出力されます()
+    content.vb: Public Sub 数字入力がトークンとして出力されます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数字入力がトークンとして出力されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子トークンが入力できます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子トークンが入力できます
+  id: 演算子トークンが入力できます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 演算子トークンが入力できます()
+  nameWithType: IncrementalParserTest.演算子トークンが入力できます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子トークンが入力できます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 演算子トークンが入力できます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 71
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 演算子トークンが入力できます()
+    content.vb: Public Sub 演算子トークンが入力できます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子トークンが入力できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.四則演算の演算子トークンが入力できます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.四則演算の演算子トークンが入力できます
+  id: 四則演算の演算子トークンが入力できます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 四則演算の演算子トークンが入力できます()
+  nameWithType: IncrementalParserTest.四則演算の演算子トークンが入力できます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.四則演算の演算子トークンが入力できます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 四則演算の演算子トークンが入力できます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 79
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 四則演算の演算子トークンが入力できます()
+    content.vb: Public Sub 四則演算の演算子トークンが入力できます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.四則演算の演算子トークンが入力できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されてもトークンは同じです
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されてもトークンは同じです
+  id: 演算子の後に演算子が入力されてもトークンは同じです
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 演算子の後に演算子が入力されてもトークンは同じです()
+  nameWithType: IncrementalParserTest.演算子の後に演算子が入力されてもトークンは同じです()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されてもトークンは同じです()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 演算子の後に演算子が入力されてもトークンは同じです
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 96
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 演算子の後に演算子が入力されてもトークンは同じです()
+    content.vb: Public Sub 演算子の後に演算子が入力されてもトークンは同じです
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されてもトークンは同じです*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されると演算子は変わります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されると演算子は変わります
+  id: 演算子の後に演算子が入力されると演算子は変わります
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 演算子の後に演算子が入力されると演算子は変わります()
+  nameWithType: IncrementalParserTest.演算子の後に演算子が入力されると演算子は変わります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されると演算子は変わります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 演算子の後に演算子が入力されると演算子は変わります
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 104
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 演算子の後に演算子が入力されると演算子は変わります()
+    content.vb: Public Sub 演算子の後に演算子が入力されると演算子は変わります
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されると演算子は変わります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に数字が入力されると数字トークンが付け足されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に数字が入力されると数字トークンが付け足されます
+  id: 演算子の後に数字が入力されると数字トークンが付け足されます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 演算子の後に数字が入力されると数字トークンが付け足されます()
+  nameWithType: IncrementalParserTest.演算子の後に数字が入力されると数字トークンが付け足されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に数字が入力されると数字トークンが付け足されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 演算子の後に数字が入力されると数字トークンが付け足されます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 114
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 演算子の後に数字が入力されると数字トークンが付け足されます()
+    content.vb: Public Sub 演算子の後に数字が入力されると数字トークンが付け足されます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に数字が入力されると数字トークンが付け足されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.イコールを受け付けその他トークンが出力されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.イコールを受け付けその他トークンが出力されます
+  id: イコールを受け付けその他トークンが出力されます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: イコールを受け付けその他トークンが出力されます()
+  nameWithType: IncrementalParserTest.イコールを受け付けその他トークンが出力されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.イコールを受け付けその他トークンが出力されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: イコールを受け付けその他トークンが出力されます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 123
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void イコールを受け付けその他トークンが出力されます()
+    content.vb: Public Sub イコールを受け付けその他トークンが出力されます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.イコールを受け付けその他トークンが出力されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二桁の数字が入力できます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二桁の数字が入力できます
+  id: 二桁の数字が入力できます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 二桁の数字が入力できます()
+  nameWithType: IncrementalParserTest.二桁の数字が入力できます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二桁の数字が入力できます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 二桁の数字が入力できます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 130
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 二桁の数字が入力できます()
+    content.vb: Public Sub 二桁の数字が入力できます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二桁の数字が入力できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点の入力をするまではトークンの小数点以下桁数はnullです
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点の入力をするまではトークンの小数点以下桁数はnullです
+  id: 小数点の入力をするまではトークンの小数点以下桁数はnullです
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 小数点の入力をするまではトークンの小数点以下桁数はnullです()
+  nameWithType: IncrementalParserTest.小数点の入力をするまではトークンの小数点以下桁数はnullです()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点の入力をするまではトークンの小数点以下桁数はnullです()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 小数点の入力をするまではトークンの小数点以下桁数はnullです
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 139
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 小数点の入力をするまではトークンの小数点以下桁数はnullです()
+    content.vb: Public Sub 小数点の入力をするまではトークンの小数点以下桁数はnullです
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点の入力をするまではトークンの小数点以下桁数はnullです*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点が入力できます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点が入力できます
+  id: 小数点が入力できます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 小数点が入力できます()
+  nameWithType: IncrementalParserTest.小数点が入力できます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点が入力できます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 小数点が入力できます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 147
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 小数点が入力できます()
+    content.vb: Public Sub 小数点が入力できます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点が入力できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数値を入れる前に小数点から入力が始められます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数値を入れる前に小数点から入力が始められます
+  id: 数値を入れる前に小数点から入力が始められます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 数値を入れる前に小数点から入力が始められます()
+  nameWithType: IncrementalParserTest.数値を入れる前に小数点から入力が始められます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数値を入れる前に小数点から入力が始められます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 数値を入れる前に小数点から入力が始められます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 157
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 数値を入れる前に小数点から入力が始められます()
+    content.vb: Public Sub 数値を入れる前に小数点から入力が始められます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数値を入れる前に小数点から入力が始められます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点を何回入力しても特に変わりはありません
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点を何回入力しても特に変わりはありません
+  id: 小数点を何回入力しても特に変わりはありません
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 小数点を何回入力しても特に変わりはありません()
+  nameWithType: IncrementalParserTest.小数点を何回入力しても特に変わりはありません()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点を何回入力しても特に変わりはありません()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 小数点を何回入力しても特に変わりはありません
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 166
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 小数点を何回入力しても特に変わりはありません()
+    content.vb: Public Sub 小数点を何回入力しても特に変わりはありません
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点を何回入力しても特に変わりはありません*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を入力することができます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を入力することができます
+  id: 小数点に続いて小数を入力することができます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 小数点に続いて小数を入力することができます()
+  nameWithType: IncrementalParserTest.小数点に続いて小数を入力することができます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を入力することができます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 小数点に続いて小数を入力することができます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 178
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 小数点に続いて小数を入力することができます()
+    content.vb: Public Sub 小数点に続いて小数を入力することができます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を入力することができます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を5桁入力することができます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を5桁入力することができます
+  id: 小数点に続いて小数を5桁入力することができます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 小数点に続いて小数を5桁入力することができます()
+  nameWithType: IncrementalParserTest.小数点に続いて小数を5桁入力することができます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を5桁入力することができます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 小数点に続いて小数を5桁入力することができます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 188
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 小数点に続いて小数を5桁入力することができます()
+    content.vb: Public Sub 小数点に続いて小数を5桁入力することができます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を5桁入力することができます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数は5桁までしか入力することはできません
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数は5桁までしか入力することはできません
+  id: 小数は5桁までしか入力することはできません
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 小数は5桁までしか入力することはできません()
+  nameWithType: IncrementalParserTest.小数は5桁までしか入力することはできません()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数は5桁までしか入力することはできません()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 小数は5桁までしか入力することはできません
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 202
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 小数は5桁までしか入力することはできません()
+    content.vb: Public Sub 小数は5桁までしか入力することはできません
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数は5桁までしか入力することはできません*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁入力することができます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁入力することができます
+  id: 整数は16桁入力することができます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 整数は16桁入力することができます()
+  nameWithType: IncrementalParserTest.整数は16桁入力することができます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁入力することができます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 整数は16桁入力することができます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 218
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 整数は16桁入力することができます()
+    content.vb: Public Sub 整数は16桁入力することができます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁入力することができます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁までしか入力することはできません
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁までしか入力することはできません
+  id: 整数は16桁までしか入力することはできません
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 整数は16桁までしか入力することはできません()
+  nameWithType: IncrementalParserTest.整数は16桁までしか入力することはできません()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁までしか入力することはできません()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 整数は16桁までしか入力することはできません
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 241
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 整数は16桁までしか入力することはできません()
+    content.vb: Public Sub 整数は16桁までしか入力することはできません
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁までしか入力することはできません*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をDeleteで削除できます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をDeleteで削除できます
+  id: 二文字以上書いた分をDeleteで削除できます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 二文字以上書いた分をDeleteで削除できます()
+  nameWithType: IncrementalParserTest.二文字以上書いた分をDeleteで削除できます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をDeleteで削除できます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 二文字以上書いた分をDeleteで削除できます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 266
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 二文字以上書いた分をDeleteで削除できます()
+    content.vb: Public Sub 二文字以上書いた分をDeleteで削除できます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をDeleteで削除できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.一文字書いた分をBackspaceで削除できます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.一文字書いた分をBackspaceで削除できます
+  id: 一文字書いた分をBackspaceで削除できます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 一文字書いた分をBackspaceで削除できます()
+  nameWithType: IncrementalParserTest.一文字書いた分をBackspaceで削除できます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.一文字書いた分をBackspaceで削除できます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 一文字書いた分をBackspaceで削除できます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 280
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 一文字書いた分をBackspaceで削除できます()
+    content.vb: Public Sub 一文字書いた分をBackspaceで削除できます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.一文字書いた分をBackspaceで削除できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をBackspaceで削除できます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をBackspaceで削除できます
+  id: 二文字以上書いた分をBackspaceで削除できます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 二文字以上書いた分をBackspaceで削除できます()
+  nameWithType: IncrementalParserTest.二文字以上書いた分をBackspaceで削除できます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をBackspaceで削除できます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 二文字以上書いた分をBackspaceで削除できます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 291
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 二文字以上書いた分をBackspaceで削除できます()
+    content.vb: Public Sub 二文字以上書いた分をBackspaceで削除できます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をBackspaceで削除できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点のみをBackspaceで削除できます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点のみをBackspaceで削除できます
+  id: 小数点のみをBackspaceで削除できます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 小数点のみをBackspaceで削除できます()
+  nameWithType: IncrementalParserTest.小数点のみをBackspaceで削除できます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点のみをBackspaceで削除できます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 小数点のみをBackspaceで削除できます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 304
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 小数点のみをBackspaceで削除できます()
+    content.vb: Public Sub 小数点のみをBackspaceで削除できます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点のみをBackspaceで削除できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点以下の数字をBackspaceで削除できます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点以下の数字をBackspaceで削除できます
+  id: 小数点以下の数字をBackspaceで削除できます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: 小数点以下の数字をBackspaceで削除できます()
+  nameWithType: IncrementalParserTest.小数点以下の数字をBackspaceで削除できます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点以下の数字をBackspaceで削除できます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 小数点以下の数字をBackspaceで削除できます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 317
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void 小数点以下の数字をBackspaceで削除できます()
+    content.vb: Public Sub 小数点以下の数字をBackspaceで削除できます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点以下の数字をBackspaceで削除できます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Cを受け付けその他トークンが出力されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Cを受け付けその他トークンが出力されます
+  id: Cを受け付けその他トークンが出力されます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: Cを受け付けその他トークンが出力されます()
+  nameWithType: IncrementalParserTest.Cを受け付けその他トークンが出力されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Cを受け付けその他トークンが出力されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Cを受け付けその他トークンが出力されます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 333
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Cを受け付けその他トークンが出力されます()
+    content.vb: Public Sub Cを受け付けその他トークンが出力されます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Cを受け付けその他トークンが出力されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Undoを受け付けその他トークンが出力されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Undoを受け付けその他トークンが出力されます
+  id: Undoを受け付けその他トークンが出力されます
+  parent: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  langs:
+  - csharp
+  - vb
+  name: Undoを受け付けその他トークンが出力されます()
+  nameWithType: IncrementalParserTest.Undoを受け付けその他トークンが出力されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Undoを受け付けその他トークンが出力されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/IncrementalParserTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undoを受け付けその他トークンが出力されます
+    path: ModelsTests/IncrementalParserTests.cs
+    startLine: 340
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models
+  syntax:
+    content: public void Undoを受け付けその他トークンが出力されます()
+    content.vb: Public Sub Undoを受け付けその他トークンが出力されます
+  overload: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Undoを受け付けその他トークンが出力されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Marimo.WindowsCalculator.Tests.Models
+  commentId: N:Marimo.WindowsCalculator.Tests.Models
+  name: Marimo.WindowsCalculator.Tests.Models
+  nameWithType: Marimo.WindowsCalculator.Tests.Models
+  fullName: Marimo.WindowsCalculator.Tests.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Marimo.WindowsCalculator.Tests.Models.TestBase
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.TestBase
+  parent: Marimo.WindowsCalculator.Tests.Models
+  name: TestBase
+  nameWithType: TestBase
+  fullName: Marimo.WindowsCalculator.Tests.Models.TestBase
+- uid: Marimo.WindowsCalculator.Tests.Models.TestBase.MemoryAppender
+  commentId: P:Marimo.WindowsCalculator.Tests.Models.TestBase.MemoryAppender
+  parent: Marimo.WindowsCalculator.Tests.Models.TestBase
+  name: MemoryAppender
+  nameWithType: TestBase.MemoryAppender
+  fullName: Marimo.WindowsCalculator.Tests.Models.TestBase.MemoryAppender
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Marimo.WindowsCalculator.Models.IncrementalParser
+  commentId: T:Marimo.WindowsCalculator.Models.IncrementalParser
+  parent: Marimo.WindowsCalculator.Models
+  name: IncrementalParser
+  nameWithType: IncrementalParser
+  fullName: Marimo.WindowsCalculator.Models.IncrementalParser
+- uid: Marimo.WindowsCalculator.Models
+  commentId: N:Marimo.WindowsCalculator.Models
+  name: Marimo.WindowsCalculator.Models
+  nameWithType: Marimo.WindowsCalculator.Models
+  fullName: Marimo.WindowsCalculator.Models
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.ActiveTokenの初期値はnullです*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.ActiveTokenの初期値はnullです
+  name: ActiveTokenの初期値はnullです
+  nameWithType: IncrementalParserTest.ActiveTokenの初期値はnullです
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.ActiveTokenの初期値はnullです
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.最初の数字入力がトークンとして出力されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.最初の数字入力がトークンとして出力されます
+  name: 最初の数字入力がトークンとして出力されます
+  nameWithType: IncrementalParserTest.最初の数字入力がトークンとして出力されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.最初の数字入力がトークンとして出力されます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.入力時にログが出力されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.入力時にログが出力されます
+  name: 入力時にログが出力されます
+  nameWithType: IncrementalParserTest.入力時にログが出力されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.入力時にログが出力されます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数字入力がトークンとして出力されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数字入力がトークンとして出力されます
+  name: 数字入力がトークンとして出力されます
+  nameWithType: IncrementalParserTest.数字入力がトークンとして出力されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数字入力がトークンとして出力されます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子トークンが入力できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子トークンが入力できます
+  name: 演算子トークンが入力できます
+  nameWithType: IncrementalParserTest.演算子トークンが入力できます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子トークンが入力できます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.四則演算の演算子トークンが入力できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.四則演算の演算子トークンが入力できます
+  name: 四則演算の演算子トークンが入力できます
+  nameWithType: IncrementalParserTest.四則演算の演算子トークンが入力できます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.四則演算の演算子トークンが入力できます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されてもトークンは同じです*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されてもトークンは同じです
+  name: 演算子の後に演算子が入力されてもトークンは同じです
+  nameWithType: IncrementalParserTest.演算子の後に演算子が入力されてもトークンは同じです
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されてもトークンは同じです
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されると演算子は変わります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されると演算子は変わります
+  name: 演算子の後に演算子が入力されると演算子は変わります
+  nameWithType: IncrementalParserTest.演算子の後に演算子が入力されると演算子は変わります
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に演算子が入力されると演算子は変わります
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に数字が入力されると数字トークンが付け足されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に数字が入力されると数字トークンが付け足されます
+  name: 演算子の後に数字が入力されると数字トークンが付け足されます
+  nameWithType: IncrementalParserTest.演算子の後に数字が入力されると数字トークンが付け足されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.演算子の後に数字が入力されると数字トークンが付け足されます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.イコールを受け付けその他トークンが出力されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.イコールを受け付けその他トークンが出力されます
+  name: イコールを受け付けその他トークンが出力されます
+  nameWithType: IncrementalParserTest.イコールを受け付けその他トークンが出力されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.イコールを受け付けその他トークンが出力されます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二桁の数字が入力できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二桁の数字が入力できます
+  name: 二桁の数字が入力できます
+  nameWithType: IncrementalParserTest.二桁の数字が入力できます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二桁の数字が入力できます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点の入力をするまではトークンの小数点以下桁数はnullです*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点の入力をするまではトークンの小数点以下桁数はnullです
+  name: 小数点の入力をするまではトークンの小数点以下桁数はnullです
+  nameWithType: IncrementalParserTest.小数点の入力をするまではトークンの小数点以下桁数はnullです
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点の入力をするまではトークンの小数点以下桁数はnullです
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点が入力できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点が入力できます
+  name: 小数点が入力できます
+  nameWithType: IncrementalParserTest.小数点が入力できます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点が入力できます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数値を入れる前に小数点から入力が始められます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数値を入れる前に小数点から入力が始められます
+  name: 数値を入れる前に小数点から入力が始められます
+  nameWithType: IncrementalParserTest.数値を入れる前に小数点から入力が始められます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.数値を入れる前に小数点から入力が始められます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点を何回入力しても特に変わりはありません*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点を何回入力しても特に変わりはありません
+  name: 小数点を何回入力しても特に変わりはありません
+  nameWithType: IncrementalParserTest.小数点を何回入力しても特に変わりはありません
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点を何回入力しても特に変わりはありません
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を入力することができます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を入力することができます
+  name: 小数点に続いて小数を入力することができます
+  nameWithType: IncrementalParserTest.小数点に続いて小数を入力することができます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を入力することができます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を5桁入力することができます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を5桁入力することができます
+  name: 小数点に続いて小数を5桁入力することができます
+  nameWithType: IncrementalParserTest.小数点に続いて小数を5桁入力することができます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点に続いて小数を5桁入力することができます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数は5桁までしか入力することはできません*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数は5桁までしか入力することはできません
+  name: 小数は5桁までしか入力することはできません
+  nameWithType: IncrementalParserTest.小数は5桁までしか入力することはできません
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数は5桁までしか入力することはできません
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁入力することができます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁入力することができます
+  name: 整数は16桁入力することができます
+  nameWithType: IncrementalParserTest.整数は16桁入力することができます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁入力することができます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁までしか入力することはできません*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁までしか入力することはできません
+  name: 整数は16桁までしか入力することはできません
+  nameWithType: IncrementalParserTest.整数は16桁までしか入力することはできません
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.整数は16桁までしか入力することはできません
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をDeleteで削除できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をDeleteで削除できます
+  name: 二文字以上書いた分をDeleteで削除できます
+  nameWithType: IncrementalParserTest.二文字以上書いた分をDeleteで削除できます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をDeleteで削除できます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.一文字書いた分をBackspaceで削除できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.一文字書いた分をBackspaceで削除できます
+  name: 一文字書いた分をBackspaceで削除できます
+  nameWithType: IncrementalParserTest.一文字書いた分をBackspaceで削除できます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.一文字書いた分をBackspaceで削除できます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をBackspaceで削除できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をBackspaceで削除できます
+  name: 二文字以上書いた分をBackspaceで削除できます
+  nameWithType: IncrementalParserTest.二文字以上書いた分をBackspaceで削除できます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.二文字以上書いた分をBackspaceで削除できます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点のみをBackspaceで削除できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点のみをBackspaceで削除できます
+  name: 小数点のみをBackspaceで削除できます
+  nameWithType: IncrementalParserTest.小数点のみをBackspaceで削除できます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点のみをBackspaceで削除できます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点以下の数字をBackspaceで削除できます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点以下の数字をBackspaceで削除できます
+  name: 小数点以下の数字をBackspaceで削除できます
+  nameWithType: IncrementalParserTest.小数点以下の数字をBackspaceで削除できます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.小数点以下の数字をBackspaceで削除できます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Cを受け付けその他トークンが出力されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Cを受け付けその他トークンが出力されます
+  name: Cを受け付けその他トークンが出力されます
+  nameWithType: IncrementalParserTest.Cを受け付けその他トークンが出力されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Cを受け付けその他トークンが出力されます
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Undoを受け付けその他トークンが出力されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Undoを受け付けその他トークンが出力されます
+  name: Undoを受け付けその他トークンが出力されます
+  nameWithType: IncrementalParserTest.Undoを受け付けその他トークンが出力されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest.Undoを受け付けその他トークンが出力されます

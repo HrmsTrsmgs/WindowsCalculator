@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  commentId: T:Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  id: OtherTokenKind
+  parent: Marimo.WindowsCalculator.Models.Tokens
+  children:
+  - Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Backspace
+  - Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.C
+  - Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.CE
+  - Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Equal
+  - Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Redo
+  - Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Undo
+  langs:
+  - csharp
+  - vb
+  name: OtherTokenKind
+  nameWithType: OtherTokenKind
+  fullName: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  type: Enum
+  source:
+    remote:
+      path: Models/Tokens/OtherTokenKind.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: OtherTokenKind
+    path: Models/Tokens/OtherTokenKind.cs
+    startLine: 5
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models.Tokens
+  summary: "\n演算子と数値以外のトークンを表します。\n"
+  example: []
+  syntax:
+    content: public enum OtherTokenKind
+    content.vb: Public Enum OtherTokenKind
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Equal
+  commentId: F:Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Equal
+  id: Equal
+  parent: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  langs:
+  - csharp
+  - vb
+  name: Equal
+  nameWithType: OtherTokenKind.Equal
+  fullName: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Equal
+  type: Field
+  source:
+    remote:
+      path: Models/Tokens/OtherTokenKind.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Equal
+    path: Models/Tokens/OtherTokenKind.cs
+    startLine: 10
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models.Tokens
+  summary: "\n=とEnterの操作。\n"
+  example: []
+  syntax:
+    content: Equal = 0
+    return:
+      type: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Backspace
+  commentId: F:Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Backspace
+  id: Backspace
+  parent: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  langs:
+  - csharp
+  - vb
+  name: Backspace
+  nameWithType: OtherTokenKind.Backspace
+  fullName: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Backspace
+  type: Field
+  source:
+    remote:
+      path: Models/Tokens/OtherTokenKind.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Backspace
+    path: Models/Tokens/OtherTokenKind.cs
+    startLine: 15
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models.Tokens
+  summary: "\nBackspaceの操作。\n"
+  example: []
+  syntax:
+    content: Backspace = 1
+    return:
+      type: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.C
+  commentId: F:Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.C
+  id: C
+  parent: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  langs:
+  - csharp
+  - vb
+  name: C
+  nameWithType: OtherTokenKind.C
+  fullName: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.C
+  type: Field
+  source:
+    remote:
+      path: Models/Tokens/OtherTokenKind.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: C
+    path: Models/Tokens/OtherTokenKind.cs
+    startLine: 20
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models.Tokens
+  summary: "\nCの操作。\n"
+  example: []
+  syntax:
+    content: C = 2
+    return:
+      type: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Undo
+  commentId: F:Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Undo
+  id: Undo
+  parent: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  langs:
+  - csharp
+  - vb
+  name: Undo
+  nameWithType: OtherTokenKind.Undo
+  fullName: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Undo
+  type: Field
+  source:
+    remote:
+      path: Models/Tokens/OtherTokenKind.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undo
+    path: Models/Tokens/OtherTokenKind.cs
+    startLine: 25
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models.Tokens
+  summary: "\nUndo操作。\n"
+  example: []
+  syntax:
+    content: Undo = 3
+    return:
+      type: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Redo
+  commentId: F:Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Redo
+  id: Redo
+  parent: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  langs:
+  - csharp
+  - vb
+  name: Redo
+  nameWithType: OtherTokenKind.Redo
+  fullName: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.Redo
+  type: Field
+  source:
+    remote:
+      path: Models/Tokens/OtherTokenKind.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Redo
+    path: Models/Tokens/OtherTokenKind.cs
+    startLine: 30
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models.Tokens
+  summary: "\nRedo操作。\n"
+  example: []
+  syntax:
+    content: Redo = 4
+    return:
+      type: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.CE
+  commentId: F:Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.CE
+  id: CE
+  parent: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  langs:
+  - csharp
+  - vb
+  name: CE
+  nameWithType: OtherTokenKind.CE
+  fullName: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind.CE
+  type: Field
+  source:
+    remote:
+      path: Models/Tokens/OtherTokenKind.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: CE
+    path: Models/Tokens/OtherTokenKind.cs
+    startLine: 35
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models.Tokens
+  summary: "\n現在の入力された数値を0にします。\n"
+  example: []
+  syntax:
+    content: CE = 5
+    return:
+      type: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Marimo.WindowsCalculator.Models.Tokens
+  commentId: N:Marimo.WindowsCalculator.Models.Tokens
+  name: Marimo.WindowsCalculator.Models.Tokens
+  nameWithType: Marimo.WindowsCalculator.Models.Tokens
+  fullName: Marimo.WindowsCalculator.Models.Tokens
+- uid: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  commentId: T:Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind
+  parent: Marimo.WindowsCalculator.Models.Tokens
+  name: OtherTokenKind
+  nameWithType: OtherTokenKind
+  fullName: Marimo.WindowsCalculator.Models.Tokens.OtherTokenKind

@@ -1,0 +1,33 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [ "*.sln" ],
+          "cwd": "."
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [ "api/**.yml" ]
+      },
+      {
+        "files": [ "**/*.md" ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [ "**/images/**" ]
+      }
+    ],
+    "globalMetadata": {
+      "_appTitle": "Project Documentation",
+      "_disableContribution": true
+    },
+    "dest": "_site"
+  }
+}

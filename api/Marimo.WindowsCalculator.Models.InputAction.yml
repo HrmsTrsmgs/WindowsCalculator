@@ -1,0 +1,783 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Models.InputAction
+  commentId: T:Marimo.WindowsCalculator.Models.InputAction
+  id: InputAction
+  parent: Marimo.WindowsCalculator.Models
+  children:
+  - Marimo.WindowsCalculator.Models.InputAction.Add
+  - Marimo.WindowsCalculator.Models.InputAction.Backspace
+  - Marimo.WindowsCalculator.Models.InputAction.C
+  - Marimo.WindowsCalculator.Models.InputAction.CE
+  - Marimo.WindowsCalculator.Models.InputAction.Divide
+  - Marimo.WindowsCalculator.Models.InputAction.Dot
+  - Marimo.WindowsCalculator.Models.InputAction.Eight
+  - Marimo.WindowsCalculator.Models.InputAction.Equal
+  - Marimo.WindowsCalculator.Models.InputAction.Five
+  - Marimo.WindowsCalculator.Models.InputAction.Four
+  - Marimo.WindowsCalculator.Models.InputAction.Multiply
+  - Marimo.WindowsCalculator.Models.InputAction.Nine
+  - Marimo.WindowsCalculator.Models.InputAction.One
+  - Marimo.WindowsCalculator.Models.InputAction.Redo
+  - Marimo.WindowsCalculator.Models.InputAction.Seven
+  - Marimo.WindowsCalculator.Models.InputAction.Six
+  - Marimo.WindowsCalculator.Models.InputAction.Substract
+  - Marimo.WindowsCalculator.Models.InputAction.Three
+  - Marimo.WindowsCalculator.Models.InputAction.Two
+  - Marimo.WindowsCalculator.Models.InputAction.Undo
+  - Marimo.WindowsCalculator.Models.InputAction.Zero
+  langs:
+  - csharp
+  - vb
+  name: InputAction
+  nameWithType: InputAction
+  fullName: Marimo.WindowsCalculator.Models.InputAction
+  type: Enum
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InputAction
+    path: Models/InputAction .cs
+    startLine: 5
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n入力されたキー入力の種類を表します。\n"
+  example: []
+  syntax:
+    content: public enum InputAction
+    content.vb: Public Enum InputAction
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Marimo.WindowsCalculator.Models.InputAction.Zero
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Zero
+  id: Zero
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: InputAction.Zero
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Zero
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Zero
+    path: Models/InputAction .cs
+    startLine: 10
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n0キー。\n"
+  example: []
+  syntax:
+    content: Zero = 0
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.One
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.One
+  id: One
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: InputAction.One
+  fullName: Marimo.WindowsCalculator.Models.InputAction.One
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: One
+    path: Models/InputAction .cs
+    startLine: 15
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n1キー。\n"
+  example: []
+  syntax:
+    content: One = 1
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Two
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Two
+  id: Two
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Two
+  nameWithType: InputAction.Two
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Two
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Two
+    path: Models/InputAction .cs
+    startLine: 20
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n2キー。\n"
+  example: []
+  syntax:
+    content: Two = 2
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Three
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Three
+  id: Three
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Three
+  nameWithType: InputAction.Three
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Three
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Three
+    path: Models/InputAction .cs
+    startLine: 25
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n3キー。\n"
+  example: []
+  syntax:
+    content: Three = 3
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Four
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Four
+  id: Four
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Four
+  nameWithType: InputAction.Four
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Four
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Four
+    path: Models/InputAction .cs
+    startLine: 30
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n4キー。\n"
+  example: []
+  syntax:
+    content: Four = 4
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Five
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Five
+  id: Five
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Five
+  nameWithType: InputAction.Five
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Five
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Five
+    path: Models/InputAction .cs
+    startLine: 35
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n5キー。\n"
+  example: []
+  syntax:
+    content: Five = 5
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Six
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Six
+  id: Six
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Six
+  nameWithType: InputAction.Six
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Six
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Six
+    path: Models/InputAction .cs
+    startLine: 40
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n6キー。\n"
+  example: []
+  syntax:
+    content: Six = 6
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Seven
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Seven
+  id: Seven
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Seven
+  nameWithType: InputAction.Seven
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Seven
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Seven
+    path: Models/InputAction .cs
+    startLine: 45
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n7キー。\n"
+  example: []
+  syntax:
+    content: Seven = 7
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Eight
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Eight
+  id: Eight
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Eight
+  nameWithType: InputAction.Eight
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Eight
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Eight
+    path: Models/InputAction .cs
+    startLine: 50
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n8キー。\n"
+  example: []
+  syntax:
+    content: Eight = 8
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Nine
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Nine
+  id: Nine
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Nine
+  nameWithType: InputAction.Nine
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Nine
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Nine
+    path: Models/InputAction .cs
+    startLine: 55
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n9キー。\n"
+  example: []
+  syntax:
+    content: Nine = 9
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Dot
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Dot
+  id: Dot
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Dot
+  nameWithType: InputAction.Dot
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Dot
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Dot
+    path: Models/InputAction .cs
+    startLine: 60
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n小数点キー。\n"
+  example: []
+  syntax:
+    content: Dot = 10
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Add
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Add
+  id: Add
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Add
+  nameWithType: InputAction.Add
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Add
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Add
+    path: Models/InputAction .cs
+    startLine: 65
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n+キー。\n"
+  example: []
+  syntax:
+    content: Add = 11
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Substract
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Substract
+  id: Substract
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Substract
+  nameWithType: InputAction.Substract
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Substract
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Substract
+    path: Models/InputAction .cs
+    startLine: 70
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n-キー。\n"
+  example: []
+  syntax:
+    content: Substract = 12
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Multiply
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Multiply
+  id: Multiply
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Multiply
+  nameWithType: InputAction.Multiply
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Multiply
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Multiply
+    path: Models/InputAction .cs
+    startLine: 75
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n*キー。\n"
+  example: []
+  syntax:
+    content: Multiply = 13
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Divide
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Divide
+  id: Divide
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Divide
+  nameWithType: InputAction.Divide
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Divide
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Divide
+    path: Models/InputAction .cs
+    startLine: 80
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n/キー。\n"
+  example: []
+  syntax:
+    content: Divide = 14
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Equal
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Equal
+  id: Equal
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Equal
+  nameWithType: InputAction.Equal
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Equal
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Equal
+    path: Models/InputAction .cs
+    startLine: 85
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\nイコールを表す、=キーもしくはEnterキー。\n"
+  example: []
+  syntax:
+    content: Equal = 15
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Undo
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Undo
+  id: Undo
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Undo
+  nameWithType: InputAction.Undo
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Undo
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Undo
+    path: Models/InputAction .cs
+    startLine: 90
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\nUndoを表すCtrl+zキー。\n"
+  example: []
+  syntax:
+    content: Undo = 16
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Redo
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Redo
+  id: Redo
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Redo
+  nameWithType: InputAction.Redo
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Redo
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Redo
+    path: Models/InputAction .cs
+    startLine: 95
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\nRedoを表すCrrl+yキー。\n"
+  example: []
+  syntax:
+    content: Redo = 17
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.C
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.C
+  id: C
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: C
+  nameWithType: InputAction.C
+  fullName: Marimo.WindowsCalculator.Models.InputAction.C
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: C
+    path: Models/InputAction .cs
+    startLine: 100
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n計算機のCキー。ESCキー。\n"
+  example: []
+  syntax:
+    content: C = 18
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.CE
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.CE
+  id: CE
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: CE
+  nameWithType: InputAction.CE
+  fullName: Marimo.WindowsCalculator.Models.InputAction.CE
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: CE
+    path: Models/InputAction .cs
+    startLine: 105
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\n計算機のCEキー。Deleteキー。\n"
+  example: []
+  syntax:
+    content: CE = 19
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Marimo.WindowsCalculator.Models.InputAction.Backspace
+  commentId: F:Marimo.WindowsCalculator.Models.InputAction.Backspace
+  id: Backspace
+  parent: Marimo.WindowsCalculator.Models.InputAction
+  langs:
+  - csharp
+  - vb
+  name: Backspace
+  nameWithType: InputAction.Backspace
+  fullName: Marimo.WindowsCalculator.Models.InputAction.Backspace
+  type: Field
+  source:
+    remote:
+      path: Models/InputAction .cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Backspace
+    path: Models/InputAction .cs
+    startLine: 110
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+  namespace: Marimo.WindowsCalculator.Models
+  summary: "\nバックスペースキー。\n"
+  example: []
+  syntax:
+    content: Backspace = 20
+    return:
+      type: Marimo.WindowsCalculator.Models.InputAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Marimo.WindowsCalculator.Models
+  commentId: N:Marimo.WindowsCalculator.Models
+  name: Marimo.WindowsCalculator.Models
+  nameWithType: Marimo.WindowsCalculator.Models
+  fullName: Marimo.WindowsCalculator.Models
+- uid: Marimo.WindowsCalculator.Models.InputAction
+  commentId: T:Marimo.WindowsCalculator.Models.InputAction
+  parent: Marimo.WindowsCalculator.Models
+  name: InputAction
+  nameWithType: InputAction
+  fullName: Marimo.WindowsCalculator.Models.InputAction

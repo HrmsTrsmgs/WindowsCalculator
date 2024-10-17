@@ -1,0 +1,702 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  id: CalculationTests
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations
+  children:
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先でも通知されます
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先に伝播します
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は通知されます
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーは計算するまでは出ていません
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.ゼロ除算の計算をするとエラーが出ます
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の計算は通知されます
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は次の計算も伝播されます
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は式にも伝播します
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更は計算先にも通知されます
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.次の計算に読み込ま時に計算は行われません
+  langs:
+  - csharp
+  - vb
+  name: CalculationTests
+  nameWithType: CalculationTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  type: Class
+  source:
+    remote:
+      path: ModelsTests/Calculations/CalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: CalculationTests
+    path: ModelsTests/Calculations/CalculationTests.cs
+    startLine: 5
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public class CalculationTests
+    content.vb: Public Class CalculationTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーは計算するまでは出ていません
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーは計算するまでは出ていません
+  id: エラーは計算するまでは出ていません
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  langs:
+  - csharp
+  - vb
+  name: エラーは計算するまでは出ていません()
+  nameWithType: CalculationTests.エラーは計算するまでは出ていません()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーは計算するまでは出ていません()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/CalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: エラーは計算するまでは出ていません
+    path: ModelsTests/Calculations/CalculationTests.cs
+    startLine: 23
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void エラーは計算するまでは出ていません()
+    content.vb: Public Sub エラーは計算するまでは出ていません
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーは計算するまでは出ていません*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.ゼロ除算の計算をするとエラーが出ます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.ゼロ除算の計算をするとエラーが出ます
+  id: ゼロ除算の計算をするとエラーが出ます
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  langs:
+  - csharp
+  - vb
+  name: ゼロ除算の計算をするとエラーが出ます()
+  nameWithType: CalculationTests.ゼロ除算の計算をするとエラーが出ます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.ゼロ除算の計算をするとエラーが出ます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/CalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: ゼロ除算の計算をするとエラーが出ます
+    path: ModelsTests/Calculations/CalculationTests.cs
+    startLine: 29
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void ゼロ除算の計算をするとエラーが出ます()
+    content.vb: Public Sub ゼロ除算の計算をするとエラーが出ます
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.ゼロ除算の計算をするとエラーが出ます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は通知されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は通知されます
+  id: エラーの変更は通知されます
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  langs:
+  - csharp
+  - vb
+  name: エラーの変更は通知されます()
+  nameWithType: CalculationTests.エラーの変更は通知されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は通知されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/CalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: エラーの変更は通知されます
+    path: ModelsTests/Calculations/CalculationTests.cs
+    startLine: 38
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void エラーの変更は通知されます()
+    content.vb: Public Sub エラーの変更は通知されます
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は通知されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先でも通知されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先でも通知されます
+  id: エラーの変更は計算先でも通知されます
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  langs:
+  - csharp
+  - vb
+  name: エラーの変更は計算先でも通知されます()
+  nameWithType: CalculationTests.エラーの変更は計算先でも通知されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先でも通知されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/CalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: エラーの変更は計算先でも通知されます
+    path: ModelsTests/Calculations/CalculationTests.cs
+    startLine: 50
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void エラーの変更は計算先でも通知されます()
+    content.vb: Public Sub エラーの変更は計算先でも通知されます
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先でも通知されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先に伝播します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先に伝播します
+  id: エラーの変更は計算先に伝播します
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  langs:
+  - csharp
+  - vb
+  name: エラーの変更は計算先に伝播します()
+  nameWithType: CalculationTests.エラーの変更は計算先に伝播します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先に伝播します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/CalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: エラーの変更は計算先に伝播します
+    path: ModelsTests/Calculations/CalculationTests.cs
+    startLine: 63
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void エラーの変更は計算先に伝播します()
+    content.vb: Public Sub エラーの変更は計算先に伝播します
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先に伝播します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の計算は通知されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の計算は通知されます
+  id: 結果の計算は通知されます
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  langs:
+  - csharp
+  - vb
+  name: 結果の計算は通知されます()
+  nameWithType: CalculationTests.結果の計算は通知されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の計算は通知されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/CalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 結果の計算は通知されます
+    path: ModelsTests/Calculations/CalculationTests.cs
+    startLine: 76
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void 結果の計算は通知されます()
+    content.vb: Public Sub 結果の計算は通知されます
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の計算は通知されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.次の計算に読み込ま時に計算は行われません
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.次の計算に読み込ま時に計算は行われません
+  id: 次の計算に読み込ま時に計算は行われません
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  langs:
+  - csharp
+  - vb
+  name: 次の計算に読み込ま時に計算は行われません()
+  nameWithType: CalculationTests.次の計算に読み込ま時に計算は行われません()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.次の計算に読み込ま時に計算は行われません()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/CalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 次の計算に読み込ま時に計算は行われません
+    path: ModelsTests/Calculations/CalculationTests.cs
+    startLine: 87
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void 次の計算に読み込ま時に計算は行われません()
+    content.vb: Public Sub 次の計算に読み込ま時に計算は行われません
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.次の計算に読み込ま時に計算は行われません*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は次の計算も伝播されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は次の計算も伝播されます
+  id: 結果の変更の通知は次の計算も伝播されます
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  langs:
+  - csharp
+  - vb
+  name: 結果の変更の通知は次の計算も伝播されます()
+  nameWithType: CalculationTests.結果の変更の通知は次の計算も伝播されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は次の計算も伝播されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/CalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 結果の変更の通知は次の計算も伝播されます
+    path: ModelsTests/Calculations/CalculationTests.cs
+    startLine: 101
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void 結果の変更の通知は次の計算も伝播されます()
+    content.vb: Public Sub 結果の変更の通知は次の計算も伝播されます
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は次の計算も伝播されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は式にも伝播します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は式にも伝播します
+  id: 結果の変更の通知は式にも伝播します
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  langs:
+  - csharp
+  - vb
+  name: 結果の変更の通知は式にも伝播します()
+  nameWithType: CalculationTests.結果の変更の通知は式にも伝播します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は式にも伝播します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/CalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 結果の変更の通知は式にも伝播します
+    path: ModelsTests/Calculations/CalculationTests.cs
+    startLine: 116
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void 結果の変更の通知は式にも伝播します()
+    content.vb: Public Sub 結果の変更の通知は式にも伝播します
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は式にも伝播します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更は計算先にも通知されます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更は計算先にも通知されます
+  id: 結果の変更は計算先にも通知されます
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests
+  langs:
+  - csharp
+  - vb
+  name: 結果の変更は計算先にも通知されます()
+  nameWithType: CalculationTests.結果の変更は計算先にも通知されます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更は計算先にも通知されます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/CalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 結果の変更は計算先にも通知されます
+    path: ModelsTests/Calculations/CalculationTests.cs
+    startLine: 127
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void 結果の変更は計算先にも通知されます()
+    content.vb: Public Sub 結果の変更は計算先にも通知されます
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更は計算先にも通知されます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations
+  commentId: N:Marimo.WindowsCalculator.Tests.Models.Calculations
+  name: Marimo.WindowsCalculator.Tests.Models.Calculations
+  nameWithType: Marimo.WindowsCalculator.Tests.Models.Calculations
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーは計算するまでは出ていません*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーは計算するまでは出ていません
+  name: エラーは計算するまでは出ていません
+  nameWithType: CalculationTests.エラーは計算するまでは出ていません
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーは計算するまでは出ていません
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.ゼロ除算の計算をするとエラーが出ます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.ゼロ除算の計算をするとエラーが出ます
+  name: ゼロ除算の計算をするとエラーが出ます
+  nameWithType: CalculationTests.ゼロ除算の計算をするとエラーが出ます
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.ゼロ除算の計算をするとエラーが出ます
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は通知されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は通知されます
+  name: エラーの変更は通知されます
+  nameWithType: CalculationTests.エラーの変更は通知されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は通知されます
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先でも通知されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先でも通知されます
+  name: エラーの変更は計算先でも通知されます
+  nameWithType: CalculationTests.エラーの変更は計算先でも通知されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先でも通知されます
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先に伝播します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先に伝播します
+  name: エラーの変更は計算先に伝播します
+  nameWithType: CalculationTests.エラーの変更は計算先に伝播します
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.エラーの変更は計算先に伝播します
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の計算は通知されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の計算は通知されます
+  name: 結果の計算は通知されます
+  nameWithType: CalculationTests.結果の計算は通知されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の計算は通知されます
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.次の計算に読み込ま時に計算は行われません*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.次の計算に読み込ま時に計算は行われません
+  name: 次の計算に読み込ま時に計算は行われません
+  nameWithType: CalculationTests.次の計算に読み込ま時に計算は行われません
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.次の計算に読み込ま時に計算は行われません
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は次の計算も伝播されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は次の計算も伝播されます
+  name: 結果の変更の通知は次の計算も伝播されます
+  nameWithType: CalculationTests.結果の変更の通知は次の計算も伝播されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は次の計算も伝播されます
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は式にも伝播します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は式にも伝播します
+  name: 結果の変更の通知は式にも伝播します
+  nameWithType: CalculationTests.結果の変更の通知は式にも伝播します
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更の通知は式にも伝播します
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更は計算先にも通知されます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更は計算先にも通知されます
+  name: 結果の変更は計算先にも通知されます
+  nameWithType: CalculationTests.結果の変更は計算先にも通知されます
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.CalculationTests.結果の変更は計算先にも通知されます

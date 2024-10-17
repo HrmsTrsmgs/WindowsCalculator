@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.WinUI3
+  commentId: N:Marimo.WindowsCalculator.WinUI3
+  id: Marimo.WindowsCalculator.WinUI3
+  children:
+  - Marimo.WindowsCalculator.WinUI3.App
+  - Marimo.WindowsCalculator.WinUI3.KeyPress
+  - Marimo.WindowsCalculator.WinUI3.MainWindow
+  - Marimo.WindowsCalculator.WinUI3.Program
+  langs:
+  - csharp
+  - vb
+  name: Marimo.WindowsCalculator.WinUI3
+  nameWithType: Marimo.WindowsCalculator.WinUI3
+  fullName: Marimo.WindowsCalculator.WinUI3
+  type: Namespace
+  assemblies:
+  - WinUI3
+references:
+- uid: Marimo.WindowsCalculator.WinUI3.App
+  commentId: T:Marimo.WindowsCalculator.WinUI3.App
+  name: App
+  nameWithType: App
+  fullName: Marimo.WindowsCalculator.WinUI3.App
+- uid: Marimo.WindowsCalculator.WinUI3.KeyPress
+  commentId: T:Marimo.WindowsCalculator.WinUI3.KeyPress
+  name: KeyPress
+  nameWithType: KeyPress
+  fullName: Marimo.WindowsCalculator.WinUI3.KeyPress
+- uid: Marimo.WindowsCalculator.WinUI3.MainWindow
+  commentId: T:Marimo.WindowsCalculator.WinUI3.MainWindow
+  name: MainWindow
+  nameWithType: MainWindow
+  fullName: Marimo.WindowsCalculator.WinUI3.MainWindow
+- uid: Marimo.WindowsCalculator.WinUI3.Program
+  commentId: T:Marimo.WindowsCalculator.WinUI3.Program
+  name: Program
+  nameWithType: Program
+  fullName: Marimo.WindowsCalculator.WinUI3.Program

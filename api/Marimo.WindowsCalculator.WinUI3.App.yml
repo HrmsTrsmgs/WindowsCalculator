@@ -1,0 +1,1121 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.WinUI3.App
+  commentId: T:Marimo.WindowsCalculator.WinUI3.App
+  id: App
+  parent: Marimo.WindowsCalculator.WinUI3
+  children:
+  - Marimo.WindowsCalculator.WinUI3.App.#ctor
+  - Marimo.WindowsCalculator.WinUI3.App.InitializeComponent
+  - Marimo.WindowsCalculator.WinUI3.App.OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs)
+  langs:
+  - csharp
+  - vb
+  name: App
+  nameWithType: App
+  fullName: Marimo.WindowsCalculator.WinUI3.App
+  type: Class
+  source:
+    remote:
+      path: WinUI3/obj/Release/net8.0-windows10.0.19041.0/App.g.i.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: App
+    path: WinUI3/obj/Release/net8.0-windows10.0.19041.0/App.g.i.cs
+    startLine: 34
+  assemblies:
+  - WinUI3
+  namespace: Marimo.WindowsCalculator.WinUI3
+  summary: "\nアプリケーションです。\n"
+  example: []
+  syntax:
+    content: 'public class App : Application, ICustomQueryInterface, IWinRTObject, IUnmanagedVirtualMethodTableProvider, IDynamicInterfaceCastable, IEquatable<Application>'
+    content.vb: >-
+      Public Class App
+          Inherits Application
+          Implements ICustomQueryInterface, IWinRTObject, IUnmanagedVirtualMethodTableProvider, IDynamicInterfaceCastable, IEquatable(Of Application)
+  inheritance:
+  - System.Object
+  - Microsoft.UI.Xaml.Application
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.IEquatable{Microsoft.UI.Xaml.Application}
+  inheritedMembers:
+  - Microsoft.UI.Xaml.Application.As``1
+  - Microsoft.UI.Xaml.Application.Start(Microsoft.UI.Xaml.ApplicationInitializationCallback)
+  - Microsoft.UI.Xaml.Application.LoadComponent(System.Object,System.Uri)
+  - Microsoft.UI.Xaml.Application.LoadComponent(System.Object,System.Uri,Microsoft.UI.Xaml.Controls.Primitives.ComponentResourceLocation)
+  - Microsoft.UI.Xaml.Application.FromAbi(System.IntPtr)
+  - Microsoft.UI.Xaml.Application.Equals(Microsoft.UI.Xaml.Application)
+  - Microsoft.UI.Xaml.Application.Equals(System.Object)
+  - Microsoft.UI.Xaml.Application.GetHashCode
+  - Microsoft.UI.Xaml.Application.Exit
+  - Microsoft.UI.Xaml.Application.IsOverridableInterface(System.Guid)
+  - Microsoft.UI.Xaml.Application.Current
+  - Microsoft.UI.Xaml.Application.WinRT#IWinRTObject#HasUnwrappableNativeObject
+  - Microsoft.UI.Xaml.Application.WinRT#IWinRTObject#NativeObject
+  - Microsoft.UI.Xaml.Application.WinRT#IWinRTObject#AdditionalTypeData
+  - Microsoft.UI.Xaml.Application.DebugSettings
+  - Microsoft.UI.Xaml.Application.DispatcherShutdownMode
+  - Microsoft.UI.Xaml.Application.FocusVisualKind
+  - Microsoft.UI.Xaml.Application.HighContrastAdjustment
+  - Microsoft.UI.Xaml.Application.RequestedTheme
+  - Microsoft.UI.Xaml.Application.Resources
+  - Microsoft.UI.Xaml.Application.UnhandledException
+  - Microsoft.UI.Xaml.Application.ResourceManagerRequested
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Marimo.WindowsCalculator.WinUI3.App.#ctor
+  commentId: M:Marimo.WindowsCalculator.WinUI3.App.#ctor
+  id: '#ctor'
+  parent: Marimo.WindowsCalculator.WinUI3.App
+  langs:
+  - csharp
+  - vb
+  name: App()
+  nameWithType: App.App()
+  fullName: Marimo.WindowsCalculator.WinUI3.App.App()
+  type: Constructor
+  source:
+    remote:
+      path: WinUI3/App.xaml.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: .ctor
+    path: WinUI3/App.xaml.cs
+    startLine: 23
+  assemblies:
+  - WinUI3
+  namespace: Marimo.WindowsCalculator.WinUI3
+  syntax:
+    content: public App()
+    content.vb: Public Sub New
+  overload: Marimo.WindowsCalculator.WinUI3.App.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.WinUI3.App.OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs)
+  commentId: M:Marimo.WindowsCalculator.WinUI3.App.OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs)
+  id: OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs)
+  parent: Marimo.WindowsCalculator.WinUI3.App
+  langs:
+  - csharp
+  - vb
+  name: OnLaunched(LaunchActivatedEventArgs)
+  nameWithType: App.OnLaunched(LaunchActivatedEventArgs)
+  fullName: Marimo.WindowsCalculator.WinUI3.App.OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs)
+  type: Method
+  source:
+    remote:
+      path: WinUI3/App.xaml.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: OnLaunched
+    path: WinUI3/App.xaml.cs
+    startLine: 38
+  assemblies:
+  - WinUI3
+  namespace: Marimo.WindowsCalculator.WinUI3
+  syntax:
+    content: protected override void OnLaunched(LaunchActivatedEventArgs args)
+    parameters:
+    - id: args
+      type: Microsoft.UI.Xaml.LaunchActivatedEventArgs
+    content.vb: Protected Overrides Sub OnLaunched(args As LaunchActivatedEventArgs)
+  overridden: Microsoft.UI.Xaml.Application.OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs)
+  overload: Marimo.WindowsCalculator.WinUI3.App.OnLaunched*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Marimo.WindowsCalculator.WinUI3.App.InitializeComponent
+  commentId: M:Marimo.WindowsCalculator.WinUI3.App.InitializeComponent
+  id: InitializeComponent
+  parent: Marimo.WindowsCalculator.WinUI3.App
+  langs:
+  - csharp
+  - vb
+  name: InitializeComponent()
+  nameWithType: App.InitializeComponent()
+  fullName: Marimo.WindowsCalculator.WinUI3.App.InitializeComponent()
+  type: Method
+  source:
+    remote:
+      path: WinUI3/obj/Release/net8.0-windows10.0.19041.0/App.g.i.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: InitializeComponent
+    path: WinUI3/obj/Release/net8.0-windows10.0.19041.0/App.g.i.cs
+    startLine: 41
+  assemblies:
+  - WinUI3
+  namespace: Marimo.WindowsCalculator.WinUI3
+  summary: "\nInitializeComponent()\n"
+  example: []
+  syntax:
+    content: public void InitializeComponent()
+    content.vb: Public Sub InitializeComponent
+  overload: Marimo.WindowsCalculator.WinUI3.App.InitializeComponent*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Marimo.WindowsCalculator.WinUI3
+  commentId: N:Marimo.WindowsCalculator.WinUI3
+  name: Marimo.WindowsCalculator.WinUI3
+  nameWithType: Marimo.WindowsCalculator.WinUI3
+  fullName: Marimo.WindowsCalculator.WinUI3
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.UI.Xaml.Application
+  commentId: T:Microsoft.UI.Xaml.Application
+  parent: Microsoft.UI.Xaml
+  isExternal: true
+  name: Application
+  nameWithType: Application
+  fullName: Microsoft.UI.Xaml.Application
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.IEquatable{Microsoft.UI.Xaml.Application}
+  commentId: T:System.IEquatable{Microsoft.UI.Xaml.Application}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<Application>
+  nameWithType: IEquatable<Application>
+  fullName: System.IEquatable<Microsoft.UI.Xaml.Application>
+  nameWithType.vb: IEquatable(Of Application)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.Application)
+  name.vb: IEquatable(Of Application)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.UI.Xaml.Application
+    name: Application
+    nameWithType: Application
+    fullName: Microsoft.UI.Xaml.Application
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.UI.Xaml.Application
+    name: Application
+    nameWithType: Application
+    fullName: Microsoft.UI.Xaml.Application
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.UI.Xaml.Application.As``1
+  commentId: M:Microsoft.UI.Xaml.Application.As``1
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: As<I>()
+  nameWithType: Application.As<I>()
+  fullName: Microsoft.UI.Xaml.Application.As<I>()
+  nameWithType.vb: Application.As(Of I)()
+  fullName.vb: Microsoft.UI.Xaml.Application.As(Of I)()
+  name.vb: As(Of I)()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Application.As``1
+    name: As<I>
+    nameWithType: Application.As<I>
+    fullName: Microsoft.UI.Xaml.Application.As<I>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Application.As``1
+    name: As(Of I)
+    nameWithType: Application.As(Of I)
+    fullName: Microsoft.UI.Xaml.Application.As(Of I)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.UI.Xaml.Application.Start(Microsoft.UI.Xaml.ApplicationInitializationCallback)
+  commentId: M:Microsoft.UI.Xaml.Application.Start(Microsoft.UI.Xaml.ApplicationInitializationCallback)
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: Start(ApplicationInitializationCallback)
+  nameWithType: Application.Start(ApplicationInitializationCallback)
+  fullName: Microsoft.UI.Xaml.Application.Start(Microsoft.UI.Xaml.ApplicationInitializationCallback)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Application.Start(Microsoft.UI.Xaml.ApplicationInitializationCallback)
+    name: Start
+    nameWithType: Application.Start
+    fullName: Microsoft.UI.Xaml.Application.Start
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.UI.Xaml.ApplicationInitializationCallback
+    name: ApplicationInitializationCallback
+    nameWithType: ApplicationInitializationCallback
+    fullName: Microsoft.UI.Xaml.ApplicationInitializationCallback
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Application.Start(Microsoft.UI.Xaml.ApplicationInitializationCallback)
+    name: Start
+    nameWithType: Application.Start
+    fullName: Microsoft.UI.Xaml.Application.Start
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.UI.Xaml.ApplicationInitializationCallback
+    name: ApplicationInitializationCallback
+    nameWithType: ApplicationInitializationCallback
+    fullName: Microsoft.UI.Xaml.ApplicationInitializationCallback
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.UI.Xaml.Application.LoadComponent(System.Object,System.Uri)
+  commentId: M:Microsoft.UI.Xaml.Application.LoadComponent(System.Object,System.Uri)
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: LoadComponent(Object, Uri)
+  nameWithType: Application.LoadComponent(Object, Uri)
+  fullName: Microsoft.UI.Xaml.Application.LoadComponent(System.Object, System.Uri)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Application.LoadComponent(System.Object,System.Uri)
+    name: LoadComponent
+    nameWithType: Application.LoadComponent
+    fullName: Microsoft.UI.Xaml.Application.LoadComponent
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Application.LoadComponent(System.Object,System.Uri)
+    name: LoadComponent
+    nameWithType: Application.LoadComponent
+    fullName: Microsoft.UI.Xaml.Application.LoadComponent
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.UI.Xaml.Application.LoadComponent(System.Object,System.Uri,Microsoft.UI.Xaml.Controls.Primitives.ComponentResourceLocation)
+  commentId: M:Microsoft.UI.Xaml.Application.LoadComponent(System.Object,System.Uri,Microsoft.UI.Xaml.Controls.Primitives.ComponentResourceLocation)
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: LoadComponent(Object, Uri, ComponentResourceLocation)
+  nameWithType: Application.LoadComponent(Object, Uri, ComponentResourceLocation)
+  fullName: Microsoft.UI.Xaml.Application.LoadComponent(System.Object, System.Uri, Microsoft.UI.Xaml.Controls.Primitives.ComponentResourceLocation)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Application.LoadComponent(System.Object,System.Uri,Microsoft.UI.Xaml.Controls.Primitives.ComponentResourceLocation)
+    name: LoadComponent
+    nameWithType: Application.LoadComponent
+    fullName: Microsoft.UI.Xaml.Application.LoadComponent
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.UI.Xaml.Controls.Primitives.ComponentResourceLocation
+    name: ComponentResourceLocation
+    nameWithType: ComponentResourceLocation
+    fullName: Microsoft.UI.Xaml.Controls.Primitives.ComponentResourceLocation
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Application.LoadComponent(System.Object,System.Uri,Microsoft.UI.Xaml.Controls.Primitives.ComponentResourceLocation)
+    name: LoadComponent
+    nameWithType: Application.LoadComponent
+    fullName: Microsoft.UI.Xaml.Application.LoadComponent
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.UI.Xaml.Controls.Primitives.ComponentResourceLocation
+    name: ComponentResourceLocation
+    nameWithType: ComponentResourceLocation
+    fullName: Microsoft.UI.Xaml.Controls.Primitives.ComponentResourceLocation
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.UI.Xaml.Application.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Xaml.Application.FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: FromAbi(IntPtr)
+  nameWithType: Application.FromAbi(IntPtr)
+  fullName: Microsoft.UI.Xaml.Application.FromAbi(System.IntPtr)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Application.FromAbi(System.IntPtr)
+    name: FromAbi
+    nameWithType: Application.FromAbi
+    fullName: Microsoft.UI.Xaml.Application.FromAbi
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IntPtr
+    name: IntPtr
+    nameWithType: IntPtr
+    fullName: System.IntPtr
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Application.FromAbi(System.IntPtr)
+    name: FromAbi
+    nameWithType: Application.FromAbi
+    fullName: Microsoft.UI.Xaml.Application.FromAbi
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IntPtr
+    name: IntPtr
+    nameWithType: IntPtr
+    fullName: System.IntPtr
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.UI.Xaml.Application.Equals(Microsoft.UI.Xaml.Application)
+  commentId: M:Microsoft.UI.Xaml.Application.Equals(Microsoft.UI.Xaml.Application)
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: Equals(Application)
+  nameWithType: Application.Equals(Application)
+  fullName: Microsoft.UI.Xaml.Application.Equals(Microsoft.UI.Xaml.Application)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Application.Equals(Microsoft.UI.Xaml.Application)
+    name: Equals
+    nameWithType: Application.Equals
+    fullName: Microsoft.UI.Xaml.Application.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.UI.Xaml.Application
+    name: Application
+    nameWithType: Application
+    fullName: Microsoft.UI.Xaml.Application
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Application.Equals(Microsoft.UI.Xaml.Application)
+    name: Equals
+    nameWithType: Application.Equals
+    fullName: Microsoft.UI.Xaml.Application.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.UI.Xaml.Application
+    name: Application
+    nameWithType: Application
+    fullName: Microsoft.UI.Xaml.Application
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.UI.Xaml.Application.Equals(System.Object)
+  commentId: M:Microsoft.UI.Xaml.Application.Equals(System.Object)
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Application.Equals(Object)
+  fullName: Microsoft.UI.Xaml.Application.Equals(System.Object)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Application.Equals(System.Object)
+    name: Equals
+    nameWithType: Application.Equals
+    fullName: Microsoft.UI.Xaml.Application.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Application.Equals(System.Object)
+    name: Equals
+    nameWithType: Application.Equals
+    fullName: Microsoft.UI.Xaml.Application.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.UI.Xaml.Application.GetHashCode
+  commentId: M:Microsoft.UI.Xaml.Application.GetHashCode
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Application.GetHashCode()
+  fullName: Microsoft.UI.Xaml.Application.GetHashCode()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Application.GetHashCode
+    name: GetHashCode
+    nameWithType: Application.GetHashCode
+    fullName: Microsoft.UI.Xaml.Application.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Application.GetHashCode
+    name: GetHashCode
+    nameWithType: Application.GetHashCode
+    fullName: Microsoft.UI.Xaml.Application.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.UI.Xaml.Application.Exit
+  commentId: M:Microsoft.UI.Xaml.Application.Exit
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: Exit()
+  nameWithType: Application.Exit()
+  fullName: Microsoft.UI.Xaml.Application.Exit()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Application.Exit
+    name: Exit
+    nameWithType: Application.Exit
+    fullName: Microsoft.UI.Xaml.Application.Exit
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Application.Exit
+    name: Exit
+    nameWithType: Application.Exit
+    fullName: Microsoft.UI.Xaml.Application.Exit
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.UI.Xaml.Application.IsOverridableInterface(System.Guid)
+  commentId: M:Microsoft.UI.Xaml.Application.IsOverridableInterface(System.Guid)
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: IsOverridableInterface(Guid)
+  nameWithType: Application.IsOverridableInterface(Guid)
+  fullName: Microsoft.UI.Xaml.Application.IsOverridableInterface(System.Guid)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Application.IsOverridableInterface(System.Guid)
+    name: IsOverridableInterface
+    nameWithType: Application.IsOverridableInterface
+    fullName: Microsoft.UI.Xaml.Application.IsOverridableInterface
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Application.IsOverridableInterface(System.Guid)
+    name: IsOverridableInterface
+    nameWithType: Application.IsOverridableInterface
+    fullName: Microsoft.UI.Xaml.Application.IsOverridableInterface
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.UI.Xaml.Application.Current
+  commentId: P:Microsoft.UI.Xaml.Application.Current
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: Current
+  nameWithType: Application.Current
+  fullName: Microsoft.UI.Xaml.Application.Current
+- uid: Microsoft.UI.Xaml.Application.WinRT#IWinRTObject#HasUnwrappableNativeObject
+  commentId: P:Microsoft.UI.Xaml.Application.WinRT#IWinRTObject#HasUnwrappableNativeObject
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: IWinRTObject.HasUnwrappableNativeObject
+  nameWithType: Application.IWinRTObject.HasUnwrappableNativeObject
+  fullName: Microsoft.UI.Xaml.Application.WinRT.IWinRTObject.HasUnwrappableNativeObject
+  nameWithType.vb: Application.WinRT.IWinRTObject.HasUnwrappableNativeObject
+  name.vb: WinRT.IWinRTObject.HasUnwrappableNativeObject
+- uid: Microsoft.UI.Xaml.Application.WinRT#IWinRTObject#NativeObject
+  commentId: P:Microsoft.UI.Xaml.Application.WinRT#IWinRTObject#NativeObject
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: IWinRTObject.NativeObject
+  nameWithType: Application.IWinRTObject.NativeObject
+  fullName: Microsoft.UI.Xaml.Application.WinRT.IWinRTObject.NativeObject
+  nameWithType.vb: Application.WinRT.IWinRTObject.NativeObject
+  name.vb: WinRT.IWinRTObject.NativeObject
+- uid: Microsoft.UI.Xaml.Application.WinRT#IWinRTObject#AdditionalTypeData
+  commentId: P:Microsoft.UI.Xaml.Application.WinRT#IWinRTObject#AdditionalTypeData
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: IWinRTObject.AdditionalTypeData
+  nameWithType: Application.IWinRTObject.AdditionalTypeData
+  fullName: Microsoft.UI.Xaml.Application.WinRT.IWinRTObject.AdditionalTypeData
+  nameWithType.vb: Application.WinRT.IWinRTObject.AdditionalTypeData
+  name.vb: WinRT.IWinRTObject.AdditionalTypeData
+- uid: Microsoft.UI.Xaml.Application.DebugSettings
+  commentId: P:Microsoft.UI.Xaml.Application.DebugSettings
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: DebugSettings
+  nameWithType: Application.DebugSettings
+  fullName: Microsoft.UI.Xaml.Application.DebugSettings
+- uid: Microsoft.UI.Xaml.Application.DispatcherShutdownMode
+  commentId: P:Microsoft.UI.Xaml.Application.DispatcherShutdownMode
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: DispatcherShutdownMode
+  nameWithType: Application.DispatcherShutdownMode
+  fullName: Microsoft.UI.Xaml.Application.DispatcherShutdownMode
+- uid: Microsoft.UI.Xaml.Application.FocusVisualKind
+  commentId: P:Microsoft.UI.Xaml.Application.FocusVisualKind
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: FocusVisualKind
+  nameWithType: Application.FocusVisualKind
+  fullName: Microsoft.UI.Xaml.Application.FocusVisualKind
+- uid: Microsoft.UI.Xaml.Application.HighContrastAdjustment
+  commentId: P:Microsoft.UI.Xaml.Application.HighContrastAdjustment
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: HighContrastAdjustment
+  nameWithType: Application.HighContrastAdjustment
+  fullName: Microsoft.UI.Xaml.Application.HighContrastAdjustment
+- uid: Microsoft.UI.Xaml.Application.RequestedTheme
+  commentId: P:Microsoft.UI.Xaml.Application.RequestedTheme
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: RequestedTheme
+  nameWithType: Application.RequestedTheme
+  fullName: Microsoft.UI.Xaml.Application.RequestedTheme
+- uid: Microsoft.UI.Xaml.Application.Resources
+  commentId: P:Microsoft.UI.Xaml.Application.Resources
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: Resources
+  nameWithType: Application.Resources
+  fullName: Microsoft.UI.Xaml.Application.Resources
+- uid: Microsoft.UI.Xaml.Application.UnhandledException
+  commentId: E:Microsoft.UI.Xaml.Application.UnhandledException
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: UnhandledException
+  nameWithType: Application.UnhandledException
+  fullName: Microsoft.UI.Xaml.Application.UnhandledException
+- uid: Microsoft.UI.Xaml.Application.ResourceManagerRequested
+  commentId: E:Microsoft.UI.Xaml.Application.ResourceManagerRequested
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: ResourceManagerRequested
+  nameWithType: Application.ResourceManagerRequested
+  fullName: Microsoft.UI.Xaml.Application.ResourceManagerRequested
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.UI.Xaml
+  commentId: N:Microsoft.UI.Xaml
+  isExternal: true
+  name: Microsoft.UI.Xaml
+  nameWithType: Microsoft.UI.Xaml
+  fullName: Microsoft.UI.Xaml
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Marimo.WindowsCalculator.WinUI3.App.#ctor*
+  commentId: Overload:Marimo.WindowsCalculator.WinUI3.App.#ctor
+  name: App
+  nameWithType: App.App
+  fullName: Marimo.WindowsCalculator.WinUI3.App.App
+- uid: Microsoft.UI.Xaml.Application.OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs)
+  commentId: M:Microsoft.UI.Xaml.Application.OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs)
+  parent: Microsoft.UI.Xaml.Application
+  isExternal: true
+  name: OnLaunched(LaunchActivatedEventArgs)
+  nameWithType: Application.OnLaunched(LaunchActivatedEventArgs)
+  fullName: Microsoft.UI.Xaml.Application.OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Application.OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs)
+    name: OnLaunched
+    nameWithType: Application.OnLaunched
+    fullName: Microsoft.UI.Xaml.Application.OnLaunched
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.UI.Xaml.LaunchActivatedEventArgs
+    name: LaunchActivatedEventArgs
+    nameWithType: LaunchActivatedEventArgs
+    fullName: Microsoft.UI.Xaml.LaunchActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Application.OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs)
+    name: OnLaunched
+    nameWithType: Application.OnLaunched
+    fullName: Microsoft.UI.Xaml.Application.OnLaunched
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.UI.Xaml.LaunchActivatedEventArgs
+    name: LaunchActivatedEventArgs
+    nameWithType: LaunchActivatedEventArgs
+    fullName: Microsoft.UI.Xaml.LaunchActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Marimo.WindowsCalculator.WinUI3.App.OnLaunched*
+  commentId: Overload:Marimo.WindowsCalculator.WinUI3.App.OnLaunched
+  name: OnLaunched
+  nameWithType: App.OnLaunched
+  fullName: Marimo.WindowsCalculator.WinUI3.App.OnLaunched
+- uid: Microsoft.UI.Xaml.LaunchActivatedEventArgs
+  commentId: T:Microsoft.UI.Xaml.LaunchActivatedEventArgs
+  parent: Microsoft.UI.Xaml
+  isExternal: true
+  name: LaunchActivatedEventArgs
+  nameWithType: LaunchActivatedEventArgs
+  fullName: Microsoft.UI.Xaml.LaunchActivatedEventArgs
+- uid: Marimo.WindowsCalculator.WinUI3.App.InitializeComponent*
+  commentId: Overload:Marimo.WindowsCalculator.WinUI3.App.InitializeComponent
+  name: InitializeComponent
+  nameWithType: App.InitializeComponent
+  fullName: Marimo.WindowsCalculator.WinUI3.App.InitializeComponent

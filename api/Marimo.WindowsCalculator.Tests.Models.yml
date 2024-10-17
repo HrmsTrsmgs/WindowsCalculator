@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Tests.Models
+  commentId: N:Marimo.WindowsCalculator.Tests.Models
+  id: Marimo.WindowsCalculator.Tests.Models
+  children:
+  - Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests
+  - Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  - Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  - Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  - Marimo.WindowsCalculator.Tests.Models.TestBase
+  langs:
+  - csharp
+  - vb
+  name: Marimo.WindowsCalculator.Tests.Models
+  nameWithType: Marimo.WindowsCalculator.Tests.Models
+  fullName: Marimo.WindowsCalculator.Tests.Models
+  type: Namespace
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+references:
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests
+  name: CalculationHistoryItemTests
+  nameWithType: CalculationHistoryItemTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculationHistoryItemTests
+- uid: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+  name: CalculatorTests
+  nameWithType: CalculatorTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.CalculatorTests
+- uid: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+  name: IncrementalParserTest
+  nameWithType: IncrementalParserTest
+  fullName: Marimo.WindowsCalculator.Tests.Models.IncrementalParserTest
+- uid: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+  name: PropertySettingsTests
+  nameWithType: PropertySettingsTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.PropertySettingsTests
+- uid: Marimo.WindowsCalculator.Tests.Models.TestBase
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.TestBase
+  parent: Marimo.WindowsCalculator.Tests.Models
+  name: TestBase
+  nameWithType: TestBase
+  fullName: Marimo.WindowsCalculator.Tests.Models.TestBase
+- uid: Marimo.WindowsCalculator.Tests.Models
+  commentId: N:Marimo.WindowsCalculator.Tests.Models
+  name: Marimo.WindowsCalculator.Tests.Models
+  nameWithType: Marimo.WindowsCalculator.Tests.Models
+  fullName: Marimo.WindowsCalculator.Tests.Models

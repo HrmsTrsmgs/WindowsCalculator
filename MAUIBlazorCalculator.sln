@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiBlazor", "MauiBlazor\Ma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWebassembly", "BlazorWebassembly\BlazorWebassembly.csproj", "{9F31BBF2-812A-4711-9291-086B227ADA0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUI3", "WinUI3\WinUI3.csproj", "{9D7954B9-90DE-48EF-A5F6-2C7ECBA2C086}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinUI3", "WinUI3\WinUI3.csproj", "{9D7954B9-90DE-48EF-A5F6-2C7ECBA2C086}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.MauiBlazor.WinUI
+  commentId: N:Marimo.WindowsCalculator.MauiBlazor.WinUI
+  id: Marimo.WindowsCalculator.MauiBlazor.WinUI
+  children:
+  - Marimo.WindowsCalculator.MauiBlazor.WinUI.App
+  - Marimo.WindowsCalculator.MauiBlazor.WinUI.Program
+  langs:
+  - csharp
+  - vb
+  name: Marimo.WindowsCalculator.MauiBlazor.WinUI
+  nameWithType: Marimo.WindowsCalculator.MauiBlazor.WinUI
+  fullName: Marimo.WindowsCalculator.MauiBlazor.WinUI
+  type: Namespace
+  assemblies:
+  - Marimo.WindowsCalculator.MauiBlazor
+references:
+- uid: Marimo.WindowsCalculator.MauiBlazor.WinUI.App
+  commentId: T:Marimo.WindowsCalculator.MauiBlazor.WinUI.App
+  name: App
+  nameWithType: App
+  fullName: Marimo.WindowsCalculator.MauiBlazor.WinUI.App
+- uid: Marimo.WindowsCalculator.MauiBlazor.WinUI.Program
+  commentId: T:Marimo.WindowsCalculator.MauiBlazor.WinUI.Program
+  name: Program
+  nameWithType: Program
+  fullName: Marimo.WindowsCalculator.MauiBlazor.WinUI.Program

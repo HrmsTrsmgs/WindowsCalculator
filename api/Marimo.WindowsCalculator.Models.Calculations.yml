@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Models.Calculations
+  commentId: N:Marimo.WindowsCalculator.Models.Calculations
+  id: Marimo.WindowsCalculator.Models.Calculations
+  children:
+  - Marimo.WindowsCalculator.Models.Calculations.AddCalculation
+  - Marimo.WindowsCalculator.Models.Calculations.Calculation
+  - Marimo.WindowsCalculator.Models.Calculations.DeleteCalculation
+  - Marimo.WindowsCalculator.Models.Calculations.DivideCalculation
+  - Marimo.WindowsCalculator.Models.Calculations.EqualButtonCalculation
+  - Marimo.WindowsCalculator.Models.Calculations.MultiplyCalculation
+  - Marimo.WindowsCalculator.Models.Calculations.NumberCalculation
+  - Marimo.WindowsCalculator.Models.Calculations.OperationCalculation
+  - Marimo.WindowsCalculator.Models.Calculations.SubstractCalculation
+  langs:
+  - csharp
+  - vb
+  name: Marimo.WindowsCalculator.Models.Calculations
+  nameWithType: Marimo.WindowsCalculator.Models.Calculations
+  fullName: Marimo.WindowsCalculator.Models.Calculations
+  type: Namespace
+  assemblies:
+  - Marimo.WindowsCalculator.Models
+references:
+- uid: Marimo.WindowsCalculator.Models.Calculations.AddCalculation
+  commentId: T:Marimo.WindowsCalculator.Models.Calculations.AddCalculation
+  name: AddCalculation
+  nameWithType: AddCalculation
+  fullName: Marimo.WindowsCalculator.Models.Calculations.AddCalculation
+- uid: Marimo.WindowsCalculator.Models.Calculations.Calculation
+  commentId: T:Marimo.WindowsCalculator.Models.Calculations.Calculation
+  parent: Marimo.WindowsCalculator.Models.Calculations
+  name: Calculation
+  nameWithType: Calculation
+  fullName: Marimo.WindowsCalculator.Models.Calculations.Calculation
+- uid: Marimo.WindowsCalculator.Models.Calculations.DeleteCalculation
+  commentId: T:Marimo.WindowsCalculator.Models.Calculations.DeleteCalculation
+  name: DeleteCalculation
+  nameWithType: DeleteCalculation
+  fullName: Marimo.WindowsCalculator.Models.Calculations.DeleteCalculation
+- uid: Marimo.WindowsCalculator.Models.Calculations.DivideCalculation
+  commentId: T:Marimo.WindowsCalculator.Models.Calculations.DivideCalculation
+  name: DivideCalculation
+  nameWithType: DivideCalculation
+  fullName: Marimo.WindowsCalculator.Models.Calculations.DivideCalculation
+- uid: Marimo.WindowsCalculator.Models.Calculations.EqualButtonCalculation
+  commentId: T:Marimo.WindowsCalculator.Models.Calculations.EqualButtonCalculation
+  name: EqualButtonCalculation
+  nameWithType: EqualButtonCalculation
+  fullName: Marimo.WindowsCalculator.Models.Calculations.EqualButtonCalculation
+- uid: Marimo.WindowsCalculator.Models.Calculations.MultiplyCalculation
+  commentId: T:Marimo.WindowsCalculator.Models.Calculations.MultiplyCalculation
+  name: MultiplyCalculation
+  nameWithType: MultiplyCalculation
+  fullName: Marimo.WindowsCalculator.Models.Calculations.MultiplyCalculation
+- uid: Marimo.WindowsCalculator.Models.Calculations.NumberCalculation
+  commentId: T:Marimo.WindowsCalculator.Models.Calculations.NumberCalculation
+  name: NumberCalculation
+  nameWithType: NumberCalculation
+  fullName: Marimo.WindowsCalculator.Models.Calculations.NumberCalculation
+- uid: Marimo.WindowsCalculator.Models.Calculations.OperationCalculation
+  commentId: T:Marimo.WindowsCalculator.Models.Calculations.OperationCalculation
+  parent: Marimo.WindowsCalculator.Models.Calculations
+  name: OperationCalculation
+  nameWithType: OperationCalculation
+  fullName: Marimo.WindowsCalculator.Models.Calculations.OperationCalculation
+- uid: Marimo.WindowsCalculator.Models.Calculations.SubstractCalculation
+  commentId: T:Marimo.WindowsCalculator.Models.Calculations.SubstractCalculation
+  name: SubstractCalculation
+  nameWithType: SubstractCalculation
+  fullName: Marimo.WindowsCalculator.Models.Calculations.SubstractCalculation
+- uid: Marimo.WindowsCalculator.Models.Calculations
+  commentId: N:Marimo.WindowsCalculator.Models.Calculations
+  name: Marimo.WindowsCalculator.Models.Calculations
+  nameWithType: Marimo.WindowsCalculator.Models.Calculations
+  fullName: Marimo.WindowsCalculator.Models.Calculations

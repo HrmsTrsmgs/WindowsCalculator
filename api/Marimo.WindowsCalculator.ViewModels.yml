@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.ViewModels
+  commentId: N:Marimo.WindowsCalculator.ViewModels
+  id: Marimo.WindowsCalculator.ViewModels
+  children:
+  - Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  langs:
+  - csharp
+  - vb
+  name: Marimo.WindowsCalculator.ViewModels
+  nameWithType: Marimo.WindowsCalculator.ViewModels
+  fullName: Marimo.WindowsCalculator.ViewModels
+  type: Namespace
+  assemblies:
+  - Marimo.WindowsCalculator.ViewModels
+references:
+- uid: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  commentId: T:Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+  parent: Marimo.WindowsCalculator.ViewModels
+  name: CalculatorViewModel
+  nameWithType: CalculatorViewModel
+  fullName: Marimo.WindowsCalculator.ViewModels.CalculatorViewModel
+- uid: Marimo.WindowsCalculator.ViewModels
+  commentId: N:Marimo.WindowsCalculator.ViewModels
+  name: Marimo.WindowsCalculator.ViewModels
+  nameWithType: Marimo.WindowsCalculator.ViewModels
+  fullName: Marimo.WindowsCalculator.ViewModels

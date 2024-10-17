@@ -1,0 +1,558 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests
+  id: NumberTokenTests
+  parent: Marimo.WindowsCalculator.Tests.Models.Tokens
+  children:
+  - Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceには5までの値しか設定することができません
+  - Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceに値を設定することができます
+  - Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceの初期値はnullです
+  - Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.Numberの初期値は指定したものです
+  - Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.桁が16桁を超える数値は指数表記になります
+  - Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.指数表記の数値部分の最大桁も16桁です
+  langs:
+  - csharp
+  - vb
+  name: NumberTokenTests
+  nameWithType: NumberTokenTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests
+  type: Class
+  source:
+    remote:
+      path: ModelsTests/Tokens/NumberTokenTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: NumberTokenTests
+    path: ModelsTests/Tokens/NumberTokenTests.cs
+    startLine: 4
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Tokens
+  syntax:
+    content: public class NumberTokenTests
+    content.vb: Public Class NumberTokenTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.Numberの初期値は指定したものです
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.Numberの初期値は指定したものです
+  id: Numberの初期値は指定したものです
+  parent: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests
+  langs:
+  - csharp
+  - vb
+  name: Numberの初期値は指定したものです()
+  nameWithType: NumberTokenTests.Numberの初期値は指定したものです()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.Numberの初期値は指定したものです()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Tokens/NumberTokenTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: Numberの初期値は指定したものです
+    path: ModelsTests/Tokens/NumberTokenTests.cs
+    startLine: 8
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Tokens
+  syntax:
+    content: public void Numberの初期値は指定したものです()
+    content.vb: Public Sub Numberの初期値は指定したものです
+  overload: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.Numberの初期値は指定したものです*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceの初期値はnullです
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceの初期値はnullです
+  id: DecimalPlaceの初期値はnullです
+  parent: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests
+  langs:
+  - csharp
+  - vb
+  name: DecimalPlaceの初期値はnullです()
+  nameWithType: NumberTokenTests.DecimalPlaceの初期値はnullです()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceの初期値はnullです()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Tokens/NumberTokenTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: DecimalPlaceの初期値はnullです
+    path: ModelsTests/Tokens/NumberTokenTests.cs
+    startLine: 14
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Tokens
+  syntax:
+    content: public void DecimalPlaceの初期値はnullです()
+    content.vb: Public Sub DecimalPlaceの初期値はnullです
+  overload: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceの初期値はnullです*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceに値を設定することができます
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceに値を設定することができます
+  id: DecimalPlaceに値を設定することができます
+  parent: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests
+  langs:
+  - csharp
+  - vb
+  name: DecimalPlaceに値を設定することができます()
+  nameWithType: NumberTokenTests.DecimalPlaceに値を設定することができます()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceに値を設定することができます()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Tokens/NumberTokenTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: DecimalPlaceに値を設定することができます
+    path: ModelsTests/Tokens/NumberTokenTests.cs
+    startLine: 20
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Tokens
+  syntax:
+    content: public void DecimalPlaceに値を設定することができます()
+    content.vb: Public Sub DecimalPlaceに値を設定することができます
+  overload: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceに値を設定することができます*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceには5までの値しか設定することができません
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceには5までの値しか設定することができません
+  id: DecimalPlaceには5までの値しか設定することができません
+  parent: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests
+  langs:
+  - csharp
+  - vb
+  name: DecimalPlaceには5までの値しか設定することができません()
+  nameWithType: NumberTokenTests.DecimalPlaceには5までの値しか設定することができません()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceには5までの値しか設定することができません()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Tokens/NumberTokenTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: DecimalPlaceには5までの値しか設定することができません
+    path: ModelsTests/Tokens/NumberTokenTests.cs
+    startLine: 27
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Tokens
+  syntax:
+    content: public void DecimalPlaceには5までの値しか設定することができません()
+    content.vb: Public Sub DecimalPlaceには5までの値しか設定することができません
+  overload: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceには5までの値しか設定することができません*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.桁が16桁を超える数値は指数表記になります
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.桁が16桁を超える数値は指数表記になります
+  id: 桁が16桁を超える数値は指数表記になります
+  parent: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests
+  langs:
+  - csharp
+  - vb
+  name: 桁が16桁を超える数値は指数表記になります()
+  nameWithType: NumberTokenTests.桁が16桁を超える数値は指数表記になります()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.桁が16桁を超える数値は指数表記になります()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Tokens/NumberTokenTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 桁が16桁を超える数値は指数表記になります
+    path: ModelsTests/Tokens/NumberTokenTests.cs
+    startLine: 36
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Tokens
+  syntax:
+    content: public void 桁が16桁を超える数値は指数表記になります()
+    content.vb: Public Sub 桁が16桁を超える数値は指数表記になります
+  overload: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.桁が16桁を超える数値は指数表記になります*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.指数表記の数値部分の最大桁も16桁です
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.指数表記の数値部分の最大桁も16桁です
+  id: 指数表記の数値部分の最大桁も16桁です
+  parent: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests
+  langs:
+  - csharp
+  - vb
+  name: 指数表記の数値部分の最大桁も16桁です()
+  nameWithType: NumberTokenTests.指数表記の数値部分の最大桁も16桁です()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.指数表記の数値部分の最大桁も16桁です()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Tokens/NumberTokenTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 指数表記の数値部分の最大桁も16桁です
+    path: ModelsTests/Tokens/NumberTokenTests.cs
+    startLine: 45
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Tokens
+  syntax:
+    content: public void 指数表記の数値部分の最大桁も16桁です()
+    content.vb: Public Sub 指数表記の数値部分の最大桁も16桁です
+  overload: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.指数表記の数値部分の最大桁も16桁です*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens
+  commentId: N:Marimo.WindowsCalculator.Tests.Models.Tokens
+  name: Marimo.WindowsCalculator.Tests.Models.Tokens
+  nameWithType: Marimo.WindowsCalculator.Tests.Models.Tokens
+  fullName: Marimo.WindowsCalculator.Tests.Models.Tokens
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.Numberの初期値は指定したものです*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.Numberの初期値は指定したものです
+  name: Numberの初期値は指定したものです
+  nameWithType: NumberTokenTests.Numberの初期値は指定したものです
+  fullName: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.Numberの初期値は指定したものです
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceの初期値はnullです*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceの初期値はnullです
+  name: DecimalPlaceの初期値はnullです
+  nameWithType: NumberTokenTests.DecimalPlaceの初期値はnullです
+  fullName: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceの初期値はnullです
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceに値を設定することができます*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceに値を設定することができます
+  name: DecimalPlaceに値を設定することができます
+  nameWithType: NumberTokenTests.DecimalPlaceに値を設定することができます
+  fullName: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceに値を設定することができます
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceには5までの値しか設定することができません*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceには5までの値しか設定することができません
+  name: DecimalPlaceには5までの値しか設定することができません
+  nameWithType: NumberTokenTests.DecimalPlaceには5までの値しか設定することができません
+  fullName: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.DecimalPlaceには5までの値しか設定することができません
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.桁が16桁を超える数値は指数表記になります*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.桁が16桁を超える数値は指数表記になります
+  name: 桁が16桁を超える数値は指数表記になります
+  nameWithType: NumberTokenTests.桁が16桁を超える数値は指数表記になります
+  fullName: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.桁が16桁を超える数値は指数表記になります
+- uid: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.指数表記の数値部分の最大桁も16桁です*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.指数表記の数値部分の最大桁も16桁です
+  name: 指数表記の数値部分の最大桁も16桁です
+  nameWithType: NumberTokenTests.指数表記の数値部分の最大桁も16桁です
+  fullName: Marimo.WindowsCalculator.Tests.Models.Tokens.NumberTokenTests.指数表記の数値部分の最大桁も16桁です

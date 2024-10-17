@@ -1,0 +1,486 @@
+### YamlMime:ManagedReference
+items:
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests
+  commentId: T:Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests
+  id: EqualButtonCalculationTests
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations
+  children:
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は繰り返し演算がある場合は繰り返した結果を取得します
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は直前にした計算と同じです
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は繰り返し演算がある場合は繰り返した結果に対する式を取得します
+  - Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は直前の式にイコールを付けたものです
+  langs:
+  - csharp
+  - vb
+  name: EqualButtonCalculationTests
+  nameWithType: EqualButtonCalculationTests
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests
+  type: Class
+  source:
+    remote:
+      path: ModelsTests/Calculations/EqualButtonCalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: EqualButtonCalculationTests
+    path: ModelsTests/Calculations/EqualButtonCalculationTests.cs
+    startLine: 5
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public class EqualButtonCalculationTests
+    content.vb: Public Class EqualButtonCalculationTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は直前にした計算と同じです
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は直前にした計算と同じです
+  id: 計算結果は直前にした計算と同じです
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests
+  langs:
+  - csharp
+  - vb
+  name: 計算結果は直前にした計算と同じです()
+  nameWithType: EqualButtonCalculationTests.計算結果は直前にした計算と同じです()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は直前にした計算と同じです()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/EqualButtonCalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 計算結果は直前にした計算と同じです
+    path: ModelsTests/Calculations/EqualButtonCalculationTests.cs
+    startLine: 15
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void 計算結果は直前にした計算と同じです()
+    content.vb: Public Sub 計算結果は直前にした計算と同じです
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は直前にした計算と同じです*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は繰り返し演算がある場合は繰り返した結果を取得します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は繰り返し演算がある場合は繰り返した結果を取得します
+  id: 計算結果は繰り返し演算がある場合は繰り返した結果を取得します
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests
+  langs:
+  - csharp
+  - vb
+  name: 計算結果は繰り返し演算がある場合は繰り返した結果を取得します()
+  nameWithType: EqualButtonCalculationTests.計算結果は繰り返し演算がある場合は繰り返した結果を取得します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は繰り返し演算がある場合は繰り返した結果を取得します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/EqualButtonCalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 計算結果は繰り返し演算がある場合は繰り返した結果を取得します
+    path: ModelsTests/Calculations/EqualButtonCalculationTests.cs
+    startLine: 21
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void 計算結果は繰り返し演算がある場合は繰り返した結果を取得します()
+    content.vb: Public Sub 計算結果は繰り返し演算がある場合は繰り返した結果を取得します
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は繰り返し演算がある場合は繰り返した結果を取得します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は直前の式にイコールを付けたものです
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は直前の式にイコールを付けたものです
+  id: 式は直前の式にイコールを付けたものです
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests
+  langs:
+  - csharp
+  - vb
+  name: 式は直前の式にイコールを付けたものです()
+  nameWithType: EqualButtonCalculationTests.式は直前の式にイコールを付けたものです()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は直前の式にイコールを付けたものです()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/EqualButtonCalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 式は直前の式にイコールを付けたものです
+    path: ModelsTests/Calculations/EqualButtonCalculationTests.cs
+    startLine: 35
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void 式は直前の式にイコールを付けたものです()
+    content.vb: Public Sub 式は直前の式にイコールを付けたものです
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は直前の式にイコールを付けたものです*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は繰り返し演算がある場合は繰り返した結果に対する式を取得します
+  commentId: M:Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は繰り返し演算がある場合は繰り返した結果に対する式を取得します
+  id: 式は繰り返し演算がある場合は繰り返した結果に対する式を取得します
+  parent: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests
+  langs:
+  - csharp
+  - vb
+  name: 式は繰り返し演算がある場合は繰り返した結果に対する式を取得します()
+  nameWithType: EqualButtonCalculationTests.式は繰り返し演算がある場合は繰り返した結果に対する式を取得します()
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は繰り返し演算がある場合は繰り返した結果に対する式を取得します()
+  type: Method
+  source:
+    remote:
+      path: ModelsTests/Calculations/EqualButtonCalculationTests.cs
+      branch: main
+      repo: https://github.com/HrmsTrsmgs/WindowsCalculator.git
+    id: 式は繰り返し演算がある場合は繰り返した結果に対する式を取得します
+    path: ModelsTests/Calculations/EqualButtonCalculationTests.cs
+    startLine: 42
+  assemblies:
+  - Marimo.WindowsCalculator.Tests.Models
+  namespace: Marimo.WindowsCalculator.Tests.Models.Calculations
+  syntax:
+    content: public void 式は繰り返し演算がある場合は繰り返した結果に対する式を取得します()
+    content.vb: Public Sub 式は繰り返し演算がある場合は繰り返した結果に対する式を取得します
+  overload: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は繰り返し演算がある場合は繰り返した結果に対する式を取得します*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations
+  commentId: N:Marimo.WindowsCalculator.Tests.Models.Calculations
+  name: Marimo.WindowsCalculator.Tests.Models.Calculations
+  nameWithType: Marimo.WindowsCalculator.Tests.Models.Calculations
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は直前にした計算と同じです*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は直前にした計算と同じです
+  name: 計算結果は直前にした計算と同じです
+  nameWithType: EqualButtonCalculationTests.計算結果は直前にした計算と同じです
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は直前にした計算と同じです
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は繰り返し演算がある場合は繰り返した結果を取得します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は繰り返し演算がある場合は繰り返した結果を取得します
+  name: 計算結果は繰り返し演算がある場合は繰り返した結果を取得します
+  nameWithType: EqualButtonCalculationTests.計算結果は繰り返し演算がある場合は繰り返した結果を取得します
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.計算結果は繰り返し演算がある場合は繰り返した結果を取得します
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は直前の式にイコールを付けたものです*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は直前の式にイコールを付けたものです
+  name: 式は直前の式にイコールを付けたものです
+  nameWithType: EqualButtonCalculationTests.式は直前の式にイコールを付けたものです
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は直前の式にイコールを付けたものです
+- uid: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は繰り返し演算がある場合は繰り返した結果に対する式を取得します*
+  commentId: Overload:Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は繰り返し演算がある場合は繰り返した結果に対する式を取得します
+  name: 式は繰り返し演算がある場合は繰り返した結果に対する式を取得します
+  nameWithType: EqualButtonCalculationTests.式は繰り返し演算がある場合は繰り返した結果に対する式を取得します
+  fullName: Marimo.WindowsCalculator.Tests.Models.Calculations.EqualButtonCalculationTests.式は繰り返し演算がある場合は繰り返した結果に対する式を取得します

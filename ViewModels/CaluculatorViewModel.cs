@@ -167,6 +167,14 @@ public class CalculatorViewModel : ObservableObject
     /// </summary>
     public CalculatorViewModel()
     {
+        model.PropertyChanged += (_, args) =>
+        {
+            if (args.PropertyName is nameof(model.ActiveCaluculation))
+            {
+                OnPropertyChanged(nameof(Expression));
+            }
+        };
+
         InputKeybord = new RelayCommand<InputAction>(c => Input(c));
 
         ClearHistoryCommand = new RelayCommand(

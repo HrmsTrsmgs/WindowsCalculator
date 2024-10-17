@@ -50,6 +50,23 @@ public class CaluculatorViewModelTests
     }
 
     [Fact]
+    public void 計算式の変更は通知されます()
+    {
+        tested.InputKeybord.Execute(InputAction.Five);
+        tested.InputKeybord.Execute(InputAction.Add);
+        tested.InputKeybord.Execute(InputAction.Three);
+
+        var changedList = new List<string?>();
+        tested.PropertyChanged += (_, args) => changedList.Add(args.PropertyName);
+        tested.InputKeybord.Execute(InputAction.Equal);
+
+        changedList.Should().Contain(nameof(tested.Expression));
+
+
+        tested.Expression.Should().Be("5 + 3 =");
+    }
+
+    [Fact]
     public void 履歴が取得できます()
     {
         tested.InputKeybord.Execute(InputAction.Three);

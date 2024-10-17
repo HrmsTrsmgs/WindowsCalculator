@@ -104,7 +104,7 @@
                     Width="20" Height="20"
                     Source="ms-appx:///Assets/Images/History.svg"/>
                     </Grid>
-                    <TextBlock 
+                    <TextBlock
                 RelativePanel.AlignBottomWithPanel="True" 
                 RelativePanel.AlignRightWithPanel="True"
                 FontSize="14"

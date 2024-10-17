@@ -209,10 +209,10 @@ public class Calculator : ModelBase
         };
 
     /// <summary>
-    /// 次の最後の演算を取得します。
+    /// イコールで繰り返すために、最後の計算を取得します。
     /// </summary>
     /// <param name="lastCaluculation">これまでの最後の計算</param>
-    /// <returns>これまでの最後の演算。</returns>
+    /// <returns>これまでの最後の計算。</returns>
     private OperationCalculation? GetLastOperationCalculation(
         EqualButtonCalculation lastCaluculation)
     {

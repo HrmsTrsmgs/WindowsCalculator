@@ -1,10 +1,10 @@
 using Marimo.WindowsCalculator.Models;
 using Marimo.WindowsCalculator.ViewModels;
 using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media.Animation;
 using System;
-using System.Runtime.Serialization.DataContracts;
 
 namespace Marimo.WindowsCalculator.WinUI3;
 public sealed partial class MainWindow : Window
@@ -127,5 +127,30 @@ public sealed partial class MainWindow : Window
     void SettingsClick(object sender, TappedRoutedEventArgs e)
     {
         SplitView.IsPaneOpen = !SplitView.IsPaneOpen;
+    }
+
+    private void RootLoaded(object sender, RoutedEventArgs e)
+    {
+        ChangeWidth(Bounds.Width);
+        SizeChanged += OnSizeChanged;
+    }
+
+    private void OnSizeChanged(object sender, WindowSizeChangedEventArgs args)
+    {
+        ChangeWidth(args.Size.Width);
+    }
+
+    private void ChangeWidth(double width)
+    {
+        if (width > 500)
+        {
+            HistoryPane.Width = 200;
+            HistoryIcon.Visibility = Microsoft.UI.Xaml.Visibility.Collapsed;
+        }
+        else
+        {
+            HistoryPane.Width = 0;
+            HistoryIcon.Visibility = Visibility.Visible;
+        }
     }
 }

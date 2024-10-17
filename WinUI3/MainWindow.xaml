@@ -12,7 +12,8 @@
     <Grid 
         x:Name="Root"
         RequestedTheme="{Binding Settings.Theme, Mode=OneWay, Converter={StaticResource ThemesConverter}}"
-        Background="{ThemeResource SystemControlAcrylicWindowBrush}">
+        Background="{ThemeResource SystemControlAcrylicWindowBrush}"
+        Loaded="RootLoaded">
         <Grid.Resources>
             <Storyboard x:Key="SlideInAnimation">
                 <DoubleAnimation 
@@ -48,13 +49,12 @@
             <ImageIcon Margin="16,0" Width="20" Height="20" Source="ms-appx:///Assets/Images/Calculator.svg"/>
             <TextBlock Margin="-4" Text="電卓" VerticalAlignment="Center" FontSize="12" />
         </StackPanel>
-        <SplitView x:Name="SplitView">
+        <SplitView x:Name="SplitView" DisplayMode="Overlay">
             <SplitView.Pane>
                 <StackPanel>
                     <TextBlock FontSize="24">設定</TextBlock>
                     <ComboBox Margin="8" Header="テーマ" ItemsSource="{x:Bind ViewModel.Themes}"
-          SelectedItem="{x:Bind ViewModel.Settings.Theme, Mode=TwoWay}"
-          Width="100"/>
+          SelectedItem="{x:Bind ViewModel.Settings.Theme, Mode=TwoWay}"/>
 
                     <TextBox Margin="8" Header="0ボタンを表すテキスト" Text="{x:Bind ViewModel.Settings.ZeroDisplayText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                     <TextBox Margin="8" Header="バックスペースボタンを表すテキスト" Text="{x:Bind ViewModel.Settings.BackspaceDisplayText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
@@ -79,12 +79,14 @@
 
                 </StackPanel>
             </SplitView.Pane>
-            <Grid x:Name="Main" Tapped="MainClick">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="100"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <RelativePanel Margin="12,48,12,0">
+            <RelativePanel x:Name="Main" Tapped="MainClick">
+                <RelativePanel
+                    x:Name="Header"
+                    RelativePanel.AlignTopWithPanel="True"
+                    RelativePanel.AlignLeftWithPanel="True"
+                    RelativePanel.LeftOf="HistoryPane"
+                    Height="100"
+                    Margin="12,48,12,0">
                     <Grid 
                         RelativePanel.AlignTopWithPanel="True" 
                         RelativePanel.AlignLeftWithPanel="True"
@@ -93,6 +95,7 @@
                         <SymbolIcon Symbol="Setting"/>
                     </Grid>
                     <Grid 
+                        x:Name="HistoryIcon"
                 RelativePanel.AlignTopWithPanel="True" 
                 RelativePanel.AlignRightWithPanel="True"
                 Background="Transparent"
@@ -107,7 +110,12 @@
                 FontSize="14"
                 Text="{x:Bind ViewModel.Expression, Mode=OneWay}"/>
                 </RelativePanel>
-                <Grid Grid.Row="1" Margin="3">
+                <Grid
+                    RelativePanel.AlignBottomWithPanel="True"
+                    RelativePanel.Below="Header"
+                    RelativePanel.LeftOf="HistoryPane"
+                    RelativePanel.AlignLeftWithPanel="True"
+                    Margin="3">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="3*"/>
                         <RowDefinition Height="2*"/>
@@ -328,7 +336,16 @@
                         </Viewbox>
                     </Button>
                 </Grid>
-            </Grid>
+                <Grid
+                    x:Name="HistoryPane"
+                    RelativePanel.AlignTopWithPanel="True"
+                    RelativePanel.AlignBottomWithPanel="True"
+                    RelativePanel.AlignRightWithPanel="True"
+                    Width="0"
+                    >
+                    <TextBlock>履歴</TextBlock>
+                </Grid>
+            </RelativePanel>
         </SplitView>
         <Grid 
             x:Name="ShadowOfMain" Background="Black" 
